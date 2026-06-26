@@ -152,6 +152,17 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not commit local app settings, generated files, or OS-specific files.
 - If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
 
+## Local Editing Checklist
+
+When working locally on this repo:
+
+1. Edit the relevant Markdown note under `Questions/`, `Connections/`, or `Templates/`.
+2. If you add or change a subject note, update `INDEX.md`, `Progress.md`, `Connections/KnowledgeGraph.md`, and `README.md` latest additions when needed.
+3. Build the website with `python3 Tools/build_site.py` only if you want a local preview; do not commit `_site/`.
+4. Review with `git status --short`.
+5. Commit the Markdown changes.
+6. Run `git push` so the public site updates automatically.
+
 ## Mobile Access
 
 - Preferred reading site: https://dingare.github.io/quant-homework/
