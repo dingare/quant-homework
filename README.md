@@ -152,6 +152,13 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not commit local app settings, generated files, or OS-specific files.
 - If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
 
+## Mobile Access
+
+- Use the GitHub mobile app for quick browsing, search, and commit history.
+- Use mobile Safari or Chrome when formula preview matters; GitHub web preview is usually better for rendered Markdown math.
+- Star or pin `dingare/quant-homework` in GitHub so it is easy to find.
+- Use mobile editing only for small typo fixes. For new notes or formula-heavy edits, use a laptop and then `git push`.
+
 ## Latest Additions
 
 - 2026-06-26: Added [L001](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md) on ridge regression as PCA shrinkage.

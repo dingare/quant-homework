@@ -11,9 +11,9 @@
 
 OLS estimator:
 
-$$
-\hat\beta=(X'X)^{-1}X'y
-$$
+```math
+\hat{\beta}=(X^\top X)^{-1}X^\top y
+```
 
 Remove one observation $(x_i,y_i)$. Derive $\hat\beta_{(-i)}$ without refitting OLS.
 
@@ -21,49 +21,49 @@ Remove one observation $(x_i,y_i)$. Derive $\hat\beta_{(-i)}$ without refitting 
 
 Let
 
-$$
-A=X'X,\qquad e_i=y_i-x_i'\hat\beta,\qquad h_i=x_i'A^{-1}x_i
-$$
+```math
+A=X^\top X,\qquad e_i=y_i-x_i^\top\hat{\beta},\qquad h_i=x_i^\top A^{-1}x_i
+```
 
 Then:
 
-$$
+```math
 \boxed{
-\hat\beta_{(-i)}
+\hat{\beta}_{(-i)}
 =
-\hat\beta
+\hat{\beta}
 -
 \frac{A^{-1}x_ie_i}{1-h_i}
 }
-$$
+```
 
 Equivalently:
 
-$$
+```math
 \boxed{
-\hat\beta-\hat\beta_{(-i)}
+\hat{\beta}-\hat{\beta}_{(-i)}
 =
 \frac{A^{-1}x_ie_i}{1-h_i}
 }
-$$
+```
 
 ## Derivation Sketch
 
 Removing one observation gives:
 
-$$
-X_{(-i)}'X_{(-i)}=X'X-x_ix_i'
-$$
+```math
+X_{(-i)}^\top X_{(-i)}=X^\top X-x_ix_i^\top
+```
 
 Use Sherman-Morrison:
 
-$$
-(A-uu')^{-1}
+```math
+(A-uu^\top)^{-1}
 =
 A^{-1}
 +
-\frac{A^{-1}uu'A^{-1}}{1-u'A^{-1}u}
-$$
+\frac{A^{-1}uu^\top A^{-1}}{1-u^\top A^{-1}u}
+```
 
 with $u=x_i$.
 
@@ -91,9 +91,9 @@ Influence requires both residual and leverage.
 
 - Derive leave-one-out prediction error:
 
-$$
+```math
 e_{(-i),i}=\frac{e_i}{1-h_i}
-$$
+```
 
 - Connect to Cook's distance.
 - Extend to ridge regression.
@@ -102,19 +102,19 @@ $$
 
 ## What to Remember
 
-$$
+```math
 \boxed{
-\hat\beta_{(-i)}
+\hat{\beta}_{(-i)}
 =
-\hat\beta
+\hat{\beta}
 -
-\frac{(X'X)^{-1}x_ie_i}{1-h_i}
+\frac{(X^\top X)^{-1}x_ie_i}{1-h_i}
 }
-$$
+```
 
-$$
+```math
 \boxed{\text{Influence}=\text{large residual}+\text{high leverage}}
-$$
+```
 
 ## Connections
 

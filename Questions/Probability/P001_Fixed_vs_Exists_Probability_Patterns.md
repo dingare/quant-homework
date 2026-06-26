@@ -13,9 +13,9 @@
 
 This note collects four probability problems with the same core idea:
 
-$$
+```math
 \text{fixed object/event} \neq \text{there exists some object/event}
-$$
+```
 
 The main interview lesson is to avoid fixing a candidate too early. If the problem says "some", "at least one", "exists", or "anywhere", we need to consider all possible candidates and handle overlap carefully.
 
@@ -37,9 +37,9 @@ Pick $N$ random points independently and uniformly on a circle. What is the prob
 
 #### Answer
 
-$$
+```math
 \boxed{P=\frac{N}{2^{N-1}}}
-$$
+```
 
 #### Key Idea
 
@@ -47,9 +47,9 @@ Do not fix the semicircle first.
 
 If a particular semicircle is fixed, then the probability all $N$ points lie in it is:
 
-$$
+```math
 \left(\frac12\right)^N
-$$
+```
 
 But the problem asks whether there exists some semicircle. The semicircle can be chosen after seeing the points.
 
@@ -59,17 +59,17 @@ Choose one point as the boundary point of the semicircle.
 
 For a fixed boundary point, the other $N-1$ points must fall within the next half-circle:
 
-$$
+```math
 \left(\frac12\right)^{N-1}
-$$
+```
 
 There are $N$ possible boundary points. These events are effectively non-overlapping, ignoring probability-zero ties at exactly opposite points.
 
 Therefore:
 
-$$
+```math
 P=N\left(\frac12\right)^{N-1}=\frac{N}{2^{N-1}}
-$$
+```
 
 ### 2. Linear Version: Random Points on $[0,1]$ Covered by a Moving Interval
 
@@ -77,29 +77,29 @@ $$
 
 Let
 
-$$
+```math
 X_1,\dots,X_N \overset{iid}{\sim} U(0,1)
-$$
+```
 
 What is the probability that all points can be covered by some interval of length $a$?
 
 Equivalently:
 
-$$
+```math
 P(\max X_i-\min X_i\leq a)
-$$
+```
 
 #### Answer
 
-$$
+```math
 \boxed{P(\text{range}\leq a)=Na^{N-1}-(N-1)a^N}
-$$
+```
 
 For $a=1/2$:
 
-$$
+```math
 \boxed{P(\text{range}\leq 1/2)=\frac{N+1}{2^N}}
-$$
+```
 
 #### Key Idea
 
@@ -113,45 +113,45 @@ Pick one point $X_i=x$ as the leftmost point.
 
 Then the other $N-1$ points need to lie in:
 
-$$
+```math
 [x,x+a]
-$$
+```
 
 If $x\leq 1-a$, the full length $a$ is available, so the contribution is:
 
-$$
+```math
 \int_0^{1-a} a^{N-1}\,dx=(1-a)a^{N-1}
-$$
+```
 
 If $x>1-a$, the interval hits the right boundary. The available length is only:
 
-$$
+```math
 1-x
-$$
+```
 
 So the contribution is:
 
-$$
+```math
 \int_{1-a}^{1}(1-x)^{N-1}\,dx=\frac{a^N}{N}
-$$
+```
 
 For one chosen leftmost point:
 
-$$
+```math
 (1-a)a^{N-1}+\frac{a^N}{N}
-$$
+```
 
 There are $N$ choices for the leftmost point:
 
-$$
+```math
 P=N\left[(1-a)a^{N-1}+\frac{a^N}{N}\right]
-$$
+```
 
 Simplifying gives:
 
-$$
+```math
 P=Na^{N-1}-(N-1)a^N
-$$
+```
 
 ### 3. Coin Toss Streak: At Least One Run of Three Heads
 
@@ -161,15 +161,15 @@ Toss a fair coin 10 times. What is the probability of seeing at least one run of
 
 That is:
 
-$$
+```math
 P(\text{at least one HHH in 10 tosses})
-$$
+```
 
 #### Answer
 
-$$
+```math
 \boxed{\frac{65}{128}\approx 50.78\%}
-$$
+```
 
 #### Key Idea
 
@@ -177,9 +177,9 @@ Fixed window is not the same as exists somewhere.
 
 The probability that the first three tosses are HHH is:
 
-$$
+```math
 \frac18
-$$
+```
 
 But the probability that HHH occurs somewhere in 10 tosses is much larger.
 
@@ -189,9 +189,9 @@ We cannot simply multiply by 8 because overlapping windows are not disjoint.
 
 Use the complement:
 
-$$
+```math
 P(\text{at least one HHH})=1-P(\text{no HHH})
-$$
+```
 
 Let $a_n$ be the number of length-$n$ binary sequences with no HHH.
 
@@ -203,33 +203,33 @@ A valid sequence can end in:
 
 So:
 
-$$
+```math
 a_n=a_{n-1}+a_{n-2}+a_{n-3}
-$$
+```
 
 Initial values:
 
-$$
+```math
 a_0=1,\quad a_1=2,\quad a_2=4
-$$
+```
 
 Then:
 
-$$
+```math
 a_{10}=504
-$$
+```
 
 Total sequences:
 
-$$
+```math
 2^{10}=1024
-$$
+```
 
 Therefore:
 
-$$
+```math
 P(\text{at least one HHH})=1-\frac{504}{1024}=\frac{520}{1024}=\frac{65}{128}
-$$
+```
 
 ### 4. Occupancy / Empty Box Problem
 
@@ -237,13 +237,13 @@ $$
 
 Throw $n$ balls independently and uniformly into $m$ boxes. What is the probability that at least one box is empty?
 
-$$
+```math
 P(\exists \text{ empty box})
-$$
+```
 
 #### Answer
 
-$$
+```math
 \boxed{
 P(\exists \text{ empty box})=
 \sum_{k=1}^{m}
@@ -251,7 +251,7 @@ P(\exists \text{ empty box})=
 \binom{m}{k}
 \left(\frac{m-k}{m}\right)^n
 }
-$$
+```
 
 #### Key Idea
 
@@ -259,9 +259,9 @@ Fixed empty box is not the same as exists some empty box.
 
 For a fixed box:
 
-$$
+```math
 P(\text{box 1 empty})=\left(1-\frac1m\right)^n
-$$
+```
 
 But the problem asks whether any box is empty.
 
@@ -273,47 +273,47 @@ Therefore, we need inclusion-exclusion.
 
 Let:
 
-$$
+```math
 A_i=\{\text{box }i\text{ is empty}\}
-$$
+```
 
 We want:
 
-$$
+```math
 P(A_1\cup A_2\cup\cdots\cup A_m)
-$$
+```
 
 If a fixed set of $k$ boxes is empty, then each ball must avoid those $k$ boxes.
 
 For one ball, the probability of avoiding those $k$ boxes is:
 
-$$
+```math
 \frac{m-k}{m}
-$$
+```
 
 For $n$ balls:
 
-$$
+```math
 \left(\frac{m-k}{m}\right)^n
-$$
+```
 
 There are:
 
-$$
+```math
 \binom{m}{k}
-$$
+```
 
 ways to choose the $k$ empty boxes.
 
 By inclusion-exclusion:
 
-$$
+```math
 P(\exists \text{ empty box})=
 \sum_{k=1}^{m}
 (-1)^{k+1}
 \binom{m}{k}
 \left(\frac{m-k}{m}\right)^n
-$$
+```
 
 ## Key Knowledge Points
 
@@ -326,11 +326,11 @@ $$
 
 All four problems share the same warning:
 
-$$
+```math
 \boxed{
 \text{fixed candidate} \neq \text{exists some candidate}
 }
-$$
+```
 
 The right tool depends on how candidate events interact:
 
@@ -343,17 +343,17 @@ The right tool depends on how candidate events interact:
 
 ## Geometry
 
-$$
+```math
 \boxed{
 \text{circle has no boundary, so no boundary correction is needed}
 }
-$$
+```
 
-$$
+```math
 \boxed{
 \text{line answer}=\text{circle-style answer}-\text{boundary correction}
 }
-$$
+```
 
 ## Common Mistakes
 
