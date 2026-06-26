@@ -1,6 +1,7 @@
 .DS_Store
 .obsidian/
 *.html
+_site/
 
 __pycache__/
 *.py[cod]
@@ -11,4 +12,3 @@ __pycache__/
 .env
 .env.*
 !.env.example
-

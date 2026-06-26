@@ -15,7 +15,7 @@ This repository should be maintained using the following rules:
 - Add cross-links when obvious.
 - Do not invent math content.
 - Only use finalized content provided by the user from ChatGPT.
-- Keep Markdown as the single source of truth.
+- Keep Markdown as the single source of truth; generated website HTML is disposable.
 - Write math in GitHub-compatible form: `$...$` for inline math and fenced `math` blocks for display math.
 
 ### Folder Structure
@@ -122,7 +122,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 3. Use the next available category ID and the standard filename format.
 4. Update `INDEX.md`, `Progress.md`, and `Connections/KnowledgeGraph.md`.
 5. Update `README.md` latest additions when a new note is added.
-6. Do not create, regenerate, or commit HTML files.
+6. Do not commit generated HTML files; the website is generated automatically by GitHub Actions.
 7. Review with `git status --short`, commit a meaningful checkpoint, then run `git push`.
 
 ## Purpose
@@ -145,7 +145,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Preserve existing notes unless explicitly asked to revise them.
 - Add cross-links when relationships are clear.
 - Use `$...$` for inline formulas and fenced `math` blocks for display formulas.
-- Do not generate or commit HTML files; GitHub Markdown rendering is the canonical preview.
+- Do not commit generated HTML files; GitHub Actions builds the public website from Markdown.
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints and run `git push`.
 - Keep commits small and descriptive, ideally one note or one cleanup per commit.
@@ -154,10 +154,18 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 
 ## Mobile Access
 
+- Preferred reading site: https://dingare.github.io/quant-homework/
 - Use the GitHub mobile app for quick browsing, search, and commit history.
-- Use mobile Safari or Chrome when formula preview matters; GitHub web preview is usually better for rendered Markdown math.
+- Use mobile Safari or Chrome for the public website when formula preview matters.
 - Star or pin `dingare/quant-homework` in GitHub so it is easy to find.
 - Use mobile editing only for small typo fixes. For new notes or formula-heavy edits, use a laptop and then `git push`.
+
+## Website Publishing
+
+- `Tools/build_site.py` builds a mobile-friendly static site into `_site/`.
+- `_site/` is ignored and should not be committed.
+- GitHub Actions deploys the site to GitHub Pages after each push to `main`.
+- The public website is generated from the Markdown source files, so update Markdown first, then commit and push.
 
 ## Latest Additions
 
