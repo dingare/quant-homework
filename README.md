@@ -113,6 +113,18 @@ Whenever a new subject is added:
 4. Update `Connections/KnowledgeGraph.md` with related concepts.
 5. Commit and push the Markdown updates to GitHub.
 
+### ChatGPT-to-GitHub Checklist
+
+When the user provides a finalized ChatGPT prompt/answer to save:
+
+1. Run `git pull` first if this machine may not have the latest remote changes.
+2. Save only finalized Markdown content under the correct `Questions/{Category}/` folder.
+3. Use the next available category ID and the standard filename format.
+4. Update `INDEX.md`, `Progress.md`, and `Connections/KnowledgeGraph.md`.
+5. Update `README.md` latest additions when a new note is added.
+6. Do not create, regenerate, or commit HTML files.
+7. Review with `git status --short`, commit a meaningful checkpoint, then run `git push`.
+
 ## Purpose
 
 - Store finalized interview prep notes by subject in a consistent, searchable structure.
@@ -136,6 +148,9 @@ Whenever a new subject is added:
 - Do not generate or commit HTML files; GitHub Markdown rendering is the canonical preview.
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints and run `git push`.
+- Keep commits small and descriptive, ideally one note or one cleanup per commit.
+- Do not commit local app settings, generated files, or OS-specific files.
+- If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
 
 ## Latest Additions
 
