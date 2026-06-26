@@ -248,8 +248,9 @@ def page_template(title: str, body: str, markdown_path: Path, markdown_files: li
       overflow-x: auto;
       padding: 1rem;
       border-radius: 14px;
-      background: #101827;
-      color: #f7fbff;
+      border: 1px solid var(--line);
+      background: #f7fafc;
+      color: #172033;
     }}
     table {{
       display: block;
