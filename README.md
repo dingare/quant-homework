@@ -16,7 +16,7 @@ This repository should be maintained using the following rules:
 - Do not invent math content.
 - Only use finalized content provided by the user from ChatGPT.
 - Keep Markdown as the single source of truth.
-- Write math in GitHub-compatible form: `$...$` for inline math and `$$...$$` for display math.
+- Write math in GitHub-compatible form: `$...$` for inline math and fenced `math` blocks for display math.
 
 ### Folder Structure
 
@@ -144,7 +144,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not invent or draft mathematical content in this knowledge base.
 - Preserve existing notes unless explicitly asked to revise them.
 - Add cross-links when relationships are clear.
-- Use `$...$` for inline formulas and `$$...$$` for block formulas.
+- Use `$...$` for inline formulas and fenced `math` blocks for display formulas.
 - Do not generate or commit HTML files; GitHub Markdown rendering is the canonical preview.
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints and run `git push`.

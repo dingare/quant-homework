@@ -13,21 +13,21 @@
 
 OLS:
 
-$$
-\hat\beta_{OLS}=(X'X)^{-1}X'y
-$$
+```math
+\hat{\beta}_{\mathrm{OLS}} = (X^\top X)^{-1}X^\top y
+```
 
 Ridge:
 
-$$
-\hat\beta_\lambda=(X'X+\lambda I)^{-1}X'y
-$$
+```math
+\hat{\beta}_{\lambda} = (X^\top X + \lambda I)^{-1}X^\top y
+```
 
 Given the SVD:
 
-$$
-X=UDV'
-$$
+```math
+X = UDV^\top
+```
 
 derive OLS and ridge in the PCA basis. Explain why ridge stabilizes OLS when regressors are highly collinear.
 
@@ -35,26 +35,26 @@ derive OLS and ridge in the PCA basis. Explain why ridge stabilizes OLS when reg
 
 If
 
-$$
-X=UDV'
-$$
+```math
+X = UDV^\top
+```
 
 then
 
-$$
-X'X=VD^2V'
-$$
+```math
+X^\top X = VD^2V^\top
+```
 
 and
 
-$$
-XX'=UD^2U'
-$$
+```math
+XX^\top = UD^2U^\top
+```
 
 So:
 
-- columns of $V$ are eigenvectors of $X'X$
-- columns of $U$ are eigenvectors of $XX'$
+- columns of $V$ are eigenvectors of $X^\top X$
+- columns of $U$ are eigenvectors of $XX^\top$
 - eigenvalues are $d_j^2$
 - $V$ describes signal / regressor directions
 - $U$ describes observation-space directions
@@ -65,104 +65,104 @@ In regression, $V$ is usually the more important object because it describes com
 
 Since
 
-$$
-X'X=VD^2V'
-$$
+```math
+X^\top X = VD^2V^\top
+```
 
 we have
 
-$$
-(X'X)^{-1}=VD^{-2}V'
-$$
+```math
+(X^\top X)^{-1} = VD^{-2}V^\top
+```
 
 Also:
 
-$$
-X'=VDU'
-$$
+```math
+X^\top = VDU^\top
+```
 
 so:
 
-$$
-X'y=VDU'y
-$$
+```math
+X^\top y = VDU^\top y
+```
 
 Therefore:
 
-$$
-\hat\beta_{OLS}
+```math
+\hat{\beta}_{\mathrm{OLS}}
 =
-(VD^{-2}V')(VDU'y)
+(VD^{-2}V^\top)(VDU^\top y)
 =
-VD^{-1}U'y
-$$
+VD^{-1}U^\top y
+```
 
 Equivalently:
 
-$$
-\hat\beta_{OLS}
+```math
+\hat{\beta}_{\mathrm{OLS}}
 =
-\sum_j \frac{u_j'y}{d_j}v_j
-$$
+\sum_j \frac{u_j^\top y}{d_j}v_j
+```
 
 So the OLS coefficient along direction $v_j$ is:
 
-$$
-\hat\theta_j^{OLS}
+```math
+\hat{\theta}_j^{\mathrm{OLS}}
 =
-\frac{u_j'y}{d_j}
-$$
+\frac{u_j^\top y}{d_j}
+```
 
 ## Ridge in PCA Basis
 
-$$
-X'X+\lambda I
+```math
+X^\top X + \lambda I
 =
-V(D^2+\lambda I)V'
-$$
+V(D^2 + \lambda I)V^\top
+```
 
 so
 
-$$
-(X'X+\lambda I)^{-1}
+```math
+(X^\top X + \lambda I)^{-1}
 =
-V(D^2+\lambda I)^{-1}V'
-$$
+V(D^2 + \lambda I)^{-1}V^\top
+```
 
 Thus:
 
-$$
-\hat\beta_\lambda
+```math
+\hat{\beta}_{\lambda}
 =
-V(D^2+\lambda I)^{-1}DU'y
-$$
+V(D^2 + \lambda I)^{-1}DU^\top y
+```
 
 The ridge coefficient along $v_j$ is:
 
-$$
-\hat\theta_j^{ridge}
+```math
+\hat{\theta}_j^{\mathrm{ridge}}
 =
-\frac{d_j}{d_j^2+\lambda}u_j'y
-$$
+\frac{d_j}{d_j^2 + \lambda}u_j^\top y
+```
 
 Compare with OLS:
 
-$$
-\hat\theta_j^{OLS}
+```math
+\hat{\theta}_j^{\mathrm{OLS}}
 =
-\frac{1}{d_j}u_j'y
-$$
+\frac{1}{d_j}u_j^\top y
+```
 
 Therefore:
 
-$$
+```math
 \boxed{
-\hat\theta_j^{ridge}
+\hat{\theta}_j^{\mathrm{ridge}}
 =
 \frac{d_j^2}{d_j^2+\lambda}
-\hat\theta_j^{OLS}
+\hat{\theta}_j^{\mathrm{OLS}}
 }
-$$
+```
 
 ## Intuition
 
@@ -176,9 +176,9 @@ Ridge avoids dividing too aggressively in weak directions by replacing $d_j^2$ w
 
 Shrinkage factor:
 
-$$
-s_j=\frac{d_j^2}{d_j^2+\lambda}
-$$
+```math
+s_j = \frac{d_j^2}{d_j^2 + \lambda}
+```
 
 If $d_j^2\gg\lambda$, then $s_j\approx1$.  
 If $d_j^2\ll\lambda$, then $s_j\approx0$.
@@ -189,7 +189,7 @@ So ridge mostly shrinks unstable low-eigenvalue directions.
 
 Rates signals such as carry, roll-down, curve slope, repo specialness, basis, and auction cheapening are often correlated.
 
-OLS may produce unstable coefficients because some signal combinations have very small eigenvalues in $X'X$.
+OLS may produce unstable coefficients because some signal combinations have very small eigenvalues in $X^\top X$.
 
 Ridge stabilizes prediction by shrinking weak signal directions.
 
@@ -206,61 +206,61 @@ But ridge introduces bias to reduce variance.
 
 Wrong:
 
-$$
+```math
 \text{Ridge simply makes all coefficients smaller equally.}
-$$
+```
 
 Correct:
 
-$$
+```math
 \text{Ridge shrinks different PCA directions by different amounts.}
-$$
+```
 
 Wrong:
 
-$$
+```math
 U \text{ and } V \text{ are the same eigenvectors.}
-$$
+```
 
 Correct:
 
-$$
-V: \text{eigenvectors of } X'X
-$$
+```math
+V: \text{eigenvectors of } X^\top X
+```
 
-$$
-U: \text{eigenvectors of } XX'
-$$
+```math
+U: \text{eigenvectors of } XX^\top
+```
 
 ## What to Remember
 
-$$
+```math
 \boxed{
-V = \text{signal-space eigenvectors of } X'X
+V = \text{signal-space eigenvectors of } X^\top X
 }
-$$
+```
 
-$$
+```math
 \boxed{
-d_j^2 = \text{eigenvalues of } X'X
+d_j^2 = \text{eigenvalues of } X^\top X
 }
-$$
+```
 
-$$
+```math
 \boxed{
-\hat\theta_j^{ridge}
+\hat{\theta}_j^{\mathrm{ridge}}
 =
 \frac{d_j^2}{d_j^2+\lambda}
-\hat\theta_j^{OLS}
+\hat{\theta}_j^{\mathrm{OLS}}
 }
-$$
+```
 
 Ridge is PCA-direction-specific shrinkage.
 
 ## Connections
 
 - Multicollinearity
-- Eigenvalues of $X'X$
+- Eigenvalues of $X^\top X$
 - PCA
 - Principal Component Regression
 - Ridge Regression
