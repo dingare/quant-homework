@@ -11,6 +11,7 @@ Cross-topic relationship map for finalized concepts and interview themes.
 - Time Series
 - Optimization
 - Coding
+- Stochastic Calculus
 - Rates Research
 
 ## Relationship Notes
@@ -19,6 +20,7 @@ Cross-topic relationship map for finalized concepts and interview themes.
 - [L001 — Ridge Regression as PCA Shrinkage](../Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md): SVD -> PCA -> Eigenvalues of $X^\top X$ -> Multicollinearity -> Ridge Regression -> Bias-Variance Tradeoff -> Rates Factor Models
 - [S001 — OLS Bias vs Variance with Correlated Regressors](../Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md): OLS -> FWL -> Residualization -> Partial Correlation -> Ridge -> PCA -> Factor Attribution
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](../Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md): Sherman-Morrison -> Leave-One-Out OLS -> Cook's Distance -> Influence Functions -> Recursive Least Squares -> Kalman Filter
+- [SC001 — Itô's Lemma and Discounted Price Martingale](../Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md): Brownian Motion -> Itô's Lemma -> GBM -> Discounted Price -> Martingale -> Risk-Neutral Measure -> Change of Measure -> Numeraire Change
 
 ## Update Rule
 

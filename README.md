@@ -33,6 +33,7 @@ homework/
 │   ├── TimeSeries/
 │   ├── Optimization/
 │   ├── Coding/
+│   ├── StochasticCalculus/
 │   └── RatesResearch/
 ├── KnowledgeCards/
 ├── Connections/
@@ -89,6 +90,7 @@ Each daily subject should be saved as one Markdown file using this structure:
 - `T001`, `T002`, ... for Time Series
 - `O001`, `O002`, ... for Optimization
 - `C001`, `C002`, ... for Coding
+- `SC001`, `SC002`, ... for Stochastic Calculus
 - `R001`, `R002`, ... for Rates Research
 
 When adding a new subject, choose the next available ID in that category.
@@ -180,6 +182,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-06-27: Added [SC001](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md) on Itô's lemma and the discounted price martingale.
 - 2026-06-26: Added [L001](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md) on ridge regression as PCA shrinkage.
 - 2026-06-25: Added [P001](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md) on fixed-vs-exists probability patterns.
 - 2026-06-25: Added [S001](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md) on OLS bias vs variance with correlated regressors.
