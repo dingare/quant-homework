@@ -113,7 +113,7 @@ Whenever a new subject is added:
 2. Update `INDEX.md` with a categorized list of all questions.
 3. Update `Progress.md` with counts by category.
 4. Update `Connections/KnowledgeGraph.md` with related concepts.
-5. Commit and push the Markdown updates to GitHub.
+5. Commit the Markdown updates to GitHub, and ask for confirmation before any `git push`.
 
 ### ChatGPT-to-GitHub Checklist
 
@@ -125,7 +125,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 4. Update `INDEX.md`, `Progress.md`, and `Connections/KnowledgeGraph.md`.
 5. Update `README.md` latest additions when a new note is added.
 6. Do not commit generated HTML files; the website is generated automatically by GitHub Actions.
-7. Review with `git status --short`, commit a meaningful checkpoint, then run `git push`.
+7. Review with `git status --short`, commit a meaningful checkpoint, then ask for confirmation before running `git push`.
 
 ## Purpose
 
@@ -149,7 +149,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Use `$...$` for inline formulas and fenced `math` blocks for display formulas.
 - Do not commit generated HTML files; GitHub Actions builds the public website from Markdown.
 - Before working from another device, run `git pull`.
-- After updating notes, commit meaningful checkpoints and run `git push`.
+- After updating notes, commit meaningful checkpoints and ask for confirmation before running `git push`.
 - Keep commits small and descriptive, ideally one note or one cleanup per commit.
 - Do not commit local app settings, generated files, or OS-specific files.
 - If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
@@ -163,7 +163,7 @@ When working locally on this repo:
 3. Build the website with `python3 Tools/build_site.py` only if you want a local preview; do not commit `_site/`.
 4. Review with `git status --short`.
 5. Commit the Markdown changes.
-6. Run `git push` so the public site updates automatically.
+6. Ask for confirmation before running `git push` so the public site updates automatically.
 
 ## Mobile Access
 
@@ -178,7 +178,7 @@ When working locally on this repo:
 - `Tools/build_site.py` builds a mobile-friendly static site into `_site/`.
 - `_site/` is ignored and should not be committed.
 - GitHub Actions deploys the site to GitHub Pages after each push to `main`.
-- The public website is generated from the Markdown source files, so update Markdown first, then commit and push.
+- The public website is generated from the Markdown source files, so update Markdown first, then commit, and ask for confirmation before push.
 
 ## Latest Additions
 

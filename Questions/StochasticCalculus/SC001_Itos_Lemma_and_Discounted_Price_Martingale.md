@@ -7,7 +7,8 @@
 - Difficulty: ★★★★☆
 - Tags: Itô's Lemma, Brownian Motion, GBM, Risk-Neutral Measure, Martingale, Discounted Price, Change of Measure
 - Review Priority: High
-- Personal Note: I am less familiar with Itô's lemma and stochastic calculus. Review this again.
+- Status: Draft / revisit later
+- Personal Note: Mainly revisit the SABR model case and the random-$r$ case.
 
 ## Core Question
 
