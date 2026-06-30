@@ -21,11 +21,11 @@ No entries yet.
 
 ## Time Series
 
-No entries yet.
+- [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
 
 ## Optimization
 
-No entries yet.
+- [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 
 ## Coding
 

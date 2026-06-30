@@ -10,12 +10,12 @@ Track counts of finalized subject notes by category.
 | Probability | P | 1 |
 | Statistics | S | 2 |
 | Econometrics | E | 0 |
-| Time Series | T | 0 |
-| Optimization | O | 0 |
+| Time Series | T | 1 |
+| Optimization | O | 1 |
 | Coding | C | 0 |
 | Stochastic Calculus | SC | 1 |
 | Rates Research | R | 0 |
-| Total | All | 5 |
+| Total | All | 7 |
 
 ## Notes
 
@@ -25,3 +25,5 @@ Track counts of finalized subject notes by category.
 - Probability count updated to 1 on 2026-06-25.
 - Linear Algebra count updated to 1 on 2026-06-26.
 - Stochastic Calculus count updated to 1 on 2026-06-27.
+- Time Series count updated to 1 on 2026-06-29.
+- Optimization count updated to 1 on 2026-06-29.
