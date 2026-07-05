@@ -9,6 +9,7 @@ Categorized index of all finalized subject notes.
 ## Probability
 
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
+- [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
 
 ## Statistics
 
@@ -17,11 +18,12 @@ Categorized index of all finalized subject notes.
 
 ## Econometrics
 
-No entries yet.
+- [E001 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Econometrics/E001_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
 
 ## Time Series
 
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
+- [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
 
 ## Optimization
 
@@ -34,6 +36,7 @@ No entries yet.
 ## Stochastic Calculus
 
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)
+- [SC002 — Change of Measure I: Understanding P, Q and the Radon-Nikodym Derivative](Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)
 
 ## Rates Research
 
