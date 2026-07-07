@@ -25,6 +25,7 @@ homework/
 ├── README.md
 ├── INDEX.md
 ├── Progress.md
+├── Backlog.md
 ├── Questions/
 │   ├── LinearAlgebra/
 │   ├── Probability/
@@ -113,7 +114,8 @@ Whenever a new subject is added:
 2. Update `INDEX.md` with a categorized list of all questions.
 3. Update `Progress.md` with counts by category.
 4. Update `Connections/KnowledgeGraph.md` with related concepts.
-5. Commit the Markdown updates to GitHub, and ask for confirmation before any `git push`.
+5. Commit the Markdown updates automatically after the changes are complete.
+6. Only run `git push` when explicitly requested by the user.
 
 ### ChatGPT-to-GitHub Checklist
 
@@ -125,7 +127,8 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 4. Update `INDEX.md`, `Progress.md`, and `Connections/KnowledgeGraph.md`.
 5. Update `README.md` latest additions when a new note is added.
 6. Do not commit generated HTML files; the website is generated automatically by GitHub Actions.
-7. Review with `git status --short`, commit a meaningful checkpoint, then ask for confirmation before running `git push`.
+7. Review with `git status --short` and commit a meaningful checkpoint automatically.
+8. Only run `git push` when explicitly requested by the user.
 
 ## Purpose
 
@@ -136,6 +139,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 ## Structure
 
 - `Questions/`: Canonical question and subject notes by category.
+- `Backlog.md`: Unfinished topics, future note clusters, and idea inventory.
 - `KnowledgeCards/`: Short-form review cards for later use.
 - `Connections/`: Cross-topic links and concept graph.
 - `Templates/`: Standard templates for new entries.
@@ -149,7 +153,9 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Use `$...$` for inline formulas and fenced `math` blocks for display formulas.
 - Do not commit generated HTML files; GitHub Actions builds the public website from Markdown.
 - Before working from another device, run `git pull`.
-- After updating notes, commit meaningful checkpoints and ask for confirmation before running `git push`.
+- After updating notes, commit meaningful checkpoints automatically.
+- Do not ask for confirmation before committing; commit by default after completing the change.
+- Only run `git push` when explicitly requested.
 - Keep commits small and descriptive, ideally one note or one cleanup per commit.
 - Do not commit local app settings, generated files, or OS-specific files.
 - If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
@@ -162,8 +168,8 @@ When working locally on this repo:
 2. If you add or change a subject note, update `INDEX.md`, `Progress.md`, `Connections/KnowledgeGraph.md`, and `README.md` latest additions when needed.
 3. Build the website with `python3 Tools/build_site.py` only if you want a local preview; do not commit `_site/`.
 4. Review with `git status --short`.
-5. Commit the Markdown changes.
-6. Ask for confirmation before running `git push` so the public site updates automatically.
+5. Commit the Markdown changes automatically.
+6. Run `git push` only when explicitly requested.
 
 ## Mobile Access
 
@@ -178,10 +184,12 @@ When working locally on this repo:
 - `Tools/build_site.py` builds a mobile-friendly static site into `_site/`.
 - `_site/` is ignored and should not be committed.
 - GitHub Actions deploys the site to GitHub Pages after each push to `main`.
-- The public website is generated from the Markdown source files, so update Markdown first, then commit, and ask for confirmation before push.
+- The public website is generated from the Markdown source files, so update Markdown first, then commit; push only when explicitly requested.
 
 ## Latest Additions
 
+- 2026-07-06: Added [Backlog](Backlog.md) to track unfinished topics and future note clusters.
+- 2026-07-06: Added [P003](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md) on deterministic tournament brackets, survival, and meeting probabilities.
 - 2026-06-29: Added [T001](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md) on Kalman filtering as recursive Bayesian estimation for noisy market signals.
 - 2026-06-29: Added [O001](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md) on convex duality and no-arbitrage pricing through primal and dual optimization.
 - 2026-06-27: Added [SC001](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md) on Itô's lemma and the discounted price martingale.
