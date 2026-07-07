@@ -10,6 +10,7 @@ Categorized index of all finalized subject notes.
 
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
+- [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
 
 ## Statistics
 
