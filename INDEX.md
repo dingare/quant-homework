@@ -5,6 +5,7 @@ Categorized index of all finalized subject notes.
 ## Linear Algebra
 
 - [L001 — Ridge Regression as PCA Shrinkage](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md)
+- [L002 — PCA, Covariance Geometry, and Why Butterfly Trades Curvature](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md)
 
 ## Probability
 

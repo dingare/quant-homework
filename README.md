@@ -188,6 +188,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-08: Added [L002](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md) on PCA covariance geometry, yield-curve risk directions, and why butterfly trades primarily isolate curvature.
 - 2026-07-06: Added [Backlog](Backlog.md) to track unfinished topics and future note clusters.
 - 2026-07-06: Added [P003](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md) on deterministic tournament brackets, survival, and meeting probabilities.
 - 2026-06-29: Added [T001](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md) on Kalman filtering as recursive Bayesian estimation for noisy market signals.
