@@ -26,6 +26,7 @@ Categorized index of all finalized subject notes.
 
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
 - [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
+- [T003 — AR(1) First Passage Time and Why Persistence Changes Waiting Time](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md)
 
 ## Optimization
 

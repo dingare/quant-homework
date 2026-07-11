@@ -188,6 +188,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-10: Added [T003](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md) on AR(1) first passage time, stationary scale, and why persistence changes waiting time.
 - 2026-07-08: Added [L002](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md) on PCA covariance geometry, yield-curve risk directions, and why butterfly trades primarily isolate curvature.
 - 2026-07-06: Added [Backlog](Backlog.md) to track unfinished topics and future note clusters.
 - 2026-07-06: Added [P003](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md) on deterministic tournament brackets, survival, and meeting probabilities.
