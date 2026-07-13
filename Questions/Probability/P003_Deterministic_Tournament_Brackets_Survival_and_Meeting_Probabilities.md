@@ -4,7 +4,7 @@
 
 - Category: Probability
 - Secondary: Combinatorics, Random Trees, Counting
-- Difficulty: ★★★☆☆
+- Difficulty: ★★★★★
 - Tags: Tournament Bracket, Random Binary Tree, Hypergeometric Probability, Survival Probability
 - Review Priority: Medium
 - Date Added: 2026-07-06
