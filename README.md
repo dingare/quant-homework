@@ -30,7 +30,6 @@ homework/
 │   ├── LinearAlgebra/
 │   ├── Probability/
 │   ├── Statistics/
-│   ├── Econometrics/
 │   ├── TimeSeries/
 │   ├── Optimization/
 │   ├── Coding/
@@ -87,7 +86,6 @@ Each daily subject should be saved as one Markdown file using this structure:
 - `L001`, `L002`, ... for Linear Algebra
 - `P001`, `P002`, ... for Probability
 - `S001`, `S002`, ... for Statistics
-- `E001`, `E002`, ... for Econometrics
 - `T001`, `T002`, ... for Time Series
 - `O001`, `O002`, ... for Optimization
 - `C001`, `C002`, ... for Coding
@@ -189,7 +187,7 @@ When working locally on this repo:
 ## Latest Additions
 
 - 2026-07-12: Added [T004](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md) on Kalman gain, innovation covariance, and covariance-weighted Bayesian updating.
-- 2026-07-12: Added [E002](Questions/Econometrics/E002_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md) on efficient IV, Rayleigh quotients, and covariance-weighted signal combination.
+- 2026-07-12: Merged Econometrics into Statistics and refiled [S003](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md) and [S004](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md).
 - 2026-07-10: Added [O002](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md) on constrained mean-variance optimization, dollar neutrality, and the meaning of Lagrange multipliers.
 - 2026-07-10: Added [T003](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md) on AR(1) first passage time, stationary scale, and why persistence changes waiting time.
 - 2026-07-08: Added [L002](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md) on PCA covariance geometry, yield-curve risk directions, and why butterfly trades primarily isolate curvature.

@@ -1,8 +1,8 @@
-# E002 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination
+# S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination
 
 ## Metadata
 
-- Category: Econometrics
+- Category: Statistics
 - Secondary: Linear Algebra, Statistics, Optimization
 - Difficulty: ★★★★★
 - Tags: Instrumental Variables, Efficient IV, GMM, Rayleigh Quotient, Covariance Weighting, Signal Combination

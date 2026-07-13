@@ -1,8 +1,8 @@
-# E001 — Cointegration: Trading Equilibrium Rather Than Correlation
+# S003 — Cointegration: Trading Equilibrium Rather Than Correlation
 
 ## Metadata
 
-- Category: Econometrics
+- Category: Statistics
 - Secondary: Time Series, Statistical Arbitrage, Mean Reversion
 - Difficulty: ★★★★☆
 - Tags: Cointegration, Stationarity, Relative Value, Engle-Granger, Mean Reversion

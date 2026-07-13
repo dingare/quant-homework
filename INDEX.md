@@ -17,11 +17,8 @@ Categorized index of all finalized subject notes.
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md)
-
-## Econometrics
-
-- [E001 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Econometrics/E001_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
-- [E002 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Econometrics/E002_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
+- [S003 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
+- [S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
 
 ## Time Series
 
