@@ -6,7 +6,9 @@ Unfinished topics and future note clusters.
 
 Goal: organize probability interview problems by **thinking patterns**, not by probability distributions. Each chapter should focus on the intuition, common solution techniques, and representative interview questions.
 
-### Part I. Tournament / Random Tree ⭐⭐⭐⭐⭐
+### Part I. Elimination Tournaments / Random Brackets ⭐⭐⭐⭐⭐
+
+Status: Completed via `P003`.
 
 **Core idea**
 
@@ -27,7 +29,7 @@ Random bracket + deterministic strength + subtree counting.
 - Expected meeting round
 - General player i vs. player k
 
-### Part II. Random Matching ⭐⭐⭐⭐⭐
+### Part II. One-Round Random Matching ⭐⭐⭐⭐⭐
 
 **Core idea**
 
