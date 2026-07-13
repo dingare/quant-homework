@@ -21,12 +21,14 @@ Categorized index of all finalized subject notes.
 ## Econometrics
 
 - [E001 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Econometrics/E001_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
+- [E002 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Econometrics/E002_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
 
 ## Time Series
 
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
 - [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
 - [T003 — AR(1) First Passage Time and Why Persistence Changes Waiting Time](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md)
+- [T004 — Kalman Filtering II: Covariance-Weighted Bayesian Updating](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md)
 
 ## Optimization
 

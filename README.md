@@ -188,6 +188,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-12: Added [T004](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md) on Kalman gain, innovation covariance, and covariance-weighted Bayesian updating.
+- 2026-07-12: Added [E002](Questions/Econometrics/E002_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md) on efficient IV, Rayleigh quotients, and covariance-weighted signal combination.
 - 2026-07-10: Added [O002](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md) on constrained mean-variance optimization, dollar neutrality, and the meaning of Lagrange multipliers.
 - 2026-07-10: Added [T003](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md) on AR(1) first passage time, stationary scale, and why persistence changes waiting time.
 - 2026-07-08: Added [L002](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md) on PCA covariance geometry, yield-curve risk directions, and why butterfly trades primarily isolate curvature.
