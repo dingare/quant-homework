@@ -113,7 +113,7 @@ Whenever a new subject is added:
 3. Update `Progress.md` with counts by category.
 4. Update `Connections/KnowledgeGraph.md` with related concepts.
 5. Commit the Markdown updates automatically after the changes are complete.
-6. Only run `git push` when explicitly requested by the user.
+6. Push the updates automatically after the commit is complete.
 
 ### ChatGPT-to-GitHub Checklist
 
@@ -126,7 +126,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 5. Update `README.md` latest additions when a new note is added.
 6. Do not commit generated HTML files; the website is generated automatically by GitHub Actions.
 7. Review with `git status --short` and commit a meaningful checkpoint automatically.
-8. Only run `git push` when explicitly requested by the user.
+8. Push automatically after the commit unless the user explicitly says not to push.
 
 ## Purpose
 
@@ -153,7 +153,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints automatically.
 - Do not ask for confirmation before committing; commit by default after completing the change.
-- Only run `git push` when explicitly requested.
+- Do not ask for confirmation before pushing; push by default after committing unless the user explicitly says not to push.
 - Keep commits small and descriptive, ideally one note or one cleanup per commit.
 - Do not commit local app settings, generated files, or OS-specific files.
 - If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
@@ -167,7 +167,7 @@ When working locally on this repo:
 3. Build the website with `python3 Tools/build_site.py` only if you want a local preview; do not commit `_site/`.
 4. Review with `git status --short`.
 5. Commit the Markdown changes automatically.
-6. Run `git push` only when explicitly requested.
+6. Push automatically after the commit unless the user explicitly says not to.
 
 ## Mobile Access
 
@@ -182,10 +182,11 @@ When working locally on this repo:
 - `Tools/build_site.py` builds a mobile-friendly static site into `_site/`.
 - `_site/` is ignored and should not be committed.
 - GitHub Actions deploys the site to GitHub Pages after each push to `main`.
-- The public website is generated from the Markdown source files, so update Markdown first, then commit; push only when explicitly requested.
+- The public website is generated from the Markdown source files, so update Markdown first, then commit and push by default unless the user explicitly says not to.
 
 ## Latest Additions
 
+- 2026-07-12: Updated workflow rules so this repo now auto-commits and auto-pushes by default unless explicitly told not to.
 - 2026-07-12: Added [T004](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md) on Kalman gain, innovation covariance, and covariance-weighted Bayesian updating.
 - 2026-07-12: Merged Econometrics into Statistics and refiled [S003](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md) and [S004](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md).
 - 2026-07-10: Added [O002](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md) on constrained mean-variance optimization, dollar neutrality, and the meaning of Lagrange multipliers.
