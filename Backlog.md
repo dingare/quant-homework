@@ -249,3 +249,91 @@ Each chapter should eventually contain:
 6. Generalizations
 7. Common Mistakes
 8. Cheat Sheet
+
+## Covariance-Weighted Estimation Themes
+
+Goal: organize the recurring mathematical idea behind `S004` and related topics. The main theme is that covariance is used to remove redundancy before combining information.
+
+### Part A. Efficient IV and GMM Weighting ⭐⭐⭐⭐⭐
+
+Status: Started via `S004`, but still incomplete conceptually.
+
+**Core idea**
+
+Choose moment or instrument weights using inverse covariance, so redundant information is downweighted.
+
+**Key techniques**
+
+- Rayleigh quotient
+- Inverse covariance weighting
+- GMM efficiency
+- Signal-to-noise optimization
+
+**Topics to revisit**
+
+- Efficient IV versus basic IV
+- Why optimal IV weights are proportional to `Q^{-1}q`
+- Efficient GMM weighting matrix
+- Weak instruments and near-collinearity
+
+### Part B. GLS and Mahalanobis Geometry ⭐⭐⭐⭐
+
+**Core idea**
+
+Euclidean weighting is wrong when errors or signals are correlated; the correct geometry is covariance-adjusted.
+
+**Key techniques**
+
+- GLS
+- Mahalanobis distance
+- Whitening
+- Covariance metric
+
+**Topics to revisit**
+
+- Why GLS uses `\Sigma^{-1}`
+- Mahalanobis distance as covariance-scaled distance
+- Whitening and decorrelation
+- Relation to OLS under spherical errors
+
+### Part C. Kalman Gain as Covariance Weighting ⭐⭐⭐⭐⭐
+
+Status: Started via `T004`, but worth revisiting as part of the same family.
+
+**Core idea**
+
+Kalman filtering is dynamic covariance-weighted signal combination.
+
+**Key techniques**
+
+- Gaussian conditioning
+- Innovation covariance
+- Kalman gain
+- Bayesian updating
+
+**Topics to revisit**
+
+- Why `K = PH^\top (HPH^\top + R)^{-1}`
+- Why gain entries can be negative
+- Relation to static GLS / IV weighting
+- Innovation-space versus state-space geometry
+
+### Part D. Mean-Variance and Projection Under Covariance ⭐⭐⭐⭐
+
+**Core idea**
+
+Portfolio construction also combines signals under a covariance metric rather than Euclidean geometry.
+
+**Key techniques**
+
+- Mean-variance optimization
+- Quadratic forms
+- Projection
+- Shadow prices
+
+**Topics to revisit**
+
+- Relation between `Q^{-1}q` and `\Sigma^{-1}\mu`
+- Projection under covariance metric
+- Constraints as signal adjustment
+- Connection to factor neutralization
