@@ -186,6 +186,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-13: Added [O003](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md) on primal vs dual optimization, KKT conditions, dimension reduction, and shadow-price interpretation.
 - 2026-07-12: Updated workflow rules so this repo now auto-commits and auto-pushes by default unless explicitly told not to.
 - 2026-07-12: Added [T004](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md) on Kalman gain, innovation covariance, and covariance-weighted Bayesian updating.
 - 2026-07-12: Merged Econometrics into Statistics and refiled [S003](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md) and [S004](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md).

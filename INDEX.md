@@ -31,6 +31,7 @@ Categorized index of all finalized subject notes.
 
 - [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)
+- [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
 
 ## Coding
 
