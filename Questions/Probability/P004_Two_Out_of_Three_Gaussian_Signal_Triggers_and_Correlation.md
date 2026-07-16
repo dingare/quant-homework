@@ -42,7 +42,7 @@ Write an exact one-dimensional integral for
 4. The signals are now equicorrelated:
 
 ```math
-\operatorname{Corr}(X_i,X_j)=\rho,\qquad i\neq j,
+\mathrm{Corr}(X_i,X_j)=\rho,\qquad i\neq j,
 ```
 
 with $0<\rho<1$. Give a one-dimensional integral representation for the trade probability.
@@ -58,7 +58,7 @@ N=\#\{i:X_i>a\},
 then
 
 ```math
-N\sim\operatorname{Binomial}(3,p).
+N\sim\mathrm{Binomial}(3,p).
 ```
 
 For the correlated case, use the common-factor representation
@@ -76,7 +76,7 @@ where $Z,\varepsilon_1,\varepsilon_2,\varepsilon_3$ are independent standard nor
 With
 
 ```math
-N\sim\operatorname{Binomial}(3,p),
+N\sim\mathrm{Binomial}(3,p),
 ```
 
 we have
@@ -250,7 +250,7 @@ p(z)
 Then
 
 ```math
-N\mid Z=z\sim\operatorname{Binomial}(3,p(z)),
+N\mid Z=z\sim\mathrm{Binomial}(3,p(z)),
 ```
 
 so
