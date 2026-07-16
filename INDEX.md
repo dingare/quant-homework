@@ -6,12 +6,14 @@ Categorized index of all finalized subject notes.
 
 - [L001 — Ridge Regression as PCA Shrinkage](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md)
 - [L002 — PCA, Covariance Geometry, and Why Butterfly Trades Curvature](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md)
+- [L003 — Woodbury Identity for Low-Rank Covariance Inversion](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md)
 
 ## Probability
 
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
 - [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
+- [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md)
 
 ## Statistics
 

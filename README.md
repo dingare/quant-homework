@@ -186,6 +186,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-15: Added [L003](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md) on the Woodbury identity, low-rank covariance inversion, and factor-model computation.
+- 2026-07-15: Added [P004](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md) on two-out-of-three Gaussian trigger rules, threshold calibration, and correlation effects.
 - 2026-07-13: Added [O003](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md) on primal vs dual optimization, KKT conditions, dimension reduction, and shadow-price interpretation.
 - 2026-07-12: Updated workflow rules so this repo now auto-commits and auto-pushes by default unless explicitly told not to.
 - 2026-07-12: Added [T004](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md) on Kalman gain, innovation covariance, and covariance-weighted Bayesian updating.

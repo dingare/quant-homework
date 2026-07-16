@@ -6,15 +6,15 @@ Track counts of finalized subject notes by category.
 
 | Category | Prefix | Count |
 | --- | --- | ---: |
-| Linear Algebra | L | 2 |
-| Probability | P | 3 |
+| Linear Algebra | L | 3 |
+| Probability | P | 4 |
 | Statistics | S | 4 |
 | Time Series | T | 4 |
 | Optimization | O | 3 |
 | Coding | C | 0 |
 | Stochastic Calculus | SC | 2 |
 | Rates Research | R | 0 |
-| Total | All | 18 |
+| Total | All | 20 |
 
 ## Notes
 
@@ -36,3 +36,5 @@ Track counts of finalized subject notes by category.
 - Linear Algebra count updated to 2 on 2026-07-08.
 - Optimization count updated to 2 on 2026-07-10.
 - Optimization count updated to 3 on 2026-07-13.
+- Linear Algebra count updated to 3 on 2026-07-15.
+- Probability count updated to 4 on 2026-07-15.
