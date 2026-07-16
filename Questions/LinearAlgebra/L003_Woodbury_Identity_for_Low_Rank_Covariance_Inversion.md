@@ -22,7 +22,7 @@ Let
 where
 
 ```math
-D=\operatorname{diag}(1,2,3,4),
+D=\mathrm{diag}(1,2,3,4),
 \qquad
 U=
 \begin{pmatrix}
@@ -89,7 +89,7 @@ We have
 ```math
 D^{-1}
 =
-\operatorname{diag}
+\mathrm{diag}
 \left(1,\frac12,\frac13,\frac14\right).
 ```
 
