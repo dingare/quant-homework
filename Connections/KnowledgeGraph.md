@@ -30,7 +30,9 @@ Cross-topic relationship map for finalized concepts and interview themes.
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](../Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md): Lagrangian -> Dual Function -> KKT Conditions -> Strong Duality -> Dimension Reduction -> Shadow Prices -> Constrained Portfolio Optimization
 - [S003 — Cointegration: Trading Equilibrium Rather Than Correlation](../Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md): Cointegration -> Stationarity -> Equilibrium Error -> Mean Reversion -> Relative Value -> Error Correction
 - [S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](../Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md): Efficient IV -> Rayleigh Quotient -> Inverse Covariance Weighting -> Redundancy Removal -> GMM -> GLS -> Signal Combination
+- [S005 — HAC / Newey–West Inference for Persistent Trading Signals](../Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md): Predictive Regression -> Regression Score -> Serial Dependence -> Long-Run Variance -> Bartlett Weights -> HAC Inference -> Overlapping Returns
 - [SC001 — Itô's Lemma and Discounted Price Martingale](../Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md): Brownian Motion -> Itô's Lemma -> GBM -> Discounted Price -> Martingale -> Risk-Neutral Measure -> Change of Measure -> Numeraire Change
+- [SC003 — Ornstein–Uhlenbeck First Hitting Time](../Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md): Ornstein–Uhlenbeck Process -> Infinitesimal Generator -> Boundary-Value ODE -> First Passage Time -> Mean-Reversion Holding Period -> Relative-Value Trading
 
 ## Update Rule
 

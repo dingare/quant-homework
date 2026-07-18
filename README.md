@@ -186,6 +186,9 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-07-18: Added [recent five-topic review](Recent_Quant_Prep_Review_2026-07-18.md), linking canonical notes without duplicating the three topics already filed.
+- 2026-07-18: Added [S005](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md) on HAC/Newey–West inference, score dependence, and persistent trading signals.
+- 2026-07-18: Added [SC003](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md) on OU first hitting times, generator ODEs, and mean-reversion holding periods.
 - 2026-07-15: Added [L003](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md) on the Woodbury identity, low-rank covariance inversion, and factor-model computation.
 - 2026-07-15: Added [P004](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md) on two-out-of-three Gaussian trigger rules, threshold calibration, and correlation effects.
 - 2026-07-13: Added [O003](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md) on primal vs dual optimization, KKT conditions, dimension reduction, and shadow-price interpretation.

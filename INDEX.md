@@ -21,6 +21,7 @@ Categorized index of all finalized subject notes.
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md)
 - [S003 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
 - [S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
+- [S005 — HAC / Newey–West Inference for Persistent Trading Signals](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md)
 
 ## Time Series
 
@@ -43,6 +44,7 @@ No entries yet.
 
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)
 - [SC002 — Change of Measure I: Understanding P, Q and the Radon-Nikodym Derivative](Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)
+- [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
 
 ## Rates Research
 
