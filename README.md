@@ -186,7 +186,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
-- 2026-07-18: Added [recent five-topic review](Recent_Quant_Prep_Review_2026-07-18.md), linking canonical notes without duplicating the three topics already filed.
+- 2026-07-19: Added [C001](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md) on prefix sums, coordinate compression, Fenwick trees, and $O(n\log n)$ range-sum counting; expanded the recent review from five to six topics.
+- 2026-07-18: Added [recent quant-prep review](Recent_Quant_Prep_Review_2026-07-18.md), linking canonical notes without duplicating topics already filed; expanded to six topics on 2026-07-19.
 - 2026-07-18: Added [S005](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md) on HAC/Newey–West inference, score dependence, and persistent trading signals.
 - 2026-07-18: Added [SC003](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md) on OU first hitting times, generator ODEs, and mean-reversion holding periods.
 - 2026-07-15: Added [L003](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md) on the Woodbury identity, low-rank covariance inversion, and factor-model computation.

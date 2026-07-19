@@ -33,6 +33,7 @@ Cross-topic relationship map for finalized concepts and interview themes.
 - [S005 — HAC / Newey–West Inference for Persistent Trading Signals](../Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md): Predictive Regression -> Regression Score -> Serial Dependence -> Long-Run Variance -> Bartlett Weights -> HAC Inference -> Overlapping Returns
 - [SC001 — Itô's Lemma and Discounted Price Martingale](../Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md): Brownian Motion -> Itô's Lemma -> GBM -> Discounted Price -> Martingale -> Risk-Neutral Measure -> Change of Measure -> Numeraire Change
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](../Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md): Ornstein–Uhlenbeck Process -> Infinitesimal Generator -> Boundary-Value ODE -> First Passage Time -> Mean-Reversion Holding Period -> Relative-Value Trading
+- [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](../Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md): Contiguous Intervals -> Prefix Sums -> Ordered Pair Counting -> Coordinate Compression -> Fenwick Tree -> Modified Merge Sort -> P&L Windows
 
 ## Update Rule
 

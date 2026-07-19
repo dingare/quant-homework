@@ -38,7 +38,7 @@ Categorized index of all finalized subject notes.
 
 ## Coding
 
-No entries yet.
+- [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md)
 
 ## Stochastic Calculus
 
