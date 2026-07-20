@@ -14,6 +14,7 @@ Categorized index of all finalized subject notes.
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
 - [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
 - [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md)
+- [P005 — One-Round Random Matching Patterns](Questions/Probability/P005_One_Round_Random_Matching_Patterns.md)
 
 ## Statistics
 

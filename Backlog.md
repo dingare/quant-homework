@@ -31,6 +31,8 @@ Random bracket + deterministic strength + subtree counting.
 
 ### Part II. One-Round Random Matching ⭐⭐⭐⭐⭐
 
+Status: In progress via `P005`. Add subsequent Part II patterns to the same question file.
+
 **Core idea**
 
 Random perfect matching on 2n people.
