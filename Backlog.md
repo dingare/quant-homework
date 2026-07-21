@@ -31,7 +31,7 @@ Random bracket + deterministic strength + subtree counting.
 
 ### Part II. One-Round Random Matching ⭐⭐⭐⭐⭐
 
-Status: In progress via `P005`. Add subsequent Part II patterns to the same question file.
+Status: Completed via `P005`. Any subsequent Part II patterns should still be added to the same question file.
 
 **Core idea**
 
