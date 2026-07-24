@@ -7,6 +7,7 @@ Categorized index of all finalized subject notes.
 - [L001 — Ridge Regression as PCA Shrinkage](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md)
 - [L002 — PCA, Covariance Geometry, and Why Butterfly Trades Curvature](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md)
 - [L003 — Woodbury Identity for Low-Rank Covariance Inversion](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md)
+- [L004 — Rank-One Covariance Update and Eigenvalue Interlacing](Questions/LinearAlgebra/L004_Rank_One_Covariance_Update_and_Eigenvalue_Interlacing.md)
 
 ## Probability
 
@@ -15,6 +16,7 @@ Categorized index of all finalized subject notes.
 - [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
 - [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md)
 - [P005 — One-Round Random Matching Patterns](Questions/Probability/P005_One_Round_Random_Matching_Patterns.md)
+- [P006 — Inversion Count in a Random Permutation](Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md)
 
 ## Statistics
 
@@ -23,6 +25,7 @@ Categorized index of all finalized subject notes.
 - [S003 — Cointegration: Trading Equilibrium Rather Than Correlation](Questions/Statistics/S003_Cointegration_Trading_Equilibrium_Rather_Than_Correlation.md)
 - [S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
 - [S005 — HAC / Newey–West Inference for Persistent Trading Signals](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md)
+- [S006 — Two Noisy Proxies and Errors-in-Variables](Questions/Statistics/S006_Two_Noisy_Proxies_and_Errors_in_Variables.md)
 
 ## Time Series
 
@@ -30,6 +33,7 @@ Categorized index of all finalized subject notes.
 - [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
 - [T003 — AR(1) First Passage Time and Why Persistence Changes Waiting Time](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md)
 - [T004 — Kalman Filtering II: Covariance-Weighted Bayesian Updating](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md)
+- [T005 — Two-Factor Kalman Update for Level and Slope](Questions/TimeSeries/T005_Two_Factor_Kalman_Update_for_Level_and_Slope.md)
 
 ## Optimization
 

@@ -52,6 +52,8 @@ Random perfect matching on 2n people.
 
 ### Part III. Random Permutations ⭐⭐⭐⭐⭐
 
+Status: Started via `P006` (inversion counts); other permutation patterns remain.
+
 **Core idea**
 
 Uniform random permutations.
