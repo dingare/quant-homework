@@ -26,6 +26,7 @@ Categorized index of all finalized subject notes.
 - [S004 — Efficient IV, Rayleigh Quotient, and Covariance-Weighted Signal Combination](Questions/Statistics/S004_Efficient_IV_Rayleigh_Quotient_and_Covariance_Weighted_Signal_Combination.md)
 - [S005 — HAC / Newey–West Inference for Persistent Trading Signals](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md)
 - [S006 — Two Noisy Proxies and Errors-in-Variables](Questions/Statistics/S006_Two_Noisy_Proxies_and_Errors_in_Variables.md)
+- [S007 — Competing Consistent Estimators and Efficient Instruments](Questions/Statistics/S007_Competing_Consistent_Estimators_and_Efficient_Instruments.md)
 
 ## Time Series
 

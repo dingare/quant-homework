@@ -8,13 +8,13 @@ Track counts of finalized subject notes by category.
 | --- | --- | ---: |
 | Linear Algebra | L | 4 |
 | Probability | P | 6 |
-| Statistics | S | 6 |
+| Statistics | S | 7 |
 | Time Series | T | 5 |
 | Optimization | O | 3 |
 | Coding | C | 1 |
 | Stochastic Calculus | SC | 3 |
 | Rates Research | R | 0 |
-| Total | All | 28 |
+| Total | All | 29 |
 
 ## Notes
 
@@ -43,3 +43,4 @@ Track counts of finalized subject notes by category.
 - Coding count updated to 1 on 2026-07-19.
 - Probability count updated to 5 on 2026-07-19; Part II is maintained as one cumulative question file.
 - Added L004, P006, S006, and T005 from the latest undocumented daily-prep questions on 2026-07-23.
+- Statistics count updated to 7 on 2026-07-26 with Exercise 5.6 on competing consistent estimators and efficient instruments.
