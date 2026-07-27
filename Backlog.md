@@ -127,6 +127,8 @@ Collecting all types.
 
 ### Part VII. Random Walk and Markov ⭐⭐⭐⭐⭐
 
+Status: Started via `P007` (unequal jumps, overshoot, and first-step analysis); other Markov patterns remain.
+
 **Core idea**
 
 First-step analysis.

@@ -17,6 +17,7 @@ Categorized index of all finalized subject notes.
 - [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md)
 - [P005 — One-Round Random Matching Patterns](Questions/Probability/P005_One_Round_Random_Matching_Patterns.md)
 - [P006 — Inversion Count in a Random Permutation](Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md)
+- [P007 — Unequal-Jump Random Walk and First-Step Analysis](Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
 
 ## Statistics
 
@@ -41,10 +42,12 @@ Categorized index of all finalized subject notes.
 - [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
+- [O004 — Optimal Execution with Impact and Inventory Risk](Questions/Optimization/O004_Optimal_Execution_with_Impact_and_Inventory_Risk.md)
 
 ## Coding
 
 - [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md)
+- [C002 — Shortest Subarray at Least K with a Monotonic Deque](Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)
 
 ## Stochastic Calculus
 
