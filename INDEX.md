@@ -8,6 +8,7 @@ Categorized index of all finalized subject notes.
 - [L002 — PCA, Covariance Geometry, and Why Butterfly Trades Curvature](Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md)
 - [L003 — Woodbury Identity for Low-Rank Covariance Inversion](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md)
 - [L004 — Rank-One Covariance Update and Eigenvalue Interlacing](Questions/LinearAlgebra/L004_Rank_One_Covariance_Update_and_Eigenvalue_Interlacing.md)
+- [L005 — Low-Rank Covariance Update and Portfolio Risk](Questions/LinearAlgebra/L005_Low_Rank_Covariance_Update_and_Portfolio_Risk.md)
 
 ## Probability
 
@@ -18,6 +19,7 @@ Categorized index of all finalized subject notes.
 - [P005 — One-Round Random Matching Patterns](Questions/Probability/P005_One_Round_Random_Matching_Patterns.md)
 - [P006 — Inversion Count in a Random Permutation](Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md)
 - [P007 — Unequal-Jump Random Walk and First-Step Analysis](Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
+- [P008 — Runs in a Conditioned Coin-Toss Sequence](Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md)
 
 ## Statistics
 
@@ -28,6 +30,7 @@ Categorized index of all finalized subject notes.
 - [S005 — HAC / Newey–West Inference for Persistent Trading Signals](Questions/Statistics/S005_HAC_Newey_West_Inference_for_Persistent_Trading_Signals.md)
 - [S006 — Two Noisy Proxies and Errors-in-Variables](Questions/Statistics/S006_Two_Noisy_Proxies_and_Errors_in_Variables.md)
 - [S007 — Competing Consistent Estimators and Efficient Instruments](Questions/Statistics/S007_Competing_Consistent_Estimators_and_Efficient_Instruments.md)
+- [S008 — Selection Bias from Trading on Signals or Outcomes](Questions/Statistics/S008_Selection_Bias_from_Trading_on_Signals_or_Outcomes.md)
 
 ## Time Series
 
@@ -36,6 +39,7 @@ Categorized index of all finalized subject notes.
 - [T003 — AR(1) First Passage Time and Why Persistence Changes Waiting Time](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md)
 - [T004 — Kalman Filtering II: Covariance-Weighted Bayesian Updating](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md)
 - [T005 — Two-Factor Kalman Update for Level and Slope](Questions/TimeSeries/T005_Two_Factor_Kalman_Update_for_Level_and_Slope.md)
+- [T006 — One-Step Kalman Update with Correlated Signals](Questions/TimeSeries/T006_One_Step_Kalman_Update_with_Correlated_Signals.md)
 
 ## Optimization
 
@@ -43,6 +47,7 @@ Categorized index of all finalized subject notes.
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
 - [O004 — Optimal Execution with Impact and Inventory Risk](Questions/Optimization/O004_Optimal_Execution_with_Impact_and_Inventory_Risk.md)
+- [O005 — Robust Portfolio Choice under Ellipsoidal Mean Uncertainty](Questions/Optimization/O005_Robust_Portfolio_Choice_under_Ellipsoidal_Mean_Uncertainty.md)
 
 ## Coding
 
@@ -54,6 +59,7 @@ Categorized index of all finalized subject notes.
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)
 - [SC002 — Change of Measure I: Understanding P, Q and the Radon-Nikodym Derivative](Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
+- [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md)
 
 ## Rates Research
 

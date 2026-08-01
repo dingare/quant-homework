@@ -52,7 +52,7 @@ Random perfect matching on 2n people.
 
 ### Part III. Random Permutations ⭐⭐⭐⭐⭐
 
-Status: Started via `P006` (inversion counts); other permutation patterns remain.
+Status: Started via `P006` (inversion counts) and `P008` (runs in a conditioned random ordering); other permutation patterns remain.
 
 **Core idea**
 
