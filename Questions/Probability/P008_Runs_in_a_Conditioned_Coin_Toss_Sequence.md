@@ -8,7 +8,7 @@ A fair coin is tossed 100 times conditional on exactly 50 heads and 50 tails. Le
 C=\sum_{i=1}^{99}I_i,qquad I_i=\mathbf1_{\{X_i\ne X_{i+1}\}},
 \]
 
-be the number of changes. Find \(E[C]\), \(\operatorname{Var}(C)\), and a normal
+be the number of changes. Find \(E[C]\), \(\mathrm{Var}(C)\), and a normal
 approximation to \(P(C\ge60)\).
 
 ## Expectation
@@ -30,15 +30,15 @@ Therefore,
 Use
 
 \[
-\operatorname{Var}(C)=\sum_i\operatorname{Var}(I_i)
-+2\sum_{i<j}\operatorname{Cov}(I_i,I_j).
+\mathrm{Var}(C)=\sum_i\mathrm{Var}(I_i)
++2\sum_{i<j}\mathrm{Cov}(I_i,I_j).
 \]
 
 Adjacent indicators both equal one only for \(HTH\) or \(THT\), so
 
 \[
 E[I_iI_{i+1}]=\frac{25}{99},qquad
-\operatorname{Cov}_{\rm adj}=-\frac{25}{9801}.
+\mathrm{Cov}_{\rm adj}=-\frac{25}{9801}.
 \]
 
 Nonadjacent indicators use four distinct positions. Both pairs must contain one head
@@ -46,7 +46,7 @@ and one tail, giving
 
 \[
 E[I_iI_j]=\frac{2450}{99\cdot97},qquad
-\operatorname{Cov}_{\rm nonadj}=\frac{50}{950697}.
+\mathrm{Cov}_{\rm nonadj}=\frac{50}{950697}.
 \]
 
 There are 98 adjacent indicator pairs and
@@ -65,7 +65,7 @@ nonadjacent pairs. Their aggregate covariances cancel:
 Hence
 
 \[
-\boxed{\operatorname{Var}(C)=99p(1-p)=\frac{2450}{99}\approx24.75}.
+\boxed{\mathrm{Var}(C)=99p(1-p)=\frac{2450}{99}\approx24.75}.
 \]
 
 The indicators are not independent; the cancellation is a feature of this symmetric
@@ -88,7 +88,7 @@ heads and \(n\) tails,
 
 \[
 E[R]=1+\frac{2mn}{m+n},qquad
-\operatorname{Var}(R)=
+\mathrm{Var}(R)=
 \frac{2mn(2mn-m-n)}{(m+n)^2(m+n-1)}.
 \]
 

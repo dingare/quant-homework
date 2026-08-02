@@ -18,7 +18,7 @@ For a uniformly random permutation \(\pi\) of \(\{1,\ldots,n\}\), define
 X=\#\{(i,j):i<j,\ \pi_i>\pi_j\}.
 ```
 
-Compute \(E[X]\) and \(\operatorname{Var}(X)\) without enumerating all \(n!\) permutations.
+Compute \(E[X]\) and \(\mathrm{Var}(X)\) without enumerating all \(n!\) permutations.
 
 ## Expected Value
 
@@ -51,21 +51,21 @@ Each indicator has variance \(1/4\). Indicators involving four distinct position
 For \(i<j<k\), inspect the six relative orderings of \(\pi_i,\pi_j,\pi_k\):
 
 ```math
-\operatorname{Cov}(I_{ij},I_{ik})
+\mathrm{Cov}(I_{ij},I_{ik})
 =\frac13-\frac14=\frac1{12},
 ```
 
 because both are one exactly when \(\pi_i\) is the largest;
 
 ```math
-\operatorname{Cov}(I_{ik},I_{jk})
+\mathrm{Cov}(I_{ik},I_{jk})
 =\frac13-\frac14=\frac1{12},
 ```
 
 because both are one exactly when \(\pi_k\) is the smallest; and
 
 ```math
-\operatorname{Cov}(I_{ij},I_{jk})
+\mathrm{Cov}(I_{ij},I_{jk})
 =\frac16-\frac14=-\frac1{12},
 ```
 
@@ -74,7 +74,7 @@ because both are one only in the descending ordering.
 Thus the sum of the three unordered covariance terms for each triple is \(1/12\). The variance expansion doubles this contribution:
 
 ```math
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =\binom n2\frac14+\binom n3\frac16.
 ```
 
@@ -82,7 +82,7 @@ Therefore
 
 ```math
 \boxed{
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =\frac{n(n-1)(2n+5)}{72}
 }.
 ```
@@ -90,7 +90,7 @@ Therefore
 For \(n=5\),
 
 ```math
-\boxed{E[X]=5,\qquad\operatorname{Var}(X)=\frac{25}{6}}.
+\boxed{E[X]=5,\qquad\mathrm{Var}(X)=\frac{25}{6}}.
 ```
 
 ## Symmetry of the Distribution
@@ -126,7 +126,7 @@ The correct variance is \(O(n^3)\), because there are \(\binom n3\) overlapping 
 The inversion count is asymptotically normal after centering and scaling:
 
 ```math
-\frac{X-E[X]}{\sqrt{\operatorname{Var}(X)}}
+\frac{X-E[X]}{\sqrt{\mathrm{Var}(X)}}
 \xrightarrow{d}N(0,1).
 ```
 
@@ -163,6 +163,6 @@ Inversion count is the Kendall-tau distance between rankings. Comparing asset ra
 \boxed{
 E[X]=\frac{n(n-1)}4,
 \qquad
-\operatorname{Var}(X)=\frac{n(n-1)(2n+5)}{72}
+\mathrm{Var}(X)=\frac{n(n-1)(2n+5)}{72}
 }.
 ```

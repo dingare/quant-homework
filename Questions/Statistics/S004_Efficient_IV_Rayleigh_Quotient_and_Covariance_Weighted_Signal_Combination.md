@@ -77,9 +77,9 @@ Q=E[zz^\top].
 Then
 
 ```math
-\operatorname{Cov}(h,x)=a^\top q,
+\mathrm{Cov}(h,x)=a^\top q,
 \qquad
-\operatorname{Var}(h)=a^\top Q a.
+\mathrm{Var}(h)=a^\top Q a.
 ```
 
 So the problem becomes

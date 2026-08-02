@@ -39,7 +39,7 @@ The fundamental identity is
 Also, because (I_A^2=I_A),
 
 ```math
-\boxed{\operatorname{Var}(I_A)=P(A)[1-P(A)]}.
+\boxed{\mathrm{Var}(I_A)=P(A)[1-P(A)]}.
 ```
 
 ## 2. Turn a Count into a Sum
@@ -68,9 +68,9 @@ For (X=\sum_i I_i),
 
 ```math
 \boxed{
-\operatorname{Var}(X)
-=\sum_i\operatorname{Var}(I_i)
-+2\sum_{i<j}\operatorname{Cov}(I_i,I_j)
+\mathrm{Var}(X)
+=\sum_i\mathrm{Var}(I_i)
++2\sum_{i<j}\mathrm{Cov}(I_i,I_j)
 }.
 ```
 
@@ -78,7 +78,7 @@ For indicators,
 
 ```math
 \boxed{
-\operatorname{Cov}(I_A,I_B)
+\mathrm{Cov}(I_A,I_B)
 =P(A\cap B)-P(A)P(B)
 }.
 ```
@@ -96,7 +96,7 @@ Zero covariance does not generally imply independence.
 The identity
 
 ```math
-\operatorname{Var}(X)=E[X^2]-E[X]^2
+\mathrm{Var}(X)=E[X^2]-E[X]^2
 ```
 
 is completely equivalent. Since (I_i^2=I_i),
@@ -133,7 +133,7 @@ and
 
 ```math
 \boxed{
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =E[X(X-1)]+E[X]-E[X]^2
 }.
 ```
@@ -273,7 +273,7 @@ E[R]=1+\frac{2mn}{m+n},
 and
 
 ```math
-\operatorname{Var}(R)
+\mathrm{Var}(R)
 =\frac{2mn(2mn-m-n)}{(m+n)^2(m+n-1)}.
 ```
 
@@ -303,7 +303,7 @@ If (X=\sum_iI_i), individual events are rare, and dependence is weak or local,
 then often
 
 ```math
-X\approx\operatorname{Poisson}(\lambda),
+X\approx\mathrm{Poisson}(\lambda),
 \qquad
 \lambda=E[X].
 ```
@@ -312,7 +312,7 @@ This occurs in birthday collisions, defaults, hashing collisions, and sparse ran
 graph motifs. Under the approximation,
 
 ```math
-E[X]\approx\operatorname{Var}(X)\approx\lambda.
+E[X]\approx\mathrm{Var}(X)\approx\lambda.
 ```
 
 ## 10. Interview Workflow
@@ -346,21 +346,21 @@ E[X]\approx\operatorname{Var}(X)\approx\lambda.
 ```
 
 ```math
-\boxed{\operatorname{Var}(I_A)=P(A)[1-P(A)]}
+\boxed{\mathrm{Var}(I_A)=P(A)[1-P(A)]}
 ```
 
 ```math
 \boxed{
-\operatorname{Cov}(I_A,I_B)
+\mathrm{Cov}(I_A,I_B)
 =P(A\cap B)-P(A)P(B)
 }
 ```
 
 ```math
 \boxed{
-\operatorname{Var}\left(\sum_iI_i\right)
-=\sum_i\operatorname{Var}(I_i)
-+2\sum_{i<j}\operatorname{Cov}(I_i,I_j)
+\mathrm{Var}\left(\sum_iI_i\right)
+=\sum_i\mathrm{Var}(I_i)
++2\sum_{i<j}\mathrm{Cov}(I_i,I_j)
 }
 ```
 

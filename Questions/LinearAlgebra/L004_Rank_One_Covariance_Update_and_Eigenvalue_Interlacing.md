@@ -15,7 +15,7 @@
 Let
 
 ```math
-\Sigma=\operatorname{diag}(4,2,1),
+\Sigma=\mathrm{diag}(4,2,1),
 \qquad
 u=(1,1,1)^\top,
 ```
@@ -111,7 +111,7 @@ Useful checks are
 
 ```math
 \sum_i\widetilde\lambda_i
-=\operatorname{tr}(\widetilde\Sigma)=10
+=\mathrm{tr}(\widetilde\Sigma)=10
 ```
 
 and

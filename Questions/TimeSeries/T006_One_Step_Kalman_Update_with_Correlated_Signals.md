@@ -2,7 +2,7 @@
 
 ## Problem
 
-Let \(x_t=0.9x_{t-1}+w_t\), with \(\operatorname{Var}(w_t)=1\), and suppose
+Let \(x_t=0.9x_{t-1}+w_t\), with \(\mathrm{Var}(w_t)=1\), and suppose
 \(x_{t-1}\mid\mathcal F_{t-1}\sim N(2,4)\). Observe
 
 \[
@@ -63,7 +63,7 @@ Sequential processing becomes valid after decorrelation. For example,
 \widetilde y_2=y_2-y_1=x_t+(v_2-v_1),
 \]
 
-and \(\operatorname{Cov}(v_1,v_2-v_1)=1-1=0\). Gaussianity then makes the
+and \(\mathrm{Cov}(v_1,v_2-v_1)=1-1=0\). Gaussianity then makes the
 transformed measurement errors independent.
 
 ## Finance Connection

@@ -52,7 +52,7 @@ Thus, conditional on $X_0=1$,
 ```math
 E[X_t]=e^{-2t},
 \qquad
-\operatorname{Var}(X_t)=\frac94(1-e^{-4t}).
+\mathrm{Var}(X_t)=\frac94(1-e^{-4t}).
 ```
 
 The OU process is a regular recurrent one-dimensional diffusion with stationary distribution $N(0,\sigma^2/(2\kappa))$. It visits both sides of zero and therefore hits zero almost surely.

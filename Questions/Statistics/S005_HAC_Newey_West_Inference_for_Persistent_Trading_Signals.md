@@ -19,11 +19,11 @@ For $T=500$, consider
 \Delta y_t=\alpha+\beta s_{t-1}+u_t,
 ```
 
-with $\hat\beta=-0.80$ bp and $\operatorname{SE}_{\mathrm{iid}}(\hat\beta)=0.25$ bp. Assume
+with $\hat\beta=-0.80$ bp and $\mathrm{SE}_{\mathrm{iid}}(\hat\beta)=0.25$ bp. Assume
 
 ```math
-\operatorname{Var}(u_t)=4,
-\quad \operatorname{Corr}(u_t,u_{t-1})=0.60,
+\mathrm{Var}(u_t)=4,
+\quad \mathrm{Corr}(u_t,u_{t-1})=0.60,
 ```
 
 ```math
@@ -85,7 +85,7 @@ The variance inflation factor relative to the iid calculation is
 Using the supplied iid standard error as the baseline,
 
 ```math
-\operatorname{SE}_{\mathrm{HAC}}
+\mathrm{SE}_{\mathrm{HAC}}
 =0.25\sqrt{1.24}
 \approx0.278,
 ```

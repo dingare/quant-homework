@@ -26,26 +26,26 @@ Truncating the regressor changes its distribution but does not break exogeneity.
 Now low-\(X\) observations survive only when \(\varepsilon\) is unusually positive,
 inducing negative selected-sample covariance between \(X\) and \(\varepsilon\).
 
-Because \(\operatorname{Var}(Y)=8\) and \(\operatorname{Cov}(X,Y)=2\), write
+Because \(\mathrm{Var}(Y)=8\) and \(\mathrm{Cov}(X,Y)=2\), write
 
 \[
-X=\frac14Y+\eta,qquad \eta\perp Y,qquad \operatorname{Var}(\eta)=\frac12.
+X=\frac14Y+\eta,qquad \eta\perp Y,qquad \mathrm{Var}(\eta)=\frac12.
 \]
 
 For a half-normal truncation,
 
 \[
-\operatorname{Var}(Y\mid Y>0)=8\left(1-\frac2\pi\right).
+\mathrm{Var}(Y\mid Y>0)=8\left(1-\frac2\pi\right).
 \]
 
 Therefore,
 
 \[
-\operatorname{Cov}(X,Y\mid Y>0)=2\left(1-\frac2\pi\right),
+\mathrm{Cov}(X,Y\mid Y>0)=2\left(1-\frac2\pi\right),
 \]
 
 \[
-\operatorname{Var}(X\mid Y>0)=1-\frac1\pi,
+\mathrm{Var}(X\mid Y>0)=1-\frac1\pi,
 \]
 
 and

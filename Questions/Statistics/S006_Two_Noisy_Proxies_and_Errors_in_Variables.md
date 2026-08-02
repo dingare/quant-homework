@@ -21,8 +21,8 @@ y=\beta x+\varepsilon,\qquad \beta=2,
 with
 
 ```math
-\operatorname{Var}(x)=1,\qquad
-\operatorname{Var}(\varepsilon)=4.
+\mathrm{Var}(x)=1,\qquad
+\mathrm{Var}(\varepsilon)=4.
 ```
 
 The latent \(x\) is not observed. Instead,
@@ -34,8 +34,8 @@ z_1=x+u_1,\qquad z_2=x+u_2,
 where
 
 ```math
-\operatorname{Var}(u_1)=1,\qquad
-\operatorname{Var}(u_2)=3,
+\mathrm{Var}(u_1)=1,\qquad
+\mathrm{Var}(u_2)=3,
 ```
 
 and \(x,\varepsilon,u_1,u_2\) are mutually independent.
@@ -45,29 +45,29 @@ Find the OLS probability limit using \(z_1\), the IV probability limit using \(z
 ## OLS and Attenuation
 
 ```math
-\operatorname{Cov}(z_1,y)
-=\operatorname{Cov}(x+u_1,2x+\varepsilon)=2,
+\mathrm{Cov}(z_1,y)
+=\mathrm{Cov}(x+u_1,2x+\varepsilon)=2,
 ```
 
 while
 
 ```math
-\operatorname{Var}(z_1)=1+1=2.
+\mathrm{Var}(z_1)=1+1=2.
 ```
 
 Therefore
 
 ```math
 \boxed{
-\operatorname{plim}\hat\beta_{\mathrm{OLS}}=1
+\mathrm{plim}\hat\beta_{\mathrm{OLS}}=1
 }.
 ```
 
 In general, classical measurement error multiplies the true slope by the reliability ratio
 
 ```math
-\frac{\operatorname{Var}(x)}
-{\operatorname{Var}(x)+\operatorname{Var}(u_1)}.
+\frac{\mathrm{Var}(x)}
+{\mathrm{Var}(x)+\mathrm{Var}(u_1)}.
 ```
 
 Noise inflates the regressor variance without increasing its covariance with the outcome.
@@ -77,8 +77,8 @@ Noise inflates the regressor variance without increasing its covariance with the
 The IV estimand is
 
 ```math
-\frac{\operatorname{Cov}(z_2,y)}
-{\operatorname{Cov}(z_2,z_1)}
+\frac{\mathrm{Cov}(z_2,y)}
+{\mathrm{Cov}(z_2,z_1)}
 =\frac{2}{1}.
 ```
 
@@ -86,7 +86,7 @@ Hence
 
 ```math
 \boxed{
-\operatorname{plim}\hat\beta_{\mathrm{IV}}=2
+\mathrm{plim}\hat\beta_{\mathrm{IV}}=2
 }.
 ```
 
@@ -96,8 +96,8 @@ The population first-stage coefficient is
 
 ```math
 \boxed{
-\pi=\frac{\operatorname{Cov}(z_2,z_1)}
-{\operatorname{Var}(z_2)}
+\pi=\frac{\mathrm{Cov}(z_2,z_1)}
+{\mathrm{Var}(z_2)}
 =\frac1{1+3}=\frac14
 }.
 ```
@@ -136,7 +136,7 @@ a=\frac34,\qquad
 This is inverse-noise-variance weighting. The combined noise variance is
 
 ```math
-\operatorname{Var}(\widetilde u)
+\mathrm{Var}(\widetilde u)
 =\left(\frac34\right)^2
 +3\left(\frac14\right)^2
 =\frac34.
@@ -146,7 +146,7 @@ Regressing \(y\) on this combined but still noisy proxy yields
 
 ```math
 \boxed{
-\operatorname{plim}\hat\beta_{\widetilde x}
+\mathrm{plim}\hat\beta_{\widetilde x}
 =\frac{2}{1+3/4}
 =\frac87\approx1.143
 }.
@@ -159,7 +159,7 @@ Combining proxies reduces attenuation but does not eliminate it.
 For \(k\) unbiased proxies
 
 ```math
-z=x\mathbf1+u,\qquad \operatorname{Cov}(u)=R,
+z=x\mathbf1+u,\qquad \mathrm{Cov}(u)=R,
 ```
 
 the minimum-noise weights satisfying \(\mathbf1^\top w=1\) are

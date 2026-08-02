@@ -360,10 +360,10 @@ Equivalently, dividing the model by \(x_i\) gives
 =\beta+\frac{e_i}{x_i}.
 ```
 
-If \(\operatorname{Var}(e_i\mid x_i)=cx_i^2\), then
+If \(\mathrm{Var}(e_i\mid x_i)=cx_i^2\), then
 
 ```math
-\operatorname{Var}\!\left(\frac{e_i}{x_i}\,\middle|\,x_i\right)=c.
+\mathrm{Var}\!\left(\frac{e_i}{x_i}\,\middle|\,x_i\right)=c.
 ```
 
 The transformed model is homoskedastic, so its sample-mean estimator is efficient.
@@ -413,7 +413,7 @@ and
 
 ```math
 \boxed{
-h^*(x)=\frac{x}{\operatorname{Var}(e\mid x)}
+h^*(x)=\frac{x}{\mathrm{Var}(e\mid x)}
 }.
 ```
 

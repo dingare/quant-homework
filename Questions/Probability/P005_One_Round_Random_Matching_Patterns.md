@@ -20,7 +20,7 @@ There are $2n$ people consisting of $n$ couples. The people are paired uniformly
 Find:
 
 1. $E[X]$,
-2. $\operatorname{Var}(X)$,
+2. $\mathrm{Var}(X)$,
 3. the total number of possible pairings,
 4. the limiting distribution of $X$ as $n\to\infty$.
 
@@ -78,7 +78,7 @@ E[I_iI_j]
 The first couple must match, after which the second couple is matching within a remaining population of $2n-2$ people. Therefore
 
 ```math
-\operatorname{Cov}(I_i,I_j)
+\mathrm{Cov}(I_i,I_j)
 =\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}>0.
 ```
 
@@ -87,21 +87,21 @@ The indicators are not independent: one successful couple slightly increases the
 Using
 
 ```math
-\operatorname{Var}(X)
-=\sum_i\operatorname{Var}(I_i)
-+2\sum_{i<j}\operatorname{Cov}(I_i,I_j),
+\mathrm{Var}(X)
+=\sum_i\mathrm{Var}(I_i)
++2\sum_{i<j}\mathrm{Cov}(I_i,I_j),
 ```
 
 and $2\binom n2=n(n-1)$ gives
 
 ```math
 \boxed{
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =\frac{4n(n-1)^2}{(2n-1)^2(2n-3)}
 }.
 ```
 
-Thus $\operatorname{Var}(X)\to 1/2$ as $n\to\infty$.
+Thus $\mathrm{Var}(X)\to 1/2$ as $n\to\infty$.
 
 ### Why the Limit Is Poisson
 
@@ -127,10 +127,10 @@ E[(X)_k]
 \longrightarrow\left(\frac12\right)^k.
 ```
 
-These are the factorial moments of a $\operatorname{Poisson}(1/2)$ random variable. Therefore
+These are the factorial moments of a $\mathrm{Poisson}(1/2)$ random variable. Therefore
 
 ```math
-\boxed{X\xrightarrow{d}\operatorname{Poisson}\left(\frac12\right)}.
+\boxed{X\xrightarrow{d}\mathrm{Poisson}\left(\frac12\right)}.
 ```
 
 ### Common Mistakes
@@ -178,7 +178,7 @@ P(X=0)=\frac{D_n}{(2n-1)!!}
 }.
 ```
 
-Because $X\Rightarrow\operatorname{Poisson}(1/2)$,
+Because $X\Rightarrow\mathrm{Poisson}(1/2)$,
 
 ```math
 P(X=0)\longrightarrow e^{-1/2}\approx0.6065.
@@ -272,7 +272,7 @@ E[I_iI_j]
 Therefore
 
 ```math
-\operatorname{Cov}(I_i,I_j)
+\mathrm{Cov}(I_i,I_j)
 =\frac{n}{(2n-1)^2(2n-3)}>0,
 ```
 
@@ -280,12 +280,12 @@ and
 
 ```math
 \boxed{
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 =\frac{2n^2(n-1)^2}{(2n-1)^2(2n-3)}
 }.
 ```
 
-Here $E[X]\sim n/2$ and $\operatorname{Var}(X)\sim n/4$. Unlike the matched-couples count, this is not a fixed-mean rare-event problem.
+Here $E[X]\sim n/2$ and $\mathrm{Var}(X)\sim n/4$. Unlike the matched-couples count, this is not a fixed-mean rare-event problem.
 
 ## Pattern 4 — Matches Internal to a Specified Subset
 
@@ -319,7 +319,7 @@ If they share a person, they are mutually exclusive:
 ```math
 E[I_{ij}I_{ik}]=0,
 \qquad
-\operatorname{Cov}(I_{ij},I_{ik})=-\frac1{(2n-1)^2}.
+\mathrm{Cov}(I_{ij},I_{ik})=-\frac1{(2n-1)^2}.
 ```
 
 If their four endpoints are distinct:
@@ -332,7 +332,7 @@ E[I_{ij}I_{kl}]
 so
 
 ```math
-\operatorname{Cov}(I_{ij},I_{kl})
+\mathrm{Cov}(I_{ij},I_{kl})
 =\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}>0.
 ```
 
@@ -341,7 +341,7 @@ There are $3\binom m3$ unordered pairs of potential edges that share one endpoin
 ```math
 \boxed{
 \begin{aligned}
-\operatorname{Var}(X)
+\mathrm{Var}(X)
 ={}&\binom m2\frac1{2n-1}\left(1-\frac1{2n-1}\right)\\
 &-\frac{6\binom m3}{(2n-1)^2}\\
 &+6\binom m4\left[
@@ -383,7 +383,7 @@ E[X]\sim\frac{m^2}{4n},
 the scale of $m$ determines the limit:
 
 - if $m=o(\sqrt n)$, then $X\xrightarrow{p}0$;
-- if $m/\sqrt n\to c$, then $X\Rightarrow\operatorname{Poisson}(c^2/4)$;
+- if $m/\sqrt n\to c$, then $X\Rightarrow\mathrm{Poisson}(c^2/4)$;
 - if $m/(2n)\to\rho\in(0,1)$, then $X/n\xrightarrow{p}\rho^2$, with a normal limit after centering and variance normalization.
 
 This is the general rare-event principle: a finite limiting mean suggests Poisson; a growing count with many small contributions suggests concentration and a Gaussian fluctuation scale.
@@ -422,7 +422,7 @@ When facing a one-round random-matching problem:
 - Writing $m!/(2^m(m/2)!)$ instead of $m!/(2^{m/2}(m/2)!)$ for a perfect matching of $m$ even objects.
 - Using $2n-4$ rather than $2n-1$ as the first denominator when exposing the partner of one fixed person.
 - Forgetting the factor $3$ when two potential edges are constructed from a chosen triple or quadruple.
-- Forgetting the factor $2$ in $2\sum_{\alpha<\beta}\operatorname{Cov}(I_\alpha,I_\beta)$.
+- Forgetting the factor $2$ in $2\sum_{\alpha<\beta}\mathrm{Cov}(I_\alpha,I_\beta)$.
 - Treating weak dependence as exact independence.
 - Forgetting that a conditioned matching may remain marginally symmetric even though its edges are globally dependent.
 
