@@ -228,6 +228,19 @@ E[X]=\binom n2\frac12=\frac{n(n-1)}4.
 For variance, classify pairs of comparisons by whether they share an index. See
 [P006 — Inversion Count](../../Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md).
 
+### Random matching
+
+In a uniformly random perfect matching of $2n$ labeled people, let
+
+```math
+I_i=\mathbf 1\{\text{target couple }i\text{ is matched together}\}.
+```
+
+The count $X=\sum_i I_i$ illustrates the full indicator toolkit: linearity of
+expectation, dependent joint-success probabilities, overlap-based covariance,
+factorial moments, and a Poisson limit. See
+[P005 — One-Round Random Matching Patterns](../../Questions/Probability/P005_One_Round_Random_Matching_Patterns.md).
+
 ### Occupied boxes
 
 If (n) balls are placed independently and uniformly into (m) boxes, let

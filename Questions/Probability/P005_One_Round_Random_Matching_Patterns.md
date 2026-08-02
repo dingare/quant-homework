@@ -445,3 +445,7 @@ The reusable toolkit is:
 ```
 
 Choose the method based on what is requested: indicators for moments, counting for exact probabilities, inclusion-exclusion for forbidden edges, and asymptotics for the large-system shape.
+
+## Connections
+
+- [Indicator Random Variables Cookbook](../../KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md) — the general framework behind the indicator expectations, covariance classifications, factorial moments, and Poisson approximations used throughout this note.
