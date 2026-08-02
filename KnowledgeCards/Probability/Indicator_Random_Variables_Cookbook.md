@@ -33,18 +33,18 @@ I_A=\mathbf 1_A=
 The fundamental identity is
 
 ```math
-\boxed{E[I_A]=P(A)}.
+E[I_A]=P(A).
 ```
 
-Also, because (I_A^2=I_A),
+Also, because $I_A^2=I_A$,
 
 ```math
-\boxed{\mathrm{Var}(I_A)=P(A)[1-P(A)]}.
+Var(I_A)=P(A)[1-P(A)].
 ```
 
 ## 2. Turn a Count into a Sum
 
-If (X) counts how many objects satisfy a property, define one indicator per
+If $X$ counts how many objects satisfy a property, define one indicator per
 candidate object:
 
 ```math
@@ -56,7 +56,7 @@ X=\sum_i I_i.
 Then linearity of expectation gives
 
 ```math
-\boxed{E[X]=\sum_i P(I_i=1)}.
+E[X]=\sum_i P(I_i=1).
 ```
 
 Independence is not required. In a symmetric problem with $N$ indicators and
@@ -67,13 +67,13 @@ $P(I_i=1)=p$, this reduces to $E[X]=Np$.
 For $X=\sum_i I_i$,
 
 ```math
-\boxed{\mathrm{Var}(X)=\sum_i \mathrm{Var}(I_i)+2\sum_{i<j}\mathrm{Cov}(I_i,I_j)}
+Var(X)=\sum_i Var(I_i)+2\sum_{i<j}Cov(I_i,I_j)
 ```
 
 For indicators,
 
 ```math
-\boxed{\mathrm{Cov}(I_A,I_B)=P(A\cap B)-P(A)P(B)}
+Cov(I_A,I_B)=P(A\cap B)-P(A)P(B)
 ```
 
 Thus most indicator-variance questions reduce to computing joint probabilities.
@@ -89,7 +89,7 @@ Zero covariance does not generally imply independence.
 The identity
 
 ```math
-\mathrm{Var}(X)=E[X^2]-E[X]^2
+Var(X)=E[X^2]-E[X]^2
 ```
 
 is completely equivalent. Since (I_i^2=I_i),
@@ -125,10 +125,7 @@ E[X(X-1)]=\sum_{i\ne j}P(I_i=1,I_j=1),
 and
 
 ```math
-\boxed{
-\mathrm{Var}(X)
-=E[X(X-1)]+E[X]-E[X]^2
-}.
+Var(X)=E[X(X-1)]+E[X]-E[X]^2.
 ```
 
 This is especially useful for collision, matching, and occupancy problems.
@@ -243,7 +240,7 @@ factorial moments, and a Poisson limit. See
 
 ### Occupied boxes
 
-If (n) balls are placed independently and uniformly into (m) boxes, let
+If $n$ balls are placed independently and uniformly into $m$ boxes, let
 
 ```math
 I_j=\mathbf 1\{\text{box }j\text{ is nonempty}\}.
@@ -252,9 +249,7 @@ I_j=\mathbf 1\{\text{box }j\text{ is nonempty}\}.
 Then
 
 ```math
-\boxed{
-E[X]=m\left[1-\left(1-\frac1m\right)^n\right]
-}.
+E[X]=m\left[1-\left(1-\frac1m\right)^n\right].
 ```
 
 For variance, compute the probability that two specified boxes are both nonempty.
@@ -269,8 +264,8 @@ I_i=\mathbf 1\{X_i\ne X_{i+1}\},
 C=\sum_{i=1}^{N-1}I_i.
 ```
 
-If (R) is the number of runs, then (R=C+1). For a random ordering of (m)
-heads and (n) tails,
+If $R$ is the number of runs, then $R=C+1$. For a random ordering of $m$
+heads and $n$ tails,
 
 ```math
 E[R]=1+\frac{2mn}{m+n},
@@ -279,7 +274,7 @@ E[R]=1+\frac{2mn}{m+n},
 and
 
 ```math
-\mathrm{Var}(R)
+Var(R)
 =\frac{2mn(2mn-m-n)}{(m+n)^2(m+n-1)}.
 ```
 
@@ -288,7 +283,7 @@ See [P008 — Runs in a Conditioned Coin-Toss Sequence](../../Questions/Probabil
 
 ### Random graphs
 
-In (G(n,p)), one edge indicator per possible pair gives
+In $G(n,p)$, one edge indicator per possible pair gives
 
 ```math
 E[\#\text{ edges}]=\binom n2p.
@@ -309,7 +304,7 @@ If (X=\sum_iI_i), individual events are rare, and dependence is weak or local,
 then often
 
 ```math
-X\approx\mathrm{Poisson}(\lambda),
+X\approx Poisson(\lambda),
 \qquad
 \lambda=E[X].
 ```
@@ -318,7 +313,7 @@ This occurs in birthday collisions, defaults, hashing collisions, and sparse ran
 graph motifs. Under the approximation,
 
 ```math
-E[X]\approx\mathrm{Var}(X)\approx\lambda.
+E[X]\approx Var(X)\approx\lambda.
 ```
 
 ## 10. Interview Workflow
@@ -348,33 +343,27 @@ E[X]\approx\mathrm{Var}(X)\approx\lambda.
 ## 12. Core Formula Sheet
 
 ```math
-\boxed{E[I_A]=P(A)}
+E[I_A]=P(A)
 ```
 
 ```math
-\boxed{\mathrm{Var}(I_A)=P(A)[1-P(A)]}
+Var(I_A)=P(A)[1-P(A)]
 ```
 
 ```math
-\boxed{
-\mathrm{Cov}(I_A,I_B)
-=P(A\cap B)-P(A)P(B)
-}
+Cov(I_A,I_B)=P(A\cap B)-P(A)P(B)
 ```
 
 ```math
-\boxed{
-\mathrm{Var}\left(\sum_iI_i\right)
-=\sum_i\mathrm{Var}(I_i)
-+2\sum_{i<j}\mathrm{Cov}(I_i,I_j)
-}
+Var\left(\sum_iI_i\right)
+=\sum_i Var(I_i)
++2\sum_{i<j}Cov(I_i,I_j)
 ```
 
 The durable skill is not memorizing the answer to each counting problem. It is
 recognizing the same reusable sequence:
 
 ```math
-\boxed{
 \text{events}
 \rightarrow
 \text{indicators}
@@ -384,5 +373,5 @@ recognizing the same reusable sequence:
 \text{joint probabilities}
 \rightarrow
 \text{overlap counts}
-}.
+.
 ```
