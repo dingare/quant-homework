@@ -5,7 +5,7 @@
 Indicator variables turn counting questions into sums of simple Bernoulli random
 variables. The central workflow is:
 
-```math
+$$
 \text{define events}
 \longrightarrow
 \text{write a count as a sum}
@@ -13,51 +13,51 @@ variables. The central workflow is:
 \text{compute marginal and joint probabilities}
 \longrightarrow
 \text{classify overlap types}.
-```
+$$
 
 This method applies to fixed points, inversions, collisions, occupied boxes, runs,
 graph motifs, and many other quant-interview probability problems.
 
 ## 1. Definition
 
-For an event (A), define
+For an event $A$, define
 
-```math
+$$
 I_A=\mathbf 1_A=
 \begin{cases}
 1,&A\text{ occurs},\\
 0,&A\text{ does not occur}.
 \end{cases}
-```
+$$
 
 The fundamental identity is
 
-```math
+$$
 E[I_A]=P(A).
-```
+$$
 
 Also, because $I_A^2=I_A$,
 
-```math
+$$
 Var(I_A)=P(A)[1-P(A)].
-```
+$$
 
 ## 2. Turn a Count into a Sum
 
 If $X$ counts how many objects satisfy a property, define one indicator per
 candidate object:
 
-```math
+$$
 I_i=\mathbf 1\{\text{object }i\text{ satisfies the property}\},
 \qquad
 X=\sum_i I_i.
-```
+$$
 
 Then linearity of expectation gives
 
-```math
+$$
 E[X]=\sum_i P(I_i=1).
-```
+$$
 
 Independence is not required. In a symmetric problem with $N$ indicators and
 $P(I_i=1)=p$, this reduces to $E[X]=Np$.
@@ -66,15 +66,15 @@ $P(I_i=1)=p$, this reduces to $E[X]=Np$.
 
 For $X=\sum_i I_i$,
 
-```math
+$$
 Var(X)=\sum_i Var(I_i)+2\sum_{i<j}Cov(I_i,I_j)
-```
+$$
 
 For indicators,
 
-```math
+$$
 Cov(I_A,I_B)=P(A\cap B)-P(A)P(B)
-```
+$$
 
 Thus most indicator-variance questions reduce to computing joint probabilities.
 
@@ -88,23 +88,23 @@ Zero covariance does not generally imply independence.
 
 The identity
 
-```math
+$$
 Var(X)=E[X^2]-E[X]^2
-```
+$$
 
-is completely equivalent. Since (I_i^2=I_i),
+is completely equivalent. Since $I_i^2=I_i$,
 
-```math
+$$
 X^2=\sum_i I_i+2\sum_{i<j}I_iI_j,
-```
+$$
 
 and therefore
 
-```math
+$$
 E[X^2]
 =\sum_i P(I_i=1)
 +2\sum_{i<j}P(I_i=1,I_j=1).
-```
+$$
 
 The covariance form is usually easier to organize because dependence is explicit.
 
@@ -112,21 +112,21 @@ The covariance form is usually easier to organize because dependence is explicit
 
 Sometimes it is easier to compute
 
-```math
+$$
 X(X-1)=\sum_{i\ne j}I_iI_j.
-```
+$$
 
 Hence
 
-```math
+$$
 E[X(X-1)]=\sum_{i\ne j}P(I_i=1,I_j=1),
-```
+$$
 
 and
 
-```math
+$$
 Var(X)=E[X(X-1)]+E[X]-E[X]^2.
-```
+$$
 
 This is especially useful for collision, matching, and occupancy problems.
 
@@ -148,31 +148,31 @@ For each class:
 3. count how many unordered pairs belong to the class;
 4. multiply and sum.
 
-If the variance is written with (sum_{i<j}), count each pair once and retain the
-factor (2). Do not count both ((i,j)) and ((j,i)) and then multiply by (2)
+If the variance is written with $\sum_{i<j}$, count each pair once and retain the
+factor $2$. Do not count both $(i,j)$ and $(j,i)$ and then multiply by $2$
 again.
 
 ## 7. Sampling Without Replacement
 
-Fixed totals create global dependence. If a sequence contains exactly (m) heads
-and (n) tails, then for distinct positions (i,j),
+Fixed totals create global dependence. If a sequence contains exactly $m$ heads
+and $n$ tails, then for distinct positions $i,j$,
 
-```math
+$$
 P(X_i=H,X_j=H)
 =\frac{m}{m+n}\frac{m-1}{m+n-1},
-```
+$$
 
-not ([m/(m+n)]^2).
+not $[m/(m+n)]^2$.
 
 Therefore, even indicators that use disjoint positions need not be independent.
 These joint probabilities are hypergeometric or sampling-without-replacement
 probabilities.
 
-More generally, under a conditioning event (B),
+More generally, under a conditioning event $B$,
 
-```math
+$$
 E[I_A\mid B]=P(A\mid B),
-```
+$$
 
 so all marginal and joint probabilities must respect the conditioning.
 
@@ -180,47 +180,47 @@ so all marginal and joint probabilities must respect the conditioning.
 
 ### Birthday collisions
 
-For (n) people and (d) equally likely birthdays, let
+For $n$ people and $d$ equally likely birthdays, let
 
-```math
+$$
 I_{ij}=\mathbf 1\{\text{people }i,j\text{ share a birthday}\}.
-```
+$$
 
-Then the number of colliding pairs is (X=\sum_{i<j}I_{ij}), and
+Then the number of colliding pairs is $X=\sum_{i<j}I_{ij}$, and
 
-```math
+$$
 E[X]=\binom n2\frac1d.
-```
+$$
 
 For variance, classify two pairs according to whether they share a person.
 
 ### Permutation fixed points
 
-Let (I_i=\mathbf 1\{\pi(i)=i\}). Then
+Let $I_i=\mathbf 1\{\pi(i)=i\}$. Then
 
-```math
+$$
 E[X]=\sum_{i=1}^n\frac1n=1.
-```
+$$
 
-For (i\ne j),
+For $i\ne j$,
 
-```math
+$$
 P(I_i=1,I_j=1)=\frac{(n-2)!}{n!}=\frac1{n(n-1)}.
-```
+$$
 
 ### Inversions
 
 Let
 
-```math
+$$
 I_{ij}=\mathbf 1\{\pi_i>\pi_j\},\qquad i<j.
-```
+$$
 
 Then
 
-```math
+$$
 E[X]=\binom n2\frac12=\frac{n(n-1)}4.
-```
+$$
 
 For variance, classify pairs of comparisons by whether they share an index. See
 [P006 — Inversion Count](../../Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md).
@@ -229,9 +229,9 @@ For variance, classify pairs of comparisons by whether they share an index. See
 
 In a uniformly random perfect matching of $2n$ labeled people, let
 
-```math
+$$
 I_i=\mathbf 1\{\text{target couple }i\text{ is matched together}\}.
-```
+$$
 
 The count $X=\sum_i I_i$ illustrates the full indicator toolkit: linearity of
 expectation, dependent joint-success probabilities, overlap-based covariance,
@@ -242,15 +242,15 @@ factorial moments, and a Poisson limit. See
 
 If $n$ balls are placed independently and uniformly into $m$ boxes, let
 
-```math
+$$
 I_j=\mathbf 1\{\text{box }j\text{ is nonempty}\}.
-```
+$$
 
 Then
 
-```math
+$$
 E[X]=m\left[1-\left(1-\frac1m\right)^n\right].
-```
+$$
 
 For variance, compute the probability that two specified boxes are both nonempty.
 
@@ -258,25 +258,25 @@ For variance, compute the probability that two specified boxes are both nonempty
 
 Let
 
-```math
+$$
 I_i=\mathbf 1\{X_i\ne X_{i+1}\},
 \qquad
 C=\sum_{i=1}^{N-1}I_i.
-```
+$$
 
 If $R$ is the number of runs, then $R=C+1$. For a random ordering of $m$
 heads and $n$ tails,
 
-```math
+$$
 E[R]=1+\frac{2mn}{m+n},
-```
+$$
 
 and
 
-```math
+$$
 Var(R)
 =\frac{2mn(2mn-m-n)}{(m+n)^2(m+n-1)}.
-```
+$$
 
 The closed form follows from classifying adjacent and nonadjacent indicator pairs.
 See [P008 — Runs in a Conditioned Coin-Toss Sequence](../../Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md).
@@ -285,36 +285,36 @@ See [P008 — Runs in a Conditioned Coin-Toss Sequence](../../Questions/Probabil
 
 In $G(n,p)$, one edge indicator per possible pair gives
 
-```math
+$$
 E[\#\text{ edges}]=\binom n2p.
-```
+$$
 
 One triangle indicator per vertex triple gives
 
-```math
+$$
 E[\#\text{ triangles}]=\binom n3p^3.
-```
+$$
 
 For the triangle-count variance, classify pairs of triangles by their shared edges
 or vertices.
 
 ## 9. Rare Events and Poisson Approximation
 
-If (X=\sum_iI_i), individual events are rare, and dependence is weak or local,
+If $X=\sum_iI_i$, individual events are rare, and dependence is weak or local,
 then often
 
-```math
+$$
 X\approx Poisson(\lambda),
 \qquad
 \lambda=E[X].
-```
+$$
 
 This occurs in birthday collisions, defaults, hashing collisions, and sparse random
 graph motifs. Under the approximation,
 
-```math
+$$
 E[X]\approx Var(X)\approx\lambda.
-```
+$$
 
 ## 10. Interview Workflow
 
@@ -335,35 +335,35 @@ E[X]\approx Var(X)\approx\lambda.
 - Assuming indicators are independent without checking shared randomness.
 - Assuming disjoint indicators are independent under a global fixed-total constraint.
 - Replacing a joint probability with a product of marginals without justification.
-- Forgetting the factor (2) in the covariance expansion.
-- Double-counting ordered pairs and also multiplying by (2).
+- Forgetting the factor $2$ in the covariance expansion.
+- Double-counting ordered pairs and also multiplying by $2$.
 - Computing one covariance correctly but miscounting how many pairs have that type.
 - Ignoring the conditioning event when computing probabilities.
 
 ## 12. Core Formula Sheet
 
-```math
+$$
 E[I_A]=P(A)
-```
+$$
 
-```math
+$$
 Var(I_A)=P(A)[1-P(A)]
-```
+$$
 
-```math
+$$
 Cov(I_A,I_B)=P(A\cap B)-P(A)P(B)
-```
+$$
 
-```math
+$$
 Var\left(\sum_iI_i\right)
 =\sum_i Var(I_i)
 +2\sum_{i<j}Cov(I_i,I_j)
-```
+$$
 
 The durable skill is not memorizing the answer to each counting problem. It is
 recognizing the same reusable sequence:
 
-```math
+$$
 \text{events}
 \rightarrow
 \text{indicators}
@@ -374,4 +374,4 @@ recognizing the same reusable sequence:
 \rightarrow
 \text{overlap counts}
 .
-```
+$$
