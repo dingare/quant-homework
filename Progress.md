@@ -16,6 +16,13 @@ Track counts of finalized subject notes by category.
 | Rates Research | R | 0 |
 | Total | All | 38 |
 
+## Knowledge Cards
+
+| Category | Count |
+| --- | ---: |
+| Probability | 1 |
+| Total | 1 |
+
 ## Notes
 
 - Initial scaffold created on 2026-06-25.
@@ -46,3 +53,4 @@ Track counts of finalized subject notes by category.
 - Statistics count updated to 7 on 2026-07-26 with Exercise 5.6 on competing consistent estimators and efficient instruments.
 - Added O004, P007, and C002 from the latest undocumented daily-prep questions on 2026-07-26.
 - Added L005, P008, S008, T006, O005, and SC004 from the latest week of daily prep on 2026-08-01 after duplicate checking.
+- Added the Indicator Random Variables Cookbook as the first Probability knowledge card on 2026-08-01; knowledge cards are tracked separately from daily questions.

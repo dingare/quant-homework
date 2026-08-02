@@ -23,6 +23,7 @@ CONTENT_PATTERNS = [
     "Progress.md",
     "Connections/*.md",
     "Questions/**/*.md",
+    "KnowledgeCards/**/*.md",
     "Templates/*.md",
 ]
 
@@ -135,7 +136,11 @@ def render_markdown(markdown_path: Path) -> tuple[str, str]:
 
 
 def build_navigation(markdown_files: list[Path], current_markdown: Path) -> str:
-    note_files = [path for path in markdown_files if path.parts[-2:-1] and "Questions" in path.parts]
+    note_files = [
+        path
+        for path in markdown_files
+        if "Questions" in path.parts or "KnowledgeCards" in path.parts
+    ]
     links = []
     for path in note_files:
         title = markdown_title(path.read_text(encoding="utf-8"), path.stem)

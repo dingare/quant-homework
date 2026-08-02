@@ -64,3 +64,9 @@ Categorized index of all finalized subject notes.
 ## Rates Research
 
 No entries yet.
+
+## Knowledge Cards
+
+### Probability
+
+- [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)

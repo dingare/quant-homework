@@ -99,3 +99,7 @@ This classical runs-test formula is itself obtained by the indicator expansion a
 Applied to return signs, unusually few runs suggest persistence and unusually many
 runs suggest mean reversion. Conditioning on the counts of positive and negative days
 removes unconditional directional bias.
+
+## Connections
+
+- [Indicator Random Variables Cookbook](../../KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md) — the reusable indicator, joint-probability, and covariance framework behind the runs formula.

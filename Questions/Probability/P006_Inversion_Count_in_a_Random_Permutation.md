@@ -153,6 +153,10 @@ For a realized array, inversions can be counted in \(O(n\log n)\) time using mer
 
 Inversion count is the Kendall-tau distance between rankings. Comparing asset rankings across dates provides a measure of signal instability, cross-sectional rank decay, and potential turnover.
 
+## Connections
+
+- [Indicator Random Variables Cookbook](../../KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md) — the general expectation, covariance, and overlap-classification method used in this problem.
+
 ## What to Remember
 
 ```math
@@ -162,4 +166,3 @@ E[X]=\frac{n(n-1)}4,
 \operatorname{Var}(X)=\frac{n(n-1)(2n+5)}{72}
 }.
 ```
-
