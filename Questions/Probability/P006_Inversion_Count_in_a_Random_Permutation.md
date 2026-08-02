@@ -15,17 +15,17 @@
 For a uniformly random permutation $\pi$ of $\{1,\ldots,n\}$, define
 
 $$
-X=\left|\{(i,j):i<j,\ \pi_i>\pi_j\}\right|.
+X=\left|\{(i,j):i\lt j,\ \pi_i\gt\pi_j\}\right|.
 $$
 
 Compute $E[X]$ and $\mathrm{Var}(X)$ without enumerating all $n!$ permutations.
 
 ## Expected Value
 
-For each $i<j$, define
+For each $i\lt j$, define
 
 $$
-I_{ij}=\mathbf1\{\pi_i>\pi_j\}.
+I_{ij}=\mathbf1\{\pi_i\gt\pi_j\}.
 $$
 
 By symmetry,
@@ -34,7 +34,7 @@ $$
 P(I_{ij}=1)=\frac12.
 $$
 
-Since $X=\sum_{i<j}I_{ij}$,
+Since $X=\sum_{i\lt j}I_{ij}$,
 
 $$
 \boxed{
@@ -48,7 +48,7 @@ Independence is not needed for this step.
 
 Each indicator has variance $1/4$. Indicators involving four distinct positions are independent, so only comparisons sharing an index contribute covariance.
 
-For $i<j<k$, inspect the six relative orderings of $\pi_i,\pi_j,\pi_k$:
+For $i\lt j\lt k$, inspect the six relative orderings of $\pi_i,\pi_j,\pi_k$:
 
 $$
 \mathrm{Cov}(I_{ij},I_{ik})

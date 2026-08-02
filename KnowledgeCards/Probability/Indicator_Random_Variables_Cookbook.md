@@ -67,7 +67,7 @@ $P(I_i=1)=p$, this reduces to $E[X]=Np$.
 For $X=\sum_i I_i$,
 
 $$
-Var(X)=\sum_i Var(I_i)+2\sum_{i<j}Cov(I_i,I_j)
+Var(X)=\sum_i Var(I_i)+2\sum_{i\lt j}Cov(I_i,I_j)
 $$
 
 For indicators,
@@ -79,8 +79,8 @@ $$
 Thus most indicator-variance questions reduce to computing joint probabilities.
 
 - Independent events have zero covariance.
-- If $P(A\cap B)>P(A)P(B)$, the covariance is positive.
-- If $P(A\cap B)<P(A)P(B)$, the covariance is negative.
+- If $P(A\cap B)\gt P(A)P(B)$, the covariance is positive.
+- If $P(A\cap B)\lt P(A)P(B)$, the covariance is negative.
 
 Zero covariance does not generally imply independence.
 
@@ -95,7 +95,7 @@ $$
 is completely equivalent. Since $I_i^2=I_i$,
 
 $$
-X^2=\sum_i I_i+2\sum_{i<j}I_iI_j,
+X^2=\sum_i I_i+2\sum_{i\lt j}I_iI_j,
 $$
 
 and therefore
@@ -103,7 +103,7 @@ and therefore
 $$
 E[X^2]
 =\sum_i P(I_i=1)
-+2\sum_{i<j}P(I_i=1,I_j=1).
++2\sum_{i\lt j}P(I_i=1,I_j=1).
 $$
 
 The covariance form is usually easier to organize because dependence is explicit.
@@ -148,7 +148,7 @@ For each class:
 3. count how many unordered pairs belong to the class;
 4. multiply and sum.
 
-If the variance is written with $\sum_{i<j}$, count each pair once and retain the
+If the variance is written with $\sum_{i\lt j}$, count each pair once and retain the
 factor $2$. Do not count both $(i,j)$ and $(j,i)$ and then multiply by $2$
 again.
 
@@ -186,7 +186,7 @@ $$
 I_{ij}=\mathbf 1\{\text{people }i,j\text{ share a birthday}\}.
 $$
 
-Then the number of colliding pairs is $X=\sum_{i<j}I_{ij}$, and
+Then the number of colliding pairs is $X=\sum_{i\lt j}I_{ij}$, and
 
 $$
 E[X]=\binom n2\frac1d.
@@ -213,7 +213,7 @@ $$
 Let
 
 $$
-I_{ij}=\mathbf 1\{\pi_i>\pi_j\},\qquad i<j.
+I_{ij}=\mathbf 1\{\pi_i\gt\pi_j\},\qquad i\lt j.
 $$
 
 Then
@@ -286,13 +286,13 @@ See [P008 — Runs in a Conditioned Coin-Toss Sequence](../../Questions/Probabil
 In $G(n,p)$, one edge indicator per possible pair gives
 
 $$
-E[\#\text{ edges}]=\binom n2p.
+E[N_{\text{edges}}]=\binom n2p.
 $$
 
 One triangle indicator per vertex triple gives
 
 $$
-E[\#\text{ triangles}]=\binom n3p^3.
+E[N_{\text{triangles}}]=\binom n3p^3.
 $$
 
 For the triangle-count variance, classify pairs of triangles by their shared edges
@@ -357,7 +357,7 @@ $$
 $$
 Var\left(\sum_iI_i\right)
 =\sum_i Var(I_i)
-+2\sum_{i<j}Cov(I_i,I_j)
++2\sum_{i\lt j}Cov(I_i,I_j)
 $$
 
 The durable skill is not memorizing the answer to each counting problem. It is

@@ -16,7 +16,20 @@ This repository should be maintained using the following rules:
 - Do not invent math content.
 - Only use finalized content provided by the user from ChatGPT.
 - Keep Markdown as the single source of truth; generated website HTML is disposable.
-- Write math in GitHub-compatible form: `$...$` for inline math and fenced `math` blocks for display math.
+- Write math in GitHub-compatible form: `$...$` for inline math and `$$...$$` for display math.
+
+### GitHub Math Compatibility (Required)
+
+Follow [GitHub's official mathematical-expression syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions):
+
+- Use `$...$` for ordinary inline math.
+- If an inline expression overlaps with Markdown syntax, use GitHub's protected inline form: dollar sign, backtick, expression, backtick, dollar sign.
+- Use `$$...$$` on separate lines for display math in this repository.
+- Do not use `\(...\)` or `\[...\]`; they are not the repository's supported Markdown delimiters.
+- Do not place raw `<` or `>` inside math. Write `\lt` and `\gt` instead. For example, use `\sum_{i\lt j}` rather than `\sum_{i<j}`.
+- Do not use `\operatorname`, `\#`, or other macros already known to fail in the repository's GitHub rendering path. Prefer simple notation such as `Var`, `Cov`, set cardinality with `\left|\cdot\right|`, and ordinary text outside the formula.
+- Before committing, verify that inline dollar delimiters, display `$$` delimiters, and braces are balanced; search changed Markdown files for forbidden macros and raw angle brackets inside formulas.
+- Run `python3 Tools/check_math_markdown.py <changed-markdown-files>` before committing math-heavy notes. The checker enforces these repository-specific compatibility rules.
 
 ### Folder Structure
 
@@ -148,7 +161,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not invent or draft mathematical content in this knowledge base.
 - Preserve existing notes unless explicitly asked to revise them.
 - Add cross-links when relationships are clear.
-- Use `$...$` for inline formulas and fenced `math` blocks for display formulas.
+- Use `$...$` for inline formulas and `$$...$$` for display formulas, following the GitHub Math Compatibility rules above.
 - Do not commit generated HTML files; GitHub Actions builds the public website from Markdown.
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints automatically.
