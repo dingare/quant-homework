@@ -62,31 +62,31 @@ Let:
 
 Replication asks for:
 
-```math
+$$
 Xw=z
-```
+$$
 
 with cost:
 
-```math
+$$
 p^\top w
-```
+$$
 
 Super hedge:
 
-```math
+$$
 \min_w p^\top w
 \quad\text{subject to}\quad
 Xw\ge z
-```
+$$
 
 Sub hedge:
 
-```math
+$$
 \max_w p^\top w
 \quad\text{subject to}\quad
 Xw\le z
-```
+$$
 
 Interpretation:
 
@@ -100,17 +100,17 @@ The dual view starts from pricing functionals rather than portfolios.
 
 Introduce state prices $q$ such that:
 
-```math
+$$
 X^\top q=p
-```
+$$
 
 This means the pricing rule is consistent with observed asset prices.
 
 Then any payoff $z$ is valued by:
 
-```math
+$$
 q^\top z
-```
+$$
 
 State prices are not probabilities.
 
@@ -143,19 +143,19 @@ Why are state prices not probabilities:
 
 Primal super-hedging problem:
 
-```math
+$$
 \min_w p^\top w
 \quad\text{subject to}\quad
 Xw\ge z
-```
+$$
 
 Dual problem:
 
-```math
+$$
 \sup_q q^\top z
 \quad\text{subject to}\quad
 X^\top q=p
-```
+$$
 
 Why are they equal in words?
 
@@ -198,9 +198,9 @@ The column space of $X$ tells us which payoffs are attainable.
 
 The constraint:
 
-```math
+$$
 X^\top q=p
-```
+$$
 
 tells us the pricing functional matches market prices on that attainable space.
 
@@ -264,17 +264,17 @@ So buy-side rates work often lives in bands, not textbook equalities.
 
 ## What to Remember
 
-```math
+$$
 \boxed{\text{Primal builds hedges; dual prices payoffs; no-arbitrage makes them meet.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{Upper and lower bounds come from cheapest super-hedges and richest sub-hedges.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{State prices are valuation weights, not probabilities.}}
-```
+$$
 
 ## Connections
 

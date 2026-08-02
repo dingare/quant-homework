@@ -15,19 +15,19 @@
 
 Suppose
 
-```math
+$$
 z=
 \begin{pmatrix}
 z_1\\
 z_2
 \end{pmatrix}
-```
+$$
 
 are two correlated instruments, and we want to construct a single instrument
 
-```math
+$$
 h=a^\top z.
-```
+$$
 
 How should we choose the weights `a`?
 
@@ -45,9 +45,9 @@ This problem is useful because it exposes a common structure that appears in man
 
 The principle is always the same:
 
-```math
+$$
 \text{use covariance to remove redundancy before combining information.}
-```
+$$
 
 ## My Current Understanding
 
@@ -62,33 +62,33 @@ So the relevant objective is not "large raw covariance" alone. It is predictive 
 
 Let
 
-```math
+$$
 h=a^\top z.
-```
+$$
 
 Define
 
-```math
+$$
 q=E[zx],
 \qquad
 Q=E[zz^\top].
-```
+$$
 
 Then
 
-```math
+$$
 \mathrm{Cov}(h,x)=a^\top q,
 \qquad
 \mathrm{Var}(h)=a^\top Q a.
-```
+$$
 
 So the problem becomes
 
-```math
+$$
 \boxed{
 \max_a \frac{(a^\top q)^2}{a^\top Q a}
 }
-```
+$$
 
 which is a generalized Rayleigh quotient.
 
@@ -96,59 +96,59 @@ which is a generalized Rayleigh quotient.
 
 Because scaling does not matter, impose
 
-```math
+$$
 a^\top Q a=1.
-```
+$$
 
 Then maximize
 
-```math
+$$
 a^\top q
-```
+$$
 
 subject to that normalization.
 
 The Lagrangian is
 
-```math
+$$
 L=a^\top q-\lambda(a^\top Q a-1).
-```
+$$
 
 The first-order condition is
 
-```math
+$$
 q=2\lambda Q a.
-```
+$$
 
 Hence
 
-```math
+$$
 \boxed{
 a=c\,Q^{-1}q
 }
-```
+$$
 
 for an irrelevant scaling constant `c`.
 
 So the direction of the optimal instrument is
 
-```math
+$$
 Q^{-1}q.
-```
+$$
 
 ## Main Intuition
 
 If the instruments are independent, then
 
-```math
+$$
 Q=I,
-```
+$$
 
 so
 
-```math
+$$
 a\propto q.
-```
+$$
 
 Weights are just proportional to predictive covariance.
 
@@ -156,9 +156,9 @@ But if the instruments are highly correlated, then `Q` has large off-diagonal te
 
 So
 
-```math
+$$
 Q^{-1}
-```
+$$
 
 does not reward correlation by itself. It rewards incremental predictive power after removing redundancy.
 
@@ -166,9 +166,9 @@ does not reward correlation by itself. It rewards incremental predictive power a
 
 The expression
 
-```math
+$$
 \frac{(a^\top q)^2}{a^\top Qa}
-```
+$$
 
 is the same kind of structure that appears in many optimization problems:
 
@@ -233,20 +233,20 @@ The correct combination is not equal weighting and not raw-correlation weighting
 
 - Objective:
 
-```math
+$$
 \max_a \frac{(a^\top q)^2}{a^\top Q a}
-```
+$$
 
 - Solution direction:
 
-```math
+$$
 a\propto Q^{-1}q
-```
+$$
 
 - Interpretation:
 
-```math
+$$
 Q^{-1}
-```
+$$
 
 removes redundancy, so the optimal instrument loads on incremental predictive content rather than duplicated correlation.

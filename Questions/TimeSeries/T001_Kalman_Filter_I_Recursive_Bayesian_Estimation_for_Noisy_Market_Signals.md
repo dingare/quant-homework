@@ -65,21 +65,21 @@ So the filter is:
 
 State equation:
 
-```math
+$$
 x_t = F x_{t-1} + w_t
-```
+$$
 
 Observation equation:
 
-```math
+$$
 y_t = H x_t + v_t
-```
+$$
 
 with
 
-```math
+$$
 x_t \in \mathbb{R}^n,\qquad y_t \in \mathbb{R}^m
-```
+$$
 
 State vector:
 
@@ -119,9 +119,9 @@ Observation covariance $R$:
 
 Innovation covariance $S$:
 
-```math
+$$
 S = HPH^\top + R
-```
+$$
 
 - dimension: $m \times m$
 - meaning: total uncertainty of the observation surprise
@@ -129,9 +129,9 @@ S = HPH^\top + R
 
 Kalman gain $K$:
 
-```math
+$$
 K = PH^\top(HPH^\top + R)^{-1}
-```
+$$
 
 - dimension: $n \times m$
 - meaning: maps observation surprise back into latent-state correction
@@ -141,55 +141,55 @@ K = PH^\top(HPH^\top + R)^{-1}
 
 Prediction:
 
-```math
+$$
 \hat{x}_{t|t-1}=F\hat{x}_{t-1|t-1}
-```
+$$
 
 Prediction covariance:
 
-```math
+$$
 P_{t|t-1}=FP_{t-1|t-1}F^\top+Q
-```
+$$
 
 Predicted observation:
 
-```math
+$$
 \hat{y}_{t|t-1}=H\hat{x}_{t|t-1}
-```
+$$
 
 Innovation:
 
-```math
+$$
 \nu_t=y_t-H\hat{x}_{t|t-1}
-```
+$$
 
 Innovation covariance:
 
-```math
+$$
 S_t=HP_{t|t-1}H^\top+R
-```
+$$
 
 Kalman gain:
 
-```math
+$$
 K_t=P_{t|t-1}H^\top(HP_{t|t-1}H^\top+R)^{-1}=P_{t|t-1}H^\top S_t^{-1}
-```
+$$
 
 Posterior update:
 
-```math
+$$
 \hat{x}_{t|t}=\hat{x}_{t|t-1}+K_t(y_t-H\hat{x}_{t|t-1})
-```
+$$
 
 Posterior covariance:
 
-```math
+$$
 P_{t|t}=(I-K_tH)P_{t|t-1}
-```
+$$
 
 For the one-dimensional latent state with two observations:
 
-```math
+$$
 H=
 \begin{bmatrix}
 1\\
@@ -200,11 +200,11 @@ H^\top=
 \begin{bmatrix}
 1&1
 \end{bmatrix}
-```
+$$
 
 If $P$ is scalar, then:
 
-```math
+$$
 PH^\top
 =
 P
@@ -213,11 +213,11 @@ P
 \end{bmatrix}
 =
 P(1,1)
-```
+$$
 
 Also:
 
-```math
+$$
 HPH^\top
 =
 \begin{bmatrix}
@@ -234,19 +234,19 @@ P
 1&1\\
 1&1
 \end{bmatrix}
-```
+$$
 
 So if
 
-```math
+$$
 S=HPH^\top+R
-```
+$$
 
 then:
 
-```math
+$$
 K=PH^\top S^{-1}=P(1,1)S^{-1}
-```
+$$
 
 This matters because two observation surprises are being aggregated into one latent-state correction.
 
@@ -262,36 +262,36 @@ The posterior is the revised belief after combining the two.
 
 The most important mental model is:
 
-```math
+$$
 \text{Posterior}=\text{Prior}+\text{Gain}\times\text{Surprise}
-```
+$$
 
-If surprise is zero, nothing changes.  
-If surprise is large but noisy, update modestly.  
+If surprise is zero, nothing changes.
+If surprise is large but noisy, update modestly.
 If surprise is large and precise, update aggressively.
 
 ## Geometry
 
-The latent state lives in state space.  
+The latent state lives in state space.
 The noisy measurements live in observation space.
 
-$H$ projects the latent state into observation space.  
-Innovation is the gap between actual observation and projected prediction.  
+$H$ projects the latent state into observation space.
+Innovation is the gap between actual observation and projected prediction.
 Kalman gain maps that gap back into state space.
 
 If one latent state is observed by two signals, then:
 
-```math
+$$
 (1,1)
-```
+$$
 
 is the informative direction because both coordinates move together when the latent state moves.
 
 By contrast:
 
-```math
+$$
 (1,-1)
-```
+$$
 
 mostly reflects disagreement between the two observations, which is usually observation noise rather than real state movement.
 
@@ -380,17 +380,17 @@ Why the framework is so useful:
 
 ## What to Remember
 
-```math
+$$
 \boxed{\text{Kalman filter = recursive Bayesian estimation for latent state extraction from noisy signals.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{Gain tells you how much to move; innovation tells you why to move.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{Correlated signals must be precision-weighted, not naively averaged.}}
-```
+$$
 
 ## Connections
 

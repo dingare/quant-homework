@@ -1,4 +1,4 @@
-# C002 — Shortest Subarray at Least \(K\) with a Monotonic Deque
+# C002 — Shortest Subarray at Least $K$ with a Monotonic Deque
 
 ## Metadata
 
@@ -14,81 +14,81 @@
 
 Given
 
-```math
+$$
 a=[2,-1,2,-4,3,1,-1,2]
-```
+$$
 
-and \(K=5\), find the shortest contiguous subarray whose sum is at least \(K\). Then design an \(O(n)\) algorithm that works even when values can be negative.
+and $K=5$, find the shortest contiguous subarray whose sum is at least $K$. Then design an $O(n)$ algorithm that works even when values can be negative.
 
 ## Example Answer
 
 The prefix sums are
 
-```math
+$$
 S=[0,2,1,3,-1,2,3,2,4].
-```
+$$
 
-At prefix index \(8\),
+At prefix index $8$,
 
-```math
+$$
 S_8-S_4=4-(-1)=5.
-```
+$$
 
 This corresponds to zero-based array indices
 
-```math
+$$
 [4,7],
-```
+$$
 
 whose values are
 
-```math
+$$
 [3,1,-1,2].
-```
+$$
 
-No window of length one, two, or three reaches \(5\). Therefore
+No window of length one, two, or three reaches $5$. Therefore
 
-```math
+$$
 \boxed{\text{shortest length}=4,\qquad\text{indices}=[4,7]}.
-```
+$$
 
 ## Prefix-Sum Reformulation
 
 Define
 
-```math
+$$
 S_0=0,
 \qquad
 S_j=\sum_{t=0}^{j-1}a_t.
-```
+$$
 
-The window \([i,j-1]\) has sum at least \(K\) exactly when
+The window $[i,j-1]$ has sum at least $K$ exactly when
 
-```math
+$$
 S_j-S_i\ge K.
-```
+$$
 
-For each endpoint \(j\), we want a useful earlier index \(i\) with a small prefix value but as large an index as possible, because that gives a shorter window.
+For each endpoint $j$, we want a useful earlier index $i$ with a small prefix value but as large an index as possible, because that gives a shorter window.
 
 ## Monotonic-Deque Invariant
 
-Maintain a deque \(D\) of prefix indices such that
+Maintain a deque $D$ of prefix indices such that
 
-```math
-S_{D_0}<S_{D_1}<\cdots<S_{D_m}.
-```
+$$
+S_{D_0}\lt S_{D_1}\lt \cdots\lt S_{D_m}.
+$$
 
-For each \(j\), perform two operations.
+For each $j$, perform two operations.
 
 ### 1. Pop Valid Starts from the Front
 
 While
 
-```math
+$$
 S_j-S_{D_0}\ge K,
-```
+$$
 
-record the candidate length \(j-D_0\) and remove \(D_0\).
+record the candidate length $j-D_0$ and remove $D_0$.
 
 This start can be discarded: for every future endpoint, it would produce an even longer window.
 
@@ -96,29 +96,29 @@ This start can be discarded: for every future endpoint, it would produce an even
 
 While
 
-```math
+$$
 S_{D_m}\ge S_j,
-```
+$$
 
-remove \(D_m\).
+remove $D_m$.
 
-The new index \(j\) dominates \(D_m\) because
+The new index $j$ dominates $D_m$ because
 
-```math
-j>D_m
+$$
+j\gt D_m
 \qquad\text{and}\qquad
 S_j\le S_{D_m}.
-```
+$$
 
-For every future endpoint \(r\),
+For every future endpoint $r$,
 
-```math
+$$
 S_r-S_j\ge S_r-S_{D_m},
-```
+$$
 
-and starting at \(j\) also creates a shorter window.
+and starting at $j$ also creates a shorter window.
 
-Finally, append \(j\).
+Finally, append $j$.
 
 ## Python Solution
 
@@ -171,9 +171,9 @@ assert shortest_subarray_at_least_k(
 
 Each prefix index is appended once and removed at most once from each end. Therefore
 
-```math
+$$
 \boxed{\text{time }O(n),\qquad\text{space }O(n)}.
-```
+$$
 
 ## Why a Sliding Window Fails
 
@@ -190,7 +190,7 @@ The deque restores a different monotonic structure—an ordered frontier of nond
 - The deque stores candidates, not arbitrary previous prefixes.
 - Front pops certify valid windows.
 - Back pops remove dominated candidates.
-- Amortized \(O(1)\) deque operations yield total \(O(n)\).
+- Amortized $O(1)$ deque operations yield total $O(n)$.
 - “Small prefix value + recent index” is the desirable combination.
 
 ## Common Mistakes
@@ -198,16 +198,16 @@ The deque restores a different monotonic structure—an ordered frontier of nond
 - Applying a nonnegative sliding-window method when negative values are present.
 - Reversing the order of the two while-loops without understanding the invariant.
 - Returning prefix indices instead of array indices.
-- Using \(>\) where \(\ge K\) is required.
-- Claiming \(O(1)\) total space while storing all prefix sums.
+- Using $\gt $ where $\ge K$ is required.
+- Claiming $O(1)$ total space while storing all prefix sums.
 
 ## Interview Follow-Ups
 
 1. Return all shortest valid windows.
-2. Explain why the algorithm is amortized \(O(n)\).
+2. Explain why the algorithm is amortized $O(n)$.
 3. Handle a streaming input.
 4. Compare this problem with count-of-range-sums.
-5. Find the longest subarray whose sum is at most \(K\).
+5. Find the longest subarray whose sum is at most $K$.
 
 ## Finance Connection
 
@@ -215,12 +215,12 @@ This can identify the shortest horizon over which cumulative P&L, alpha, order f
 
 ## What to Remember
 
-```math
+$$
 \boxed{
 \text{prefix sums}
 +\text{monotonic deque}
 +\text{dominance}
 =O(n)
 }.
-```
+$$
 

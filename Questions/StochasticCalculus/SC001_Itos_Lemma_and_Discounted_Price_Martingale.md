@@ -14,9 +14,9 @@
 
 Given
 
-```math
+$$
 dS_t=\mu S_tdt+\sigma S_tdW_t
-```
+$$
 
 derive:
 
@@ -28,33 +28,33 @@ derive:
 
 If
 
-```math
+$$
 dX_t=\mu_tdt+\sigma_tdW_t
-```
+$$
 
 and
 
-```math
+$$
 Y_t=f(t,X_t)
-```
+$$
 
 then
 
-```math
+$$
 dY_t
 =
 f_tdt+f_xdX_t+\frac12 f_{xx}(dX_t)^2
-```
+$$
 
 Using
 
-```math
+$$
 (dW_t)^2=dt,\qquad dt\,dW_t=0,\qquad dt^2=0
-```
+$$
 
 we get
 
-```math
+$$
 \boxed{
 df(t,X_t)
 =
@@ -62,43 +62,43 @@ df(t,X_t)
 +
 \sigma_tf_xdW_t
 }
-```
+$$
 
 ## Example 1: Log Price
 
 Let
 
-```math
+$$
 f(S)=\log S
-```
+$$
 
 Then
 
-```math
+$$
 f'(S)=\frac1S,\qquad f''(S)=-\frac1{S^2}
-```
+$$
 
 Given
 
-```math
+$$
 dS_t=\mu S_tdt+\sigma S_tdW_t
-```
+$$
 
 Itô's lemma gives:
 
-```math
+$$
 \boxed{
 d\log S_t
 =
 \left(\mu-\frac12\sigma^2\right)dt+\sigma dW_t
 }
-```
+$$
 
 The term
 
-```math
+$$
 -\frac12\sigma^2dt
-```
+$$
 
 is the Itô correction.
 
@@ -106,99 +106,99 @@ is the Itô correction.
 
 Let
 
-```math
+$$
 \tilde S_t=e^{-rt}S_t
-```
+$$
 
 Since $e^{-rt}$ is deterministic,
 
-```math
+$$
 d(e^{-rt})=-re^{-rt}dt
-```
+$$
 
 Using Itô product rule:
 
-```math
+$$
 d(e^{-rt}S_t)
 =
 e^{-rt}dS_t+S_td(e^{-rt})+d(e^{-rt})dS_t
-```
+$$
 
 The cross term is zero because $d(e^{-rt})$ only has $dt$.
 
 Therefore:
 
-```math
+$$
 d(e^{-rt}S_t)
 =
 e^{-rt}dS_t-re^{-rt}S_tdt
-```
+$$
 
 Substitute
 
-```math
+$$
 dS_t=\mu S_tdt+\sigma S_tdW_t
-```
+$$
 
 Then:
 
-```math
+$$
 \boxed{
 d(e^{-rt}S_t)
 =
 e^{-rt}S_t[(\mu-r)dt+\sigma dW_t]
 }
-```
+$$
 
 Under risk-neutral measure $Q$,
 
-```math
+$$
 dS_t=rS_tdt+\sigma S_tdW_t^Q
-```
+$$
 
 so
 
-```math
+$$
 \boxed{
 d(e^{-rt}S_t)
 =
 e^{-rt}S_t\sigma dW_t^Q
 }
-```
+$$
 
 Thus:
 
-```math
+$$
 \boxed{
 e^{-rt}S_t \text{ is a martingale under } Q
 }
-```
+$$
 
 ## Important Distinction
 
 Under $Q$,
 
-```math
+$$
 d\log S_t
 =
 \left(r-\frac12\sigma^2\right)dt+\sigma dW_t^Q
-```
+$$
 
 So generally:
 
-```math
+$$
 \boxed{
 \log S_t \text{ is not a martingale}
 }
-```
+$$
 
 The martingale object is:
 
-```math
+$$
 \boxed{
 e^{-rt}S_t
 }
-```
+$$
 
 because $S_t$ is a tradable asset and no-arbitrage pricing requires discounted tradable prices to be martingales.
 
@@ -216,9 +216,9 @@ The risk-neutral measure is chosen to make discounted tradable asset prices mart
 
 In equity, people often model:
 
-```math
+$$
 \log S_t
-```
+$$
 
 or log returns because GBM keeps prices positive and makes log returns normal.
 
@@ -232,30 +232,30 @@ In fixed income, people often model:
 
 But in both equity and fixed income, no-arbitrage pricing is based on:
 
-```math
+$$
 \boxed{
 \frac{\text{tradable asset price}}{\text{numeraire}}
 \text{ is a martingale under the associated pricing measure}
 }
-```
+$$
 
 For money-market numeraire:
 
-```math
+$$
 B_t=e^{\int_0^t r_sds}
-```
+$$
 
 the martingale object is:
 
-```math
+$$
 \frac{P_t}{B_t}
-```
+$$
 
 For a $T$-bond numeraire, the martingale object is:
 
-```math
+$$
 \frac{\text{asset price}}{P(t,T)}
-```
+$$
 
 under the $T$-forward measure.
 
@@ -274,33 +274,33 @@ Change of measure is used in:
 
 Key distinction:
 
-```math
+$$
 P: \text{forecasting / alpha / realized expected return}
-```
+$$
 
-```math
+$$
 Q: \text{pricing / no-arbitrage / hedge ratios}
-```
+$$
 
 ## Common Mistakes
 
 Wrong:
 
-```math
+$$
 \log S_t \text{ is martingale under } Q
-```
+$$
 
 Correct:
 
-```math
+$$
 e^{-rt}S_t \text{ is martingale under } Q
-```
+$$
 
 Wrong:
 
-```math
+$$
 d(e^{-rt}S_t)
-```
+$$
 
 is just ordinary differentiation.
 
@@ -318,33 +318,33 @@ Risk-neutral measure removes drift from discounted tradable asset prices.
 
 ## What to Remember
 
-```math
+$$
 \boxed{
 d\log S_t
 =
 \left(\mu-\frac12\sigma^2\right)dt+\sigma dW_t
 }
-```
+$$
 
-```math
+$$
 \boxed{
 d(e^{-rt}S_t)
 =
 e^{-rt}S_t[(\mu-r)dt+\sigma dW_t]
 }
-```
+$$
 
-```math
+$$
 \boxed{
 e^{-rt}S_t \text{ is martingale under } Q
 }
-```
+$$
 
-```math
+$$
 \boxed{
 \log S_t \text{ is generally not martingale under } Q
 }
-```
+$$
 
 ## Connections
 

@@ -11,17 +11,17 @@
 
 Given the covariance matrix
 
-```math
+$$
 \Sigma=
 \begin{pmatrix}
 4 & 3\\
 3 & 4
 \end{pmatrix}
-```
+$$
 
 with eigenvectors
 
-```math
+$$
 v_1=\frac{1}{\sqrt2}
 \begin{pmatrix}
 1\\
@@ -33,15 +33,15 @@ v_2=\frac{1}{\sqrt2}
 1\\
 -1
 \end{pmatrix}
-```
+$$
 
 and eigenvalues
 
-```math
+$$
 \lambda_1=7,
 \qquad
 \lambda_2=1,
-```
+$$
 
 what do these principal components mean geometrically, and how does the same idea connect to yield-curve curvature and butterfly trades?
 
@@ -49,35 +49,35 @@ what do these principal components mean geometrically, and how does the same ide
 
 For
 
-```math
+$$
 \Sigma=
 \begin{pmatrix}
 4 & 3\\
 3 & 4
 \end{pmatrix},
-```
+$$
 
 the high-variance direction is
 
-```math
+$$
 (1,1)
-```
+$$
 
 and the low-variance direction is
 
-```math
+$$
 (1,-1).
-```
+$$
 
 If the covariance flips sign so that
 
-```math
+$$
 \Sigma=
 \begin{pmatrix}
 4 & -3\\
 -3 & 4
 \end{pmatrix},
-```
+$$
 
 then the roles reverse:
 
@@ -113,11 +113,11 @@ This is why PCA is best read as geometry plus risk decomposition, not just eigen
 
 In rates PCA, the empirical principal directions are usually interpreted as:
 
-```math
+$$
 PC1 \approx \text{level},\qquad
 PC2 \approx \text{slope},\qquad
 PC3 \approx \text{curvature}.
-```
+$$
 
 These are orthogonal directions of historical yield-curve variation.
 
@@ -131,25 +131,25 @@ So the two-dimensional covariance example is the small version of the same idea 
 
 A simple 2s5s10s butterfly is
 
-```math
+$$
 \text{Fly}=y_2-2y_5+y_{10}.
-```
+$$
 
 This is a second-difference operator. It asks whether the 5y point is high or low relative to the line connecting 2y and 10y.
 
 If
 
-```math
-y_5 > \frac{y_2+y_{10}}{2},
-```
+$$
+y_5 \gt  \frac{y_2+y_{10}}{2},
+$$
 
 then the 5y yield is high relative to the wings, so 5y is cheap.
 
 If
 
-```math
-y_5 < \frac{y_2+y_{10}}{2},
-```
+$$
+y_5 \lt  \frac{y_2+y_{10}}{2},
+$$
 
 then the 5y yield is low relative to the wings, so 5y is rich.
 
@@ -157,31 +157,31 @@ then the 5y yield is low relative to the wings, so 5y is rich.
 
 A parallel level shift
 
-```math
+$$
 y_2 \to y_2+c,\qquad
 y_5 \to y_5+c,\qquad
 y_{10}\to y_{10}+c
-```
+$$
 
 gives
 
-```math
+$$
 (y_2+c)-2(y_5+c)+(y_{10}+c)=y_2-2y_5+y_{10},
-```
+$$
 
 so level cancels because
 
-```math
+$$
 c-2c+c=0.
-```
+$$
 
 A linear slope move also approximately cancels because if 5y lies on the line between 2y and 10y, then
 
-```math
+$$
 y_5 \approx \frac{y_2+y_{10}}{2}
 \quad\Rightarrow\quad
 y_2-2y_5+y_{10}\approx 0.
-```
+$$
 
 That is why the butterfly primarily isolates curvature rather than level or slope.
 
@@ -198,9 +198,9 @@ In practice, real trades are not equal-notional. They should be DV01-adjusted an
 
 A practical butterfly is chosen so that
 
-```math
+$$
 w_2DV01_2+w_5DV01_5+w_{10}DV01_{10}=0
-```
+$$
 
 to make the position approximately level-neutral. Traders may also choose weights to reduce slope exposure, leaving mainly curvature exposure.
 
@@ -215,27 +215,27 @@ They are related, but not identical.
 
 Wrong:
 
-```math
+$$
 (1,1)\text{ is always the common factor.}
-```
+$$
 
 Correct:
 
-```math
+$$
 \text{The dominant factor depends on the covariance structure.}
-```
+$$
 
 Wrong:
 
-```math
+$$
 \text{Low variance means a good trade.}
-```
+$$
 
 Correct:
 
-```math
+$$
 \text{Low variance only means that direction was historically stable.}
-```
+$$
 
 It does not imply mean reversion or positive expected return.
 
@@ -251,14 +251,14 @@ It does not imply mean reversion or positive expected return.
 
 ## What to Remember
 
-```math
+$$
 \boxed{\text{PCA rotates covariance into orthogonal risk directions.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{Butterfly trades curvature because they largely cancel level and linear slope.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{In rates, curvature means the belly moves differently from the wings.}}
-```
+$$

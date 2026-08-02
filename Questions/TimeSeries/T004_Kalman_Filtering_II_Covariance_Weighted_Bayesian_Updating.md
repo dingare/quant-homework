@@ -15,23 +15,23 @@
 
 Suppose a latent state
 
-```math
+$$
 x=(L,S)^\top
-```
+$$
 
 has prior distribution
 
-```math
+$$
 x\sim N(m,P),
-```
+$$
 
 and observations satisfy
 
-```math
+$$
 y=Hx+\varepsilon,
 \qquad
 \varepsilon\sim N(0,R).
-```
+$$
 
 How should we think about:
 
@@ -59,9 +59,9 @@ Kalman filtering is one of the cleanest dynamic versions of that idea.
 
 The innovation
 
-```math
+$$
 y-Hm
-```
+$$
 
 is just observation minus prediction.
 
@@ -73,49 +73,49 @@ That tradeoff is exactly what the Kalman gain encodes.
 
 Innovation:
 
-```math
+$$
 \nu=y-Hm
-```
+$$
 
 Innovation covariance:
 
-```math
+$$
 S=HPH^\top+R
-```
+$$
 
 Kalman gain:
 
-```math
+$$
 K=PH^\top(HPH^\top+R)^{-1}=PH^\top S^{-1}
-```
+$$
 
 Posterior mean:
 
-```math
+$$
 m_{\text{new}}=m+K(y-Hm)=m+K\nu
-```
+$$
 
 Posterior covariance:
 
-```math
+$$
 P_{\text{new}}=(I-KH)P
-```
+$$
 
 One-step prediction:
 
-```math
+$$
 m_{t+1|t}=F m_{t|t},
 \qquad
 P_{t+1|t}=F P_{t|t}F^\top+Q
-```
+$$
 
 ## Why Covariance Determines Trust
 
 The gain
 
-```math
+$$
 K=PH^\top(HPH^\top+R)^{-1}
-```
+$$
 
 balances two uncertainty sources:
 
@@ -124,17 +124,17 @@ balances two uncertainty sources:
 
 If
 
-```math
+$$
 R
-```
+$$
 
 is large, observations are noisy, so we trust them less.
 
 If
 
-```math
+$$
 P
-```
+$$
 
 is large, the prior is uncertain, so we trust the prior less.
 
@@ -152,9 +152,9 @@ So a negative entry in the gain is not a bug. It is a direct expression of cross
 
 The posterior mean depends on the realized
 
-```math
+$$
 y.
-```
+$$
 
 The posterior covariance does not.
 
@@ -190,9 +190,9 @@ This is another covariance-adjusted projection problem.
 
 The recurring principle is:
 
-```math
+$$
 \text{remove redundancy first, then combine information.}
-```
+$$
 
 ## Common Mistakes
 
@@ -233,20 +233,20 @@ The Kalman filter is the natural way to update those hidden objects over time wi
 
 - Innovation:
 
-```math
+$$
 \nu=y-Hm
-```
+$$
 
 - Innovation covariance:
 
-```math
+$$
 S=HPH^\top+R
-```
+$$
 
 - Kalman gain:
 
-```math
+$$
 K=PH^\top(HPH^\top+R)^{-1}
-```
+$$
 
 - The gain tells us how much of today’s surprise is signal after accounting for covariance and measurement noise.

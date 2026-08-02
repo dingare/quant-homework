@@ -41,21 +41,21 @@ That is especially attractive when the number of constraints is far smaller than
 
 Consider the equality-constrained problem
 
-```math
+$$
 \min_x \frac12\|x-a\|^2
 \quad\text{subject to}\quad
 Bx=c,
-```
+$$
 
 with
 
-```math
+$$
 x\in\mathbb R^n,
 \qquad
 B\in\mathbb R^{m\times n},
 \qquad
 c\in\mathbb R^m.
-```
+$$
 
 Here:
 
@@ -74,73 +74,73 @@ In finance, the primal variables could be:
 
 Introduce one multiplier for each equality constraint:
 
-```math
+$$
 \lambda\in\mathbb R^m.
-```
+$$
 
 Using the convention
 
-```math
+$$
 \mathcal L(x,\lambda)
 =
 \frac12(x-a)^\top(x-a)+\lambda^\top(Bx-c),
-```
+$$
 
 the first-order condition in $x$ is
 
-```math
+$$
 \nabla_x \mathcal L
 =
 x-a+B^\top\lambda
 =
 0.
-```
+$$
 
 So
 
-```math
+$$
 x(\lambda)=a-B^\top\lambda.
-```
+$$
 
 ## The Formal Dual Problem
 
 The dual function is
 
-```math
+$$
 g(\lambda)=\inf_x \mathcal L(x,\lambda).
-```
+$$
 
 The dual problem is therefore
 
-```math
+$$
 \max_\lambda g(\lambda).
-```
+$$
 
 This matters in interviews because the dual is not merely "substitute $x(\lambda)$ back somewhere." Formally, we minimize the Lagrangian over $x$ first and then maximize over $\lambda$.
 
 For this quadratic problem, substituting $x(\lambda)$ back into the constraint gives
 
-```math
+$$
 B(a-B^\top\lambda)=c,
-```
+$$
 
 so
 
-```math
+$$
 BB^\top\lambda=Ba-c.
-```
+$$
 
 If $B$ has full row rank, then $BB^\top$ is invertible and
 
-```math
+$$
 \lambda=(BB^\top)^{-1}(Ba-c).
-```
+$$
 
 Then
 
-```math
+$$
 x^*=a-B^\top\lambda.
-```
+$$
 
 If $B$ does not have full row rank, we should not write an inverse blindly. We instead solve the linear system in a least-norm or pseudoinverse sense.
 
@@ -183,7 +183,7 @@ This is common in:
 - constrained least squares,
 - projection problems.
 
-If instead $m\approx n$ or $m>n$, the dual may not be smaller and we often solve the primal directly or use iterative methods.
+If instead $m\approx n$ or $m\gt n$, the dual may not be smaller and we often solve the primal directly or use iterative methods.
 
 ## KKT and Convexity
 
@@ -197,15 +197,15 @@ For equality-constrained convex problems, the key conditions are:
 
 For inequality constraints such as
 
-```math
+$$
 h(x)\le 0,
-```
+$$
 
 the multipliers also satisfy
 
-```math
+$$
 \lambda\ge 0,
-```
+$$
 
 and complementary slackness enters the picture.
 
@@ -229,25 +229,25 @@ The multiplier also gives sensitivity information.
 
 Suppose the constraint right-hand side changes from
 
-```math
+$$
 c
 \to
 c+\Delta c.
-```
+$$
 
 Then the optimal objective changes at first order according to the multiplier.
 
 With the convention
 
-```math
+$$
 \mathcal L(x,\lambda)=f(x)+\lambda^\top(Bx-c),
-```
+$$
 
 the sensitivity of the optimal value with respect to $c$ is
 
-```math
+$$
 -\lambda^*.
-```
+$$
 
 So the sign depends on the Lagrangian convention. That is an easy place to lose points if I state the shadow-price rule too casually.
 
@@ -259,9 +259,9 @@ Interviewers usually want to hear this point clearly.
 
 If $n=10^7$, then a dense $n\times n$ matrix has
 
-```math
+$$
 10^{14}
-```
+$$
 
 entries, which is computationally absurd to store and invert directly.
 
@@ -269,9 +269,9 @@ Even when the inverse exists mathematically, numerical work almost never forms i
 
 Instead we solve systems such as
 
-```math
+$$
 Qx=b
-```
+$$
 
 using factorization or iterative methods.
 

@@ -15,15 +15,15 @@
 
 Suppose there are
 
-```math
+$$
 N=2^n
-```
+$$
 
 players with deterministic strength ranking
 
-```math
-1>2>3>\cdots>N.
-```
+$$
+1\gt 2\gt 3\gt \cdots\gt N.
+$$
 
 The bracket is drawn uniformly at random, and the stronger player always wins.
 
@@ -51,7 +51,7 @@ Fix player 1.
 
 Hence
 
-```math
+$$
 \boxed{
 P(\text{1 and 2 meet in the final})
 =
@@ -59,27 +59,27 @@ P(\text{1 and 2 meet in the final})
 =
 \frac{2^{n-1}}{2^n-1}
 }
-```
+$$
 
 ### 2. Player k Reaches Top T
 
 Player `k` loses only to players
 
-```math
+$$
 1,2,\dots,k-1.
-```
+$$
 
 So player `k` reaches a given stage exactly when the relevant subtree contains no stronger player.
 
 If the goal is to finish in Top `T`, where `T` is a power of 2, then the relevant subtree size is
 
-```math
+$$
 s=\frac{N}{T}.
-```
+$$
 
 Therefore
 
-```math
+$$
 \boxed{
 P(\text{player }k\text{ reaches Top }T)
 =
@@ -87,66 +87,66 @@ P(\text{player }k\text{ reaches Top }T)
 =
 \frac{\binom{N-k}{N/T-1}}{\binom{N-1}{N/T-1}}
 }
-```
+$$
 
 Example: if `N=16`, then the probability that player 5 reaches Top 4 is
 
-```math
+$$
 \frac{\binom{11}{3}}{\binom{15}{3}}
 =
 \frac{33}{91}.
-```
+$$
 
 ### 3. Champion
 
-```math
+$$
 P(\text{player 1 is champion})=1
-```
+$$
 
 and for every `k>1`,
 
-```math
+$$
 P(\text{player }k\text{ is champion})=0.
-```
+$$
 
 ### 4. Which Round Do Players 1 and 2 Meet?
 
 Fix player 1.
 
-```math
+$$
 \boxed{
 P(R=r)=\frac{2^{r-1}}{N-1}
 }
 \qquad r=1,2,\dots,n.
-```
+$$
 
 Also,
 
-```math
+$$
 E[R]
 =
 \sum_{r=1}^n r\frac{2^{r-1}}{N-1}.
-```
+$$
 
 Using
 
-```math
+$$
 \sum_{r=1}^n r2^{r-1}=(n-1)2^n+1,
-```
+$$
 
 we obtain
 
-```math
+$$
 \boxed{
 E[R]=\frac{(n-1)2^n+1}{2^n-1}
 }.
-```
+$$
 
 As `n\to\infty`,
 
-```math
+$$
 E[R]\approx n-1.
-```
+$$
 
 ### 5. General Pair: Player 1 and Player k
 
@@ -154,7 +154,7 @@ Unlike player 2, player `k` may be eliminated before meeting player 1. The place
 
 Thus
 
-```math
+$$
 \boxed{
 P(\text{1 and }k\text{ meet in round }r)
 =
@@ -163,11 +163,11 @@ P(\text{1 and }k\text{ meet in round }r)
 \frac{\binom{N-k}{2^{r-1}-1}}{\binom{N-2}{2^{r-1}-1}}
 }
 \qquad r=1,2,\dots,n.
-```
+$$
 
 Summing over all rounds gives
 
-```math
+$$
 \boxed{
 P(\text{1 and }k\text{ meet})
 =
@@ -176,18 +176,18 @@ P(\text{1 and }k\text{ meet})
 \cdot
 \frac{\binom{N-k}{2^{r-1}-1}}{\binom{N-2}{2^{r-1}-1}}
 }.
-```
+$$
 
 If needed, the conditional expected meeting round is
 
-```math
+$$
 \boxed{
 E[R\mid \text{meet}]
 =
 \frac{\sum_{r=1}^n r\,P(\text{meet in round }r)}
 {P(\text{meet})}
 }.
-```
+$$
 
 ## Key Knowledge Points
 

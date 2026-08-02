@@ -15,37 +15,37 @@
 
 Given
 
-```math
+$$
 \mu=
 \begin{pmatrix}
 4\\
 2\\
 1
 \end{pmatrix},
-```
+$$
 
 and
 
-```math
+$$
 \Sigma=
 \begin{pmatrix}
 4&1&0\\
 1&2&1\\
 0&1&2
 \end{pmatrix},
-```
+$$
 
 maximize
 
-```math
+$$
 \mu^\top w-\frac12 w^\top \Sigma w
-```
+$$
 
 subject to
 
-```math
+$$
 1^\top w=0.
-```
+$$
 
 How do we:
 
@@ -77,25 +77,25 @@ So the constrained problem is not just "same objective, smaller domain." It is e
 
 Without the constraint, the first-order condition is
 
-```math
+$$
 \mu-\Sigma w=0,
-```
+$$
 
 so
 
-```math
+$$
 w_{\text{unc}}=\Sigma^{-1}\mu.
-```
+$$
 
 Solving
 
-```math
+$$
 \Sigma w=\mu
-```
+$$
 
 gives
 
-```math
+$$
 \boxed{
 w_{\text{unc}}=
 \begin{pmatrix}
@@ -104,13 +104,13 @@ w_{\text{unc}}=
 0.3
 \end{pmatrix}
 }
-```
+$$
 
 with
 
-```math
-1^\top w_{\text{unc}}=1.6>0.
-```
+$$
+1^\top w_{\text{unc}}=1.6\gt 0.
+$$
 
 So the unconstrained optimizer naturally wants a net long portfolio.
 
@@ -118,40 +118,40 @@ So the unconstrained optimizer naturally wants a net long portfolio.
 
 Introduce the Lagrangian
 
-```math
+$$
 \mathcal L(w,\lambda)
 =
 \mu^\top w-\frac12 w^\top\Sigma w-\lambda\,1^\top w.
-```
+$$
 
 The first-order condition in `w` is
 
-```math
+$$
 \mu-\Sigma w-\lambda 1=0,
-```
+$$
 
 so
 
-```math
+$$
 w=\Sigma^{-1}(\mu-\lambda 1).
-```
+$$
 
 Imposing
 
-```math
+$$
 1^\top w=0
-```
+$$
 
 gives
 
-```math
+$$
 \lambda=
 \frac{1^\top\Sigma^{-1}\mu}{1^\top\Sigma^{-1}1}.
-```
+$$
 
 Here,
 
-```math
+$$
 \Sigma^{-1}\mu=
 \begin{pmatrix}
 0.9\\
@@ -165,25 +165,25 @@ Here,
 0.2\\
 0.4
 \end{pmatrix},
-```
+$$
 
 so
 
-```math
+$$
 1^\top\Sigma^{-1}\mu=1.6,
 \qquad
 1^\top\Sigma^{-1}1=0.8,
-```
+$$
 
 and therefore
 
-```math
+$$
 \boxed{\lambda=2.}
-```
+$$
 
 Thus
 
-```math
+$$
 w^*
 =
 \Sigma^{-1}(\mu-2\,1)
@@ -193,11 +193,11 @@ w^*
 0\\
 -0.5
 \end{pmatrix}.
-```
+$$
 
 So the constrained optimum is
 
-```math
+$$
 \boxed{
 w^*=
 \begin{pmatrix}
@@ -206,7 +206,7 @@ w^*=
 -0.5
 \end{pmatrix}
 }
-```
+$$
 
 which is dollar neutral.
 
@@ -214,23 +214,23 @@ which is dollar neutral.
 
 The constraint
 
-```math
+$$
 1^\top w=0
-```
+$$
 
 forbids net long exposure.
 
 That means the optimizer cannot use the part of the signal that points in the all-ones direction. Instead of optimizing the raw vector
 
-```math
+$$
 \mu,
-```
+$$
 
 it optimizes the adjusted signal
 
-```math
+$$
 \mu-\lambda 1.
-```
+$$
 
 So the constraint effectively subtracts the same amount from every expected return until the neutral portfolio condition is satisfied.
 
@@ -238,9 +238,9 @@ So the constraint effectively subtracts the same amount from every expected retu
 
 The multiplier
 
-```math
+$$
 \lambda
-```
+$$
 
 has two linked meanings.
 
@@ -248,20 +248,20 @@ First, it is the shadow value of relaxing the neutrality constraint. It tells us
 
 Second, it is the uniform shift applied to expected returns in order to remove the forbidden direction. Here
 
-```math
+$$
 \lambda=2
-```
+$$
 
 means the optimizer behaves as if the effective alpha vector were
 
-```math
+$$
 \mu-2\,1=
 \begin{pmatrix}
 2\\
 0\\
 -1
 \end{pmatrix}.
-```
+$$
 
 ## Geometry
 
@@ -269,9 +269,9 @@ Without constraints, the optimizer searches the full space.
 
 With
 
-```math
+$$
 1^\top w=0,
-```
+$$
 
 the feasible set becomes a plane. The constrained solution is the covariance-metric projection of the unconstrained optimum onto that plane.
 
@@ -316,26 +316,26 @@ Only the constraint vector or constraint matrix changes.
 
 - Unconstrained optimum:
 
-```math
+$$
 w_{\text{unc}}=\Sigma^{-1}\mu.
-```
+$$
 
 - Constrained optimum:
 
-```math
+$$
 w^*=\Sigma^{-1}(\mu-\lambda 1),
 \qquad
 \lambda=\frac{1^\top\Sigma^{-1}\mu}{1^\top\Sigma^{-1}1}.
-```
+$$
 
 - In this example:
 
-```math
+$$
 w_{\text{unc}}=(0.9,0.4,0.3)^\top,
 \qquad
 \lambda=2,
 \qquad
 w^*=(0.5,0,-0.5)^\top.
-```
+$$
 
 - Constraints change the effective signal being optimized.

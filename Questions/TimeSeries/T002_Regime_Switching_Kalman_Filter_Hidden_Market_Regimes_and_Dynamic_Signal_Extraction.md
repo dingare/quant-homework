@@ -15,21 +15,21 @@
 
 Suppose the hidden state evolves as
 
-```math
+$$
 x_t=A_{s_t}x_{t-1}+w_t
-```
+$$
 
 where
 
-```math
+$$
 s_t\in\{0,1\}
-```
+$$
 
 is an unobserved Markov regime, and observations satisfy
 
-```math
+$$
 y_t=Hx_t+v_t.
-```
+$$
 
 How do we estimate both the latent factor $x_t$ and the hidden regime $s_t$ at the same time?
 

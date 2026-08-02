@@ -15,17 +15,17 @@
 
 Suppose $X_t$ is a martingale with $X_0=0$, and define the stopping time
 
-```math
+$$
 \tau=\inf\{t: X_t\in\{a,-b\}\}
-```
+$$
 
-for $a,b>0$.
+for $a,b\gt 0$.
 
 Show that
 
-```math
+$$
 P(X_\tau=a)=\frac{b}{a+b}
-```
+$$
 
 and explain why changing stopping rules cannot generate alpha in a fair game.
 
@@ -43,9 +43,9 @@ Many trading rules look appealing because they improve win rate or truncate loss
 
 A martingale is a fair game in conditional expectation:
 
-```math
+$$
 E[X_t\mid\mathcal F_s]=X_s.
-```
+$$
 
 So the stopping rule can change:
 
@@ -60,49 +60,49 @@ but not the expected value, provided the stopping argument is valid.
 
 At the stopping time, the process ends at either $a$ or $-b$, so
 
-```math
+$$
 X_\tau\in\{a,-b\}.
-```
+$$
 
 Let
 
-```math
+$$
 p=P(X_\tau=a).
-```
+$$
 
 Then
 
-```math
+$$
 P(X_\tau=-b)=1-p.
-```
+$$
 
 If optional stopping applies, then
 
-```math
+$$
 E[X_\tau]=E[X_0]=0.
-```
+$$
 
 Therefore
 
-```math
+$$
 ap+(-b)(1-p)=0.
-```
+$$
 
 Solve:
 
-```math
+$$
 ap-b+bp=0
 \quad\Longrightarrow\quad
 p(a+b)=b
 \quad\Longrightarrow\quad
 \boxed{P(X_\tau=a)=\frac{b}{a+b}}.
-```
+$$
 
 Similarly,
 
-```math
+$$
 \boxed{P(X_\tau=-b)=\frac{a}{a+b}}.
-```
+$$
 
 ## Intuition
 
@@ -119,11 +119,11 @@ Suppose a strategy exits at:
 
 This can create an impressive win rate without creating positive expected value. What matters is:
 
-```math
+$$
 E[\text{PnL}]
 =
 \sum \text{probability}\times \text{payoff}.
-```
+$$
 
 Optional stopping says that in a fair game, exit engineering alone changes the shape of outcomes, not the mean.
 

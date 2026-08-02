@@ -15,9 +15,9 @@
 
 Suppose $X_t$ and $Y_t$ are both non-stationary random walks, but there exists some $\beta$ such that
 
-```math
+$$
 Z_t=Y_t-\beta X_t
-```
+$$
 
 is stationary.
 
@@ -40,9 +40,9 @@ Cointegration says that although each series may wander on its own, a particular
 
 So the real traded object is not "Asset A versus Asset B." It is the residual:
 
-```math
+$$
 Y_t-\beta X_t.
-```
+$$
 
 ## Why High Correlation Is Not Enough
 
@@ -54,9 +54,9 @@ That means a highly correlated pair can still be a terrible mean-reversion trade
 
 If
 
-```math
+$$
 Z_t=Y_t-\beta X_t
-```
+$$
 
 is stationary, then the spread has:
 
@@ -71,15 +71,15 @@ Only then does it make sense to say the spread is unusually wide or unusually ti
 
 Correlation asks:
 
-```math
+$$
 \text{Do these series move together?}
-```
+$$
 
 Cointegration asks:
 
-```math
+$$
 \text{Are these series tied to a long-run equilibrium?}
-```
+$$
 
 For trading, the second question is the important one.
 
@@ -87,9 +87,9 @@ For trading, the second question is the important one.
 
 A common representation is
 
-```math
+$$
 Y_t=\alpha+\beta X_t+e_t
-```
+$$
 
 where:
 

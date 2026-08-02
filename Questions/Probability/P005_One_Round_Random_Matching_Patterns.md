@@ -28,10 +28,10 @@ Find:
 
 The number of perfect matchings of $2n$ labeled people is
 
-```math
+$$
 (2n-1)!!=(2n-1)(2n-3)\cdots3\cdot1
 =\frac{(2n)!}{2^n n!}.
-```
+$$
 
 Sequentially, the first fixed person has $2n-1$ possible partners, the next unmatched fixed person has $2n-3$, and so on.
 
@@ -41,27 +41,27 @@ Alternatively, start with $(2n)!$ permutations, divide by $2^n$ because order wi
 
 For couple $i$, define
 
-```math
+$$
 I_i=\mathbf 1\{\text{couple }i\text{ is matched together}\}.
-```
+$$
 
 Then
 
-```math
+$$
 X=\sum_{i=1}^n I_i.
-```
+$$
 
 For either member of a fixed couple, exactly one of the $2n-1$ possible partners is their significant other. Hence
 
-```math
+$$
 P(I_i=1)=\frac1{2n-1}.
-```
+$$
 
 By linearity of expectation, which does not require independence,
 
-```math
+$$
 \boxed{E[X]=\frac{n}{2n-1}}.
-```
+$$
 
 In particular, $E[X]\to 1/2$.
 
@@ -69,37 +69,37 @@ In particular, $E[X]\to 1/2$.
 
 For $i\ne j$,
 
-```math
+$$
 E[I_iI_j]
 =P(I_i=1,I_j=1)
 =\frac1{(2n-1)(2n-3)}.
-```
+$$
 
 The first couple must match, after which the second couple is matching within a remaining population of $2n-2$ people. Therefore
 
-```math
+$$
 \mathrm{Cov}(I_i,I_j)
-=\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}>0.
-```
+=\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}\gt 0.
+$$
 
 The indicators are not independent: one successful couple slightly increases the chance that another couple succeeds.
 
 Using
 
-```math
+$$
 \mathrm{Var}(X)
 =\sum_i\mathrm{Var}(I_i)
-+2\sum_{i<j}\mathrm{Cov}(I_i,I_j),
-```
++2\sum_{i\lt j}\mathrm{Cov}(I_i,I_j),
+$$
 
 and $2\binom n2=n(n-1)$ gives
 
-```math
+$$
 \boxed{
 \mathrm{Var}(X)
 =\frac{4n(n-1)^2}{(2n-1)^2(2n-3)}
 }.
-```
+$$
 
 Thus $\mathrm{Var}(X)\to 1/2$ as $n\to\infty$.
 
@@ -114,24 +114,24 @@ This is a rare-event counting problem:
 
 A precise factorial-moment argument uses
 
-```math
+$$
 (X)_k=X(X-1)\cdots(X-k+1).
-```
+$$
 
 For fixed $k$,
 
-```math
+$$
 E[(X)_k]
 =\frac{n(n-1)\cdots(n-k+1)}
 {(2n-1)(2n-3)\cdots(2n-(2k-1))}
 \longrightarrow\left(\frac12\right)^k.
-```
+$$
 
 These are the factorial moments of a $\mathrm{Poisson}(1/2)$ random variable. Therefore
 
-```math
+$$
 \boxed{X\xrightarrow{d}\mathrm{Poisson}\left(\frac12\right)}.
-```
+$$
 
 ### Common Mistakes
 
@@ -156,58 +156,58 @@ Let $A_i$ be the event that couple $i$ is matched together. For $r$ couples, def
 
 If a specified set of $j$ couples is forced to match, the remaining $2r-2j$ people can be paired in
 
-```math
+$$
 (2r-2j-1)!!
-```
+$$
 
 ways. There are $\binom rj$ choices of the specified couples. Inclusion-exclusion therefore gives
 
-```math
+$$
 \boxed{
 D_r=\sum_{j=0}^r(-1)^j\binom rj(2r-2j-1)!!
 }.
-```
+$$
 
 The convention $(-1)!!=1$ represents the single empty matching after everyone has already been paired.
 
 Consequently,
 
-```math
+$$
 \boxed{
 P(X=0)=\frac{D_n}{(2n-1)!!}
 }.
-```
+$$
 
 Because $X\Rightarrow\mathrm{Poisson}(1/2)$,
 
-```math
+$$
 P(X=0)\longrightarrow e^{-1/2}\approx0.6065.
-```
+$$
 
 ### Exact Distribution
 
 For exactly $k$ couples to match, first choose those couples and then require zero matches among the remaining $n-k$ couples:
 
-```math
+$$
 \boxed{
 P(X=k)=\frac{\binom nkD_{n-k}}{(2n-1)!!}
 }.
-```
+$$
 
 Equivalently,
 
-```math
+$$
 P(X=k)
 =\frac{\binom nk}{(2n-1)!!}
 \sum_{j=0}^{n-k}(-1)^j\binom{n-k}{j}
 \big(2(n-k-j)-1\big)!!.
-```
+$$
 
 A useful feasibility check is
 
-```math
+$$
 P(X=n-1)=0:
-```
+$$
 
 if $n-1$ couples match, the final two people are also a couple and must match.
 
@@ -219,27 +219,27 @@ There are $n$ members of type M and $n$ members of type F. All $2n$ people are p
 
 Match each of the $n$ M members bijectively to the $n$ F members. There are $n!$ favorable matchings, so
 
-```math
+$$
 \boxed{
 P(X=n)=\frac{n!}{(2n-1)!!}
 =\frac{2^n(n!)^2}{(2n)!}
 =\frac{2^n}{\binom{2n}{n}}
 }.
-```
+$$
 
 ### Expected Number of Mixed Pairs
 
 For each M member, let $I_i$ indicate that their partner is type F. Every mixed pair contains exactly one M member, so $X=\sum_{i=1}^n I_i$ without double counting. Since
 
-```math
+$$
 P(I_i=1)=\frac{n}{2n-1},
-```
+$$
 
 linearity gives
 
-```math
+$$
 \boxed{E[X]=\frac{n^2}{2n-1}}.
-```
+$$
 
 ### Exact Distribution and the Parity Constraint
 
@@ -251,12 +251,12 @@ If there are $k$ mixed pairs, then $n-k$ M members and $n-k$ F members remain to
 
 Thus
 
-```math
+$$
 \boxed{
 P(X=k)=
 \frac{\binom nk^2k!\big((n-k-1)!!\big)^2}{(2n-1)!!}
 }
-```
+$$
 
 when $n-k$ is even, and $P(X=k)=0$ otherwise. In particular, $X$ has the same parity as $n$.
 
@@ -264,26 +264,26 @@ when $n-k$ is even, and $P(X=k)=0$ otherwise. In particular, $X$ has the same pa
 
 For two distinct M members,
 
-```math
+$$
 E[I_iI_j]
 =\frac{n}{2n-1}\frac{n-1}{2n-3}.
-```
+$$
 
 Therefore
 
-```math
+$$
 \mathrm{Cov}(I_i,I_j)
-=\frac{n}{(2n-1)^2(2n-3)}>0,
-```
+=\frac{n}{(2n-1)^2(2n-3)}\gt 0,
+$$
 
 and
 
-```math
+$$
 \boxed{
 \mathrm{Var}(X)
 =\frac{2n^2(n-1)^2}{(2n-1)^2(2n-3)}
 }.
-```
+$$
 
 Here $E[X]\sim n/2$ and $\mathrm{Var}(X)\sim n/4$. Unlike the matched-couples count, this is not a fixed-mean rare-event problem.
 
@@ -295,18 +295,18 @@ Among $2n$ people, suppose a specified subset contains $m$ people. Let $X$ be th
 
 Define one indicator $I_{ij}$ for each potential pair inside the subset. There are $\binom m2$ potential pairs and
 
-```math
+$$
 P(I_{ij}=1)=\frac1{2n-1}.
-```
+$$
 
 Hence
 
-```math
+$$
 \boxed{
 E[X]=\frac{\binom m2}{2n-1}
 =\frac{m(m-1)}{2(2n-1)}
 }.
-```
+$$
 
 The indicator should be attached to each potential pair, not to each person; otherwise an actual internal pair may be counted twice.
 
@@ -316,29 +316,29 @@ For two potential internal pairs, there are two covariance types.
 
 If they share a person, they are mutually exclusive:
 
-```math
+$$
 E[I_{ij}I_{ik}]=0,
 \qquad
 \mathrm{Cov}(I_{ij},I_{ik})=-\frac1{(2n-1)^2}.
-```
+$$
 
 If their four endpoints are distinct:
 
-```math
+$$
 E[I_{ij}I_{kl}]
 =\frac1{(2n-1)(2n-3)},
-```
+$$
 
 so
 
-```math
+$$
 \mathrm{Cov}(I_{ij},I_{kl})
-=\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}>0.
-```
+=\frac1{(2n-1)(2n-3)}-\frac1{(2n-1)^2}\gt 0.
+$$
 
 There are $3\binom m3$ unordered pairs of potential edges that share one endpoint and $3\binom m4$ unordered pairs of disjoint potential edges. Therefore
 
-```math
+$$
 \boxed{
 \begin{aligned}
 \mathrm{Var}(X)
@@ -349,7 +349,7 @@ There are $3\binom m3$ unordered pairs of potential edges that share one endpoin
 \right].
 \end{aligned}
 }
-```
+$$
 
 The factors $3$ come from the three two-edge configurations on a selected triple or quadruple; the additional factor $2$ comes from the covariance expansion.
 
@@ -357,18 +357,18 @@ The factors $3$ come from the three two-edge configurations on a selected triple
 
 For a specified subset of $2k$ people to pair entirely within itself, both the subset and its complement must form perfect matchings. Thus
 
-```math
+$$
 \boxed{
 P(\text{the specified }2k\text{ people form a closed matching})
 =\frac{(2k-1)!!(2n-2k-1)!!}{(2n-1)!!}
 }.
-```
+$$
 
 For four specified people this becomes
 
-```math
+$$
 \frac{3}{(2n-1)(2n-3)},
-```
+$$
 
 corresponding to their three internal matchings.
 
@@ -376,9 +376,9 @@ corresponding to their three internal matchings.
 
 Since
 
-```math
+$$
 E[X]\sim\frac{m^2}{4n},
-```
+$$
 
 the scale of $m$ determines the limit:
 
@@ -392,11 +392,11 @@ This is the general rare-event principle: a finite limiting mean suggests Poisso
 
 Return to $n$ couples and condition on no couple being matched together. Fix a person A, their partner A', and another person B who is not A'. Then
 
-```math
+$$
 \boxed{
 P(\text{A is paired with B}\mid X=0)=\frac1{2n-2}
 }.
-```
+$$
 
 The condition removes A' from A's candidate set. All remaining $2n-2$ candidates are still symmetric under relabeling that preserves the couple structure and the event $X=0$.
 
@@ -422,19 +422,19 @@ When facing a one-round random-matching problem:
 - Writing $m!/(2^m(m/2)!)$ instead of $m!/(2^{m/2}(m/2)!)$ for a perfect matching of $m$ even objects.
 - Using $2n-4$ rather than $2n-1$ as the first denominator when exposing the partner of one fixed person.
 - Forgetting the factor $3$ when two potential edges are constructed from a chosen triple or quadruple.
-- Forgetting the factor $2$ in $2\sum_{\alpha<\beta}\mathrm{Cov}(I_\alpha,I_\beta)$.
+- Forgetting the factor $2$ in $2\sum_{\alpha\lt \beta}\mathrm{Cov}(I_\alpha,I_\beta)$.
 - Treating weak dependence as exact independence.
 - Forgetting that a conditioned matching may remain marginally symmetric even though its edges are globally dependent.
 
 ## Final Takeaways
 
-```math
-\boxed{\#\text{ perfect matchings of }2n\text{ labeled objects}=(2n-1)!!}
-```
+$$
+\boxed{N_{\text{matchings}}(2n)=(2n-1)!!}
+$$
 
 The reusable toolkit is:
 
-```math
+$$
 \boxed{
 \text{sequential exposure}
 +\text{ indicators}
@@ -442,7 +442,7 @@ The reusable toolkit is:
 +\text{ inclusion-exclusion}
 +\text{ symmetry}
 }
-```
+$$
 
 Choose the method based on what is requested: indicators for moments, counting for exact probabilities, inclusion-exclusion for forbidden edges, and asymptotics for the large-system shape.
 

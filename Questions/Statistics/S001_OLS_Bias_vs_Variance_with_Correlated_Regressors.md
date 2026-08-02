@@ -11,29 +11,29 @@
 
 True model:
 
-```math
+$$
 y=\beta_1x_1+\beta_2x_2+\epsilon,\qquad E[\epsilon|x_1,x_2]=0
-```
+$$
 
 with
 
-```math
+$$
 Var(x_1)=Var(x_2)=1,\qquad Corr(x_1,x_2)=\rho
-```
+$$
 
 where $\rho\approx 1$.
 
 Compare:
 
-```math
+$$
 y\sim x_1+x_2
-```
+$$
 
 versus
 
-```math
+$$
 y\sim x_1
-```
+$$
 
 When is beta biased, and when is it only high variance?
 
@@ -41,29 +41,29 @@ When is beta biased, and when is it only high variance?
 
 Full regression:
 
-```math
+$$
 E[\hat\beta|X]=\beta
-```
+$$
 
 so multicollinearity alone does not create bias.
 
 Single-variable regression omitting $x_2$:
 
-```math
+$$
 \tilde\beta_1=\beta_1+\beta_2\rho
-```
+$$
 
 so omitted variable bias is:
 
-```math
+$$
 \tilde\beta_1-\beta_1=\beta_2\rho
-```
+$$
 
 Variance inflation in full regression:
 
-```math
+$$
 Var(\hat\beta_1)\propto \frac{1}{1-\rho^2}
-```
+$$
 
 so as $\rho\to1$, coefficient estimates become unstable.
 
@@ -78,9 +78,9 @@ so as $\rho\to1$, coefficient estimates become unstable.
 
 The coefficient on $x_2$ is based on residualized $x_2$:
 
-```math
+$$
 \tilde x_2=M_{x_1}x_2
-```
+$$
 
 If $x_2$ is almost explained by $x_1$, then $\tilde x_2$ is tiny, making the coefficient noisy.
 
@@ -88,15 +88,15 @@ If $x_2$ is almost explained by $x_1$, then $\tilde x_2$ is tiny, making the coe
 
 Wrong:
 
-```math
+$$
 Corr(x_1,x_2)\approx1 \Rightarrow \text{bias}
-```
+$$
 
 Correct:
 
-```math
+$$
 Corr(x_1,x_2)\approx1 \Rightarrow \text{high variance}
-```
+$$
 
 Bias requires omitted variables or $E[\epsilon|X]\neq0$.
 
@@ -106,13 +106,13 @@ In rates factor models, carry and roll-down may be highly correlated. Including 
 
 ## What to Remember
 
-```math
+$$
 \boxed{\text{Omitting correlated signals creates bias; including them creates variance.}}
-```
+$$
 
-```math
+$$
 \boxed{\text{Multicollinearity hurts attribution more than prediction.}}
-```
+$$
 
 ## Connections
 

@@ -15,23 +15,23 @@
 
 Consider the AR(1) process
 
-```math
+$$
 X_{t+1}=0.8X_t+\epsilon_{t+1},
 \qquad
 \epsilon_t\sim N(0,1),
-```
+$$
 
 with
 
-```math
+$$
 X_0=0.
-```
+$$
 
 Define the first hitting time
 
-```math
-\tau=\inf\{t:X_t>2\}.
-```
+$$
+\tau=\inf\{t:X_t\gt 2\}.
+$$
 
 How should we think about:
 
@@ -56,15 +56,15 @@ That distinction matters in practice because many trading problems are naturally
 
 The object of interest is not just
 
-```math
+$$
 X_t,
-```
+$$
 
 but the waiting time
 
-```math
+$$
 \tau.
-```
+$$
 
 That makes this a threshold-crossing problem rather than a standard forecasting problem.
 
@@ -72,37 +72,37 @@ That makes this a threshold-crossing problem rather than a standard forecasting 
 
 For an AR(1) process
 
-```math
+$$
 X_{t+1}=\phi X_t+\epsilon_{t+1},
 \qquad
 \epsilon_t\sim N(0,\sigma^2),
-```
+$$
 
 the stationary variance is
 
-```math
+$$
 \mathrm{Var}(X)=\frac{\sigma^2}{1-\phi^2}.
-```
+$$
 
 Here
 
-```math
+$$
 \phi=0.8,
 \qquad
 \sigma^2=1,
-```
+$$
 
 so
 
-```math
+$$
 \mathrm{Var}(X)=\frac{1}{1-0.8^2}=\frac{1}{0.36}\approx 2.78.
-```
+$$
 
 Hence the stationary standard deviation is
 
-```math
+$$
 \sqrt{2.78}\approx 1.67.
-```
+$$
 
 So the barrier `2` is about `1.2` stationary standard deviations above the mean.
 
@@ -110,21 +110,21 @@ So the barrier `2` is about `1.2` stationary standard deviations above the mean.
 
 Under stationarity,
 
-```math
+$$
 X_t\sim N(0,2.78),
-```
+$$
 
 so
 
-```math
-P(X_t>2)\approx P(Z>1.2)\approx 0.115.
-```
+$$
+P(X_t\gt 2)\approx P(Z\gt 1.2)\approx 0.115.
+$$
 
 A simple approximation is then
 
-```math
-E[\tau]\approx \frac{1}{P(X_t>2)}\approx \frac{1}{0.115}\approx 8.7.
-```
+$$
+E[\tau]\approx \frac{1}{P(X_t\gt 2)}\approx \frac{1}{0.115}\approx 8.7.
+$$
 
 This is a geometric-style approximation: if the event happens about 11.5% of the time, then the average waiting time is about 8.7 periods.
 
@@ -134,23 +134,23 @@ The approximation is useful but not exact for two reasons.
 
 First, the AR(1) process is not independent across time. If
 
-```math
+$$
 X_t
-```
+$$
 
 is already large, then
 
-```math
+$$
 X_{t+1}
-```
+$$
 
 is more likely to remain large. Crossings cluster, so the process does not behave like repeated independent trials.
 
 Second, the approximation assumes stationarity, but the process starts from
 
-```math
+$$
 X_0=0.
-```
+$$
 
 Early on, the variance is smaller than the stationary variance, so the true expected waiting time is generally longer than the stationary geometric estimate.
 
@@ -174,17 +174,17 @@ Persistence changes waiting time because it creates runs. Once the process start
 
 - What changes if
 
-```math
+$$
 \phi=0.95
-```
+$$
 
 instead of `0.8`?
 - How does the waiting time change if the barrier is `3` instead of `2`?
 - How would you estimate
 
-```math
+$$
 E[\tau]
-```
+$$
 
 more accurately than the geometric approximation?
 - How does this relate to stop-loss or take-profit timing in trading?
@@ -206,14 +206,14 @@ This matters whenever the timing of a trigger is more important than the next-st
 - First passage is a waiting-time problem, not just a forecasting problem.
 - For AR(1),
 
-```math
+$$
 \mathrm{Var}(X)=\frac{\sigma^2}{1-\phi^2}.
-```
+$$
 
 - A quick approximation is
 
-```math
-E[\tau]\approx \frac{1}{P(X>a)}.
-```
+$$
+E[\tau]\approx \frac{1}{P(X\gt a)}.
+$$
 
 - That approximation is imperfect because AR(1) observations are dependent and the process may start away from stationarity.

@@ -15,57 +15,57 @@
 
 A market maker observes three independent signals:
 
-```math
+$$
 X_1,X_2,X_3 \sim N(0,1).
-```
+$$
 
 A trade is triggered when at least two signals exceed the same threshold $a$. The desk chooses $a$ so that the unconditional trade probability is exactly $5\%$:
 
-```math
-\mathbb P\!\left(\#\{i:X_i>a\}\ge 2\right)=0.05.
-```
+$$
+\mathbb P\!\left(\left|\{i:X_i\gt a\}\right|\ge 2\right)=0.05.
+$$
 
-1. Find $p=\mathbb P(X_i>a)$, and approximate $a$.
+1. Find $p=\mathbb P(X_i\gt a)$, and approximate $a$.
 2. Conditional on a trade occurring, compute the probability that all three signals exceed $a$.
 3. Let
 
-```math
+$$
 M=\max(X_1,X_2,X_3).
-```
+$$
 
 Write an exact one-dimensional integral for
 
-```math
-\mathbb E[M\mid \#\{i:X_i>a\}\ge 2].
-```
+$$
+\mathbb E[M\mid \left|\{i:X_i\gt a\}\right|\ge 2].
+$$
 
 4. The signals are now equicorrelated:
 
-```math
+$$
 \mathrm{Corr}(X_i,X_j)=\rho,\qquad i\neq j,
-```
+$$
 
-with $0<\rho<1$. Give a one-dimensional integral representation for the trade probability.
+with $0\lt \rho\lt 1$. Give a one-dimensional integral representation for the trade probability.
 
 ## Hint
 
 For the independent case, if
 
-```math
-N=\#\{i:X_i>a\},
-```
+$$
+N=\left|\{i:X_i\gt a\}\right|,
+$$
 
 then
 
-```math
+$$
 N\sim\mathrm{Binomial}(3,p).
-```
+$$
 
 For the correlated case, use the common-factor representation
 
-```math
+$$
 X_i=\sqrt{\rho}\,Z+\sqrt{1-\rho}\,\varepsilon_i,
-```
+$$
 
 where $Z,\varepsilon_1,\varepsilon_2,\varepsilon_3$ are independent standard normals.
 
@@ -75,79 +75,79 @@ where $Z,\varepsilon_1,\varepsilon_2,\varepsilon_3$ are independent standard nor
 
 With
 
-```math
+$$
 N\sim\mathrm{Binomial}(3,p),
-```
+$$
 
 we have
 
-```math
+$$
 \mathbb P(N\ge2)
 =
 3p^2(1-p)+p^3.
-```
+$$
 
 Therefore
 
-```math
+$$
 3p^2-2p^3=0.05.
-```
+$$
 
 Solving
 
-```math
+$$
 2p^3-3p^2+0.05=0
-```
+$$
 
 for the root in $(0,1)$ gives approximately
 
-```math
+$$
 \boxed{p\approx0.13535}.
-```
+$$
 
 Hence
 
-```math
+$$
 a=\Phi^{-1}(1-p),
-```
+$$
 
 so
 
-```math
+$$
 \boxed{a\approx1.10}.
-```
+$$
 
 ### 2. Probability That All Three Exceed
 
 We need
 
-```math
+$$
 \mathbb P(N=3\mid N\ge2)
 =
 \frac{p^3}{3p^2(1-p)+p^3}.
-```
+$$
 
 Since the denominator is $0.05$,
 
-```math
+$$
 \mathbb P(N=3\mid N\ge2)
 =
 \frac{p^3}{0.05}.
-```
+$$
 
 Using $p\approx0.13535$,
 
-```math
+$$
 p^3\approx0.00248.
-```
+$$
 
 Thus
 
-```math
+$$
 \boxed{
 \mathbb P(N=3\mid N\ge2)\approx0.0496
 }.
-```
+$$
 
 Only about $5\%$ of triggered trades have all three signals above threshold.
 
@@ -155,42 +155,42 @@ Only about $5\%$ of triggered trades have all three signals above threshold.
 
 Let
 
-```math
+$$
 A=\{N\ge2\}.
-```
+$$
 
 On $A$, at least two variables exceed $a$, so necessarily
 
-```math
-M>a.
-```
+$$
+M\gt a.
+$$
 
 Therefore
 
-```math
+$$
 \mathbb E[M\mid A]
 =
-a+\int_a^\infty \mathbb P(M>t\mid A)\,dt.
-```
+a+\int_a^\infty \mathbb P(M\gt t\mid A)\,dt.
+$$
 
 For $t\ge a$, define
 
-```math
+$$
 q(t)=\Phi(t)-\Phi(a).
-```
+$$
 
 Then
 
-```math
+$$
 \mathbb P(M\le t,A)
 =
 3q(t)^2\Phi(a)+q(t)^3.
-```
+$$
 
 Hence
 
-```math
-\mathbb P(M>t\mid A)
+$$
+\mathbb P(M\gt t\mid A)
 =
 1-
 \frac{
@@ -198,11 +198,11 @@ Hence
 +
 [\Phi(t)-\Phi(a)]^3
 }{0.05}.
-```
+$$
 
 Thus an exact one-dimensional integral is
 
-```math
+$$
 \boxed{
 \mathbb E[M\mid A]
 =
@@ -217,53 +217,53 @@ a+
 }{0.05}
 \right]dt
 }.
-```
+$$
 
 ### 4. Equicorrelated Signals
 
 Write
 
-```math
+$$
 X_i=\sqrt{\rho}\,Z+\sqrt{1-\rho}\,\varepsilon_i.
-```
+$$
 
 Conditional on $Z=z$, the $X_i$ are independent and
 
-```math
-\mathbb P(X_i>a\mid Z=z)
+$$
+\mathbb P(X_i\gt a\mid Z=z)
 =
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
-```
+$$
 
 Define
 
-```math
+$$
 p(z)
 =
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
-```
+$$
 
 Then
 
-```math
+$$
 N\mid Z=z\sim\mathrm{Binomial}(3,p(z)),
-```
+$$
 
 so
 
-```math
+$$
 \mathbb P(N\ge2\mid Z=z)
 =
 3p(z)^2[1-p(z)]+p(z)^3.
-```
+$$
 
 Integrating over $Z$,
 
-```math
+$$
 \boxed{
 \mathbb P(N\ge2)
 =
@@ -272,7 +272,7 @@ Integrating over $Z$,
 3p(z)^2(1-p(z))+p(z)^3
 \right]\phi(z)\,dz
 }.
-```
+$$
 
 ## Key Knowledge Points
 
@@ -313,9 +313,9 @@ That is the geometric simplification behind the one-dimensional integral.
 - For fixed $a$, is the trade probability monotone in $\rho$?
 - Derive
 
-```math
+$$
 \mathbb P(N=3\mid N\ge2)
-```
+$$
 
 under equicorrelation as a ratio of one-dimensional integrals.
 - Generalize the trigger to at least $k$ exceedances among $n$ signals.
