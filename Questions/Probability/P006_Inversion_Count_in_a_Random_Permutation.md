@@ -14,9 +14,9 @@
 
 For a uniformly random permutation \(\pi\) of \(\{1,\ldots,n\}\), define
 
-```math
+$$
 X=\#\{(i,j):i<j,\ \pi_i>\pi_j\}.
-```
+$$
 
 Compute \(E[X]\) and \(\mathrm{Var}(X)\) without enumerating all \(n!\) permutations.
 
@@ -24,23 +24,23 @@ Compute \(E[X]\) and \(\mathrm{Var}(X)\) without enumerating all \(n!\) permutat
 
 For each \(i<j\), define
 
-```math
+$$
 I_{ij}=\mathbf1\{\pi_i>\pi_j\}.
-```
+$$
 
 By symmetry,
 
-```math
+$$
 P(I_{ij}=1)=\frac12.
-```
+$$
 
 Since \(X=\sum_{i<j}I_{ij}\),
 
-```math
+$$
 \boxed{
 E[X]=\binom n2\frac12=\frac{n(n-1)}4
 }.
-```
+$$
 
 Independence is not needed for this step.
 
@@ -50,85 +50,85 @@ Each indicator has variance \(1/4\). Indicators involving four distinct position
 
 For \(i<j<k\), inspect the six relative orderings of \(\pi_i,\pi_j,\pi_k\):
 
-```math
+$$
 \mathrm{Cov}(I_{ij},I_{ik})
 =\frac13-\frac14=\frac1{12},
-```
+$$
 
 because both are one exactly when \(\pi_i\) is the largest;
 
-```math
+$$
 \mathrm{Cov}(I_{ik},I_{jk})
 =\frac13-\frac14=\frac1{12},
-```
+$$
 
 because both are one exactly when \(\pi_k\) is the smallest; and
 
-```math
+$$
 \mathrm{Cov}(I_{ij},I_{jk})
 =\frac16-\frac14=-\frac1{12},
-```
+$$
 
 because both are one only in the descending ordering.
 
 Thus the sum of the three unordered covariance terms for each triple is \(1/12\). The variance expansion doubles this contribution:
 
-```math
+$$
 \mathrm{Var}(X)
 =\binom n2\frac14+\binom n3\frac16.
-```
+$$
 
 Therefore
 
-```math
+$$
 \boxed{
 \mathrm{Var}(X)
 =\frac{n(n-1)(2n+5)}{72}
 }.
-```
+$$
 
 For \(n=5\),
 
-```math
+$$
 \boxed{E[X]=5,\qquad\mathrm{Var}(X)=\frac{25}{6}}.
-```
+$$
 
 ## Symmetry of the Distribution
 
 Reversing every comparison maps a permutation with \(X\) inversions to one with
 
-```math
+$$
 \binom n2-X
-```
+$$
 
 inversions. Hence
 
-```math
+$$
 X\overset d=\binom n2-X.
-```
+$$
 
 The distribution is symmetric around
 
-```math
+$$
 \frac12\binom n2=\frac{n(n-1)}4.
-```
+$$
 
 ## Why Independence Gives the Wrong Answer
 
 If all indicators were incorrectly treated as independent, the variance would be only
 
-```math
+$$
 \binom n2\frac14=O(n^2).
-```
+$$
 
 The correct variance is \(O(n^3)\), because there are \(\binom n3\) overlapping triples whose net covariance contribution does not vanish.
 
 The inversion count is asymptotically normal after centering and scaling:
 
-```math
+$$
 \frac{X-E[X]}{\sqrt{\mathrm{Var}(X)}}
 \xrightarrow{d}N(0,1).
-```
+$$
 
 ## Algorithmic Connection
 
@@ -159,10 +159,10 @@ Inversion count is the Kendall-tau distance between rankings. Comparing asset ra
 
 ## What to Remember
 
-```math
+$$
 \boxed{
 E[X]=\frac{n(n-1)}4,
 \qquad
 \mathrm{Var}(X)=\frac{n(n-1)(2n+5)}{72}
 }.
-```
+$$

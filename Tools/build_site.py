@@ -28,6 +28,10 @@ CONTENT_PATTERNS = [
 ]
 
 MATH_FENCE_RE = re.compile(r"```math\n(.*?)\n```", re.DOTALL)
+DOLLAR_DISPLAY_MATH_RE = re.compile(
+    r"^\$\$[ \t]*\n(.*?)\n\$\$[ \t]*$",
+    re.DOTALL | re.MULTILINE,
+)
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\s)(.+?)(?<!\s)(?<!\\)\$")
 
 
@@ -88,6 +92,9 @@ def protect_math(markdown_text: str) -> tuple[str, list[tuple[str, str]]]:
         return f"@@MATH_{len(fragments) - 1}@@"
 
     protected = MATH_FENCE_RE.sub(lambda m: stash("display", m.group(1).strip()), markdown_text)
+    protected = DOLLAR_DISPLAY_MATH_RE.sub(
+        lambda m: stash("display", m.group(1).strip()), protected
+    )
     protected = INLINE_MATH_RE.sub(lambda m: stash("inline", m.group(1)), protected)
     return protected, fragments
 
