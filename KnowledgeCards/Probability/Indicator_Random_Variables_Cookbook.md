@@ -59,35 +59,28 @@ Then linearity of expectation gives
 \boxed{E[X]=\sum_i P(I_i=1)}.
 ```
 
-Independence is not required. In a symmetric problem with (N) indicators and
-(P(I_i=1)=p), this reduces to (E[X]=Np).
+Independence is not required. In a symmetric problem with $N$ indicators and
+$P(I_i=1)=p$, this reduces to $E[X]=Np$.
 
 ## 3. Variance of a Sum of Indicators
 
-For (X=\sum_i I_i),
+For $X=\sum_i I_i$,
 
 ```math
-\boxed{
-\mathrm{Var}(X)
-=\sum_i\mathrm{Var}(I_i)
-+2\sum_{i<j}\mathrm{Cov}(I_i,I_j)
-}.
+\boxed{\mathrm{Var}(X)=\sum_i \mathrm{Var}(I_i)+2\sum_{i<j}\mathrm{Cov}(I_i,I_j)}
 ```
 
 For indicators,
 
 ```math
-\boxed{
-\mathrm{Cov}(I_A,I_B)
-=P(A\cap B)-P(A)P(B)
-}.
+\boxed{\mathrm{Cov}(I_A,I_B)=P(A\cap B)-P(A)P(B)}
 ```
 
 Thus most indicator-variance questions reduce to computing joint probabilities.
 
 - Independent events have zero covariance.
-- If (P(A\cap B)>P(A)P(B)), the covariance is positive.
-- If (P(A\cap B)<P(A)P(B)), the covariance is negative.
+- If $P(A\cap B)>P(A)P(B)$, the covariance is positive.
+- If $P(A\cap B)<P(A)P(B)$, the covariance is negative.
 
 Zero covariance does not generally imply independence.
 
