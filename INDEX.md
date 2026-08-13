@@ -9,6 +9,7 @@ Categorized index of all finalized subject notes.
 - [L003 — Woodbury Identity for Low-Rank Covariance Inversion](Questions/LinearAlgebra/L003_Woodbury_Identity_for_Low_Rank_Covariance_Inversion.md)
 - [L004 — Rank-One Covariance Update and Eigenvalue Interlacing](Questions/LinearAlgebra/L004_Rank_One_Covariance_Update_and_Eigenvalue_Interlacing.md)
 - [L005 — Low-Rank Covariance Update and Portfolio Risk](Questions/LinearAlgebra/L005_Low_Rank_Covariance_Update_and_Portfolio_Risk.md)
+- [L006 — Factor-Neutral Alpha in Eigenfactor Space](Questions/LinearAlgebra/L006_Factor_Neutral_Alpha_in_Eigenfactor_Space.md)
 
 ## Probability
 
@@ -21,6 +22,7 @@ Categorized index of all finalized subject notes.
 - [P007 — Unequal-Jump Random Walk and First-Step Analysis](Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
 - [P008 — Runs in a Conditioned Coin-Toss Sequence](Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md)
 - [P009 — Uniform Sum Stopping Time and the Overshooting Draw](Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md)
+- [P010 — Bayesian Signal Selection under Multiple Testing](Questions/Probability/P010_Bayesian_Signal_Selection_under_Multiple_Testing.md)
 
 ## Statistics
 
@@ -49,11 +51,13 @@ Categorized index of all finalized subject notes.
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
 - [O004 — Optimal Execution with Impact and Inventory Risk](Questions/Optimization/O004_Optimal_Execution_with_Impact_and_Inventory_Risk.md)
 - [O005 — Robust Portfolio Choice under Ellipsoidal Mean Uncertainty](Questions/Optimization/O005_Robust_Portfolio_Choice_under_Ellipsoidal_Mean_Uncertainty.md)
+- [O006 — Hedge-Constrained Execution with Position Limits](Questions/Optimization/O006_Hedge_Constrained_Execution_with_Position_Limits.md)
 
 ## Coding
 
 - [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md)
 - [C002 — Shortest Subarray at Least K with a Monotonic Deque](Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)
+- [C003 — Online Median with Two Heaps](Questions/Coding/C003_Online_Median_with_Two_Heaps.md)
 
 ## Stochastic Calculus
 
@@ -61,6 +65,8 @@ Categorized index of all finalized subject notes.
 - [SC002 — Change of Measure I: Understanding P, Q and the Radon-Nikodym Derivative](Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
 - [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md)
+- [SC005 — Brownian Hitting Probability with Drift](Questions/StochasticCalculus/SC005_Brownian_Hitting_Probability_with_Drift.md)
+- [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md)
 
 ## Rates Research
 
