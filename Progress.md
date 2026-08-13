@@ -20,8 +20,8 @@ Track counts of finalized subject notes by category.
 
 | Category | Count |
 | --- | ---: |
-| Probability | 1 |
-| Total | 1 |
+| Probability | 2 |
+| Total | 2 |
 
 ## Notes
 
@@ -56,3 +56,4 @@ Track counts of finalized subject notes by category.
 - Added the Indicator Random Variables Cookbook as the first Probability knowledge card on 2026-08-01; knowledge cards are tracked separately from daily questions.
 - Added P009 on uniform partial sums, the tail-sum identity, and the overshooting draw on 2026-08-13.
 - Added six missing daily-prep notes from the 2026-08-03 through 2026-08-13 review window: L006, P010, O006, C003, SC005, and SC006.
+- Added the Waiting Time and Competing Risks Cookbook on 2026-08-13; knowledge cards remain separate from daily-question counts.

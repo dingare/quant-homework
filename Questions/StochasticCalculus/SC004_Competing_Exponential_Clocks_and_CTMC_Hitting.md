@@ -54,3 +54,8 @@ The clean independence result relies on exponential waiting times.
 Limit-order-book events can be modeled as competing clocks for fills, cancellations,
 client flow, and adverse price moves. Event probability depends on relative intensity;
 waiting time depends on total intensity.
+
+## Connections
+
+- [Waiting Time and Competing Risks Cookbook](../../KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md) — 将本题的 exponential race 推广到 non-exponential hazards、Poisson arrivals、queue position、inspection paradox 与 phase-type models。
+- [SC006 — Competing Exponentials and Time-Dependent Hazards](SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) — 比较 exponential 的无记忆性与 Gamma clock 的年龄依赖。

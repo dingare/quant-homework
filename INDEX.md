@@ -77,3 +77,4 @@ No entries yet.
 ### Probability
 
 - [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)
+- [Waiting Time and Competing Risks Cookbook](KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md)

@@ -99,3 +99,8 @@ $$
 - 独立 exponentials：最小值 rate 相加，赢家概率为自身 rate 占比。
 - non-exponential competing risks：年龄包含信息，应使用 survival function 与 time-dependent hazard。
 - inspection paradox 还涉及随机观察时的 length-biased sampling，不能仅靠 memorylessness 一句话代替。
+
+## Connections
+
+- [Waiting Time and Competing Risks Cookbook](../../KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md) — 从 exponential race 扩展到 Poisson arrivals、Gamma / Weibull hazards、queue position、inspection paradox 与 phase-type CTMC 的结构化复习卡。
+- [SC004 — Competing Exponential Clocks and CTMC Hitting](SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md) — 状态依赖 rates 和有限状态 first-step analysis。
