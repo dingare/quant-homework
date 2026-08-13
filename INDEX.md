@@ -20,6 +20,7 @@ Categorized index of all finalized subject notes.
 - [P006 — Inversion Count in a Random Permutation](Questions/Probability/P006_Inversion_Count_in_a_Random_Permutation.md)
 - [P007 — Unequal-Jump Random Walk and First-Step Analysis](Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
 - [P008 — Runs in a Conditioned Coin-Toss Sequence](Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md)
+- [P009 — Uniform Sum Stopping Time and the Overshooting Draw](Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md)
 
 ## Statistics
 

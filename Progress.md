@@ -7,14 +7,14 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 5 |
-| Probability | P | 8 |
+| Probability | P | 9 |
 | Statistics | S | 8 |
 | Time Series | T | 6 |
 | Optimization | O | 5 |
 | Coding | C | 2 |
 | Stochastic Calculus | SC | 4 |
 | Rates Research | R | 0 |
-| Total | All | 38 |
+| Total | All | 39 |
 
 ## Knowledge Cards
 
@@ -54,3 +54,4 @@ Track counts of finalized subject notes by category.
 - Added O004, P007, and C002 from the latest undocumented daily-prep questions on 2026-07-26.
 - Added L005, P008, S008, T006, O005, and SC004 from the latest week of daily prep on 2026-08-01 after duplicate checking.
 - Added the Indicator Random Variables Cookbook as the first Probability knowledge card on 2026-08-01; knowledge cards are tracked separately from daily questions.
+- Added P009 on uniform partial sums, the tail-sum identity, and the overshooting draw on 2026-08-13.

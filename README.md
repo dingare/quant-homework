@@ -199,6 +199,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-08-13: Added [P009](Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md) on uniform partial sums, the survival/tail-sum derivation of $E[N]=e$, and the expected overshooting draw.
 - 2026-08-01: Added the [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md), a reusable reference for indicator sums, covariance, overlap classification, factorial moments, and common counting patterns; linked it to P006 and P008 without increasing the daily-question count.
 - 2026-07-19: Added [C001](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md) on prefix sums, coordinate compression, Fenwick trees, and $O(n\log n)$ range-sum counting; expanded the recent review from five to six topics.
 - 2026-07-18: Added [recent quant-prep review](Recent_Quant_Prep_Review_2026-07-18.md), linking canonical notes without duplicating topics already filed; expanded to six topics on 2026-07-19.
