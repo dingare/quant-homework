@@ -52,6 +52,7 @@ Categorized index of all finalized subject notes.
 - [O004 — Optimal Execution with Impact and Inventory Risk](Questions/Optimization/O004_Optimal_Execution_with_Impact_and_Inventory_Risk.md)
 - [O005 — Robust Portfolio Choice under Ellipsoidal Mean Uncertainty](Questions/Optimization/O005_Robust_Portfolio_Choice_under_Ellipsoidal_Mean_Uncertainty.md)
 - [O006 — Hedge-Constrained Execution with Position Limits](Questions/Optimization/O006_Hedge_Constrained_Execution_with_Position_Limits.md)
+- [O007 — Turnover-Constrained Mean-Variance Portfolio and KKT Active Set](Questions/Optimization/O007_Turnover_Constrained_Mean_Variance_Portfolio_and_KKT_Active_Set.md)
 
 ## Coding
 

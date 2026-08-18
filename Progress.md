@@ -10,11 +10,11 @@ Track counts of finalized subject notes by category.
 | Probability | P | 10 |
 | Statistics | S | 8 |
 | Time Series | T | 6 |
-| Optimization | O | 6 |
+| Optimization | O | 7 |
 | Coding | C | 3 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 45 |
+| Total | All | 46 |
 
 ## Knowledge Cards
 
@@ -57,3 +57,4 @@ Track counts of finalized subject notes by category.
 - Added P009 on uniform partial sums, the tail-sum identity, and the overshooting draw on 2026-08-13.
 - Added six missing daily-prep notes from the 2026-08-03 through 2026-08-13 review window: L006, P010, O006, C003, SC005, and SC006.
 - Added the Waiting Time and Competing Risks Cookbook on 2026-08-13; knowledge cards remain separate from daily-question counts.
+- Added O007 from the final generated Daily Quant problem before the source schedule paused on 2026-08-14; corrected the source candidate by completing the KKT active-set check.
