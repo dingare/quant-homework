@@ -7,21 +7,21 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 6 |
-| Probability | P | 10 |
+| Probability | P | 11 |
 | Statistics | S | 8 |
 | Time Series | T | 6 |
 | Optimization | O | 7 |
 | Coding | C | 3 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 46 |
+| Total | All | 47 |
 
 ## Knowledge Cards
 
 | Category | Count |
 | --- | ---: |
-| Probability | 2 |
-| Total | 2 |
+| Probability | 3 |
+| Total | 3 |
 
 ## Notes
 
@@ -58,3 +58,4 @@ Track counts of finalized subject notes by category.
 - Added six missing daily-prep notes from the 2026-08-03 through 2026-08-13 review window: L006, P010, O006, C003, SC005, and SC006.
 - Added the Waiting Time and Competing Risks Cookbook on 2026-08-13; knowledge cards remain separate from daily-question counts.
 - Added O007 from the final generated Daily Quant problem before the source schedule paused on 2026-08-14; corrected the source candidate by completing the KKT active-set check.
+- Added P011 and the Second-Order Difference Equations for Random-Walk Hitting Problems knowledge card on 2026-08-20; Probability now has 11 finalized questions and 3 knowledge cards.

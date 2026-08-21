@@ -23,6 +23,7 @@ Categorized index of all finalized subject notes.
 - [P008 — Runs in a Conditioned Coin-Toss Sequence](Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md)
 - [P009 — Uniform Sum Stopping Time and the Overshooting Draw](Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md)
 - [P010 — Bayesian Signal Selection under Multiple Testing](Questions/Probability/P010_Bayesian_Signal_Selection_under_Multiple_Testing.md)
+- [P011 — 奇环上首次到达时间的奇偶性与奖金归属](Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
 
 ## Statistics
 
@@ -79,3 +80,4 @@ No entries yet.
 
 - [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)
 - [Waiting Time and Competing Risks Cookbook](KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md)
+- [Second-Order Difference Equations for Random-Walk Hitting Problems](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
