@@ -88,18 +88,16 @@ $$
 第一种是先到 $a$，再从 $a$ 出发先到 $b$ 而不是 $a-1$。普通赌徒破产概率给出
 
 $$
-P_0(T_a\lt T_b)
-P_a(T_b\lt T_{a-1})
-=
+P_0(T_a\lt T_b)\cdot
+P_a(T_b\lt T_{a-1})=
 \frac{b}{44}\cdot\frac1{45}.
 $$
 
 第二种是先到 $b$，再从 $b$ 出发先到 $a$ 而不是 $b+1$：
 
 $$
-P_0(T_b\lt T_a)
-P_b(T_a\lt T_{b+1})
-=
+P_0(T_b\lt T_a)\cdot
+P_b(T_a\lt T_{b+1})=
 \frac{k}{44}\cdot\frac1{45}.
 $$
 
