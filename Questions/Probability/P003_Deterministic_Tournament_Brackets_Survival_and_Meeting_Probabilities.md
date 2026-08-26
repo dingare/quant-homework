@@ -61,7 +61,7 @@ P(\text{1 and 2 meet in the final})
 }
 $$
 
-### 2. Player $k$ Reaches Top $T$
+### 2. Player k Reaches Top T
 
 Player $k$ loses only to players
 
@@ -148,7 +148,7 @@ $$
 E[R]\approx n-1.
 $$
 
-### 5. General Pair: Player 1 and Player $k$
+### 5. General Pair: Player 1 and Player k
 
 Unlike player 2, player $k$ may be eliminated before meeting player 1. The placement factor and survival factor must both be included.
 
