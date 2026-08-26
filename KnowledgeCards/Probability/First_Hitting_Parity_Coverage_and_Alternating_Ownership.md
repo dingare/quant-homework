@@ -1,8 +1,8 @@
 # 首次命中、奇偶增强、覆盖与轮流归属框架
 
-## Purpose
+## 用途
 
-这张卡用于识别一类共同骨架：随机游走首次访问位置，访问时刻的奇偶性决定轮到谁，最终收益又是各目标归属的总和。[P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) 是代表题，但方法也覆盖普通赌徒破产、路径或环的覆盖，以及二阶差分方程。
+这张卡用于识别一类共同骨架：随机游走首次访问某个位置的时刻，即首次命中时间（first hitting time）；该时刻的奇偶性（parity）决定轮到谁，最终收益则是各目标归属的总和。[P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) 是代表题，但这套方法也覆盖赌徒破产（gambler's ruin）、路径或环的覆盖（coverage）、轮流归属（alternating ownership），以及二阶差分方程（second-order difference equation）。
 
 核心分流是：
 
@@ -20,36 +20,183 @@ $$
 
 ## 1. 基础模板：赌徒破产
 
-在 $\{0,1,\ldots,N\}$ 上令 $X_0=i$，每步以概率 $p$ 右移、概率 $q=1-p$ 左移；$0,N$ 为吸收边界，
+考虑状态空间 $\{0,1,\ldots,N\}$ 上的最近邻随机游走。令 $X_0=i$，其中 $0\lt i\lt N$；每一步以概率 $p$ 向右移动一格，以概率 $q=1-p$ 向左移动一格。到达 $0$ 或 $N$ 后过程停止，因此这两个点是吸收边界。定义首次到达任一边界的停时（stopping time）
 
 $$
 T=\inf\{t\ge0:X_t\in\{0,N\}\}.
 $$
 
-### 边界命中概率
+这个模型可以理解为：赌徒初始资本为 $i$，每局赢一单位的概率为 $p$、输一单位的概率为 $q$；问题是他会先破产到 $0$，还是先把资本做到 $N$。
 
-令 $h_i=P_i(X_T=N)$。首步递推及边界为
+### 边界命中概率：究竟在计算什么
+
+我们关心的不是“某个时刻位于 $N$”的概率，而是**从 $i$ 出发，在先碰到 $0$ 之前先碰到 $N$ 的概率**。记
+
+$$
+h_i=P_i(X_T=N)=P_i(T_N\lt T_0),
+$$
+
+其中
+
+$$
+T_0=\inf\{t\ge0:X_t=0\},
+\qquad
+T_N=\inf\{t\ge0:X_t=N\},
+\qquad
+T=T_0\wedge T_N.
+$$
+
+下标 $i$ 表示条件 $X_0=i$。由于最近邻路径不可能越过边界而不先碰到它，停止位置只可能是 $0$ 或 $N$，所以
+
+$$
+X_T=N\mathbf1_{\{T_N\lt T_0\}},
+\qquad
+E_i[X_T]=Nh_i.
+$$
+
+这条等式把“停下时的位置期望”直接连接到所求的首次命中概率，是鞅解法的关键。
+
+#### 公平游走：用鞅与可选停止逐步推导
+
+当 $p=q=1/2$ 时，
+
+$$
+E[X_{t+1}\mid\mathcal F_t]=X_t,
+$$
+
+因此 $X_t$ 是鞅（martingale）。直观上，公平游戏在下一步没有方向性优势，所以停止前的条件期望资本不变。
+
+应用可选停止（optional stopping）时，最稳妥的写法是先取有界停时 $T\wedge n$。可选停止定理给出
+
+$$
+E_i[X_{T\wedge n}]=E_i[X_0]=i.
+$$
+
+有限区间上的吸收随机游走满足 $T\lt\infty$ 几乎必然；同时始终有 $0\le X_{T\wedge n}\le N$。于是 $X_{T\wedge n}\to X_T$，并可由有界收敛定理令 $n\to\infty$，得到
+
+$$
+E_i[X_T]=i.
+$$
+
+另一方面，$X_T$ 只取 $0$ 与 $N$，故
+
+$$
+E_i[X_T]
+=0\cdot P_i(X_T=0)+N\cdot P_i(X_T=N)
+=Nh_i.
+$$
+
+比较两式便有
+
+$$
+Nh_i=i,
+\qquad
+\boxed{h_i=\frac{i}{N}}.
+$$
+
+因此
+
+$$
+P_i(T_0\lt T_N)=1-h_i=1-\frac{i}{N}.
+$$
+
+面试中的一句话直觉是：公平资本过程的期望保持在 $i$；最终资本只能是 $0$ 或 $N$，所以落在 $N$ 的概率必须是 $i/N$。
+
+#### 有偏游走：构造指数鞅
+
+当 $p\ne q$ 时，$X_t$ 本身不再是鞅，因为单步漂移为 $p-q$。令
+
+$$
+r=\frac qp,
+\qquad
+M_t=r^{X_t}.
+$$
+
+则
+
+$$
+E[M_{t+1}\mid\mathcal F_t]
+=r^{X_t}\left(pr+\frac q r\right)
+=r^{X_t}(q+p)
+=M_t,
+$$
+
+所以 $M_t=(q/p)^{X_t}$ 是鞅。仍先停止于 $T\wedge n$。因为 $X_{T\wedge n}\in\{0,1,\ldots,N\}$，$M_{T\wedge n}$ 也被两个有限常数夹住；结合 $T\lt\infty$ 几乎必然，可取极限得到
+
+$$
+E_i[r^{X_T}]=r^i.
+$$
+
+停止时 $X_T$ 只可能是 $0$ 或 $N$，因此
+
+$$
+r^i
+=r^0P_i(X_T=0)+r^NP_i(X_T=N)
+=(1-h_i)+r^Nh_i.
+$$
+
+整理可得
+
+$$
+r^i-1=h_i(r^N-1),
+$$
+
+从而
+
+$$
+\boxed{
+h_i=\frac{1-r^i}{1-r^N}
+=\frac{1-(q/p)^i}{1-(q/p)^N}
+},
+\qquad p\ne q.
+$$
+
+下边界先被命中的概率仍为 $1-h_i$。若 $p\gt q$，向右漂移使 $h_i$ 高于公平情形的 $i/N$；若 $p\lt q$，则相反。这是检查公式方向是否写反的快速方法。当 $p\to q$ 时，上式的极限回到 $i/N$。
+
+#### 等价路线：首步分析与边值递推
+
+同一个 $h_i=P_i(T_N\lt T_0)$ 也可以不用鞅求解。站在内部点 $i$，走完第一步后只有两种状态：以概率 $p$ 到达 $i+1$，以概率 $q$ 到达 $i-1$。由马尔可夫性，之后“先到 $N$”的条件概率分别是 $h_{i+1}$ 与 $h_{i-1}$，因此
 
 $$
 h_i=ph_{i+1}+qh_{i-1},
 \qquad h_0=0,\quad h_N=1.
 $$
 
-公平情形 $p=q=1/2$：
+边界条件正是所求事件的定义：从 $0$ 出发已经失败，所以 $h_0=0$；从 $N$ 出发已经成功，所以 $h_N=1$。
+
+公平时递推化为
+
+$$
+h_{i+1}-h_i=h_i-h_{i-1}.
+$$
+
+相邻差分为常数，所以 $h_i=A+Bi$。代入 $h_0=0$ 与 $h_N=1$，得到
 
 $$
 h_i=\frac{i}{N},
-\qquad P_i(X_T=0)=1-\frac{i}{N}.
 $$
 
-有偏情形 $p\ne q$：
+与可选停止的答案一致。
+
+有偏时把 $h_i=\lambda^i$ 代入递推，得到特征方程
+
+$$
+p\lambda^2-\lambda+q=0,
+$$
+
+其两个根为 $1$ 与 $q/p$。因此二阶差分方程的通解是
+
+$$
+h_i=A+B\left(\frac qp\right)^i.
+$$
+
+再代入两个边界条件，得到
 
 $$
 h_i=\frac{1-(q/p)^i}{1-(q/p)^N},
-\qquad P_i(X_T=0)=1-h_i.
 $$
 
-公平时用鞅 $X_t$；有偏时用指数鞅 $(q/p)^{X_t}$。在有限区间先对 $T\wedge n$ 停止，再利用有界性取极限，是最稳妥的可选停止论证。
+再次与指数鞅路线一致。两种方法并非在算不同的量：它们都从同一个事件 $\{T_N\lt T_0\}$ 出发；首步法利用该概率满足的局部递推，鞅法利用停止位置的全局期望约束。面试时，边界简单且能迅速找到鞅，鞅法通常更短；状态复杂、有越界或需要附加条件时，首步递推往往更稳。
 
 ### 平均吸收时间
 
@@ -162,15 +309,15 @@ $$
 }
 $$
 
-## Connections
+## 相关连接
 
 - [P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
-- [P002 — Optional Stopping](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
-- [P007 — Unequal-Jump Random Walk](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
-- [Indicator Random Variables Cookbook](Indicator_Random_Variables_Cookbook.md)
-- [Second-Order Difference Equations for Random-Walk Hitting Problems](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
+- [P002 — 可选停止](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
+- [P007 — 不等步长随机游走](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
+- [指示随机变量手册](Indicator_Random_Variables_Cookbook.md)
+- [随机游走命中问题中的二阶差分方程](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
 
-## What to Remember
+## 核心记忆
 
 $$
 \boxed{
