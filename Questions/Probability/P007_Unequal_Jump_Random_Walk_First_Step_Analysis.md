@@ -242,3 +242,4 @@ $$
 }.
 $$
 
+Related review path: [首次命中、奇偶增强、覆盖与轮流归属框架](../../KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md).

@@ -181,6 +181,7 @@ $$
 - [P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
 - [P007 — Unequal-Jump Random Walk and First-Step Analysis](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
+- [首次命中、奇偶增强、覆盖与轮流归属框架](First_Hitting_Parity_Coverage_and_Alternating_Ownership.md)
 
 ## What to Remember
 

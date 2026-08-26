@@ -20,8 +20,8 @@ Track counts of finalized subject notes by category.
 
 | Category | Count |
 | --- | ---: |
-| Probability | 3 |
-| Total | 3 |
+| Probability | 4 |
+| Total | 4 |
 
 ## Notes
 
@@ -59,3 +59,4 @@ Track counts of finalized subject notes by category.
 - Added the Waiting Time and Competing Risks Cookbook on 2026-08-13; knowledge cards remain separate from daily-question counts.
 - Added O007 from the final generated Daily Quant problem before the source schedule paused on 2026-08-14; corrected the source candidate by completing the KKT active-set check.
 - Added P011 and the Second-Order Difference Equations for Random-Walk Hitting Problems knowledge card on 2026-08-20; Probability now has 11 finalized questions and 3 knowledge cards.
+- Added the First-Hitting Parity, Coverage, and Alternating Ownership framework card on 2026-08-25; Probability knowledge cards now total 4.

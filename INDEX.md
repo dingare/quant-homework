@@ -81,3 +81,4 @@ No entries yet.
 - [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)
 - [Waiting Time and Competing Risks Cookbook](KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md)
 - [Second-Order Difference Equations for Random-Walk Hitting Problems](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
+- [首次命中、奇偶增强、覆盖与轮流归属框架](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md)

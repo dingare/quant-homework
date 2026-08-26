@@ -156,3 +156,5 @@ But those are risk-management benefits, not proof of alpha. This distinction mat
 Stopping Rule $\neq$ Alpha.
 
 If the underlying process is a martingale, clever exits can change distribution, hit rate, and path behavior, but not expected profit.
+
+Related review path: [首次命中、奇偶增强、覆盖与轮流归属框架](../../KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md).
