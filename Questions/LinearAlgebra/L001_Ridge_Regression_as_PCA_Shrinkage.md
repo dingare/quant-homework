@@ -90,66 +90,57 @@ $$
 Therefore:
 
 $$
-\hat{\beta}_{\mathrm{OLS}}
-=
-(VD^{-2}V^\top)(VDU^\top y)
-=
+\hat{\beta}_{\mathrm{OLS}}=
+(VD^{-2}V^\top)(VDU^\top y)=
 VD^{-1}U^\top y
 $$
 
 Equivalently:
 
 $$
-\hat{\beta}_{\mathrm{OLS}}
-=
+\hat{\beta}_{\mathrm{OLS}}=
 \sum_j \frac{u_j^\top y}{d_j}v_j
 $$
 
 So the OLS coefficient along direction $v_j$ is:
 
 $$
-\hat{\theta}_j^{\mathrm{OLS}}
-=
+\hat{\theta}_j^{\mathrm{OLS}}=
 \frac{u_j^\top y}{d_j}
 $$
 
 ## Ridge in PCA Basis
 
 $$
-X^\top X + \lambda I
-=
+X^\top X + \lambda I=
 V(D^2 + \lambda I)V^\top
 $$
 
 so
 
 $$
-(X^\top X + \lambda I)^{-1}
-=
+(X^\top X + \lambda I)^{-1}=
 V(D^2 + \lambda I)^{-1}V^\top
 $$
 
 Thus:
 
 $$
-\hat{\beta}_{\lambda}
-=
+\hat{\beta}_{\lambda}=
 V(D^2 + \lambda I)^{-1}DU^\top y
 $$
 
 The ridge coefficient along $v_j$ is:
 
 $$
-\hat{\theta}_j^{\mathrm{ridge}}
-=
+\hat{\theta}_j^{\mathrm{ridge}}=
 \frac{d_j}{d_j^2 + \lambda}u_j^\top y
 $$
 
 Compare with OLS:
 
 $$
-\hat{\theta}_j^{\mathrm{OLS}}
-=
+\hat{\theta}_j^{\mathrm{OLS}}=
 \frac{1}{d_j}u_j^\top y
 $$
 
@@ -157,8 +148,7 @@ Therefore:
 
 $$
 \boxed{
-\hat{\theta}_j^{\mathrm{ridge}}
-=
+\hat{\theta}_j^{\mathrm{ridge}}=
 \frac{d_j^2}{d_j^2+\lambda}
 \hat{\theta}_j^{\mathrm{OLS}}
 }
@@ -248,8 +238,7 @@ $$
 
 $$
 \boxed{
-\hat{\theta}_j^{\mathrm{ridge}}
-=
+\hat{\theta}_j^{\mathrm{ridge}}=
 \frac{d_j^2}{d_j^2+\lambda}
 \hat{\theta}_j^{\mathrm{OLS}}
 }

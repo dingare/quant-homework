@@ -29,8 +29,7 @@ Then:
 
 $$
 \boxed{
-\hat{\beta}_{(-i)}
-=
+\hat{\beta}_{(-i)}=
 \hat{\beta}
 -
 \frac{A^{-1}x_ie_i}{1-h_i}
@@ -41,8 +40,7 @@ Equivalently:
 
 $$
 \boxed{
-\hat{\beta}-\hat{\beta}_{(-i)}
-=
+\hat{\beta}-\hat{\beta}_{(-i)}=
 \frac{A^{-1}x_ie_i}{1-h_i}
 }
 $$
@@ -58,8 +56,7 @@ $$
 Use Sherman-Morrison:
 
 $$
-(A-uu^\top)^{-1}
-=
+(A-uu^\top)^{-1}=
 A^{-1}
 +
 \frac{A^{-1}uu^\top A^{-1}}{1-u^\top A^{-1}u}
@@ -104,8 +101,7 @@ $$
 
 $$
 \boxed{
-\hat{\beta}_{(-i)}
-=
+\hat{\beta}_{(-i)}=
 \hat{\beta}
 -
 \frac{(X^\top X)^{-1}x_ie_i}{1-h_i}

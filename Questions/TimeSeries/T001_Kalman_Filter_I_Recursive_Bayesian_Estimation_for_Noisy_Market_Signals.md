@@ -205,21 +205,18 @@ $$
 If $P$ is scalar, then:
 
 $$
-PH^\top
-=
+PH^\top=
 P
 \begin{bmatrix}
 1&1
-\end{bmatrix}
-=
+\end{bmatrix}=
 P(1,1)
 $$
 
 Also:
 
 $$
-HPH^\top
-=
+HPH^\top=
 \begin{bmatrix}
 1\\
 1
@@ -227,8 +224,7 @@ HPH^\top
 P
 \begin{bmatrix}
 1&1
-\end{bmatrix}
-=
+\end{bmatrix}=
 P
 \begin{bmatrix}
 1&1\\

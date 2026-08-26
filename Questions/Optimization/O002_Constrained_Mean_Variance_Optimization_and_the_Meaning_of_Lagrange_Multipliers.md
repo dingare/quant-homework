@@ -119,8 +119,7 @@ So the unconstrained optimizer naturally wants a net long portfolio.
 Introduce the Lagrangian
 
 $$
-\mathcal L(w,\lambda)
-=
+\mathcal L(w,\lambda)=
 \mu^\top w-\frac12 w^\top\Sigma w-\lambda\,1^\top w.
 $$
 
@@ -184,10 +183,8 @@ $$
 Thus
 
 $$
-w^*
-=
-\Sigma^{-1}(\mu-2\,1)
-=
+w^*=
+\Sigma^{-1}(\mu-2\,1)=
 \begin{pmatrix}
 0.5\\
 0\\

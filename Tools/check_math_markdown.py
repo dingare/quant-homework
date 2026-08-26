@@ -18,6 +18,7 @@ FORBIDDEN = {
 }
 
 INLINE_MATH_RE = re.compile(r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)")
+STANDALONE_EQUALS_RE = re.compile(r"\s*=+\s*")
 
 
 def braces_balance(expression: str) -> tuple[int, bool]:
@@ -39,8 +40,20 @@ def braces_balance(expression: str) -> tuple[int, bool]:
     return depth, early_close
 
 
-def math_regions(text: str) -> tuple[list[tuple[int, str]], list[str]]:
-    regions: list[tuple[int, str]] = []
+def standalone_equals_errors(start_line: int, expression: str) -> list[str]:
+    """Flag display-math lines GitHub can misread as Setext headings."""
+    errors: list[str] = []
+    for offset, line in enumerate(expression.splitlines(), start=1):
+        if STANDALONE_EQUALS_RE.fullmatch(line):
+            errors.append(
+                f"{start_line + offset}: standalone equals line inside display math; "
+                "keep = with an operand or use aligned with &="
+            )
+    return errors
+
+
+def math_regions(text: str) -> tuple[list[tuple[int, str, bool]], list[str]]:
+    regions: list[tuple[int, str, bool]] = []
     errors: list[str] = []
     display_start: int | None = None
     display_lines: list[str] = []
@@ -51,7 +64,7 @@ def math_regions(text: str) -> tuple[list[tuple[int, str]], list[str]]:
                 display_start = line_number
                 display_lines = []
             else:
-                regions.append((display_start, "\n".join(display_lines)))
+                regions.append((display_start, "\n".join(display_lines), True))
                 display_start = None
                 display_lines = []
             continue
@@ -61,7 +74,7 @@ def math_regions(text: str) -> tuple[list[tuple[int, str]], list[str]]:
             continue
 
         for match in INLINE_MATH_RE.finditer(line):
-            regions.append((line_number, match.group(1)))
+            regions.append((line_number, match.group(1), False))
 
         if line.count("$") % 2:
             errors.append(f"{line_number}: unmatched inline dollar delimiter")
@@ -99,7 +112,9 @@ def check_file(path: Path) -> list[str]:
     regions, delimiter_errors = math_regions(text)
     errors.extend(delimiter_errors)
 
-    for line_number, expression in regions:
+    for line_number, expression, is_display in regions:
+        if is_display:
+            errors.extend(standalone_equals_errors(line_number, expression))
         if "<" in expression or ">" in expression:
             errors.append(
                 f"{line_number}: raw angle bracket in math; use \\lt or \\gt"

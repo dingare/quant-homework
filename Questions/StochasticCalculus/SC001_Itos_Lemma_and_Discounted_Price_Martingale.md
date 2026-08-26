@@ -41,8 +41,7 @@ $$
 then
 
 $$
-dY_t
-=
+dY_t=
 f_tdt+f_xdX_t+\frac12 f_{xx}(dX_t)^2
 $$
 
@@ -56,8 +55,7 @@ we get
 
 $$
 \boxed{
-df(t,X_t)
-=
+df(t,X_t)=
 \left(f_t+\mu_tf_x+\frac12\sigma_t^2f_{xx}\right)dt
 +
 \sigma_tf_xdW_t
@@ -88,8 +86,7 @@ Itô's lemma gives:
 
 $$
 \boxed{
-d\log S_t
-=
+d\log S_t=
 \left(\mu-\frac12\sigma^2\right)dt+\sigma dW_t
 }
 $$
@@ -119,8 +116,7 @@ $$
 Using Itô product rule:
 
 $$
-d(e^{-rt}S_t)
-=
+d(e^{-rt}S_t)=
 e^{-rt}dS_t+S_td(e^{-rt})+d(e^{-rt})dS_t
 $$
 
@@ -129,8 +125,7 @@ The cross term is zero because $d(e^{-rt})$ only has $dt$.
 Therefore:
 
 $$
-d(e^{-rt}S_t)
-=
+d(e^{-rt}S_t)=
 e^{-rt}dS_t-re^{-rt}S_tdt
 $$
 
@@ -144,8 +139,7 @@ Then:
 
 $$
 \boxed{
-d(e^{-rt}S_t)
-=
+d(e^{-rt}S_t)=
 e^{-rt}S_t[(\mu-r)dt+\sigma dW_t]
 }
 $$
@@ -160,8 +154,7 @@ so
 
 $$
 \boxed{
-d(e^{-rt}S_t)
-=
+d(e^{-rt}S_t)=
 e^{-rt}S_t\sigma dW_t^Q
 }
 $$
@@ -179,8 +172,7 @@ $$
 Under $Q$,
 
 $$
-d\log S_t
-=
+d\log S_t=
 \left(r-\frac12\sigma^2\right)dt+\sigma dW_t^Q
 $$
 
@@ -320,16 +312,14 @@ Risk-neutral measure removes drift from discounted tradable asset prices.
 
 $$
 \boxed{
-d\log S_t
-=
+d\log S_t=
 \left(\mu-\frac12\sigma^2\right)dt+\sigma dW_t
 }
 $$
 
 $$
 \boxed{
-d(e^{-rt}S_t)
-=
+d(e^{-rt}S_t)=
 e^{-rt}S_t[(\mu-r)dt+\sigma dW_t]
 }
 $$

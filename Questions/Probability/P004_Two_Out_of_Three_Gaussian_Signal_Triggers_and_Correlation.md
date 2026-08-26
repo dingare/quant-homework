@@ -82,8 +82,7 @@ $$
 we have
 
 $$
-\mathbb P(N\ge2)
-=
+\mathbb P(N\ge2)=
 3p^2(1-p)+p^3.
 $$
 
@@ -122,16 +121,14 @@ $$
 We need
 
 $$
-\mathbb P(N=3\mid N\ge2)
-=
+\mathbb P(N=3\mid N\ge2)=
 \frac{p^3}{3p^2(1-p)+p^3}.
 $$
 
 Since the denominator is $0.05$,
 
 $$
-\mathbb P(N=3\mid N\ge2)
-=
+\mathbb P(N=3\mid N\ge2)=
 \frac{p^3}{0.05}.
 $$
 
@@ -168,8 +165,7 @@ $$
 Therefore
 
 $$
-\mathbb E[M\mid A]
-=
+\mathbb E[M\mid A]=
 a+\int_a^\infty \mathbb P(M\gt t\mid A)\,dt.
 $$
 
@@ -182,16 +178,14 @@ $$
 Then
 
 $$
-\mathbb P(M\le t,A)
-=
+\mathbb P(M\le t,A)=
 3q(t)^2\Phi(a)+q(t)^3.
 $$
 
 Hence
 
 $$
-\mathbb P(M\gt t\mid A)
-=
+\mathbb P(M\gt t\mid A)=
 1-
 \frac{
 3[\Phi(t)-\Phi(a)]^2\Phi(a)
@@ -204,8 +198,7 @@ Thus an exact one-dimensional integral is
 
 $$
 \boxed{
-\mathbb E[M\mid A]
-=
+\mathbb E[M\mid A]=
 a+
 \int_a^\infty
 \left[
@@ -230,8 +223,7 @@ $$
 Conditional on $Z=z$, the $X_i$ are independent and
 
 $$
-\mathbb P(X_i\gt a\mid Z=z)
-=
+\mathbb P(X_i\gt a\mid Z=z)=
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
@@ -240,8 +232,7 @@ $$
 Define
 
 $$
-p(z)
-=
+p(z)=
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
@@ -256,8 +247,7 @@ $$
 so
 
 $$
-\mathbb P(N\ge2\mid Z=z)
-=
+\mathbb P(N\ge2\mid Z=z)=
 3p(z)^2[1-p(z)]+p(z)^3.
 $$
 
@@ -265,8 +255,7 @@ Integrating over $Z$,
 
 $$
 \boxed{
-\mathbb P(N\ge2)
-=
+\mathbb P(N\ge2)=
 \int_{-\infty}^{\infty}
 \left[
 3p(z)^2(1-p(z))+p(z)^3

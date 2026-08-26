@@ -81,18 +81,15 @@ $$
 Using the convention
 
 $$
-\mathcal L(x,\lambda)
-=
+\mathcal L(x,\lambda)=
 \frac12(x-a)^\top(x-a)+\lambda^\top(Bx-c),
 $$
 
 the first-order condition in $x$ is
 
 $$
-\nabla_x \mathcal L
-=
-x-a+B^\top\lambda
-=
+\nabla_x \mathcal L=
+x-a+B^\top\lambda=
 0.
 $$
 

@@ -22,8 +22,7 @@ $$
 under the physical measure $\mathbb P$, and define a new measure $\mathbb Q$ by
 
 $$
-\frac{d\mathbb Q}{d\mathbb P}
-=
+\frac{d\mathbb Q}{d\mathbb P}=
 e^{\theta X-\frac12\theta^2}.
 $$
 
@@ -54,8 +53,7 @@ is the state-by-state weight conversion factor from old probabilities to new pro
 For any integrable random variable $Y$,
 
 $$
-E_{\mathbb Q}[Y]
-=
+E_{\mathbb Q}[Y]=
 E_{\mathbb P}\left[Y\frac{d\mathbb Q}{d\mathbb P}\right].
 $$
 
@@ -64,8 +62,7 @@ $$
 To define a probability measure, the density ratio must integrate to one:
 
 $$
-E_{\mathbb P}\left[e^{\theta X-\frac12\theta^2}\right]
-=
+E_{\mathbb P}\left[e^{\theta X-\frac12\theta^2}\right]=
 e^{-\frac12\theta^2}E_{\mathbb P}[e^{\theta X}].
 $$
 
@@ -88,28 +85,23 @@ The term $-\frac12\theta^2$ is just the normalization that makes total probabili
 Compute the moment generating function under $\mathbb Q$:
 
 $$
-E_{\mathbb Q}[e^{tX}]
-=
-E_{\mathbb P}\left[e^{tX}\frac{d\mathbb Q}{d\mathbb P}\right]
-=
+E_{\mathbb Q}[e^{tX}]=
+E_{\mathbb P}\left[e^{tX}\frac{d\mathbb Q}{d\mathbb P}\right]=
 E_{\mathbb P}\left[e^{(t+\theta)X-\frac12\theta^2}\right].
 $$
 
 Using the Gaussian MGF under $\mathbb P$:
 
 $$
-E_{\mathbb P}[e^{(t+\theta)X}]
-=
+E_{\mathbb P}[e^{(t+\theta)X}]=
 e^{\frac12(t+\theta)^2},
 $$
 
 so
 
 $$
-E_{\mathbb Q}[e^{tX}]
-=
-e^{-\frac12\theta^2}e^{\frac12(t+\theta)^2}
-=
+E_{\mathbb Q}[e^{tX}]=
+e^{-\frac12\theta^2}e^{\frac12(t+\theta)^2}=
 e^{\theta t+\frac12 t^2}.
 $$
 

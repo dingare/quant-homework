@@ -120,8 +120,7 @@ Suppose a strategy exits at:
 This can create an impressive win rate without creating positive expected value. What matters is:
 
 $$
-E[\text{PnL}]
-=
+E[\text{PnL}]=
 \sum \text{probability}\times \text{payoff}.
 $$
 

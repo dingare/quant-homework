@@ -63,8 +63,7 @@ Then answer:
 Use
 
 $$
-(D+UU^\top)^{-1}
-=
+(D+UU^\top)^{-1}=
 D^{-1}
 -
 D^{-1}U
@@ -87,8 +86,7 @@ You only need to solve a $2\times 2$ system.
 We have
 
 $$
-D^{-1}
-=
+D^{-1}=
 \mathrm{diag}
 \left(1,\frac12,\frac13,\frac14\right).
 $$
@@ -96,8 +94,7 @@ $$
 Therefore
 
 $$
-y=D^{-1}b
-=
+y=D^{-1}b=
 \begin{pmatrix}
 1\\1\\0\\1/4
 \end{pmatrix}.
@@ -106,8 +103,7 @@ $$
 Also,
 
 $$
-V=D^{-1}U
-=
+V=D^{-1}U=
 \begin{pmatrix}
 1&0\\
 1/2&1/2\\
@@ -126,8 +122,7 @@ $$
 Its entries are
 
 $$
-U^\top V
-=
+U^\top V=
 \begin{pmatrix}
 7/4&1/4\\
 1/4&13/12
@@ -147,8 +142,7 @@ $$
 Next,
 
 $$
-U^\top y
-=
+U^\top y=
 \begin{pmatrix}
 9/4\\
 3/4
@@ -168,8 +162,7 @@ $$
 11/4&1/4\\
 1/4&25/12
 \end{pmatrix}
-z
-=
+z=
 \begin{pmatrix}
 9/4\\
 3/4
@@ -259,8 +252,7 @@ So Woodbury is a geometric decomposition into:
 - Derive the determinant identity
 
 $$
-\det(D+UU^\top)
-=
+\det(D+UU^\top)=
 \det(D)\det(I+U^\top D^{-1}U).
 $$
 

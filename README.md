@@ -25,10 +25,11 @@ Follow [GitHub's official mathematical-expression syntax](https://docs.github.co
 - Use `$...$` for ordinary inline math.
 - If an inline expression overlaps with Markdown syntax, use GitHub's protected inline form: dollar sign, backtick, expression, backtick, dollar sign.
 - Use `$$...$$` on separate lines for display math in this repository.
+- Inside a `$$` display block, never place `=` alone on its own line. GitHub may parse it as a Setext heading underline and split the formula. Keep the equals sign with an operand, or use `\begin{aligned}` with `&=` for multiline derivations.
 - Do not use `\(...\)` or `\[...\]`; they are not the repository's supported Markdown delimiters.
 - Do not place raw `<` or `>` inside math. Write `\lt` and `\gt` instead. For example, use `\sum_{i\lt j}` rather than `\sum_{i<j}`.
 - Do not use `\operatorname`, `\#`, or other macros already known to fail in the repository's GitHub rendering path. Prefer simple notation such as `Var`, `Cov`, set cardinality with `\left|\cdot\right|`, and ordinary text outside the formula.
-- Before committing, verify that inline dollar delimiters, display `$$` delimiters, and braces are balanced; search changed Markdown files for forbidden macros and raw angle brackets inside formulas.
+- Before committing, verify that inline dollar delimiters, display `$$` delimiters, and braces are balanced; search changed Markdown files for standalone equals lines, forbidden macros, and raw angle brackets inside formulas.
 - Run `python3 Tools/check_math_markdown.py <changed-markdown-files>` before committing math-heavy notes. The checker enforces these repository-specific compatibility rules.
 
 ### Folder Structure
