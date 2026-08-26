@@ -200,7 +200,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
-- 2026-08-25：新增[首次命中、奇偶增强、覆盖与轮流归属框架](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md)，把赌徒破产、奇偶增强递推、路径/环覆盖、线性期望与重根差分方程连接到 P011，并给出分阶段复习路线。
+- 2026-08-25: Added the [first-hitting parity, coverage, and alternating ownership framework](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md), connecting gambler's ruin, parity-augmented recursion, path/cycle coverage, linearity of expectation, and repeated-root difference equations to P011, with a staged review path.
 - 2026-08-20: Added [P011](Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) on first-hitting-time parity, odd-cycle ownership, linearity of expectation, and why optional stopping needs parity augmentation; added the related [second-order difference-equation knowledge card](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md).
 - 2026-08-17: Added [O007](Questions/Optimization/O007_Turnover_Constrained_Mean_Variance_Portfolio_and_KKT_Active_Set.md) from the final Daily Quant problem generated before the source schedule paused on 2026-08-14; completed and corrected the active-set/KKT solution for the $L^1$ turnover constraint.
 - 2026-08-13: Added the [Waiting Time and Competing Risks Cookbook](KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md), organizing exponential races, Gamma / Weibull hazards, Poisson arrivals, execution queues, inspection bias, and phase-type CTMC models; linked it bidirectionally with SC004 and SC006 without increasing the daily-question count.

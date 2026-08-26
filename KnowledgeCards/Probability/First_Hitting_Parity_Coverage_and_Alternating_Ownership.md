@@ -1,42 +1,42 @@
-# 首次命中、奇偶增强、覆盖与轮流归属框架
+# First-Hitting Parity, Coverage, and Alternating Ownership
 
-## 用途
+## Purpose
 
-这张卡用于识别一类共同骨架：随机游走首次访问某个位置的时刻，即首次命中时间（first hitting time）；该时刻的奇偶性（parity）决定轮到谁，最终收益则是各目标归属的总和。[P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) 是代表题，但这套方法也覆盖赌徒破产（gambler's ruin）、路径或环的覆盖（coverage）、轮流归属（alternating ownership），以及二阶差分方程（second-order difference equation）。
+This card organizes a recurring problem pattern: a random walk first visits a location at a first-hitting time; the parity of that time determines whose turn it is; and the final payoff is the sum of the ownership indicators for all targets. [P011 — Parity of First-Hitting Times on an Odd Cycle](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) is the representative problem, but the same framework also covers gambler's ruin, path or cycle coverage, alternating ownership, and second-order difference equations.
 
-核心分流是：
-
-$$
-\text{只问总数期望}\Rightarrow\text{指示变量与线性期望};
-$$
+The main decision split is:
 
 $$
-\text{只问边界或平均时间}\Rightarrow\text{首步递推或鞅};
+\text{expected total only}\Rightarrow\text{indicators and linearity of expectation};
 $$
 
 $$
-\text{问到达时刻奇偶或轮流归属}\Rightarrow\text{扩充状态或奇偶翻转递推}.
+\text{boundary identity or mean time only}\Rightarrow\text{first-step recursion or martingales};
 $$
 
-## 1. 基础模板：赌徒破产
+$$
+\text{hitting-time parity or alternating ownership}\Rightarrow\text{augment the state or use a parity-flipping recursion}.
+$$
 
-考虑状态空间 $\{0,1,\ldots,N\}$ 上的最近邻随机游走。令 $X_0=i$，其中 $0\lt i\lt N$；每一步以概率 $p$ 向右移动一格，以概率 $q=1-p$ 向左移动一格。到达 $0$ 或 $N$ 后过程停止，因此这两个点是吸收边界。定义首次到达任一边界的停时（stopping time）
+## 1. Base Template: Gambler's Ruin
+
+Consider a nearest-neighbor random walk on $\{0,1,\ldots,N\}$. Let $X_0=i$, where $0\lt i\lt N$. At each step the walk moves one unit to the right with probability $p$ and one unit to the left with probability $q=1-p$. The process stops upon reaching $0$ or $N$, so these are absorbing boundaries. Define the first time either boundary is reached by
 
 $$
 T=\inf\{t\ge0:X_t\in\{0,N\}\}.
 $$
 
-这个模型可以理解为：赌徒初始资本为 $i$，每局赢一单位的概率为 $p$、输一单位的概率为 $q$；问题是他会先破产到 $0$，还是先把资本做到 $N$。
+Equivalently, a gambler starts with capital $i$, wins one unit with probability $p$, and loses one unit with probability $q$. We ask whether the gambler goes broke at $0$ before building the bankroll to $N$.
 
-### 边界命中概率：究竟在计算什么
+### Boundary-Hitting Probability: What Are We Computing?
 
-我们关心的不是“某个时刻位于 $N$”的概率，而是**从 $i$ 出发，在先碰到 $0$ 之前先碰到 $N$ 的概率**。记
+The quantity of interest is not the probability of being at $N$ at some fixed time. It is the probability, starting from $i$, of hitting $N$ before hitting $0$. Write
 
 $$
 h_i=P_i(X_T=N)=P_i(T_N\lt T_0),
 $$
 
-其中
+where
 
 $$
 T_0=\inf\{t\ge0:X_t=0\},
@@ -46,7 +46,7 @@ T_N=\inf\{t\ge0:X_t=N\},
 T=T_0\wedge T_N.
 $$
 
-下标 $i$ 表示条件 $X_0=i$。由于最近邻路径不可能越过边界而不先碰到它，停止位置只可能是 $0$ 或 $N$，所以
+The subscript $i$ means that $X_0=i$. A nearest-neighbor path cannot cross a boundary without first touching it, so the stopped position is either $0$ or $N$. Consequently,
 
 $$
 X_T=N\mathbf1_{\{T_N\lt T_0\}},
@@ -54,31 +54,31 @@ X_T=N\mathbf1_{\{T_N\lt T_0\}},
 E_i[X_T]=Nh_i.
 $$
 
-这条等式把“停下时的位置期望”直接连接到所求的首次命中概率，是鞅解法的关键。
+This identity connects the expected stopped position directly to the required first-hitting probability and is the key to the martingale solution.
 
-#### 公平游走：用鞅与可选停止逐步推导
+#### Fair Walk: Martingale and Optional-Stopping Derivation
 
-当 $p=q=1/2$ 时，
+When $p=q=1/2$,
 
 $$
 E[X_{t+1}\mid\mathcal F_t]=X_t,
 $$
 
-因此 $X_t$ 是鞅（martingale）。直观上，公平游戏在下一步没有方向性优势，所以停止前的条件期望资本不变。
+so $X_t$ is a martingale. Intuitively, a fair game has no directional advantage at the next step, and the conditional expected capital remains unchanged before absorption.
 
-应用可选停止（optional stopping）时，最稳妥的写法是先取有界停时 $T\wedge n$。可选停止定理给出
+The safest optional-stopping argument first uses the bounded stopping time $T\wedge n$. The optional stopping theorem gives
 
 $$
 E_i[X_{T\wedge n}]=E_i[X_0]=i.
 $$
 
-有限区间上的吸收随机游走满足 $T\lt\infty$ 几乎必然；同时始终有 $0\le X_{T\wedge n}\le N$。于是 $X_{T\wedge n}\to X_T$，并可由有界收敛定理令 $n\to\infty$，得到
+For an absorbing random walk on a finite interval, $T\lt\infty$ almost surely. Moreover, $0\le X_{T\wedge n}\le N$. Thus $X_{T\wedge n}\to X_T$, and bounded convergence allows us to let $n\to\infty$:
 
 $$
 E_i[X_T]=i.
 $$
 
-另一方面，$X_T$ 只取 $0$ 与 $N$，故
+On the other hand, $X_T$ takes only the values $0$ and $N$, so
 
 $$
 E_i[X_T]
@@ -86,7 +86,7 @@ E_i[X_T]
 =Nh_i.
 $$
 
-比较两式便有
+Comparing the two expressions yields
 
 $$
 Nh_i=i,
@@ -94,17 +94,17 @@ Nh_i=i,
 \boxed{h_i=\frac{i}{N}}.
 $$
 
-因此
+Therefore,
 
 $$
 P_i(T_0\lt T_N)=1-h_i=1-\frac{i}{N}.
 $$
 
-面试中的一句话直觉是：公平资本过程的期望保持在 $i$；最终资本只能是 $0$ 或 $N$，所以落在 $N$ 的概率必须是 $i/N$。
+The interview-level intuition is one sentence: the expected capital in a fair game stays at $i$, and the terminal capital can only be $0$ or $N$, so the probability of finishing at $N$ must be $i/N$.
 
-#### 有偏游走：构造指数鞅
+#### Biased Walk: Constructing an Exponential Martingale
 
-当 $p\ne q$ 时，$X_t$ 本身不再是鞅，因为单步漂移为 $p-q$。令
+When $p\ne q$, $X_t$ is no longer a martingale because its one-step drift is $p-q$. Set
 
 $$
 r=\frac qp,
@@ -112,7 +112,7 @@ r=\frac qp,
 M_t=r^{X_t}.
 $$
 
-则
+Then
 
 $$
 E[M_{t+1}\mid\mathcal F_t]
@@ -121,13 +121,13 @@ E[M_{t+1}\mid\mathcal F_t]
 =M_t,
 $$
 
-所以 $M_t=(q/p)^{X_t}$ 是鞅。仍先停止于 $T\wedge n$。因为 $X_{T\wedge n}\in\{0,1,\ldots,N\}$，$M_{T\wedge n}$ 也被两个有限常数夹住；结合 $T\lt\infty$ 几乎必然，可取极限得到
+so $M_t=(q/p)^{X_t}$ is a martingale. Again, first stop at $T\wedge n$. Because $X_{T\wedge n}\in\{0,1,\ldots,N\}$, the stopped martingale is bounded between two finite constants. Combining this boundedness with $T\lt\infty$ almost surely and taking limits gives
 
 $$
 E_i[r^{X_T}]=r^i.
 $$
 
-停止时 $X_T$ 只可能是 $0$ 或 $N$，因此
+At absorption, $X_T$ is either $0$ or $N$. Hence
 
 $$
 r^i
@@ -135,13 +135,13 @@ r^i
 =(1-h_i)+r^Nh_i.
 $$
 
-整理可得
+Rearranging,
 
 $$
 r^i-1=h_i(r^N-1),
 $$
 
-从而
+and therefore
 
 $$
 \boxed{
@@ -151,176 +151,176 @@ h_i=\frac{1-r^i}{1-r^N}
 \qquad p\ne q.
 $$
 
-下边界先被命中的概率仍为 $1-h_i$。若 $p\gt q$，向右漂移使 $h_i$ 高于公平情形的 $i/N$；若 $p\lt q$，则相反。这是检查公式方向是否写反的快速方法。当 $p\to q$ 时，上式的极限回到 $i/N$。
+The probability of hitting the lower boundary first remains $1-h_i$. If $p\gt q$, the rightward drift makes $h_i$ larger than the fair-walk value $i/N$; if $p\lt q$, it makes $h_i$ smaller. This is a quick check that the ratio has not been inverted. As $p\to q$, the biased formula converges to $i/N$.
 
-#### 等价路线：首步分析与边值递推
+#### Equivalent Route: First-Step Analysis and Boundary Recurrence
 
-同一个 $h_i=P_i(T_N\lt T_0)$ 也可以不用鞅求解。站在内部点 $i$，走完第一步后只有两种状态：以概率 $p$ 到达 $i+1$，以概率 $q$ 到达 $i-1$。由马尔可夫性，之后“先到 $N$”的条件概率分别是 $h_{i+1}$ 与 $h_{i-1}$，因此
+The same probability $h_i=P_i(T_N\lt T_0)$ can be found without martingales. From an interior state $i$, the first step moves to $i+1$ with probability $p$ and to $i-1$ with probability $q$. By the Markov property, the conditional probabilities of subsequently hitting $N$ first are $h_{i+1}$ and $h_{i-1}$. Therefore,
 
 $$
 h_i=ph_{i+1}+qh_{i-1},
 \qquad h_0=0,\quad h_N=1.
 $$
 
-边界条件正是所求事件的定义：从 $0$ 出发已经失败，所以 $h_0=0$；从 $N$ 出发已经成功，所以 $h_N=1$。
+The boundary conditions are part of the event definition: starting from $0$ is already failure, whereas starting from $N$ is already success.
 
-公平时递推化为
+For a fair walk, the recurrence becomes
 
 $$
 h_{i+1}-h_i=h_i-h_{i-1}.
 $$
 
-相邻差分为常数，所以 $h_i=A+Bi$。代入 $h_0=0$ 与 $h_N=1$，得到
+The neighboring differences are constant, so $h_i=A+Bi$. Substituting $h_0=0$ and $h_N=1$ gives
 
 $$
 h_i=\frac{i}{N},
 $$
 
-与可选停止的答案一致。
+in agreement with optional stopping.
 
-有偏时把 $h_i=\lambda^i$ 代入递推，得到特征方程
+For a biased walk, substitute $h_i=\lambda^i$ into the recurrence to obtain the characteristic equation
 
 $$
-p\lambda^2-\lambda+q=0,
+p\lambda^2-\lambda+q=0.
 $$
 
-其两个根为 $1$ 与 $q/p$。因此二阶差分方程的通解是
+Its roots are $1$ and $q/p$, so the general solution of the second-order difference equation is
 
 $$
 h_i=A+B\left(\frac qp\right)^i.
 $$
 
-再代入两个边界条件，得到
+Applying the two boundary conditions produces
 
 $$
 h_i=\frac{1-(q/p)^i}{1-(q/p)^N},
 $$
 
-再次与指数鞅路线一致。两种方法并非在算不同的量：它们都从同一个事件 $\{T_N\lt T_0\}$ 出发；首步法利用该概率满足的局部递推，鞅法利用停止位置的全局期望约束。面试时，边界简单且能迅速找到鞅，鞅法通常更短；状态复杂、有越界或需要附加条件时，首步递推往往更稳。
+again matching the exponential-martingale result. These approaches do not compute different quantities: both begin with the same event $\{T_N\lt T_0\}$. First-step analysis uses the local recurrence satisfied by its probability, whereas the martingale method uses a global expectation constraint at the stopped position. In an interview, the martingale route is usually shorter when the boundaries are simple and the martingale is apparent; first-step recursion is often safer when the state is more complicated, overshoot is possible, or extra conditions are imposed.
 
-### 平均吸收时间
+### Mean Absorption Time
 
-令 $e_i=E_i[T]$。首步递推为
+Let $e_i=E_i[T]$. First-step analysis gives
 
 $$
 e_i=1+pe_{i+1}+qe_{i-1},
 \qquad e_0=e_N=0.
 $$
 
-公平情形：
+For a fair walk,
 
 $$
 e_i=i(N-i).
 $$
 
-这也可由 $X_t^2-t$ 的鞅和可选停止得到。有偏情形令 $\mu=p-q$，则 $X_t-\mu t$ 是鞅；结合 $E_i[X_T]=Nh_i$ 得
+This also follows from the martingale $X_t^2-t$ and optional stopping. In the biased case, let $\mu=p-q$. Then $X_t-\mu t$ is a martingale. Combining optional stopping with $E_i[X_T]=Nh_i$ gives
 
 $$
 e_i=\frac{Nh_i-i}{p-q}
 =\frac{i-Nh_i}{q-p}.
 $$
 
-这里有限状态、吸收几乎必然且 $E[T]\lt\infty$，因而上述停止可严格化。对无界区域、无界跳跃或可能无限等待的停时，不能只写“由可选停止”；必须检查有界停时、一致可积性或可积支配等条件。参见 [P002](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)。
+Because the state space is finite, absorption occurs almost surely and $E[T]\lt\infty$, so these stopping arguments can be made rigorous. On an unbounded domain, with unbounded jumps, or for a stopping time that may have infinite expectation, it is not enough to write “by optional stopping”; one must check bounded stopping times, uniform integrability, or an appropriate integrable domination condition. See [P002](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md).
 
-### 这套基础模板遗漏什么
+### What This Base Template Does Not Record
 
-$h_i$ 告诉你从哪个边界退出，$e_i$ 告诉你平均多久退出；两者都不告诉你 $T$ 是奇数还是偶数。若轮流行动使归属由 $T\bmod2$ 决定，必须保留时间奇偶状态。
+$h_i$ identifies the exit boundary, and $e_i$ gives the mean time to exit. Neither tells us whether $T$ is odd or even. If alternating turns make ownership depend on $T\bmod2$, time parity must be retained in the state.
 
-## 2. 四个相连的题型家族
+## 2. Four Connected Problem Families
 
-### A. 首次命中与赌徒破产
+### A. First Hitting and Gambler's Ruin
 
-- **识别信号：** “先到哪条边界”“破产前达到目标”“止盈与止损谁先触发”。
-- **标准工具：** $h_i=ph_{i+1}+qh_{i-1}$；平均时间用 $e_i=1+pe_{i+1}+qe_{i-1}$；简单边界优先考虑鞅和可选停止。
-- **能捕捉：** 出口身份、命中概率、平均停止时间；处理不等步长和越界时改用有限状态方程，见 [P007](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)。
-- **不能捕捉：** 裸位置状态不记录到达时刻奇偶、访问顺序或完整路径。
-- **面试变式：** 偏置硬币、非对称边界、条件命中时间、不等跳步与 overshoot、带漂移布朗运动。
+- **Recognition cues:** “Which boundary is reached first?”, “Reach a target before ruin,” or “Does take-profit or stop-loss trigger first?”
+- **Standard tools:** $h_i=ph_{i+1}+qh_{i-1}$; for mean time use $e_i=1+pe_{i+1}+qe_{i-1}$; for simple boundaries, consider martingales and optional stopping first.
+- **What it captures:** Exit identity, hitting probability, and mean stopping time. For unequal steps and overshoot, use a finite-state system instead; see [P007](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md).
+- **What it misses:** Position alone does not record hitting-time parity, visit order, or the complete path.
+- **Interview variants:** Biased coins, asymmetric boundaries, conditional hitting times, unequal jumps and overshoot, and Brownian motion with drift.
 
-### B. 奇偶增强的命中时间与轮流行动
+### B. Parity-Augmented Hitting Times and Alternating Turns
 
-- **识别信号：** “奇数步或偶数步首次到达”“两人轮流移动”“第几位玩家拿到首次访问奖励”。
-- **标准工具：** 状态扩充为 $(X_t,t\bmod2)$；或令 $q_i=P_i(T\text{ 为奇数})$，公平游走时
+- **Recognition cues:** “First arrive after an odd or even number of steps,” “Two players alternate moves,” or “Which player receives the first-visit reward?”
+- **Standard tools:** Augment the state to $(X_t,t\bmod2)$; alternatively, let $q_i=P_i(T\text{ is odd})$. For a fair walk,
 
 $$
 q_i=1-\frac{q_{i-1}+q_{i+1}}2.
 $$
 
-- **鞅角色：** 普通 $X_t$ 不够；需把 $(-1)^t$ 或概率母函数 $z^T$ 加入构造。$z=-1$ 提取奇偶差。
-- **能捕捉：** 首次到达的奇偶与交替归属。
-- **不能捕捉：** 单个目标的边际归属通常不足以给出各目标间依赖或最终胜率；胜率还需结构约束。
-- **面试变式：** 偏置游走的两层奇偶状态、每 $k$ 步轮换、不同玩家权重、给定边界与奇偶的联合概率。
+- **Role of martingales:** The ordinary $X_t$ martingale is insufficient. Incorporate $(-1)^t$ or the probability generating function $z^T$; evaluating at $z=-1$ extracts the parity imbalance.
+- **What it captures:** First-hitting parity and alternating ownership.
+- **What it misses:** Marginal ownership probabilities for individual targets generally do not reveal dependence among targets or the final win probability. The win probability also needs structural constraints.
+- **Interview variants:** Two-layer parity states for a biased walk, rotation every $k$ steps, player-specific weights, and the joint probability of a boundary and a parity.
 
-### C. 路径与环上的覆盖或已访问集合
+### C. Coverage and Visited Sets on Paths and Cycles
 
-- **识别信号：** “每个点第一次访问时领奖”“直到覆盖全部顶点”“圆环可以剪开或提升到整数线”。
-- **标准结构：** 一维游走的已访问集合始终是区间 $[\min X_t,\max X_t]$；环可剪成以目标为两个端点的区间，或提升到整数线研究极差。
-- **线性期望角色：** 对目标 $v$ 定义 $I_v=\mathbf1\{v\text{ 归某玩家}\}$，则 $E[\sum_v I_v]=\sum_vP(I_v=1)$，不要求独立。
-- **能捕捉：** 期望覆盖收益、最后未访问点、路径的二分颜色约束；在 P011 中，去掉最后一点后得到偶数长度路径，从而最终比分只能相差一。
-- **不能捕捉：** 线性期望本身不给方差、联合归属或胜率；必须另证可能比分的支持集，或计算联合概率。
-- **面试变式：** 偶环与奇环、加权顶点、非均匀起点、路径 cover time、最后访问点分布、一般图上是否仍能用二分结构。
+- **Recognition cues:** “Collect a reward on the first visit to each vertex,” “Continue until every vertex is covered,” or “Cut the cycle or lift it to the integer line.”
+- **Standard structure:** The visited set of a one-dimensional walk is always an interval $[\min X_t,\max X_t]$. A cycle can be cut into an interval whose endpoints represent a target, or lifted to the integer line so that its range can be studied.
+- **Role of linearity of expectation:** For a target $v$, define $I_v=\mathbf1\{v\text{ belongs to a given player}\}$. Then $E[\sum_v I_v]=\sum_vP(I_v=1)$; independence is not required.
+- **What it captures:** Expected coverage payoff, the last unvisited vertex, and bipartite coloring constraints on a path. In P011, deleting the final vertex leaves an even-length path, forcing the final scores to differ by exactly one.
+- **What it misses:** Linearity of expectation alone does not give variance, joint ownership, or win probability. One must additionally prove the support of the possible scores or compute joint probabilities.
+- **Interview variants:** Even versus odd cycles, weighted vertices, nonuniform starting points, path cover time, the distribution of the last-visited vertex, and whether bipartite structure still helps on a general graph.
 
-### D. 二阶差分方程
+### D. Second-Order Difference Equations
 
-- **识别信号：** 最近邻首步分析只连接 $i-1,i,i+1$；有两个边界条件。
-- **标准工具：** 齐次递推尝试 $a_i=\lambda^i$；非齐次项先找特解或平移。不同根给 $A\lambda_1^i+B\lambda_2^i$；二重根给
+- **Recognition cues:** Nearest-neighbor first-step analysis connects only $i-1$, $i$, and $i+1$, with two boundary conditions.
+- **Standard tools:** For a homogeneous recurrence, try $a_i=\lambda^i$. For a nonhomogeneous term, first find a particular solution or shift the sequence. Distinct roots give $A\lambda_1^i+B\lambda_2^i$; a repeated root gives
 
 $$
 a_i=(A+Bi)\lambda^i.
 $$
 
-- **在奇偶题中的角色：** 平移 $r_i=q_i-1/2$ 后特征方程为 $(\lambda+1)^2=0$，所以必须保留 $(A+Bi)(-1)^i$。负根对应交替，二重根产生线性包络。
-- **能捕捉：** 边界命中、平均时间、折现量、奇偶母函数等边值问题。
-- **不能捕捉：** 方程不会替你决定正确的状态、事件和边界；状态漏掉奇偶，解得再漂亮也回答错问题。
-- **面试变式：** 偏置游走的几何根、常数非齐次项、重复根、$z^T$ 母函数、更高阶跳步递推。详见 [二阶差分方程卡](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)。
+- **Role in parity problems:** After shifting by $r_i=q_i-1/2$, the characteristic equation is $(\lambda+1)^2=0$, so the term $(A+Bi)(-1)^i$ must be retained. The negative root represents alternation, and the repeated root creates a linear envelope.
+- **What it captures:** Boundary hitting, mean time, discounted quantities, and parity generating functions as boundary-value problems.
+- **What it misses:** The equation cannot choose the correct state, event, or boundary conditions for you. If parity is omitted from the state, an elegant solution still answers the wrong question.
+- **Interview variants:** Geometric roots for a biased walk, constant nonhomogeneous terms, repeated roots, the $z^T$ generating function, and higher-order recurrences from larger jumps. See the [second-order difference equations card](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md).
 
-## 3. 识别与选法决策树
+## 3. Recognition and Method-Selection Decision Tree
 
-1. **结果是若干目标奖励之和吗？** 是：先为每个目标设归属指示变量，用线性期望；不要先追联合分布。
-2. **单个目标只依赖先到哪个边界吗？** 是：剪图成区间，写普通命中递推；边界简单时用鞅更短。
-3. **行动者随步数轮换，或题目问奇偶时刻吗？** 是：立即把 $t\bmod2$ 加入状态，或写“走一步后奇偶翻转”的递推。
-4. **问平均停止时间吗？** 在概率递推上加当步的 $+1$；公平时考虑 $X_t^2-t$，有偏时考虑 $X_t-(p-q)t$。
-5. **问覆盖路径或环吗？** 检查已访问集是否为区间、能否剪环、是否存在二分颜色或最后顶点结构。
-6. **得到最近邻线性递推吗？** 解二阶差分方程；先找特解，再检查重根和两个边界。
-7. **想由期望推出胜率吗？** 只有先证明最终取值只有两个可能时才可；否则期望不决定胜率。
+1. **Is the outcome a sum of rewards over targets?** If yes, first assign an ownership indicator to each target and use linearity of expectation; do not start by seeking the joint distribution.
+2. **For one target, does the event depend only on which boundary is hit first?** If yes, cut the graph into an interval and write the ordinary hitting recurrence; when the boundaries are simple, a martingale may be shorter.
+3. **Does the acting player rotate with the step count, or does the problem ask about odd/even arrival?** If yes, immediately add $t\bmod2$ to the state or write a recursion in which parity flips after one step.
+4. **Is the mean stopping time required?** Add the current step's $+1$ to the probability recurrence. In the fair case consider $X_t^2-t$; in the biased case consider $X_t-(p-q)t$.
+5. **Does the problem ask about covering a path or cycle?** Check whether the visited set is an interval, whether the cycle can be cut, and whether bipartite coloring or a last-vertex argument applies.
+6. **Did first-step analysis produce a nearest-neighbor linear recurrence?** Solve the second-order difference equation: find a particular solution first, then check for repeated roots and impose both boundary conditions.
+7. **Do you want to infer a win probability from an expectation?** This is valid only after proving that the final value has exactly two possible outcomes; otherwise, the expectation does not determine the win probability.
 
-## 4. 从简单到复杂的复习路线
+## 4. Review Path from Simple to Complex
 
-| 顺序 | 要掌握的问题 | 为什么是下一步 | 新增要素 | 对应条目 |
+| Order | Problem to Master | Why It Comes Next | New Ingredient | Entry |
 | --- | --- | --- | --- | --- |
-| 1 | **先掌握：公平赌徒破产。** 从 $i$ 出发先到 $N$ 的概率与平均吸收时间 | 建立边界值、首步递推和可选停止的共同语言 | 调和递推；$X_t$ 与 $X_t^2-t$ | [P002](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md) |
-| 2 | 偏置赌徒破产 | 在同一状态空间中看线性解变为几何解 | $(q/p)^{X_t}$；中心化鞅；两个不同特征根 | 本卡第 1 节 |
-| 3 | 不等步长的有限区间退出 | 防止机械套用最近邻公式 | overshoot；有限状态线性系统 | [P007](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md) |
-| 4 | 区间吸收时间为奇数的概率 | 第一次强制承认“位置状态不够” | 奇偶翻转；$(X_t,t\bmod2)$；二重根 $-1$ | [二阶差分方程卡](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md) |
-| 5 | 路径上首次访问奖励的期望 | 从一个目标推广到许多相关目标 | 指示变量；无需独立的线性期望 | [Indicator Cookbook](Indicator_Random_Variables_Cookbook.md) |
-| 6 | **P011 奇环轮流归属** | 合并命中奇偶、剪环、覆盖区间和胜率结构 | 整数线提升；最后顶点；二分路径；期望转胜率 | [P011](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) |
-| 7 | 偏置、加权或偶环版本 | 检验哪些结论依赖公平性、均匀性与奇环 | 两层递推；加权线性期望；二分图例外 | P011 Practice Variants |
+| 1 | **Start here: fair gambler's ruin.** From $i$, find the probability of reaching $N$ first and the mean absorption time | Establishes the common language of boundary values, first-step recursion, and optional stopping | Harmonic recurrence; $X_t$ and $X_t^2-t$ | [P002](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md) |
+| 2 | Biased gambler's ruin | Shows a linear solution becoming geometric on the same state space | $(q/p)^{X_t}$; centered martingale; two distinct characteristic roots | Section 1 of this card |
+| 3 | Finite-interval exit with unequal step sizes | Prevents mechanical use of nearest-neighbor formulas | Overshoot; finite-state linear system | [P007](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md) |
+| 4 | Probability that interval absorption occurs at an odd time | First problem that forces recognition that position alone is insufficient | Parity flip; $(X_t,t\bmod2)$; repeated root $-1$ | [Second-order difference equations card](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md) |
+| 5 | Expected first-visit rewards on a path | Extends one target to many dependent targets | Indicators; linearity of expectation without independence | [Indicator Cookbook](Indicator_Random_Variables_Cookbook.md) |
+| 6 | **P011: alternating ownership on an odd cycle** | Combines hitting parity, cutting a cycle, interval coverage, and score structure | Integer-line lift; last vertex; bipartite path; expectation to win probability | [P011](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) |
+| 7 | Biased, weighted, or even-cycle versions | Tests which conclusions rely on fairness, uniformity, and odd-cycle structure | Two-layer recurrence; weighted linearity; bipartite exceptions | P011 Practice Variants |
 
-每一步复习时都同时回答四问：状态是什么、边界是什么、一步后递推怎样、该状态遗漏了什么。
+At every stage, answer four questions: What is the state? What are the boundaries? What is the one-step recursion? What information does the state omit?
 
-## 5. P011 的框架定位
+## 5. Where P011 Fits
 
-P011 同时使用四个家族：普通赌徒破产证明整数线最终覆盖区间的端点参数均匀；坐标与时间同奇偶把首次访问映射为玩家归属；指示变量与线性期望汇总每块砖；奇偶翻转递推产生二重根 $-1$；最后删除一个顶点所得的二分路径，再把期望差转成胜率。
+P011 uses all four families. Ordinary gambler's ruin shows that the endpoint parameter of the eventually covered interval on the integer lift is uniform. Matching coordinate parity with time parity maps first visits to player ownership. Indicators and linearity of expectation aggregate the ownership of every brick. The parity-flipping recursion produces the repeated root $-1$. Finally, deleting the last vertex leaves a bipartite path, allowing the expected score difference to be converted into a win probability.
 
-因此最重要的诊断不是“会不会某个闭式公式”，而是：
+The most important diagnosis is therefore not whether one remembers a particular closed form, but this distinction:
 
 $$
 \boxed{
-\text{普通命中只需位置；交替归属必须保留时间相位。}
+\text{Ordinary hitting needs position only; alternating ownership must retain the time phase.}
 }
 $$
 
-## 相关连接
+## Connections
 
-- [P011 — 奇环上首次到达时间的奇偶性与奖金归属](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
-- [P002 — 可选停止](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
-- [P007 — 不等步长随机游走](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
-- [指示随机变量手册](Indicator_Random_Variables_Cookbook.md)
-- [随机游走命中问题中的二阶差分方程](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
+- [P011 — Parity of First-Hitting Times on an Odd Cycle](../../Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
+- [P002 — Optional Stopping](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
+- [P007 — Unequal-Jump Random Walk](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md)
+- [Indicator Random Variables Cookbook](Indicator_Random_Variables_Cookbook.md)
+- [Second-Order Difference Equations for Random-Walk Hitting Problems](Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
 
-## 核心记忆
+## What to Remember
 
 $$
 \boxed{
-\text{先问状态是否足够，再选线性期望、鞅或奇偶增强递推。}
+\text{First ask whether the state is sufficient; then choose linearity, a martingale, or parity augmentation.}
 }
 $$

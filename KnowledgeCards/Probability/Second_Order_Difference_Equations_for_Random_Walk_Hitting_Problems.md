@@ -2,20 +2,20 @@
 
 ## Purpose
 
-随机游走的边界命中概率、期望停止时间、折现命中量和首次到达时间奇偶性，通常都可由首步分析化为二阶差分方程。核心流程是
+Boundary-hitting probabilities, expected stopping times, discounted hitting quantities, and first-hitting-time parity for random walks can usually be reduced to second-order difference equations by first-step analysis. The core workflow is
 
 $$
-\text{定义状态量}
+\text{define the state quantity}
 \rightarrow
-\text{写边界值}
+\text{write the boundary values}
 \rightarrow
-\text{首步分析}
+\text{apply first-step analysis}
 \rightarrow
-\text{齐次化}
+\text{homogenize the recurrence}
 \rightarrow
-\text{特征根}
+\text{find the characteristic roots}
 \rightarrow
-\text{边界定常数}.
+\text{use the boundaries to determine the constants}.
 $$
 
 ## 1. 先分清所求量
