@@ -53,11 +53,11 @@ Hence
 
 $$
 \boxed{
+\begin{aligned}
 P(\text{1 and 2 meet in the final})
-=
-\frac{N/2}{N-1}
-=
-\frac{2^{n-1}}{2^n-1}
+&=\frac{N/2}{N-1}\\
+&=\frac{2^{n-1}}{2^n-1}
+\end{aligned}
 }
 $$
 
@@ -81,20 +81,18 @@ Therefore
 
 $$
 \boxed{
+\begin{aligned}
 P(\text{player }k\text{ reaches Top }T)
-=
-\frac{\binom{N-k}{s-1}}{\binom{N-1}{s-1}}
-=
-\frac{\binom{N-k}{N/T-1}}{\binom{N-1}{N/T-1}}
+&=\frac{\binom{N-k}{s-1}}{\binom{N-1}{s-1}}\\
+&=\frac{\binom{N-k}{N/T-1}}{\binom{N-1}{N/T-1}}
+\end{aligned}
 }
 $$
 
 Example: if $N=16$, then the probability that player 5 reaches Top 4 is
 
 $$
-\frac{\binom{11}{3}}{\binom{15}{3}}
-=
-\frac{33}{91}.
+\frac{\binom{11}{3}}{\binom{15}{3}}=\frac{33}{91}.
 $$
 
 ### 3. Champion
@@ -123,9 +121,7 @@ $$
 Also,
 
 $$
-E[R]
-=
-\sum_{r=1}^n r\frac{2^{r-1}}{N-1}.
+E[R]=\sum_{r=1}^n r\frac{2^{r-1}}{N-1}.
 $$
 
 Using
@@ -156,11 +152,12 @@ Thus
 
 $$
 \boxed{
+\begin{aligned}
 P(\text{1 and }k\text{ meet in round }r)
-=
-\frac{2^{r-1}}{N-1}
+&=\frac{2^{r-1}}{N-1}
 \cdot
 \frac{\binom{N-k}{2^{r-1}-1}}{\binom{N-2}{2^{r-1}-1}}
+\end{aligned}
 }
 \qquad r=1,2,\dots,n.
 $$
@@ -169,12 +166,13 @@ Summing over all rounds gives
 
 $$
 \boxed{
+\begin{aligned}
 P(\text{1 and }k\text{ meet})
-=
-\sum_{r=1}^n
+&=\sum_{r=1}^n
 \frac{2^{r-1}}{N-1}
 \cdot
 \frac{\binom{N-k}{2^{r-1}-1}}{\binom{N-2}{2^{r-1}-1}}
+\end{aligned}
 }.
 $$
 
@@ -182,10 +180,11 @@ If needed, the conditional expected meeting round is
 
 $$
 \boxed{
+\begin{aligned}
 E[R\mid \text{meet}]
-=
-\frac{\sum_{r=1}^n r\,P(\text{meet in round }r)}
+&=\frac{\sum_{r=1}^n r\,P(\text{meet in round }r)}
 {P(\text{meet})}
+\end{aligned}
 }.
 $$
 
