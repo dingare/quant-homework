@@ -24,6 +24,9 @@ Categorized index of all finalized subject notes.
 - [P009 — Uniform Sum Stopping Time and the Overshooting Draw](Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md)
 - [P010 — Bayesian Signal Selection under Multiple Testing](Questions/Probability/P010_Bayesian_Signal_Selection_under_Multiple_Testing.md)
 - [P011 — 奇环上首次到达时间的奇偶性与奖金归属](Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md)
+- [P012 — Random-Walk Stopping: Hit +3 Before -2](Questions/Probability/P012_Random_Walk_Stopping_Hit_Plus3_Before_Minus2.md)
+- [P013 — Bayesian Gaussian Signal Fusion with Correlated Noise](Questions/Probability/P013_Bayesian_Gaussian_Signal_Fusion_with_Correlated_Noise.md)
+- [P014 — Conditional Expectation Under a Random Stopping Rule](Questions/Probability/P014_Conditional_Expectation_Under_a_Random_Stopping_Rule.md)
 
 ## Statistics
 
@@ -35,6 +38,7 @@ Categorized index of all finalized subject notes.
 - [S006 — Two Noisy Proxies and Errors-in-Variables](Questions/Statistics/S006_Two_Noisy_Proxies_and_Errors_in_Variables.md)
 - [S007 — Competing Consistent Estimators and Efficient Instruments](Questions/Statistics/S007_Competing_Consistent_Estimators_and_Efficient_Instruments.md)
 - [S008 — Selection Bias from Trading on Signals or Outcomes](Questions/Statistics/S008_Selection_Bias_from_Trading_on_Signals_or_Outcomes.md)
+- [S009 — Overlapping Three-Day Returns and Hansen–Hodrick Inference](Questions/Statistics/S009_Overlapping_Three_Day_Returns_and_Hansen_Hodrick_Inference.md)
 
 ## Time Series
 
@@ -54,6 +58,7 @@ Categorized index of all finalized subject notes.
 - [O005 — Robust Portfolio Choice under Ellipsoidal Mean Uncertainty](Questions/Optimization/O005_Robust_Portfolio_Choice_under_Ellipsoidal_Mean_Uncertainty.md)
 - [O006 — Hedge-Constrained Execution with Position Limits](Questions/Optimization/O006_Hedge_Constrained_Execution_with_Position_Limits.md)
 - [O007 — Turnover-Constrained Mean-Variance Portfolio and KKT Active Set](Questions/Optimization/O007_Turnover_Constrained_Mean_Variance_Portfolio_and_KKT_Active_Set.md)
+- [O008 — Risk Budgeting with a Binding Factor Constraint](Questions/Optimization/O008_Risk_Budgeting_with_a_Binding_Factor_Constraint.md)
 
 ## Coding
 
