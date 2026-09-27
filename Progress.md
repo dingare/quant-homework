@@ -7,21 +7,21 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 6 |
-| Probability | P | 11 |
-| Statistics | S | 8 |
+| Probability | P | 16 |
+| Statistics | S | 9 |
 | Time Series | T | 6 |
-| Optimization | O | 7 |
+| Optimization | O | 8 |
 | Coding | C | 3 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 47 |
+| Total | All | 54 |
 
 ## Knowledge Cards
 
 | Category | Count |
 | --- | ---: |
-| Probability | 4 |
-| Total | 4 |
+| Probability | 5 |
+| Total | 5 |
 
 ## Notes
 
@@ -60,3 +60,4 @@ Track counts of finalized subject notes by category.
 - Added O007 from the final generated Daily Quant problem before the source schedule paused on 2026-08-14; corrected the source candidate by completing the KKT active-set check.
 - Added P011 and the Second-Order Difference Equations for Random-Walk Hitting Problems knowledge card on 2026-08-20; Probability now has 11 finalized questions and 3 knowledge cards.
 - Added the First-Hitting Parity, Coverage, and Alternating Ownership framework card on 2026-08-25; Probability knowledge cards now total 4.
+- Added P015 (twice-seen dice coupon collector), P016 (mutual nearest neighbors), and the Random Points, Order Statistics, and Spacings knowledge card on 2026-09-27; reconciled counts with all existing question files.

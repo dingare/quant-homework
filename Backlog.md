@@ -2,6 +2,21 @@
 
 Unfinished topics and future note clusters.
 
+## Random Points and Spacings — To-Do List
+
+Status: Core topic completed and summarized in the [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md) Knowledge Card. P001 covers interval and semicircle coverage; P016 covers mutual neighbors, simulation, expectation, and spacing laws.
+
+**Future problems for the next session**
+
+- Derive the variance of the mutual-neighbor car count by classifying overlapping local-gap events; compare it with simulation uncertainty.
+- Derive the nearest-neighbor distance distribution for an endpoint rank, an interior rank, and a uniformly selected car; distinguish these from a fixed adjacent spacing.
+- Work out mutual-neighbor counts on a circle with geodesic distance and with cars fixed at segment endpoints; state the changed boundary comparisons.
+- Analyze one explicit nonuniform position model and check which gap-symmetry arguments and expectation formulas survive.
+- Develop the existing Part X broken-stick item into minimum- and maximum-spacing questions, distinguishing internal gaps from all gaps including boundaries.
+
+These are unfinished extensions, not completed question notes. The simulation,
+mean, and Dirichlet/Beta results already in P016 do not need to be redone.
+
 ## Probability Patterns
 
 Goal: organize probability interview problems by **thinking patterns**, not by probability distributions. Each chapter should focus on the intuition, common solution techniques, and representative interview questions.

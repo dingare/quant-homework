@@ -15,6 +15,9 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 ## Relationship Notes
 
+- [P015 — Dice Coupon Collector: See Every Face at Least Twice](../Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md): Coupon Collection -> Sufficient State -> First-Step Recurrence -> Self-Loop Removal -> Dynamic Programming
+- [Random Points, Order Statistics, and Spacings](../KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md): P001 Coverage and Range -> Order Statistics -> Boundary Effects -> Dirichlet and Beta Spacings -> P016 Mutual Neighbors -> Efficient Simulation
+- [P016 — Mutual Nearest Neighbors on a Line](../Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md): Order Statistics -> Dirichlet Spacings -> Local Gap Minima -> Indicator Expectations -> Linear-Time Simulation
 - [P001 — Fixed vs Exists Probability Patterns](../Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md): Fixed vs Exists -> Circle Semicircle Problem -> Range -> Boundary Correction -> Complement Counting -> Inclusion-Exclusion
 - [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](../Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md): Gaussian Signals -> Binomial Exceedance Counts -> Threshold Calibration -> Conditional Maximum -> Equicorrelation -> Common Factor Mixture
 - [Indicator Random Variables Cookbook](../KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md): Counting Problems -> Indicator Sums -> Linearity of Expectation -> Joint Probabilities -> Covariance -> Overlap Classification -> Factorial Moments -> Poisson Approximation

@@ -200,6 +200,9 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-09-27: Added [P015](Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md) on collecting every die face twice using a two-variable first-step recurrence.
+- 2026-09-27: Added [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md), summarizing completed P001 and P016 material; recorded unfinished extensions in the [To-Do List](Backlog.md#random-points-and-spacings--to-do-list).
+- 2026-09-27: Added [P016](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md) on mutual nearest neighbors, efficient simulation, indicator expectations, and uniform spacings.
 - 2026-08-25: Added the [first-hitting parity, coverage, and alternating ownership framework](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md), connecting gambler's ruin, parity-augmented recursion, path/cycle coverage, linearity of expectation, and repeated-root difference equations to P011, with a staged review path.
 - 2026-08-20: Added [P011](Questions/Probability/P011_Parity_of_First_Hitting_Times_on_an_Odd_Cycle.md) on first-hitting-time parity, odd-cycle ownership, linearity of expectation, and why optional stopping needs parity augmentation; added the related [second-order difference-equation knowledge card](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md).
 - 2026-08-17: Added [O007](Questions/Optimization/O007_Turnover_Constrained_Mean_Variance_Portfolio_and_KKT_Active_Set.md) from the final Daily Quant problem generated before the source schedule paused on 2026-08-14; completed and corrected the active-set/KKT solution for the $L^1$ turnover constraint.

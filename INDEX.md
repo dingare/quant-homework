@@ -27,6 +27,8 @@ Categorized index of all finalized subject notes.
 - [P012 — Random-Walk Stopping: Hit +3 Before -2](Questions/Probability/P012_Random_Walk_Stopping_Hit_Plus3_Before_Minus2.md)
 - [P013 — Bayesian Gaussian Signal Fusion with Correlated Noise](Questions/Probability/P013_Bayesian_Gaussian_Signal_Fusion_with_Correlated_Noise.md)
 - [P014 — Conditional Expectation Under a Random Stopping Rule](Questions/Probability/P014_Conditional_Expectation_Under_a_Random_Stopping_Rule.md)
+- [P015 — Dice Coupon Collector: See Every Face at Least Twice](Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md)
+- [P016 — Mutual Nearest Neighbors on a Line](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)
 
 ## Statistics
 
@@ -87,3 +89,4 @@ No entries yet.
 - [Waiting Time and Competing Risks Cookbook](KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md)
 - [Second-Order Difference Equations for Random-Walk Hitting Problems](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
 - [首次命中、奇偶增强、覆盖与轮流归属框架](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md)
+- [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md)
