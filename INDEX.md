@@ -68,6 +68,8 @@ Categorized index of all finalized subject notes.
 - [C002 — Shortest Subarray at Least K with a Monotonic Deque](Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)
 - [C003 — Online Median with Two Heaps](Questions/Coding/C003_Online_Median_with_Two_Heaps.md)
 
+- [C004 — NeetCode Sliding Window Maximum](Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md)
+
 ## Stochastic Calculus
 
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)

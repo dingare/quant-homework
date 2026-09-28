@@ -15,6 +15,7 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 ## Relationship Notes
 
+- [C004 — NeetCode Sliding Window Maximum](../Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md): Range Maximum -> Segment Tree / Block DP -> Monotonic Deque Dominance ([C002](../Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)) -> Heap Lazy Deletion ([C003](../Questions/Coding/C003_Online_Median_with_Two_Heaps.md))
 - [P015 — Dice Coupon Collector: See Every Face at Least Twice](../Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md): Coupon Collection -> Sufficient State -> First-Step Recurrence -> Self-Loop Removal -> Dynamic Programming
 - [Random Points, Order Statistics, and Spacings](../KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md): P001 Coverage and Range -> Order Statistics -> Boundary Effects -> Dirichlet and Beta Spacings -> P016 Mutual Neighbors -> Efficient Simulation
 - [P016 — Mutual Nearest Neighbors on a Line](../Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md): Order Statistics -> Dirichlet Spacings -> Local Gap Minima -> Indicator Expectations -> Linear-Time Simulation

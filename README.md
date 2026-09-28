@@ -200,6 +200,7 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-09-27: Added [C004 — NeetCode Sliding Window Maximum](Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md) with segment tree, block DP, monotonic deque, and heap solutions, plus time/space comparisons.
 - 2026-09-27: Added [P015](Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md) on collecting every die face twice using a two-variable first-step recurrence.
 - 2026-09-27: Added [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md), summarizing completed P001 and P016 material; recorded unfinished extensions in the [To-Do List](Backlog.md#random-points-and-spacings--to-do-list).
 - 2026-09-27: Added [P016](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md) on mutual nearest neighbors, efficient simulation, indicator expectations, and uniform spacings.
