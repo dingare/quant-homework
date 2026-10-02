@@ -7,14 +7,14 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 6 |
-| Probability | P | 16 |
+| Probability | P | 17 |
 | Statistics | S | 9 |
 | Time Series | T | 6 |
 | Optimization | O | 8 |
 | Coding | C | 4 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 55 |
+| Total | All | 56 |
 
 ## Knowledge Cards
 
@@ -62,3 +62,4 @@ Track counts of finalized subject notes by category.
 - Added the First-Hitting Parity, Coverage, and Alternating Ownership framework card on 2026-08-25; Probability knowledge cards now total 4.
 - Added P015 (twice-seen dice coupon collector), P016 (mutual nearest neighbors), and the Random Points, Order Statistics, and Spacings knowledge card on 2026-09-27; reconciled counts with all existing question files.
 - Added C004 (NeetCode Sliding Window Maximum) on 2026-09-27; Coding now has 4 notes and the total is 55.
+- Added P018 (first Ace position and face-card conditioning) on 2026-10-02; Probability now has 17 notes and the total is 56. P017 is not yet filed; the supplied P018 identifier is preserved.

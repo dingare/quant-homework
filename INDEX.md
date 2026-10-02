@@ -30,6 +30,8 @@ Categorized index of all finalized subject notes.
 - [P015 — Dice Coupon Collector: See Every Face at Least Twice](Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md)
 - [P016 — Mutual Nearest Neighbors on a Line](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)
 
+- [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md)
+
 ## Statistics
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)

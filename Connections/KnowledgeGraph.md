@@ -15,6 +15,8 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 ## Relationship Notes
 
+- [P018 — First Ace Position and Conditioning on a Face Card](../Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md): Sampling Without Replacement -> Minimum Order Statistic -> Exchangeable Gaps ([P016](../Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)) -> Beta-Binomial Variance -> Conditional Expectation
+
 - [C004 — NeetCode Sliding Window Maximum](../Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md): Range Maximum -> Segment Tree / Block DP -> Monotonic Deque Dominance ([C002](../Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)) -> Heap Lazy Deletion ([C003](../Questions/Coding/C003_Online_Median_with_Two_Heaps.md))
 - [P015 — Dice Coupon Collector: See Every Face at Least Twice](../Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md): Coupon Collection -> Sufficient State -> First-Step Recurrence -> Self-Loop Removal -> Dynamic Programming
 - [Random Points, Order Statistics, and Spacings](../KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md): P001 Coverage and Range -> Order Statistics -> Boundary Effects -> Dirichlet and Beta Spacings -> P016 Mutual Neighbors -> Efficient Simulation
