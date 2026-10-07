@@ -203,6 +203,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-06: Added worked drill answers in C005, C006, P019, S010, and T007; extended P018, L001, and O002 with the exact drill variants. All answers are linked from [the daily test](DailyTests/2026-10-06.md#questions-and-worked-answers), with time-capped attempt context preserved.
+
 - 2026-10-06: Added [daily interview testing results](DailyTests/2026-10-06.md) and a [daily-tests index](DailyTests/INDEX.md); recorded all seven questions, user-reported timings, ratings, and retrieval notes.
 
 - 2026-10-02: Added [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md) on the first Ace distribution, exchangeable gaps, beta-binomial variance, and conditioning on a face card.

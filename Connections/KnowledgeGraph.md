@@ -15,6 +15,15 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 ## Relationship Notes
 
+- [C005 — Q1 drill answer](../Questions/Coding/C005_Maximum_Subarray_Sum_Fixed_and_Minimum_Length.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Window invariant → Prefix difference → Eligible running minimum
+- [P018 — Q2 drill answer](../Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md#interview-drill--second-ace-before-position-20) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Conditional sample space → Complement counting → Order statistics
+- [S010 — Q3 drill answer](../Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Sampling uncertainty → Robust variance → Identification
+- [C006 — Q4 drill answer](../Questions/Coding/C006_Longest_Consecutive_Sequence.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Hash membership → Interval boundary invariant → Linear expected time
+- [P019 — Q5 drill answer](../Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Suffix states → First-step recurrence → Absorption
+- [T007 — Q6 drill answer](../Questions/TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Information availability → Chronological validation → Regime stability
+- [L001 — Q7 drill answer](../Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md#interview-drill--why-ridge-is-invertible) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Positive definiteness → Unique optimum → Lagrange multipliers
+- [O002 — Q7 drill answer](../Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md#interview-drill--risk-aversion-and-a-budget-constraint) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Positive definiteness → Unique optimum → Lagrange multipliers
+
 - [P018 — First Ace Position and Conditioning on a Face Card](../Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md): Sampling Without Replacement -> Minimum Order Statistic -> Exchangeable Gaps ([P016](../Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)) -> Beta-Binomial Variance -> Conditional Expectation
 
 - [C004 — NeetCode Sliding Window Maximum](../Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md): Range Maximum -> Segment Tree / Block DP -> Monotonic Deque Dominance ([C002](../Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)) -> Heap Lazy Deletion ([C003](../Questions/Coding/C003_Online_Median_with_Two_Heaps.md))

@@ -36,6 +36,7 @@ Categorized index of all finalized subject notes.
 - [P016 — Mutual Nearest Neighbors on a Line](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)
 
 - [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md)
+- [P019 — HH vs HTT Pattern Race](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md)
 
 ## Statistics
 
@@ -48,6 +49,7 @@ Categorized index of all finalized subject notes.
 - [S007 — Competing Consistent Estimators and Efficient Instruments](Questions/Statistics/S007_Competing_Consistent_Estimators_and_Efficient_Instruments.md)
 - [S008 — Selection Bias from Trading on Signals or Outcomes](Questions/Statistics/S008_Selection_Bias_from_Trading_on_Signals_or_Outcomes.md)
 - [S009 — Overlapping Three-Day Returns and Hansen–Hodrick Inference](Questions/Statistics/S009_Overlapping_Three_Day_Returns_and_Hansen_Hodrick_Inference.md)
+- [S010 — OLS Significance, Randomness, and Robust Standard Errors](Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md)
 
 ## Time Series
 
@@ -57,6 +59,7 @@ Categorized index of all finalized subject notes.
 - [T004 — Kalman Filtering II: Covariance-Weighted Bayesian Updating](Questions/TimeSeries/T004_Kalman_Filtering_II_Covariance_Weighted_Bayesian_Updating.md)
 - [T005 — Two-Factor Kalman Update for Level and Slope](Questions/TimeSeries/T005_Two_Factor_Kalman_Update_for_Level_and_Slope.md)
 - [T006 — One-Step Kalman Update with Correlated Signals](Questions/TimeSeries/T006_One_Step_Kalman_Update_with_Correlated_Signals.md)
+- [T007 — Random Forest Rates Signals and Time-Series Validation](Questions/TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md)
 
 ## Optimization
 
@@ -76,6 +79,8 @@ Categorized index of all finalized subject notes.
 - [C003 — Online Median with Two Heaps](Questions/Coding/C003_Online_Median_with_Two_Heaps.md)
 
 - [C004 — NeetCode Sliding Window Maximum](Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md)
+- [C005 — Maximum Subarray Sum with Fixed and Minimum Length](Questions/Coding/C005_Maximum_Subarray_Sum_Fixed_and_Minimum_Length.md)
+- [C006 — Longest Consecutive Sequence](Questions/Coding/C006_Longest_Consecutive_Sequence.md)
 
 ## Stochastic Calculus
 

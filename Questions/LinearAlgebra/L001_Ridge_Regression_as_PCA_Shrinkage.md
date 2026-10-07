@@ -256,3 +256,29 @@ Ridge is PCA-direction-specific shrinkage.
 - Bias-Variance Tradeoff
 - Signal Attribution
 - Rates Factor Models
+
+## Interview Drill — Why Ridge Is Invertible
+
+### Question
+
+Why is $A=X^\top X+\lambda I$, $\lambda\gt0$, invertible even if $X^\top X$ is singular?
+
+### Answer
+
+The matrix $X^\top X$ is positive semidefinite, so all its eigenvalues are nonnegative. Adding $\lambda I$ leaves the eigenvectors unchanged and shifts each eigenvalue by the positive number lambda:
+
+$$
+\lambda_i(X^\top X+\lambda I)=\lambda_i(X^\top X)+\lambda\gt0.
+$$
+
+Thus A is positive definite and invertible. Equivalently, for any nonzero real vector v,
+
+$$
+v^\top Av=\|Xv\|^2+\lambda\|v\|^2\gt0.
+$$
+
+The crucial claim is that **every** eigenvalue is positive, not merely that one nonzero eigenvalue exists.
+
+### Timed Attempt
+
+[2026-10-06 Q7](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round): Y/G, about 5 minutes for the combined lightning round; stopped at the recommended limit. Concepts were correct, but formulas were not automatic. Continue with the [mean-variance answer](../Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md#interview-drill--risk-aversion-and-a-budget-constraint).

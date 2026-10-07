@@ -336,3 +336,49 @@ w^*=(0.5,0,-0.5)^\top.
 $$
 
 - Constraints change the effective signal being optimized.
+
+## Interview Drill — Risk Aversion and a Budget Constraint
+
+### Question
+
+Find the unconstrained optimum of
+
+$$
+\max_w\mu^\top w-\frac{\gamma}{2}w^\top\Sigma w.
+$$
+
+Then add $\mathbf{1}^\top w=1$. What is the first step?
+
+### Answer
+
+Assume $\gamma\gt0$ and a symmetric positive-definite covariance matrix Sigma. The first-order condition and unique optimum are
+
+$$
+\mu-\gamma\Sigma w=0,\qquad
+w^*=\frac{1}{\gamma}\Sigma^{-1}\mu.
+$$
+
+The Hessian is $-\gamma\Sigma$, which is negative definite, so this stationary point is the unique maximum.
+
+For the budget constraint, introduce a Lagrange multiplier eta:
+
+$$
+\mathcal L(w,\eta)
+=\mu^\top w-\frac{\gamma}{2}w^\top\Sigma w
+-\eta(\mathbf{1}^\top w-1).
+$$
+
+The first-order conditions imply
+
+$$
+w=\frac{1}{\gamma}\Sigma^{-1}(\mu-\eta\mathbf{1}),
+\qquad
+\eta=\frac{\mathbf{1}^\top\Sigma^{-1}\mu-\gamma}
+{\mathbf{1}^\top\Sigma^{-1}\mathbf{1}}.
+$$
+
+“Set up the Lagrangian” is the concise interview response; this is also an equality-constrained KKT system. The inverse formula requires invertible Sigma. With singular covariance, existence and uniqueness need separate analysis.
+
+### Timed Attempt
+
+[2026-10-06 Q7](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round): Y/G, about 5 minutes for the combined round; stopped at the recommended limit. The answer direction was correct; crisp formulas need practice. See also the [ridge invertibility answer](../LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md#interview-drill--why-ridge-is-invertible).

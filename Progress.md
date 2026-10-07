@@ -7,14 +7,14 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 6 |
-| Probability | P | 17 |
-| Statistics | S | 9 |
-| Time Series | T | 6 |
+| Probability | P | 18 |
+| Statistics | S | 10 |
+| Time Series | T | 7 |
 | Optimization | O | 8 |
-| Coding | C | 4 |
+| Coding | C | 6 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 56 |
+| Total | All | 61 |
 
 ## Knowledge Cards
 
@@ -63,3 +63,5 @@ Track counts of finalized subject notes by category.
 - Added P015 (twice-seen dice coupon collector), P016 (mutual nearest neighbors), and the Random Points, Order Statistics, and Spacings knowledge card on 2026-09-27; reconciled counts with all existing question files.
 - Added C004 (NeetCode Sliding Window Maximum) on 2026-09-27; Coding now has 4 notes and the total is 55.
 - Added P018 (first Ace position and face-card conditioning) on 2026-10-02; Probability now has 17 notes and the total is 56. P017 is not yet filed; the supplied P018 identifier is preserved.
+
+- 2026-10-06: Added C005, C006, P019, S010, and T007 from the interview drill, bringing the total to 61. Extended P018, L001, and O002 without adding duplicate subject counts. Timed results remain separate in [DailyTests](DailyTests/INDEX.md).

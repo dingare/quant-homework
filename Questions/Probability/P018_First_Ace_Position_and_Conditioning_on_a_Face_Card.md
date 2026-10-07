@@ -64,3 +64,35 @@ The identity of the particular face card does not matter: conditional on any par
 
 - P017 — Second Ace and the Negative Hypergeometric Distribution (not yet filed) — the second Ace position uses the first two gaps.
 - [P016 — Mutual Nearest Neighbors on a Line](P016_Mutual_Nearest_Neighbors_on_a_Line.md) — order statistics and exchangeable spacings.
+
+## Interview Drill — Second Ace Before Position 20
+
+### Question
+
+Given that the first Ace is at position 10, what is the probability that the second Ace appears before position 20?
+
+### Solution
+
+Positions 1–9 are non-Aces, position 10 is an Ace, and the remaining three Ace positions form a uniformly chosen three-element subset of the 42 positions 11–52. “Before 20” means positions 11–19: nine eligible positions.
+
+Use the complement: no remaining Ace in those nine positions means all three remaining Aces lie among positions 20–52, which contain 33 positions.
+
+$$
+\begin{aligned}
+P(T_2\lt20\mid T_1=10)
+&=1-\frac{\binom{33}{3}}{\binom{42}{3}}\\
+&=\frac{753}{1435}\approx0.5247.
+\end{aligned}
+$$
+
+An equivalent disjoint count sums over exactly j Aces in the nine eligible positions:
+
+$$
+\frac{\sum_{j=1}^{3}\binom{9}{j}\binom{33}{3-j}}{\binom{42}{3}}.
+$$
+
+Choosing “an Ace in the first nine remaining positions” and then freely choosing the others overcounts outcomes with two or three Aces there. These nine positions are 11–19 in the original deck, not its original positions 1–9.
+
+### Timed Attempt
+
+[2026-10-06 Q2](../../DailyTests/2026-10-06.md#q2--conditional-ace-positions): Y, about 12 minutes; stopped at the recommended time limit. Conditioning was understood, but the count overcounted. The worked answer above was added after the attempt.
