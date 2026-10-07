@@ -49,6 +49,8 @@ homework/
 │   ├── Coding/
 │   ├── StochasticCalculus/
 │   └── RatesResearch/
+├── DailyTests/
+│   └── INDEX.md
 ├── KnowledgeCards/
 ├── Connections/
 │   └── KnowledgeGraph.md
@@ -150,6 +152,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 
 ## Structure
 
+- `DailyTests/`: [Dated interview results](DailyTests/INDEX.md), timings, ratings, and retrieval notes; use [the daily-test template](Templates/DailyTestTemplate.md).
 - `Questions/`: Canonical question and subject notes by category.
 - `Backlog.md`: Unfinished topics, future note clusters, and idea inventory.
 - `KnowledgeCards/`: Short-form review cards for later use.
@@ -199,6 +202,8 @@ When working locally on this repo:
 - The public website is generated from the Markdown source files, so update Markdown first, then commit and push by default unless the user explicitly says not to.
 
 ## Latest Additions
+
+- 2026-10-06: Added [daily interview testing results](DailyTests/2026-10-06.md) and a [daily-tests index](DailyTests/INDEX.md); recorded all seven questions, user-reported timings, ratings, and retrieval notes.
 
 - 2026-10-02: Added [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md) on the first Ace distribution, exchangeable gaps, beta-binomial variance, and conditioning on a face card.
 

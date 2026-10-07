@@ -23,6 +23,7 @@ CONTENT_PATTERNS = [
     "Progress.md",
     "Connections/*.md",
     "Questions/**/*.md",
+    "DailyTests/*.md",
     "KnowledgeCards/**/*.md",
     "Templates/*.md",
 ]

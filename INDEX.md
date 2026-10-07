@@ -2,6 +2,11 @@
 
 Categorized index of all finalized subject notes.
 
+## Daily Testing Results
+
+- [Daily Testing Results Index](DailyTests/INDEX.md)
+- [2026-10-06 — Quant Interview Drill](DailyTests/2026-10-06.md) — seven-question scorecard; Q7 self-rating Y/G.
+
 ## Linear Algebra
 
 - [L001 — Ridge Regression as PCA Shrinkage](Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md)
