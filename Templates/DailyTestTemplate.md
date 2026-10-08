@@ -31,3 +31,9 @@
 ## Session Takeaways
 
 ## Retest Priorities
+
+## Future Drill Coverage
+
+- Knowledge points to rotate next:
+- Any consecutive-day repeat and the specific prior miss justifying spaced repetition:
+- Avoid repeating the same structures on consecutive days without such a reason.
