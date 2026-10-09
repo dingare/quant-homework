@@ -7,14 +7,14 @@ Track counts of finalized subject notes by category.
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 6 |
-| Probability | P | 18 |
+| Probability | P | 19 |
 | Statistics | S | 10 |
 | Time Series | T | 7 |
 | Optimization | O | 8 |
 | Coding | C | 6 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 0 |
-| Total | All | 61 |
+| Total | All | 62 |
 
 ## Knowledge Cards
 
@@ -65,3 +65,5 @@ Track counts of finalized subject notes by category.
 - Added P018 (first Ace position and face-card conditioning) on 2026-10-02; Probability now has 17 notes and the total is 56. P017 is not yet filed; the supplied P018 identifier is preserved.
 
 - 2026-10-06: Added C005, C006, P019, S010, and T007 from the interview drill, bringing the total to 61. Extended P018, L001, and O002 without adding duplicate subject counts. Timed results remain separate in [DailyTests](DailyTests/INDEX.md).
+
+- 2026-10-09: Added P020 on the half-threshold uniform-sum overshoot probability, bringing Probability to 19 notes and the total to 62.

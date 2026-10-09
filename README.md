@@ -203,6 +203,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-09: Added [P020 — Uniform Sum: Half-Threshold Overshoot Probability](Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md) with the full conditional-distribution derivation, simplex geometry, the atom at zero, and the infinite-sequence assumption.
+
 - 2026-10-06: Added worked drill answers in C005, C006, P019, S010, and T007; extended P018, L001, and O002 with the exact drill variants. All answers are linked from [the daily test](DailyTests/2026-10-06.md#questions-and-worked-answers), with time-capped attempt context preserved.
 
 - 2026-10-06: Added [daily interview testing results](DailyTests/2026-10-06.md) and a [daily-tests index](DailyTests/INDEX.md); recorded all seven questions, user-reported timings, ratings, and retrieval notes.

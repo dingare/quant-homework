@@ -38,6 +38,8 @@ Categorized index of all finalized subject notes.
 - [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md)
 - [P019 — HH vs HTT Pattern Race](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md)
 
+- [P020 — Uniform Sum: Half-Threshold Overshoot Probability](Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md)
+
 ## Statistics
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)

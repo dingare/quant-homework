@@ -66,6 +66,8 @@ Cross-topic relationship map for finalized concepts and interview themes.
 - [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](../Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md): Contiguous Intervals -> Prefix Sums -> Ordered Pair Counting -> Coordinate Compression -> Fenwick Tree -> Modified Merge Sort -> P&L Windows
 - [C003 — Online Median with Two Heaps](../Questions/Coding/C003_Online_Median_with_Two_Heaps.md): Streaming Data -> Lower Max-Heap -> Upper Min-Heap -> Online Median -> Rolling Window -> Lazy Deletion
 
+- [P020 — Uniform Sum: Half-Threshold Overshoot Probability](../Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md): Uniform Partial Sums -> Convolution / Simplex Volume -> Pre-Stopping Position -> Atom at Zero -> Conditional Truncation -> Overshoot Probability; related to [P009](../Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md) and [P014](../Questions/Probability/P014_Conditional_Expectation_Under_a_Random_Stopping_Rule.md).
+
 ## Update Rule
 
 When a new finalized subject is added:
