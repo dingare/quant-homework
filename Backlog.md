@@ -358,3 +358,17 @@ Portfolio construction also combines signals under a covariance metric rather th
 - Projection under covariance metric
 - Constraints as signal adjustment
 - Connection to factor neutralization
+
+## October 8 Interview Knowledge Gaps
+
+Source: [2026-10-08 Daily Interview Test](DailyTests/2026-10-08.md). Status: Open review items; explanations received, independent retrieval not yet verified. These are gap notes, not new finalized subject notes.
+
+| Question / result | Future-review tags | Gap and next retrieval check |
+| --- | --- | --- |
+| [Q1 — M/P](DailyTests/2026-10-08.md#q1--dependency-ordering) | `graph`, `topological-sort` | Model prerequisites as directed edges; implement indegrees / zero-indegree queue, explain cycle detection and O(V+E) complexity. |
+| [Q2 — P/Y](DailyTests/2026-10-08.md#q2--hh-versus-ht-waiting-times) | `absorbing-markov-chains`, `state-recursion` | Choose useful suffix states; derive HH = 6 and HT = 4, then recover t = (I-Q) inverse times ones. Connect to [P019](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md), distinguishing waiting time from race probability. |
+| [Q3 — P/M](DailyTests/2026-10-08.md#q3--exponential-mle-and-fisher-information) | `mle`, `fisher-information`, `asymptotic-se` | Derive the exponential rate MLE, define score and expected information, distinguish per-observation from total information, and obtain plug-in SE. Explain regularity and asymptotic versus exact variance. |
+| [Q4 — P/Y](DailyTests/2026-10-08.md#q4--minimize-the-largest-group-sum) | `binary-search-on-answer` | Recognize minimize-maximum + monotone feasibility; prove greedy uses the fewest groups for a fixed limit on positive inputs, then implement first-feasible binary search. |
+| [Q7 — Y](DailyTests/2026-10-08.md#q7--projection-matrices-and-psd) | `projection-matrices` | Use symmetry plus idempotence to prove the quadratic form equals the squared norm of Px; distinguish PSD from PD and explain why zero is allowed. |
+
+Secondary review: [Q8](DailyTests/2026-10-08.md#q8--paired-strategy-return-test), positive same-day covariance reduces the variance of differences at fixed marginal variances; serial dependence requires separate treatment. Q5–Q8 were completed in **5 minutes total**. Preserve the broader, harder coverage relative to October 6–7 while scheduling targeted retests.
