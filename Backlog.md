@@ -372,3 +372,19 @@ Source: [2026-10-08 Daily Interview Test](DailyTests/2026-10-08.md). Status: Ope
 | [Q7 — Y](DailyTests/2026-10-08.md#q7--projection-matrices-and-psd) | `projection-matrices` | Use symmetry plus idempotence to prove the quadratic form equals the squared norm of Px; distinguish PSD from PD and explain why zero is allowed. |
 
 Secondary review: [Q8](DailyTests/2026-10-08.md#q8--paired-strategy-return-test), positive same-day covariance reduces the variance of differences at fixed marginal variances; serial dependence requires separate treatment. Q5–Q8 were completed in **5 minutes total**. Preserve the broader, harder coverage relative to October 6–7 while scheduling targeted retests.
+
+## October 9 Interview Knowledge Gaps
+
+Accidental repeats are retained for auditability but excluded from new-coverage counts. Original Q4, Q8, and Q9 were accidental repeats; original Q3 was removed before an attempt and replaced.
+
+| Question / result | Future-review tags | Gap and next retrieval check |
+| --- | --- | --- |
+| [Q1 — P/Y](DailyTests/2026-10-09.md#q1--dag-scheduling-with-durations) | `dag-dp`, `earliest-finish`, `topological-sort` | Keep Kahn BFS; propagate maximum parent finish time, enqueue only at indegree zero, and detect cycles with processed count. Intentional revisit of October 8 Q1. |
+| [Q2 — Y/G](DailyTests/2026-10-09.md#q2--expected-waiting-time-for-hth) | `state-recursion`, `pattern-waiting-time`, `self-overlap` | Preserve the correct suffix states and audit every transition, especially fallback from HT on T. |
+| [Q3 replacement — Y](DailyTests/2026-10-09.md#q3--one-sided-z-test-with-known-variance) | `sampling-distribution`, `one-sided-z-test`, `hypothesis-testing` | Write the sample-mean distribution first; known variance implies z, and `mu > 0` implies a right-tail rejection region. |
+| [Q4 replacement — G](DailyTests/2026-10-09.md#q4--original-repeat-and-kth-largest-replacement) | `min-heap`, `quickselect`, `off-by-one` | Keep exactly k heap elements using `< k`; reproduce Quickselect as the expected-O(n) follow-up. |
+| [Q5 — P/Y](DailyTests/2026-10-09.md#q5--time-series-validation-and-ridge) | `time-series-validation`, `ridge`, `multicollinearity` | Name temporal leakage, regime shift, and serial / overlapping dependence concretely; explain Ridge as variance reduction and coefficient stabilization. |
+| [Q6(a) — M/P](DailyTests/2026-10-09.md#q6--competing-poisson-processes) | `poisson-superposition`, `merged-process-labels`, `erlang` | Use A/B labels in the merged process; do not model the second arrival as exponential. |
+| [Q7 — Y](DailyTests/2026-10-09.md#q7--projection-matrix) | `projection-rank`, `column-space`, `eigenvalue-multiplicity` | Rank equals the dimension of the projected subspace; connect rank / trace to the number of eigenvalue ones. Intentional revisit of October 8 Q7. |
+
+Repeat-control rule for future drills: compare candidate questions against the previous **2–3 Daily Stress Tests** by solution pattern. A documented weak spot may be deliberately repeated only when labeled **intentional spaced repetition**; otherwise replace it and do not count it as new coverage.
