@@ -6,6 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Source completeness |
 | --- | --- | --- | --- |
+| [2026-10-10](2026-10-10.md) | Survival Mode — continued October 11 | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3/Q8 Miss; Q7 Partial | All eight prompts, independent vs assisted work, K/R/I gaps; Q1 initial 12 min, Q2 initial 9 min; other times unrecorded |
 | [2026-10-09](2026-10-09.md) | Quant Interview Drill — repeat-audited set | Q1 P/Y; Q2 Y/G; Q3 replacement Y; Q4 original G repeat; Q4 replacement G; Q5 P/Y; Q6a M/P; Q6b G; Q7 Y; Q8/Q9 accidental repeats | All attempted prompts, target budgets, replacement questions, repeat classifications, and review tags; actual times not recorded |
 | [2026-10-08](2026-10-08.md) | Quant Interview Drill — broader / harder set | Q1 M/P; Q2 P/Y; Q3 P/M; Q4 P/Y; Q5 G/Y; Q6 G; Q7 Y; Q8 G/Y | All eight prompts and ratings; target times; Q5–Q8 actual 5 min total; tagged knowledge gaps |
 | [2026-10-07](2026-10-07.md) | Quant Interview Drill | Q1 P/Y; Q2 G; Q3 P+/Y-G; Q4 P/Y; Q5 G; Q6 G-ish; Q7 Y/G | All seven prompts and ratings; target times; Q5 actual 1 min; Q6 ambiguous timing preserved; review / retrieval notes |
@@ -31,6 +32,8 @@ Interview performance logs, kept separately from canonical question notes and kn
 - Rotate coding, probability, statistics, ML, and math subtopics rather than only changing surface wording or numbers.
 - After October 7, broaden beyond prefix sums, order statistics, and overlap / leakage. Q1's deque and Q4's balance-to-hash misses justify targeted retests; successful order-statistics retrieval is not a reason for another immediate repeat.
 - After October 9, compare every candidate question against the previous 2–3 Daily Stress Tests by underlying solution pattern, not surface wording. Repeat only documented misses / weak spots, label those prompts as intentional spaced repetition, and avoid binary-search-on-answer, equal-balance prefix hashing, paired-test / HAC, and repeated likelihood derivations in the immediate next set.
+
+- After the October 10–11 drill, preserve the user-endorsed breadth and difficulty. Distinguish unfamiliar knowledge (especially A/B randomization and gradient-descent foundations) from retrieval and implementation gaps. Retest only deliberately, label the originating miss, and do not count guided completion as a cold solve.
 
 ## Navigation
 

@@ -5,6 +5,7 @@ Categorized index of all finalized subject notes.
 ## Daily Testing Results
 
 - [Daily Testing Results Index](DailyTests/INDEX.md)
+- [2026-10-10 — Survival Mode, continued October 11](DailyTests/2026-10-10.md) — eight questions, independent/assisted evidence, and K/R/I review priorities.
 - [2026-10-06 — Quant Interview Drill](DailyTests/2026-10-06.md) — seven-question scorecard; Q7 self-rating Y/G.
 
 ## Linear Algebra

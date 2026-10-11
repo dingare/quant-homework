@@ -391,6 +391,8 @@ Repeat-control rule for future drills: compare candidate questions against the p
 
 ## A/B Testing — Review To-Do
 
+Source: [October 10–11 Q3](DailyTests/2026-10-10.md#q3--exact-randomization-and-ab-testing). **Miss / K**, explicitly confirmed by the user; detailed review requested. Explanations received afterward; independent mastery unverified.
+
 - [ ] Experimental design: random assignment, treatment/control groups, randomization units, and interference.
 - [ ] Potential outcomes, individual and average treatment effects, and difference-in-means estimation.
 - [ ] Sharp null versus zero-average-effect null.
@@ -400,3 +402,25 @@ Repeat-control rule for future drills: compare candidate questions against the p
 - [ ] Power, minimum detectable effect, and sample-size planning.
 - [ ] Prespecified metrics, multiple testing, and repeated peeking / optional stopping.
 - [ ] Practice a small exact randomization example and an end-to-end A/B test design.
+
+## October 10–11 Interview Review Priorities
+
+Source: [eight-question Survival Mode drill](DailyTests/2026-10-10.md). User requested keeping the broader coverage despite many unfamiliar or unretrieved ideas. K = knowledge, R = retrieval, I = implementation; do not force K/R classification where prior familiarity was not established.
+
+| Question | Status and next independent check |
+| --- | --- |
+| Q1 — connectivity / DSU | Partial / Hinted; I plus unresolved K/R. Maintain global pair count; union roots unconditionally when different; compare component sizes, not root IDs; explain path halving. Initial attempt 12 min. |
+| Q2 — derangements / indicators | Partial / Hinted; R/K. Complete inclusion-exclusion through k=6; explain expectation linearity without independence and derive pair covariance. Initial 9 min covered only part 1; conditional-expectation identity independently proposed later. |
+| Q3 — randomization / A-B | Miss / K, user-confirmed. Follow the A/B checklist above; distinguish assignment-based exactness from normal/sample-variance reasoning and sharp from weak nulls. |
+| Q4 — edit distance | Partial / Hinted; state setup prompted, I in dimensions/bounds/transitions/return. Rebuild from prefix-length state; handle empty strings. DP direction and boundaries were independently correct. |
+| Q5 — extrapolation | Partial / Hinted. Tree limitation and OLS were independent; test on the deployment feature range and evaluate test rather than training error. |
+| Q6 — optimal stopping | Partial / Hinted. Reconstruct backward induction, remaining option value, net cost, conditional mean, and probabilities of reaching each draw. |
+| Q7 — recentering | Partial. Correct slope and invariant fit; fix Z=W+10 substitution and variance of a coefficient combination. The user correctly understood that old/new coefficient-zero tests are different hypotheses. |
+| Q8 — gradient descent | Miss / K. Begin with negative gradient and one-dimensional quadratic stability; then eigen-direction multipliers and minimax step size. Three minutes was a retrieval budget, not a reasonable first-learning budget. |
+
+- [ ] Gradient-descent foundations: local linear approximation, step-size overshoot, and the quadratic gradient.
+- [ ] Re-derive the strict stability bound from absolute multiplier less than one; distinguish an upper bound from a selected step.
+- [ ] Explain why the best worst-direction contraction balances a decreasing and an increasing endpoint magnitude.
+- [ ] Retest selected misses after review, explicitly labeled intentional spaced repetition; continue new structures in other slots.
+
+No final independently verified rewrite was submitted for Q1 or Q4. Do not mark these skills mastered based only on supplied solutions or acknowledgments. Keep the A/B checklist open; the session did not complete that review curriculum.
