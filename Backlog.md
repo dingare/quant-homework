@@ -388,3 +388,15 @@ Accidental repeats are retained for auditability but excluded from new-coverage 
 | [Q7 — Y](DailyTests/2026-10-09.md#q7--projection-matrix) | `projection-rank`, `column-space`, `eigenvalue-multiplicity` | Rank equals the dimension of the projected subspace; connect rank / trace to the number of eigenvalue ones. Intentional revisit of October 8 Q7. |
 
 Repeat-control rule for future drills: compare candidate questions against the previous **2–3 Daily Stress Tests** by solution pattern. A documented weak spot may be deliberately repeated only when labeled **intentional spaced repetition**; otherwise replace it and do not count it as new coverage.
+
+## A/B Testing — Review To-Do
+
+- [ ] Experimental design: random assignment, treatment/control groups, randomization units, and interference.
+- [ ] Potential outcomes, individual and average treatment effects, and difference-in-means estimation.
+- [ ] Sharp null versus zero-average-effect null.
+- [ ] Exact randomization tests: assignment distributions, two-sided p-values, and ties.
+- [ ] When to use randomization tests, Welch t tests, or two-proportion tests; assumptions and limitations.
+- [ ] Confidence intervals, effect size, and statistical versus practical significance.
+- [ ] Power, minimum detectable effect, and sample-size planning.
+- [ ] Prespecified metrics, multiple testing, and repeated peeking / optional stopping.
+- [ ] Practice a small exact randomization example and an end-to-end A/B test design.
