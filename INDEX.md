@@ -96,7 +96,7 @@ Categorized index of all finalized subject notes.
 
 ## Rates Research
 
-No entries yet.
+- [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md)
 
 ## Knowledge Cards
 

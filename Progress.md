@@ -13,8 +13,8 @@ Track counts of finalized subject notes by category.
 | Optimization | O | 8 |
 | Coding | C | 6 |
 | Stochastic Calculus | SC | 6 |
-| Rates Research | R | 0 |
-| Total | All | 62 |
+| Rates Research | R | 1 |
+| Total | All | 63 |
 
 ## Knowledge Cards
 
@@ -67,3 +67,5 @@ Track counts of finalized subject notes by category.
 - 2026-10-06: Added C005, C006, P019, S010, and T007 from the interview drill, bringing the total to 61. Extended P018, L001, and O002 without adding duplicate subject counts. Timed results remain separate in [DailyTests](DailyTests/INDEX.md).
 
 - 2026-10-09: Added P020 on the half-threshold uniform-sum overshoot probability, bringing Probability to 19 notes and the total to 62.
+
+- 2026-10-12: Added R001 on French OAT spread, repo funding and liquidity risk; Rates Research now has 1 note and the total is 63.

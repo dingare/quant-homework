@@ -68,6 +68,8 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 - [P020 — Uniform Sum: Half-Threshold Overshoot Probability](../Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md): Uniform Partial Sums -> Convolution / Simplex Volume -> Pre-Stopping Position -> Atom at Zero -> Conditional Truncation -> Overshoot Probability; related to [P009](../Questions/Probability/P009_Uniform_Sum_Stopping_Time_and_Overshooting_Draw.md) and [P014](../Questions/Probability/P014_Conditional_Expectation_Under_a_Random_Stopping_Rule.md).
 
+- [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](../Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md): Sovereign Spread -> Collateral MTM -> Margin Calls -> Funding Liquidity -> Forced Unwind; connects relative-value convergence (S003), funding constraints (O001), and risk-factor hedging (L002).
+
 ## Update Rule
 
 When a new finalized subject is added:
