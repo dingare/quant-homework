@@ -424,3 +424,20 @@ Source: [eight-question Survival Mode drill](DailyTests/2026-10-10.md). User req
 - [ ] Retest selected misses after review, explicitly labeled intentional spaced repetition; continue new structures in other slots.
 
 No final independently verified rewrite was submitted for Q1 or Q4. Do not mark these skills mastered based only on supplied solutions or acknowledgments. Keep the A/B checklist open; the session did not complete that review curriculum.
+
+## Time-Series Fitting — Review To-Do
+
+Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q5--ma1-equivalence-invertibility-and-fitting). Review remains open; explanations received are not independent mastery.
+
+- [ ] MA(1) moment estimation: sample variance and lag-one autocovariance, invertible root, innovation variance.
+- [ ] Gaussian maximum likelihood with unobserved innovations and observation covariance.
+- [ ] Conditional versus exact likelihood: initialization, pre-sample shocks, state-space / Kalman methods.
+- [ ] Stationarity, invertibility, and identifiability; equivalent representations and stable innovation reconstruction.
+- [ ] AR/ARMA fitting: OLS applicability, likelihood estimation, parameter constraints, residual diagnostics.
+- [ ] Runnable Python fitting exercise; independently explain estimates and residual autocorrelation.
+
+## Pending Drill and Workload Preference — October 12
+
+- [ ] Resume [Q7 — confidence versus prediction intervals](DailyTests/2026-10-11.md#q7--pending-confidence-vs-prediction-intervals), 6-minute target. No answer or hint yet.
+- [ ] Resume [Q8 — conditioning and least squares](DailyTests/2026-10-11.md#q8--pending-conditioning-and-least-squares), 3-minute target. No answer or hint yet.
+- Both are Pending, not Miss. New drills: 4–5 questions, 30–40 minutes; mainly core interview material, at most one stretch question. Keep breadth and repeat checks, but reduce simultaneous new-foundation teaching.
