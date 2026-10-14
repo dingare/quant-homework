@@ -448,3 +448,16 @@ Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q
 - [ ] Explain fixed-design response variance versus estimator variance versus repeated-sampling prediction-error variance; explain which model risks interval formulas omit.
 - [ ] Revisit the [SVD / QR / conditioning / PCA card](KnowledgeCards/LinearAlgebra/SVD_QR_Conditioning_Least_Squares_and_PCA.md): dimensions, eigenvalues versus singular values, normal equations, stable least squares, and right singular vectors.
 - [ ] Run PCA/SVD/QR examples and reproduce projection and explained-variance calculations without supplied code.
+
+## October 13 Survival Drill — Pending Items and Review
+
+Source: [October 13 session](DailyTests/2026-10-13.md). Q1–Q3 Partial / Hinted; Q4/Q5 **Pending, not Miss**. Actual times unknown. Latest explicit workload request is 4–6 substantive questions and 45–60 minutes initial solving; this supersedes the earlier 30–40-minute preference for new drills.
+
+- [ ] Resume [Q4](DailyTests/2026-10-13.md#q4--pending-ratio-of-means-inference), 11-minute initial budget. Exact prompt retained, no solutions or hints supplied.
+- [ ] Resume [Q5](DailyTests/2026-10-13.md#q5--pending-deployment-probabilities-and-decisions), 8-minute initial budget. Exact prompt retained, no solutions or hints supplied.
+- [x] Q1 user rewrite: apply whitespace pointer advancement, digit-to-int conversion, and continue after reading a number. User explicitly confirmed completion during recording. Assistant verified the corresponding minimal repair; final exact user submission not re-read.
+- [ ] Q1 later cold retest: stack invariant, unary/binary signs, pointer movement, nested and whitespace tests. Original multiplication follow-up remains unattempted.
+- [ ] Q2 later retest: random-time length bias plus conditional residual position. First probability, mean (4.5 typo clarified), and completion-start follow-up were independently correct.
+- [ ] Q3 later retest: clipped integration bounds, event-weighted moment numerator divided by event probability, and conditional dependence/covariance. Reversed inequality was a reading slip. User's u-first integration order and numerator 1/8 were correct by clarification; do not misrecord them as errors.
+
+Resume the two pending items before generating another full set unless instructed otherwise. Near-term Q1–Q3 retests must be explicitly labeled intentional spaced repetition; guided completion is not Cold Solve.
