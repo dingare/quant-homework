@@ -21,7 +21,8 @@ Track counts of finalized subject notes by category.
 | Category | Count |
 | --- | ---: |
 | Probability | 5 |
-| Total | 5 |
+| Linear Algebra | 1 |
+| Total | 6 |
 
 ## Notes
 
@@ -69,3 +70,5 @@ Track counts of finalized subject notes by category.
 - 2026-10-09: Added P020 on the half-threshold uniform-sum overshoot probability, bringing Probability to 19 notes and the total to 62.
 
 - 2026-10-12: Added R001 on French OAT spread, repo funding and liquidity risk; Rates Research now has 1 note and the total is 63.
+
+- 2026-10-13: Added the SVD/QR/conditioning/least-squares/PCA knowledge card. Knowledge cards total 6; finalized subject-question counts unchanged. Updated October 11 make-up session with Q7/Q8 guided continuation, not cold mastery.

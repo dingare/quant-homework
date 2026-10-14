@@ -6,7 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Source completeness |
 | --- | --- | --- | --- |
-| [2026-10-11](2026-10-11.md) | Make-up drill attempted October 12 — paused | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3 independent correct (timing unknown); Q7/Q8 Pending | Six attempts, exact two pending English prompts; actual times unknown; next drills 4–5 questions / 30–40 minutes |
+| [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | All prompts and evidence; Q7 full interval derivation/model risks; Q8 linked SVD/QR/PCA card; actual times unknown |
 | [2026-10-10](2026-10-10.md) | Survival Mode — continued October 11 | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3/Q8 Miss; Q7 Partial | All eight prompts, independent vs assisted work, K/R/I gaps; Q1 initial 12 min, Q2 initial 9 min; other times unrecorded |
 | [2026-10-09](2026-10-09.md) | Quant Interview Drill — repeat-audited set | Q1 P/Y; Q2 Y/G; Q3 replacement Y; Q4 original G repeat; Q4 replacement G; Q5 P/Y; Q6a M/P; Q6b G; Q7 Y; Q8/Q9 accidental repeats | All attempted prompts, target budgets, replacement questions, repeat classifications, and review tags; actual times not recorded |
 | [2026-10-08](2026-10-08.md) | Quant Interview Drill — broader / harder set | Q1 M/P; Q2 P/Y; Q3 P/M; Q4 P/Y; Q5 G/Y; Q6 G; Q7 Y; Q8 G/Y | All eight prompts and ratings; target times; Q5–Q8 actual 5 min total; tagged knowledge gaps |
@@ -29,7 +29,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 ## Future Drill Coverage
 
-- Updated October 12 preference supersedes the previous full eight-question workload: 4–5 questions, 30–40 minutes, mainly core material and at most one stretch question. Resume pending Q7/Q8 first; no initial hints. Keep English prompts, breadth, and prior 2–3-session solution-pattern checks.
+- Updated October 12 preference supersedes the previous full eight-question workload: 4–5 questions, 30–40 minutes, mainly core material and at most one stretch question. Q7/Q8 were completed as guided review October 13; independent retests remain open. No initial hints on new drills. Keep English prompts, breadth, and prior 2–3-session solution-pattern checks.
 
 
 - Diversify knowledge points across daily drills; avoid the same structures on consecutive days unless a specific prior miss warrants spaced repetition. Name the prior miss when repeating a structure.

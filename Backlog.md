@@ -438,6 +438,13 @@ Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q
 
 ## Pending Drill and Workload Preference — October 12
 
-- [ ] Resume [Q7 — confidence versus prediction intervals](DailyTests/2026-10-11.md#q7--pending-confidence-vs-prediction-intervals), 6-minute target. No answer or hint yet.
-- [ ] Resume [Q8 — conditioning and least squares](DailyTests/2026-10-11.md#q8--pending-conditioning-and-least-squares), 3-minute target. No answer or hint yet.
-- Both are Pending, not Miss. New drills: 4–5 questions, 30–40 minutes; mainly core interview material, at most one stretch question. Keep breadth and repeat checks, but reduce simultaneous new-foundation teaching.
+- [x] Resume [Q7 — confidence versus prediction intervals](DailyTests/2026-10-11.md#q7--confidence-vs-prediction-intervals): guided review October 13; independent mastery not yet checked.
+- [x] Resume [Q8 — conditioning and least squares](DailyTests/2026-10-11.md#q8--conditioning-and-least-squares): guided review October 13; independent mastery not yet checked.
+- Both are now Partial / Hinted following the October 13 guided continuation. New drills: 4–5 questions, 30–40 minutes; mainly core interview material, at most one stretch question. Keep breadth and repeat checks, but reduce simultaneous new-foundation teaching.
+
+## October 13 Follow-Up Review
+
+- [ ] Independently derive mean confidence and new-observation prediction intervals, including slope-error representation, zero covariance, t pivot, and added observation-noise term.
+- [ ] Explain fixed-design response variance versus estimator variance versus repeated-sampling prediction-error variance; explain which model risks interval formulas omit.
+- [ ] Revisit the [SVD / QR / conditioning / PCA card](KnowledgeCards/LinearAlgebra/SVD_QR_Conditioning_Least_Squares_and_PCA.md): dimensions, eigenvalues versus singular values, normal equations, stable least squares, and right singular vectors.
+- [ ] Run PCA/SVD/QR examples and reproduce projection and explained-variance calculations without supplied code.

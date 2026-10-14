@@ -4,7 +4,7 @@ Categorized index of all finalized subject notes.
 
 ## Daily Testing Results
 
-- [October 11 make-up drill, attempted October 12](DailyTests/2026-10-11.md) — six attempted questions; **Q7 and Q8 pending for next session**.
+- [October 11 make-up drill, attempted October 12](DailyTests/2026-10-11.md) — eight questions reviewed through October 13; Q7/Q8 Partial / Hinted, with interval derivation and SVD/QR/PCA card.
 
 - [Daily Testing Results Index](DailyTests/INDEX.md)
 - [2026-10-10 — Survival Mode, continued October 11](DailyTests/2026-10-10.md) — eight questions, independent/assisted evidence, and K/R/I review priorities.
@@ -109,3 +109,7 @@ Categorized index of all finalized subject notes.
 - [Second-Order Difference Equations for Random-Walk Hitting Problems](KnowledgeCards/Probability/Second_Order_Difference_Equations_for_Random_Walk_Hitting_Problems.md)
 - [首次命中、奇偶增强、覆盖与轮流归属框架](KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md)
 - [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md)
+
+### Linear Algebra
+
+- [SVD, QR, Conditioning, Least Squares, and PCA](KnowledgeCards/LinearAlgebra/SVD_QR_Conditioning_Least_Squares_and_PCA.md) — decompositions, stable solving, pseudoinverse, eigenvalue connection, PCA directions/scores, and runnable Python.
