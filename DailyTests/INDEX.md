@@ -6,6 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Source completeness |
 | --- | --- | --- | --- |
+| [2026-10-14](2026-10-14.md) | Retrieval and three-question interview session; final review Pending | R1 Partial / Hinted; R2 independent by user report, submission unverified; Q1–Q3 Partial / Hinted overall | DSU core independent, typo repaired and code tested; weighted inference guided; validation feedback corrected; actual times unknown |
 | [2026-10-13](2026-10-13.md) | Survival Mode — continued October 14 | Q1–Q5 Partial / Hinted on main questions; Q5 decision follow-up Pending | Q4 CLT/SE/CI and counterexample reviewed; Q5 Bayes odds explained; Q1 fixes completed by user report; Q1 multiplication follow-up unattempted; actual times unknown |
 | [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | All prompts and evidence; Q7 full interval derivation/model risks; Q8 linked SVD/QR/PCA card; actual times unknown |
 | [2026-10-10](2026-10-10.md) | Survival Mode — continued October 11 | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3/Q8 Miss; Q7 Partial | All eight prompts, independent vs assisted work, K/R/I gaps; Q1 initial 12 min, Q2 initial 9 min; other times unrecorded |
@@ -29,6 +30,8 @@ Interview performance logs, kept separately from canonical question notes and kn
 - Accidental repeats remain in the attempt history but do **not** count as new knowledge coverage. If replaced, record both the removed prompt and the replacement.
 
 ## Future Drill Coverage
+
+- October 14 latest instruction: 2–3 mixed timed questions within 8:20–9:00, retrieval 8:00–8:20, one gap with reading 9:10–9:45, independent reproduction 9:45–10:00. This supersedes the historical workload preferences below. See [October 14](2026-10-14.md) for evidence, removed repeats and outstanding final review. No extra questions to fill time; at most one new structure, none on each third completed session. Count completed sets rather than calendar dates or continuations; do not infer duration or mastery.
 
 - Latest explicit October 13 request: roughly 4–6 substantive questions, 45–60 minutes initial solving, depth over count. The set used five questions / 54 minutes. Updated October 14: Q4 is reviewed; **Q5's decision/recalibration follow-up remains Pending**. Q1's multiplication follow-up is also unattempted. This is the latest workload instruction; earlier preferences below remain historical context.
 

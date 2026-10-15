@@ -471,3 +471,19 @@ Resume Q5's pending follow-up before replacing it with another full set unless i
 - [ ] Q5: attempt the original cost-sensitive decision/recalibration follow-up without an initial solution. It remains Pending, not Miss.
 
 All seven dated DailyTests were audited October 14 for mathematical content and GitHub rendering. Blocked macros and Markdown-consumed TeX escapes were repaired; the checker and Pages renderer now support protected math syntax. Historical attempts, typo clarifications, scores, and recorded times are preserved.
+
+## October 14 Interview Session — Evidence and Spaced Review
+
+Source: [October 14 session](DailyTests/2026-10-14.md). All actual times unknown. Initial solving/review discussed; dedicated reading block and final independent reproduction **Pending**.
+
+- [ ] **Priority: R1**, intentional spaced repetition of October 10–11 Q2. Review [indicator cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md), then independently reconstruct fixed-point indicators, marginal/joint probabilities, covariance and variance. Generic setup needed assistance; K/R unresolved. This is the ONE selected focused gap.
+- R2: user reports independently solving the residual-service question before seeing the answer. Exact working not submitted, timing unverified. Supersedes initial Partial / Hinted classification; do not invent a fresh gap or treat it as a Miss.
+- Q1: independent DSU structure and pair-count identity recovered. Root-link typo explicitly clarified and corrected submission verified by assistant tests, including 1,000 randomized comparisons. Do not treat typo as conceptual DSU failure or leave the code unverified. Overall Partial / Hinted because complexity required assistance.
+- [ ] Q1 later independent check: distinguish node count from edge count, amortized inverse-Ackermann find cost from single-call worst case, and auxiliary from output space. K/R unresolved; no substantive implementation gap established by the typo.
+- [ ] Q2 later intentional spaced repetition: derive weighted residual scale estimate, mean-estimator SE and exact t pivot; prove optimality and justify degrees of freedom/independence. Weights and minimum variance were independent; notation ambiguity is not an error. Numerical part was supplied, not independently submitted.
+- [ ] Q3 later intentional spaced repetition: specify training/refit/selection/final-test chronology and fit preprocessing only on available training data. Valid discussion of optional standardization for flags and model dependence is preserved. Lag features can be standardized with training-fitted parameters; blanket rejection of lag scaling was clarified. K/R unresolved.
+- Q3 held-out test reasoning independently correct after English wording clarification; no knowledge gap from translation. Distribution shift/overfit/regime concerns independently correct. Replacement Q3 repeated older validation patterns without advance repetition labeling; exclude from new coverage.
+- Original ratio-of-means and deployment-probability prompts were withdrawn at user request as just completed elsewhere. Preserve the existing October 13/14 continuation and its pending decision follow-up; do not score these as fresh failures.
+
+Future near-term retests must name the originating date/item and be labeled **intentional spaced repetition**. Latest format is two retrieval checks or one derivation, only 2–3 timed questions, at most one new structure (none each third completed session), one review gap with reading, then independent reproduction. Weekly 35/30/20/10/5 targets apply across sessions, not forced into every night. Pending work is not a Miss; no elapsed times inferred.
+
