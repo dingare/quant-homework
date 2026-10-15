@@ -10,6 +10,7 @@ import shutil
 from pathlib import Path
 
 import mistune
+from check_math_markdown import check_file
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +35,7 @@ DOLLAR_DISPLAY_MATH_RE = re.compile(
     re.DOTALL | re.MULTILINE,
 )
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\s)(.+?)(?<!\s)(?<!\\)\$")
+PROTECTED_INLINE_MATH_RE = re.compile(r"\$`([^`\n]+)`\$")
 
 
 def collect_markdown_files() -> list[Path]:
@@ -96,6 +98,7 @@ def protect_math(markdown_text: str) -> tuple[str, list[tuple[str, str]]]:
     protected = DOLLAR_DISPLAY_MATH_RE.sub(
         lambda m: stash("display", m.group(1).strip()), protected
     )
+    protected = PROTECTED_INLINE_MATH_RE.sub(lambda m: stash("inline", m.group(1)), protected)
     protected = INLINE_MATH_RE.sub(lambda m: stash("inline", m.group(1)), protected)
     return protected, fragments
 
@@ -326,6 +329,13 @@ def page_template(title: str, body: str, markdown_path: Path, markdown_files: li
 
 def build_site(output_dir: Path) -> None:
     markdown_files = collect_markdown_files()
+    math_errors = [
+        f"{path.relative_to(ROOT)}:{error}"
+        for path in markdown_files if path.parent.name == "DailyTests"
+        for error in check_file(path)
+    ]
+    if math_errors:
+        raise ValueError("DailyTests math checks failed:\n" + "\n".join(math_errors))
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True)

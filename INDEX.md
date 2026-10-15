@@ -4,7 +4,7 @@ Categorized index of all finalized subject notes.
 
 ## Daily Testing Results
 
-- [October 13 survival drill](DailyTests/2026-10-13.md) — Q1–Q3 Partial / Hinted; Q1 repairs completed by user report; **Q4/Q5 Pending**, resume before a new full set.
+- [October 13 survival drill, continued October 14](DailyTests/2026-10-13.md) — all five main questions Partial / Hinted; Q1 repairs completed; Q4 inference and Q5 Bayes odds reviewed; **Q5 decision follow-up Pending**.
 
 - [October 11 make-up drill, attempted October 12](DailyTests/2026-10-11.md) — eight questions reviewed through October 13; Q7/Q8 Partial / Hinted, with interval derivation and SVD/QR/PCA card.
 

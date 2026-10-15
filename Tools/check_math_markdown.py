@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""Check changed Markdown files for repository-specific GitHub math issues."""
+"""Check Markdown math for observed GitHub rendering failures.
+
+Prefer fenced math blocks and GitHub's $`...`$ inline form. A syntax check
+cannot establish mathematical correctness or replace checking rendered pages.
+"""
 
 from __future__ import annotations
 
 import re
+import string
 import sys
 from pathlib import Path
 
-
-FORBIDDEN = {
-    r"\operatorname": "use simple notation such as Var or Cov",
-    r"\#": "use set cardinality instead of the forbidden hash macro",
-    r"\(": "use $...$ for inline math",
-    r"\)": "use $...$ for inline math",
-    r"\[": "use $$...$$ for display math",
-    r"\]": "use $$...$$ for display math",
+INLINE_RE = re.compile(r"\$`([^`\n]+)`\$|(?<![\\$])\$(?!\$)([^$\n]+)(?<!\\)\$(?!\$)")
+FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})(.*)$")
+MARKDOWN_ESCAPES_RE = re.compile(r"\\[" + re.escape(string.punctuation) + r"]")
+BLOCKED_MACROS = {
+    "operatorname": "GitHub rejects this macro; use \\mathrm{Var}, \\mathrm{Cov}, or \\mathrm{plim}",
+    "#": "GitHub rejects this macro; write set cardinality with vertical bars",
 }
-
-INLINE_MATH_RE = re.compile(r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)")
-STANDALONE_EQUALS_RE = re.compile(r"\s*=+\s*")
 
 
 def braces_balance(expression: str) -> tuple[int, bool]:
@@ -40,112 +40,101 @@ def braces_balance(expression: str) -> tuple[int, bool]:
     return depth, early_close
 
 
-def standalone_equals_errors(start_line: int, expression: str) -> list[str]:
-    """Flag display-math lines GitHub can misread as Setext headings."""
-    errors: list[str] = []
-    for offset, line in enumerate(expression.splitlines(), start=1):
-        if STANDALONE_EQUALS_RE.fullmatch(line):
-            errors.append(
-                f"{start_line + offset}: standalone equals line inside display math; "
-                "keep = with an operand or use aligned with &="
-            )
-    return errors
-
-
-def math_regions(text: str) -> tuple[list[tuple[int, str, bool]], list[str]]:
-    regions: list[tuple[int, str, bool]] = []
-    errors: list[str] = []
-    display_start: int | None = None
-    display_lines: list[str] = []
-
-    for line_number, line in enumerate(text.splitlines(), start=1):
-        if line.strip() == "$$":
-            if display_start is None:
-                display_start = line_number
-                display_lines = []
+def math_regions(text: str) -> tuple[list[tuple[int, str, str]], list[str]]:
+    regions = []
+    errors = []
+    fence = None
+    dollar_start = None
+    body = []
+    for number, line in enumerate(text.splitlines(), start=1):
+        marker = FENCE_RE.match(line)
+        if fence is not None:
+            char, width, kind, start = fence
+            if marker and marker[1][0] == char and len(marker[1]) >= width and not marker[2].strip():
+                if kind == "math":
+                    regions.append((start, "\n".join(body), "fenced"))
+                fence = None
+                body = []
+            elif kind == "math":
+                body.append(line)
+            continue
+        if dollar_start is not None:
+            if line.strip() == "$$":
+                regions.append((dollar_start, "\n".join(body), "dollar-block"))
+                dollar_start = None
+                body = []
             else:
-                regions.append((display_start, "\n".join(display_lines), True))
-                display_start = None
-                display_lines = []
+                body.append(line)
             continue
-
-        if display_start is not None:
-            display_lines.append(line)
+        if marker:
+            fence = (marker[1][0], len(marker[1]), marker[2].strip(), number)
+            body = []
             continue
-
-        for match in INLINE_MATH_RE.finditer(line):
-            regions.append((line_number, match.group(1), False))
-
-        if line.count("$") % 2:
-            errors.append(f"{line_number}: unmatched inline dollar delimiter")
-
-    if display_start is not None:
-        errors.append(f"{display_start}: unmatched display $$ delimiter")
-
+        if line.strip() == "$$":
+            dollar_start = number
+            body = []
+            continue
+        matches = list(INLINE_RE.finditer(line))
+        for match in matches:
+            protected = match[1] is not None
+            regions.append((number, match[1] if protected else match[2], "protected-inline" if protected else "inline"))
+        remainder = INLINE_RE.sub("", line)
+        remainder = re.sub(r"(`+).*?\1", "", remainder)
+        if re.search(r"(?<!\\)\$", remainder):
+            errors.append(f"{number}: unmatched or unsupported dollar delimiter")
+        if re.search(r"\\[()[\]]", remainder):
+            errors.append(f"{number}: bare TeX delimiters do not render as math on GitHub")
+    if fence is not None:
+        errors.append(f"{fence[3]}: unclosed code/math fence")
+    if dollar_start is not None:
+        errors.append(f"{dollar_start}: unclosed $$ math block")
     return regions, errors
 
 
-def check_file(path: Path) -> list[str]:
-    text = path.read_text(encoding="utf-8")
-    errors: list[str] = []
-
-    in_code_fence = False
-    for line_number, line in enumerate(text.splitlines(), start=1):
-        if line.strip() == "```math":
-            errors.append(
-                f"{line_number}: forbidden '```math'; "
-                "use $$...$$ for display math in this repository"
-            )
-            in_code_fence = True
-            continue
-        if line.strip().startswith("```"):
-            in_code_fence = not in_code_fence
-            continue
-        if in_code_fence:
-            continue
-
-        line_without_inline_code = re.sub(r"`[^`]*`", "", line)
-        for token, guidance in FORBIDDEN.items():
-            if token in line_without_inline_code:
-                errors.append(f"{line_number}: forbidden {token!r}; {guidance}")
-
-    regions, delimiter_errors = math_regions(text)
-    errors.extend(delimiter_errors)
-
-    for line_number, expression, is_display in regions:
-        if is_display:
-            errors.extend(standalone_equals_errors(line_number, expression))
-        if "<" in expression or ">" in expression:
-            errors.append(
-                f"{line_number}: raw angle bracket in math; use \\lt or \\gt"
-            )
-        balance, early_close = braces_balance(expression)
-        if balance != 0 or early_close:
-            errors.append(
-                f"{line_number}: unbalanced math braces "
-                f"(balance={balance}, early_close={early_close})"
-            )
-
+def check_text(text: str) -> list[str]:
+    regions, errors = math_regions(text)
+    for line, expression, kind in regions:
+        for name, guidance in BLOCKED_MACROS.items():
+            if re.search(r"\\" + re.escape(name) + (r"\b" if name.isalpha() else ""), expression):
+                errors.append(f"{line}: blocked macro \\{name}; {guidance}")
+        depth, early = braces_balance(expression)
+        if depth or early:
+            errors.append(f"{line}: unbalanced math braces (balance={depth}, early_close={early})")
+        if kind in {"inline", "dollar-block"}:
+            if MARKDOWN_ESCAPES_RE.search(expression):
+                errors.append(f"{line}: Markdown can consume TeX punctuation escapes; use a math fence or $`...`$")
+            if re.search(r"[<>]", expression):
+                errors.append(f"{line}: raw angle brackets in unprotected math; use \\lt / \\gt")
+            if kind == "dollar-block" and re.search(r"^\s*=+\s*$", expression, re.M):
+                errors.append(f"{line}: standalone equals line can become a Markdown heading; use a math fence")
+        opened = re.findall(r"\\begin\{([^}]+)\}", expression)
+        closed = re.findall(r"\\end\{([^}]+)\}", expression)
+        if sorted(opened) != sorted(closed):
+            errors.append(f"{line}: unmatched TeX environment")
     return errors
 
 
+def check_file(path: Path) -> list[str]:
+    return check_text(path.read_text(encoding="utf-8"))
+
+
 def main() -> int:
-    if len(sys.argv) < 2:
-        print("usage: check_math_markdown.py FILE.md [FILE.md ...]", file=sys.stderr)
-        return 2
-
-    failed = False
-    for argument in sys.argv[1:]:
+    arguments = sys.argv[1:] or ["DailyTests"]
+    paths = []
+    for argument in arguments:
         path = Path(argument)
-        errors = check_file(path)
-        if errors:
+        paths.extend(sorted(path.rglob("*.md")) if path.is_dir() else [path])
+    failed = False
+    for path in paths:
+        for error in check_file(path):
             failed = True
-            for error in errors:
-                print(f"{path}:{error}")
-
+            print(f"{path}:{error}")
+    if not paths:
+        print("No Markdown files found", file=sys.stderr)
+        return 2
     if not failed:
-        print(f"Math Markdown check passed for {len(sys.argv) - 1} file(s).")
-    return 1 if failed else 0
+        print(f"Math Markdown check passed for {len(paths)} file(s). Rendered-page and mathematical review are separate checks.")
+    return int(failed)
 
 
 if __name__ == "__main__":

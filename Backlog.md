@@ -451,13 +451,23 @@ Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q
 
 ## October 13 Survival Drill — Pending Items and Review
 
-Source: [October 13 session](DailyTests/2026-10-13.md). Q1–Q3 Partial / Hinted; Q4/Q5 **Pending, not Miss**. Actual times unknown. Latest explicit workload request is 4–6 substantive questions and 45–60 minutes initial solving; this supersedes the earlier 30–40-minute preference for new drills.
+Source: [October 13 session, continued October 14](DailyTests/2026-10-13.md). All five main questions Partial / Hinted. Q4 is reviewed; Q5's cost-sensitive decision/recalibration follow-up **Pending, not Miss**. Actual times unknown. Latest explicit workload request is 4–6 substantive questions and 45–60 minutes initial solving; this supersedes the earlier 30–40-minute preference for new drills.
 
-- [ ] Resume [Q4](DailyTests/2026-10-13.md#q4--pending-ratio-of-means-inference), 11-minute initial budget. Exact prompt retained, no solutions or hints supplied.
-- [ ] Resume [Q5](DailyTests/2026-10-13.md#q5--pending-deployment-probabilities-and-decisions), 8-minute initial budget. Exact prompt retained, no solutions or hints supplied.
+- [x] Resume [Q4](DailyTests/2026-10-13.md#q4--ratio-of-means-inference), original 11-minute budget. Guided CLT/Slutsky, standard error, confidence interval, counterexample, and denominator-risk review completed October 14; later cold retrieval remains open.
+- [ ] Finish [Q5's decision/recalibration follow-up](DailyTests/2026-10-13.md#q5--deployment-probabilities-and-decisions). Main Bayes/odds probability question reviewed October 14; original combined budget 8 minutes, actual time unknown. No solution or hint supplied for the decision follow-up.
 - [x] Q1 user rewrite: apply whitespace pointer advancement, digit-to-int conversion, and continue after reading a number. User explicitly confirmed completion during recording. Assistant verified the corresponding minimal repair; final exact user submission not re-read.
 - [ ] Q1 later cold retest: stack invariant, unary/binary signs, pointer movement, nested and whitespace tests. Original multiplication follow-up remains unattempted.
 - [ ] Q2 later retest: random-time length bias plus conditional residual position. First probability, mean (4.5 typo clarified), and completion-start follow-up were independently correct.
 - [ ] Q3 later retest: clipped integration bounds, event-weighted moment numerator divided by event probability, and conditional dependence/covariance. Reversed inequality was a reading slip. User's u-first integration order and numerator 1/8 were correct by clarification; do not misrecord them as errors.
 
-Resume the two pending items before generating another full set unless instructed otherwise. Near-term Q1–Q3 retests must be explicitly labeled intentional spaced repetition; guided completion is not Cold Solve.
+Resume Q5's pending follow-up before replacing it with another full set unless instructed otherwise. Near-term Q1–Q5 retests must be explicitly labeled intentional spaced repetition; guided completion is not Cold Solve.
+
+## October 14 Follow-Up Review
+
+- [ ] Q4: independently reconstruct W_i=X_i-rY_i, centered CLT, denominator convergence, and Slutsky scaling.
+- [ ] Q4: distinguish the variance of the limiting sqrt(n) fluctuation from the estimator's approximate variance; derive the paired residual plug-in SE and asymptotic CI.
+- [ ] Q4: reproduce the Uniform(1,3) mean-of-ratios counterexample, including density normalization and the reciprocal of the mean; explain integrability requirements and denominator-relative uncertainty.
+- [ ] Q5: distinguish prior, likelihood, posterior, probability, and odds; independently derive label-shift adjustment and convert odds back to probability.
+- [ ] Q5: attempt the original cost-sensitive decision/recalibration follow-up without an initial solution. It remains Pending, not Miss.
+
+All seven dated DailyTests were audited October 14 for mathematical content and GitHub rendering. Blocked macros and Markdown-consumed TeX escapes were repaired; the checker and Pages renderer now support protected math syntax. Historical attempts, typo clarifications, scores, and recorded times are preserved.
