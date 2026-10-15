@@ -1,41 +1,35 @@
-# YYYY-MM-DD — Interview Drill
+# YYYY-MM-DD — Quant Interview Drill
 
-## Metadata
+## Session
 
-- Date:
-- Source:
-- Status:
-- Timing method:
-- Coverage classification: Distinguish new coverage, intentional spaced repetition, and accidental repeats. Accidental repeats do not count as new coverage.
-- Navigation: [Daily Testing Results](../DailyTests/INDEX.md) · [Knowledge Index](../INDEX.md)
+- Date / continuation dates:
+- Status / pending items:
+- Planned budget; actual time only if reported:
+- Coverage: new / intentional spaced repetition / accidental repeat. For a retest, name the original date, item and gap.
+- [All sessions](../DailyTests/INDEX.md) · [Review backlog](../Backlog.md)
 
 ## Results
 
-| Question | Topic / prompt | Target time | Actual time | Result | Coverage classification | Mistakes / retrieval holes |
-| --- | --- | --- | --- | --- | --- | --- |
-| Q1 | | Not recorded | Not recorded | | New / intentional revisit / accidental repeat | |
+| Item | Budget | Actual | Result | Review focus |
+| --- | --- | --- | --- | --- |
+| Q1 | | Not recorded | Cold Solve / Partial / Hinted / Miss / Pending | Specific weak point; K, R or I only when supported |
 
-## Q1 — Topic
+K = Knowledge; R = Retrieval; I = Implementation. Leave K/R unresolved if evidence is insufficient. Guided review is not cold mastery; pending work is not a Miss.
+
+## Q1 — Short title
 
 ### Question
 
-### Answer and Feedback
+Keep the English prompt, assumptions, constraints and required outputs. No initial hints for unattempted questions.
 
-- Interviewer rating:
-- Self-rating:
-- Mistake / retrieval hole:
+### Key solution
 
-### Retrieval Cue
+Keep the essential reasoning, correctly rendered formulas and one useful reference implementation or link. Omit solutions for pending questions/follow-ups. Use math fences for displayed equations and protected inline math; see [Math Markdown Guide](../Tools/MathMarkdownGuide.md).
 
-### Related Notes
+### Review focus
 
-## Session Takeaways
+**Weak point:** identify the specific knowledge, retrieval or implementation issue in one short paragraph. End with the next independent check or reference reading. If no gap is established, say so. Include only the evidence needed to distinguish independent success from assisted work; preserve meaningful typo/wording clarifications and code-verification limits.
 
-## Retest Priorities
+## Next review
 
-## Future Drill Coverage
-
-- Knowledge points to rotate next:
-- Any consecutive-day repeat and the specific prior miss justifying spaced repetition:
-- Compare candidate prompts against the previous 2–3 Daily Stress Tests by underlying solution pattern, not merely wording.
-- Avoid repeating the same structures without a documented reason. Label deliberate retests as intentional spaced repetition and exclude accidental repeats from new-coverage claims.
+Choose ONE important gap for the next focused review, with a reference link and a closed-book reproduction task. Keep completion status explicit.

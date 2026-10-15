@@ -15,7 +15,7 @@ Inline source example: `$` followed by a backtick, the TeX expression, a backtic
 - For upright function names, use the mathrm macro with Var, Cov, SE, or plim in braces. GitHub currently rejects operatorname in these notes.
 - Do not put mathematical expressions into ordinary code spans unless showing source code is intentional.
 - Keep bounds, variance versus standard deviation, density normalizations, conditioning events, and denominator assumptions explicit.
-- Preserve original incorrect attempts as history, and label corrected worked answers clearly. Never overwrite a user's typo clarification or turn guided work into a cold solve.
+- DailyTests use concise questions, key solutions and highlighted review gaps. Keep only essential performance evidence; omit attempt-by-attempt transcripts. Preserve meaningful typo/wording clarifications and never turn guided work into a cold solve. Earlier detailed histories remain available in Git.
 - A checker can catch known syntax failures; it cannot prove that a derivation is correct or replace a rendered-page review.
 
 Run `python Tools/check_math_markdown.py DailyTests` and `python -m unittest discover -s Tools -p 'test_math_rendering.py'` (the latter needs the existing mistune build dependency). The Pages build also checks DailyTests before rendering and supports both protected forms. After publishing, inspect GitHub's rendered page for macro errors, literal punctuation, missing delimiters, and integral/interval readability.

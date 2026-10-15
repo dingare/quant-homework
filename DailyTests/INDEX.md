@@ -4,12 +4,12 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 ## Sessions
 
-| Date | Session | Results in question order | Source completeness |
+| Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
 | [2026-10-14](2026-10-14.md) | Retrieval and three-question interview session; final review Pending | R1 Partial / Hinted; R2 independent by user report, submission unverified; Q1–Q3 Partial / Hinted overall | DSU core independent, typo repaired and code tested; weighted inference guided; validation feedback corrected; actual times unknown |
 | [2026-10-13](2026-10-13.md) | Survival Mode — continued October 14 | Q1–Q5 Partial / Hinted on main questions; Q5 decision follow-up Pending | Q4 CLT/SE/CI and counterexample reviewed; Q5 Bayes odds explained; Q1 fixes completed by user report; Q1 multiplication follow-up unattempted; actual times unknown |
-| [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | All prompts and evidence; Q7 full interval derivation/model risks; Q8 linked SVD/QR/PCA card; actual times unknown |
-| [2026-10-10](2026-10-10.md) | Survival Mode — continued October 11 | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3/Q8 Miss; Q7 Partial | All eight prompts, independent vs assisted work, K/R/I gaps; Q1 initial 12 min, Q2 initial 9 min; other times unrecorded |
+| [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | Dijkstra, inference and matrix foundations; reference formulas and review links; actual times unknown |
+| [2026-10-10](2026-10-10.md) | Survival Mode — continued October 11 | Q1/Q2/Q4/Q5/Q6 Partial / Hinted; Q3/Q8 Miss; Q7 Partial | A/B and gradient-descent foundations; Q1 initial 12 min, Q2 initial 9 min; other times unrecorded |
 | [2026-10-09](2026-10-09.md) | Quant Interview Drill — repeat-audited set | Q1 P/Y; Q2 Y/G; Q3 replacement Y; Q4 original G repeat; Q4 replacement G; Q5 P/Y; Q6a M/P; Q6b G; Q7 Y; Q8/Q9 accidental repeats | All attempted prompts, target budgets, replacement questions, repeat classifications, and review tags; actual times not recorded |
 | [2026-10-08](2026-10-08.md) | Quant Interview Drill — broader / harder set | Q1 M/P; Q2 P/Y; Q3 P/M; Q4 P/Y; Q5 G/Y; Q6 G; Q7 Y; Q8 G/Y | All eight prompts and ratings; target times; Q5–Q8 actual 5 min total; tagged knowledge gaps |
 | [2026-10-07](2026-10-07.md) | Quant Interview Drill | Q1 P/Y; Q2 G; Q3 P+/Y-G; Q4 P/Y; Q5 G; Q6 G-ish; Q7 Y/G | All seven prompts and ratings; target times; Q5 actual 1 min; Q6 ambiguous timing preserved; review / retrieval notes |
@@ -17,33 +17,23 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 ## Recording Convention
 
-- Create one file per date: `DailyTests/YYYY-MM-DD.md`, using the [daily-test template](../Templates/DailyTestTemplate.md).
-- Use session-local Q1, Q2, etc.; link each to existing canonical questions / knowledge cards where the relationship is verified.
-- Record the prompt, target time, actual time, result, answer summary, and concise mistakes / retrieval holes.
-- M = Miss; P = partial / hinted / over-time in the October 7 tracker; retain P+ as a source modifier. G = Green; Y = Yellow; R = Red. Preserve source modifiers such as Y+, G/Y, or Y/G and distinguish self-ratings from interviewer ratings.
-- For time-capped attempts, record time spent before stopping and whether the solution was complete; do not label a cap as the time required to solve. Link worked answers added afterward separately from the original attempt.
-- Record unavailable timing as “Not recorded”; do not substitute the target time or infer solve time from chat timestamps.
-- Distinguish missing source information from an unanswered question or a Red result.
-- Add newest sessions first in this table. Keep retests as dated observations rather than overwriting earlier results.
-- Daily test logs do not increase finalized subject-note counts in Progress.md.
-- Classify repeated material as **intentional spaced-repetition revisit** or **accidental repeat**. Name the originating date / question whenever possible.
-- Accidental repeats remain in the attempt history but do **not** count as new knowledge coverage. If replaced, record both the removed prompt and the replacement.
+- Use the [daily-test template](../Templates/DailyTestTemplate.md): Session → Results → each item's Question / Key solution / Review focus → Next review. October 10–14 logs use this concise format; earlier logs remain historical records.
+- Keep complete problem assumptions, the essential derivation or reference code, and **specific weak points**. Omit attempt-by-attempt transcripts and repetitive feedback. Retain only evidence needed for the rating, genuine independent successes, meaningful typo/wording clarifications and code-verification limits.
+- Results: **Cold Solve**, **Partial / Hinted**, **Miss**, **Pending**. K = Knowledge, R = Retrieval, I = Implementation; leave K/R unresolved without evidence. Guided completion is not cold mastery. Self-reported completion and directly verified work remain distinguishable.
+- Actual time is **Not recorded** unless the user reports it; prompt budgets and timestamps are not elapsed time. A time-capped attempt is not necessarily a completed solve. Unsubmitted code is unverified, not unpracticed.
+- Retests are dated observations. Label **intentional spaced repetition**, with the original date, question and gap; accidental repeats do not count as new coverage. Keep removed prompts identifiable by a short source link.
+- Use protected inline math and fenced math blocks throughout, including prompts and complexity statements. Follow the [math guide](../Tools/MathMarkdownGuide.md), run the checker, and inspect rendered output.
+- Older M/P and G/Y/R ratings retain their original meaning and modifiers; do not retrospectively invent a cold-solve grade. DailyTests do not change finalized subject-note counts in Progress.md.
 
-## Future Drill Coverage
+## Current Training Structure
 
-- October 14 latest instruction: 2–3 mixed timed questions within 8:20–9:00, retrieval 8:00–8:20, one gap with reading 9:10–9:45, independent reproduction 9:45–10:00. This supersedes the historical workload preferences below. See [October 14](2026-10-14.md) for evidence, removed repeats and outstanding final review. No extra questions to fill time; at most one new structure, none on each third completed session. Count completed sets rather than calendar dates or continuations; do not infer duration or mastery.
-
-- Latest explicit October 13 request: roughly 4–6 substantive questions, 45–60 minutes initial solving, depth over count. The set used five questions / 54 minutes. Updated October 14: Q4 is reviewed; **Q5's decision/recalibration follow-up remains Pending**. Q1's multiplication follow-up is also unattempted. This is the latest workload instruction; earlier preferences below remain historical context.
-
-- Updated October 12 preference supersedes the previous full eight-question workload: 4–5 questions, 30–40 minutes, mainly core material and at most one stretch question. Q7/Q8 were completed as guided review October 13; independent retests remain open. No initial hints on new drills. Keep English prompts, breadth, and prior 2–3-session solution-pattern checks.
-
-
-- Diversify knowledge points across daily drills; avoid the same structures on consecutive days unless a specific prior miss warrants spaced repetition. Name the prior miss when repeating a structure.
-- Rotate coding, probability, statistics, ML, and math subtopics rather than only changing surface wording or numbers.
-- After October 7, broaden beyond prefix sums, order statistics, and overlap / leakage. Q1's deque and Q4's balance-to-hash misses justify targeted retests; successful order-statistics retrieval is not a reason for another immediate repeat.
-- After October 9, compare every candidate question against the previous 2–3 Daily Stress Tests by underlying solution pattern, not surface wording. Repeat only documented misses / weak spots, label those prompts as intentional spaced repetition, and avoid binary-search-on-answer, equal-balance prefix hashing, paired-test / HAC, and repeated likelihood derivations in the immediate next set.
-
-- After the October 10–11 drill, preserve the user-endorsed breadth and difficulty. Distinguish unfamiliar knowledge (especially A/B randomization and gradient-descent foundations) from retrieval and implementation gaps. Retest only deliberately, label the originating miss, and do not count guided completion as a cold solve.
+- 8:00–8:20: closed-book retrieval — one previous question, two short checks or one derivation.
+- 8:20–9:00: only 2–3 mixed interview questions in English, without topic labels or initial hints. Require runnable Python when appropriate and prioritize independent statistical derivations.
+- 9:10–9:45: review ONE important gap, including reference reading.
+- 9:45–10:00: independently reproduce the solution without references. Keep this Pending until actually submitted.
+- At most one new conceptual/algorithmic structure; none on every third completed study session. Count completed study sets, not calendar dates or continuations. Verify the history before choosing consolidation.
+- Weekly targets: Coding 35%, Probability 30%, Statistics 20%, ML/Time Series 10%, Linear Algebra/Optimization 5%. Do not force every topic into one session or add filler questions.
+- Compare the latest 2–3 tests by underlying solution pattern. Repeat only deliberately for an identified gap; consult [Backlog](../Backlog.md) and recent continuations before proposing supposedly pending questions.
 
 ## Navigation
 

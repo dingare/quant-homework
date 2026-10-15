@@ -16,16 +16,15 @@ This repository should be maintained using the following rules:
 - Do not invent math content.
 - Only use finalized content provided by the user from ChatGPT.
 - Keep Markdown as the single source of truth; generated website HTML is disposable.
-- Write math in GitHub-compatible form: `$...$` for inline math and `$$...$$` for display math.
+- Write math using protected inline notation and fenced math blocks as described below.
 
 ### GitHub Math Compatibility (Required)
 
 Follow [GitHub's official mathematical-expression syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions):
 
-- Use `$...$` for ordinary inline math.
-- If an inline expression overlaps with Markdown syntax, use GitHub's protected inline form: dollar sign, backtick, expression, backtick, dollar sign.
-- Use `$$...$$` on separate lines for display math in this repository.
-- Inside a `$$` display block, never place `=` alone on its own line. GitHub may parse it as a Setext heading underline and split the formula. Keep the equals sign with an operand, or use `\begin{aligned}` with `&=` for multiline derivations.
+- Use GitHub's protected inline form (dollar sign, backtick, expression, backtick, dollar sign) for inline equations.
+- Use fenced `math` blocks for displayed equations. This protects TeX punctuation escapes from Markdown parsing and is supported by the Pages renderer.
+- See [Math Markdown Guide](Tools/MathMarkdownGuide.md) for examples. Mathematical notation belongs in math markup, not ordinary text or code spans unless it is actual program syntax.
 - Do not use `\(...\)` or `\[...\]`; they are not the repository's supported Markdown delimiters.
 - Do not place raw `<` or `>` inside math. Write `\lt` and `\gt` instead. For example, use `\sum_{i\lt j}` rather than `\sum_{i<j}`.
 - Do not use `\operatorname`, `\#`, or other macros already known to fail in the repository's GitHub rendering path. Prefer simple notation such as `Var`, `Cov`, set cardinality with `\left|\cdot\right|`, and ordinary text outside the formula.
@@ -152,7 +151,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 
 ## Structure
 
-- `DailyTests/`: [Dated interview results](DailyTests/INDEX.md), timings, ratings, and retrieval notes; use [the daily-test template](Templates/DailyTestTemplate.md).
+- `DailyTests/`: [Dated interview results](DailyTests/INDEX.md), concise questions, key solutions and highlighted weak points; use [the daily-test template](Templates/DailyTestTemplate.md). Keep only essential evidence for ratings, timing and verification; omit attempt-by-attempt transcripts.
 - `Questions/`: Canonical question and subject notes by category.
 - `Backlog.md`: Unfinished topics, future note clusters, and idea inventory.
 - `KnowledgeCards/`: Short-form review cards for later use.
@@ -165,7 +164,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not invent or draft mathematical content in this knowledge base.
 - Preserve existing notes unless explicitly asked to revise them.
 - Add cross-links when relationships are clear.
-- Use `$...$` for inline formulas and `$$...$$` for display formulas, following the GitHub Math Compatibility rules above.
+- Use protected inline formulas and fenced math blocks, following the GitHub Math Compatibility rules above.
 - Do not commit generated HTML files; GitHub Actions builds the public website from Markdown.
 - Before working from another device, run `git pull`.
 - After updating notes, commit meaningful checkpoints automatically.
