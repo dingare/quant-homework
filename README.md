@@ -200,6 +200,14 @@ When working locally on this repo:
 - GitHub Actions deploys the site to GitHub Pages after each push to `main`.
 - The public website is generated from the Markdown source files, so update Markdown first, then commit and push by default unless the user explicitly says not to.
 
+### Website Maintenance
+
+- Maintain the website alongside the notes. After changing notes or website tools, install `Tools/requirements-site.txt`, run `python3 -m unittest discover -s Tools -p 'test_*.py'`, and run `python3 Tools/build_site.py` before committing and pushing.
+- The build checks DailyTests math markup and all generated local page and section links. It includes the backlog, dated review summaries, and math-formatting guide as well as the question notes and daily tests.
+- Keep build dependencies in `Tools/requirements-site.txt` so local previews and GitHub Actions use the same versions.
+- After pushing, check the matching [Pages workflow run](https://github.com/dingare/quant-homework/actions/workflows/pages.yml) and confirm deployment succeeds.
+- One-time repository setup: in **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**. This was enabled on 2026-10-16. The workflow token can deploy to an enabled site but cannot perform the initial administrative setup; a `Configure Pages` error saying `Not Found` or `Resource not accessible by integration` calls for checking this setting.
+
 ## Latest Additions
 
 - 2026-10-12: Added [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md), connecting sovereign repricing, repo margin and funding liquidity; recent market claims remain explicitly unverified.

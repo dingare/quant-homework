@@ -7,7 +7,9 @@ import argparse
 import html
 import re
 import shutil
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 import mistune
 from check_math_markdown import check_file
@@ -22,11 +24,14 @@ CONTENT_PATTERNS = [
     "README.md",
     "INDEX.md",
     "Progress.md",
+    "Backlog.md",
+    "Recent_Quant_Prep_Review_*.md",
     "Connections/*.md",
     "Questions/**/*.md",
     "DailyTests/*.md",
     "KnowledgeCards/**/*.md",
     "Templates/*.md",
+    "Tools/MathMarkdownGuide.md",
 ]
 
 MATH_FENCE_RE = re.compile(r"```math\n(.*?)\n```", re.DOTALL)
@@ -36,6 +41,66 @@ DOLLAR_DISPLAY_MATH_RE = re.compile(
 )
 INLINE_MATH_RE = re.compile(r"(?<!\\)\$(?!\s)(.+?)(?<!\s)(?<!\\)\$")
 PROTECTED_INLINE_MATH_RE = re.compile(r"\$`([^`\n]+)`\$")
+
+
+class NotesRenderer(mistune.HTMLRenderer):
+    """Give headings stable anchors matching the notes' existing section links."""
+
+    def __init__(self, math_fragments: list[tuple[str, str]]) -> None:
+        super().__init__(escape=False)
+        self.math_fragments = math_fragments
+        self.heading_ids: set[str] = set()
+
+    def heading(self, text: str, level: int, **attrs: str) -> str:
+        plain_text = html.unescape(re.sub(r"<[^>]*>", "", text))
+        for index, (_, expression) in enumerate(self.math_fragments):
+            plain_text = plain_text.replace(f"@@MATH_{index}@@", expression)
+        slug = re.sub(r"[^\w\s-]", "", plain_text.lower())
+        slug = re.sub(r"\s", "-", slug)
+        heading_id = slug
+        suffix = 0
+        while heading_id in self.heading_ids:
+            suffix += 1
+            heading_id = f"{slug}-{suffix}"
+        self.heading_ids.add(heading_id)
+        return super().heading(text, level, id=heading_id)
+
+
+class PageLinks(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.links: list[str] = []
+        self.ids: set[str] = set()
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if attributes.get("id"):
+            self.ids.add(attributes["id"])
+        if tag == "a" and attributes.get("href"):
+            self.links.append(attributes["href"])
+
+
+def check_site_links(output_dir: Path) -> None:
+    """Reject missing local pages and section targets before publication."""
+    output_dir = output_dir.resolve()
+    pages = {path: PageLinks() for path in output_dir.rglob("*.html")}
+    for path, page in pages.items():
+        page.feed(path.read_text(encoding="utf-8"))
+    errors = []
+    for path, page in pages.items():
+        for href in page.links:
+            link = urlsplit(href)
+            if link.scheme or link.netloc:
+                continue
+            target = (path.parent / unquote(link.path)).resolve() if link.path else path
+            if target.is_dir():
+                target /= "index.html"
+            if not target.is_relative_to(output_dir) or not target.is_file():
+                errors.append(f"{path.relative_to(output_dir)}: missing page {href}")
+            elif link.fragment and target in pages and unquote(link.fragment) not in pages[target].ids:
+                errors.append(f"{path.relative_to(output_dir)}: missing section {href}")
+    if errors:
+        raise ValueError("Website link checks failed:\n" + "\n".join(errors))
 
 
 def collect_markdown_files() -> list[Path]:
@@ -137,7 +202,7 @@ def render_markdown(markdown_path: Path) -> tuple[str, str]:
     markdown_text = markdown_path.read_text(encoding="utf-8")
     protected, math_fragments = protect_math(markdown_text)
     markdown = mistune.create_markdown(
-        escape=False,
+        renderer=NotesRenderer(math_fragments),
         plugins=["strikethrough", "table", "url"],
     )
     body = markdown(protected)
@@ -252,6 +317,7 @@ def page_template(title: str, body: str, markdown_path: Path, markdown_files: li
     h1 {{ margin-top: 0; font-size: clamp(2rem, 8vw, 3.4rem); line-height: 1.05; }}
     h2 {{ margin-top: 2.1rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--line); }}
     h3 {{ margin-top: 1.6rem; }}
+    [id] {{ scroll-margin-top: 7rem; }}
     p, li {{ line-height: 1.75; font-size: 1.04rem; }}
     a {{ color: var(--accent); }}
     code {{
@@ -342,9 +408,11 @@ def build_site(output_dir: Path) -> None:
 
     for markdown_path in markdown_files:
         title, body = render_markdown(markdown_path)
-        output_path = page_output_path(markdown_path)
+        output_path = output_dir / page_output_path(markdown_path).relative_to(SITE_DIR)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(page_template(title, body, markdown_path, markdown_files), encoding="utf-8")
+    check_site_links(output_dir)
+    print(f"Built {len(markdown_files)} pages in {output_dir}; all local links and sections passed.")
 
 
 def main() -> None:
