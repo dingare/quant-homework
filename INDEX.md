@@ -4,6 +4,8 @@ Categorized index of all finalized subject notes.
 
 ## Daily Testing Results
 
+- [October 15 drill, continued October 16](DailyTests/2026-10-15.md) — median partition search, exact coin sampling and most-powerful variance testing; Q1–Q3 Partial / Hinted; **Q4 correlation feasibility Pending**.
+
 - [October 13 survival drill, continued October 14](DailyTests/2026-10-13.md) — all five main questions Partial / Hinted; Q1 repairs completed; Q4 inference and Q5 Bayes odds reviewed; **Q5 decision follow-up Pending**.
 
 - [October 11 make-up drill, attempted October 12](DailyTests/2026-10-11.md) — eight questions reviewed through October 13; Q7/Q8 Partial / Hinted, with interval derivation and SVD/QR/PCA card.

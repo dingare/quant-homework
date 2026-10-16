@@ -6,6 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
+| [2026-10-15](2026-10-15.md) | Four-question drill, continued October 16; Q4 deferred | Q1–Q3 Partial / Hinted; Q4 Pending; original cache prompt withdrawn before attempt | Median merge repairs and supplied partition solution; independent coin construction with cost correction; Neyman–Pearson new knowledge taught; Q1 initial approx. 22–23 min, other actual times unknown |
 | [2026-10-14](2026-10-14.md) | Retrieval and three-question interview session; final review Pending | R1 Partial / Hinted; R2 independent by user report, submission unverified; Q1–Q3 Partial / Hinted overall | DSU core independent, typo repaired and code tested; weighted inference guided; validation feedback corrected; actual times unknown |
 | [2026-10-13](2026-10-13.md) | Survival Mode — continued October 14 | Q1–Q5 Partial / Hinted on main questions; Q5 decision follow-up Pending | Q4 CLT/SE/CI and counterexample reviewed; Q5 Bayes odds explained; Q1 fixes completed by user report; Q1 multiplication follow-up unattempted; actual times unknown |
 | [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | Dijkstra, inference and matrix foundations; reference formulas and review links; actual times unknown |
@@ -27,13 +28,15 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 ## Current Training Structure
 
-- 8:00–8:20: closed-book retrieval — one previous question, two short checks or one derivation.
-- 8:20–9:00: only 2–3 mixed interview questions in English, without topic labels or initial hints. Require runnable Python when appropriate and prioritize independent statistical derivations.
-- 9:10–9:45: review ONE important gap, including reference reading.
-- 9:45–10:00: independently reproduce the solution without references. Keep this Pending until actually submitted.
-- At most one new conceptual/algorithmic structure; none on every third completed study session. Count completed study sets, not calendar dates or continuations. Verify the history before choosing consolidation.
+Updated by the October 15–16 request; supersedes the previous retrieval/review-block format and new-structure cap.
+
+- Give **4–5 substantive interview questions**, in English, without topic labels or initial hints/solutions. Keep realistic budgets; the recent solving preference is approximately 45–60 minutes.
+- Prioritize genuinely new interview problems and underlying solution patterns. Avoid superficial variants of familiar material. Prefer algorithmic reasoning over engineering-heavy coding; require runnable Python when appropriate.
+- **No separate retrieval or review block.** The user handles revision independently. Save explanations and performance assessment until after an attempt, or an explicit request for help/answers.
+- Mainly core interview material, with at most one clearly labeled stretch question. A new foundation should not be treated as a timed retrieval failure; first-learning time is not a familiar-topic solving budget.
 - Weekly targets: Coding 35%, Probability 30%, Statistics 20%, ML/Time Series 10%, Linear Algebra/Optimization 5%. Do not force every topic into one session or add filler questions.
 - Compare the latest 2–3 tests by underlying solution pattern. Repeat only deliberately for an identified gap; consult [Backlog](../Backlog.md) and recent continuations before proposing supposedly pending questions.
+- Next session: resume [October 15 Q4](2026-10-15.md#q4--feasible-correlations-and-zero-variance-portfolios), deferred and unattempted, before generating a new set. Keep its solution withheld.
 
 ## Navigation
 
