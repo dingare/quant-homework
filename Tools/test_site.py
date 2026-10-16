@@ -29,12 +29,13 @@ class SiteTests(unittest.TestCase):
                    "[Backlog](Backlog.md#ab-testing--review-to-do)\n\n"
                    "[Review](Recent_Quant_Prep_Review_2026-07-18.md)\n\n"
                    "[Math guide](Tools/MathMarkdownGuide.md)\n")
+        self.write("INDEX.md", "# Index\n\n[Home](README.md)\n")
         self.write("Backlog.md", "# Backlog\n\n## A/B Testing — Review To-Do\n")
         self.write("Recent_Quant_Prep_Review_2026-07-18.md", "# Review\n")
         self.write("Tools/MathMarkdownGuide.md", "# Math guide\n\n[Home](../README.md)\n")
         output = self.root / "preview"
         site.build_site(output)
-        for relative in ("index.html", "Backlog.html", "Recent_Quant_Prep_Review_2026-07-18.html",
+        for relative in ("index.html", "INDEX.html", "Backlog.html", "Recent_Quant_Prep_Review_2026-07-18.html",
                          "Tools/MathMarkdownGuide.html"):
             self.assertTrue((output / relative).is_file(), relative)
         self.assertFalse(site.SITE_DIR.exists())
