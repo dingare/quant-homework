@@ -6,7 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
-| [2026-10-15](2026-10-15.md) | Four-question drill, continued October 16; Q4 deferred | Q1–Q3 Partial / Hinted; Q4 Pending; original cache prompt withdrawn before attempt | Median merge repairs and supplied partition solution; independent coin construction with cost correction; Neyman–Pearson new knowledge taught; Q1 initial approx. 22–23 min, other actual times unknown |
+| [2026-10-15](2026-10-15.md) | Four-question drill, continued October 16; Q4 completed | Q1–Q3 Partial / Hinted; Q4 Mastered; original cache prompt withdrawn before attempt | Q4 independently solved with conceptual understanding; no further Q4 review needed. Median merge repairs and supplied partition solution; independent coin construction with cost correction; Neyman–Pearson new knowledge taught; Q1 initial approx. 22–23 min, other actual times unknown |
 | [2026-10-14](2026-10-14.md) | Retrieval and three-question interview session; final review Pending | R1 Partial / Hinted; R2 independent by user report, submission unverified; Q1–Q3 Partial / Hinted overall | DSU core independent, typo repaired and code tested; weighted inference guided; validation feedback corrected; actual times unknown |
 | [2026-10-13](2026-10-13.md) | Survival Mode — continued October 14 | Q1–Q5 Partial / Hinted on main questions; Q5 decision follow-up Pending | Q4 CLT/SE/CI and counterexample reviewed; Q5 Bayes odds explained; Q1 fixes completed by user report; Q1 multiplication follow-up unattempted; actual times unknown |
 | [2026-10-11](2026-10-11.md) | Make-up drill October 12; guided continuation October 13 | Q3 independent correct (timing unknown); all seven other questions Partial / Hinted; none Pending | Dijkstra, inference and matrix foundations; reference formulas and review links; actual times unknown |
@@ -21,6 +21,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 - Use the [daily-test template](../Templates/DailyTestTemplate.md): Session → Results → each item's Question / Key solution / Review focus → Next review. October 10–14 logs use this concise format; earlier logs remain historical records.
 - Keep complete problem assumptions, the essential derivation or reference code, and **specific weak points**. Omit attempt-by-attempt transcripts and repetitive feedback. Retain only evidence needed for the rating, genuine independent successes, meaningful typo/wording clarifications and code-verification limits.
 - Results: **Cold Solve**, **Partial / Hinted**, **Miss**, **Pending**. K = Knowledge, R = Retrieval, I = Implementation; leave K/R unresolved without evidence. Guided completion is not cold mastery. Self-reported completion and directly verified work remain distinguishable.
+- **Mastered** records explicitly confirmed independent solving and conceptual understanding, as requested for October 15 Q4. Do not keep mastered items in pending or remedial-review queues.
 - Actual time is **Not recorded** unless the user reports it; prompt budgets and timestamps are not elapsed time. A time-capped attempt is not necessarily a completed solve. Unsubmitted code is unverified, not unpracticed.
 - Retests are dated observations. Label **intentional spaced repetition**, with the original date, question and gap; accidental repeats do not count as new coverage. Keep removed prompts identifiable by a short source link.
 - Use protected inline math and fenced math blocks throughout, including prompts and complexity statements. Follow the [math guide](../Tools/MathMarkdownGuide.md), run the checker, and inspect rendered output.
@@ -36,7 +37,7 @@ Updated by the October 15–16 request; supersedes the previous retrieval/review
 - Mainly core interview material, with at most one clearly labeled stretch question. A new foundation should not be treated as a timed retrieval failure; first-learning time is not a familiar-topic solving budget.
 - Weekly targets: Coding 35%, Probability 30%, Statistics 20%, ML/Time Series 10%, Linear Algebra/Optimization 5%. Do not force every topic into one session or add filler questions.
 - Compare the latest 2–3 tests by underlying solution pattern. Repeat only deliberately for an identified gap; consult [Backlog](../Backlog.md) and recent continuations before proposing supposedly pending questions.
-- Next session: resume [October 15 Q4](2026-10-15.md#q4--feasible-correlations-and-zero-variance-portfolios), deferred and unattempted, before generating a new set. Keep its solution withheld.
+- [October 15 Q4](2026-10-15.md#q4--feasible-correlations-and-zero-variance-portfolios) is **Mastered**, independently solved with conceptual understanding confirmed October 16. No additional Q4 review or remedial practice is needed.
 
 ## Navigation
 
