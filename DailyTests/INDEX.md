@@ -6,6 +6,7 @@ Interview performance logs, kept separately from canonical question notes and kn
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
+| [2026-10-17](2026-10-17.md) | Four-question drill; all discussed | Q1–Q4 Partial / Hinted overall; Q2.1 and Q3.1 Cold Solve | Heap state updates (I), long-cycle counting, exact endpoint bounds, signal smoothing / costs; final Q1 user repair unsubmitted; actual times unknown |
 | [2026-10-15](2026-10-15.md) | Four-question drill, continued October 16; Q4 completed | Q1–Q3 Partial / Hinted; Q4 Mastered; original cache prompt withdrawn before attempt | Q4 independently solved with conceptual understanding; no further Q4 review needed. Median merge repairs and supplied partition solution; independent coin construction with cost correction; Neyman–Pearson new knowledge taught; Q1 initial approx. 22–23 min, other actual times unknown |
 | [2026-10-14](2026-10-14.md) | Retrieval and three-question interview session; final review Pending | R1 Partial / Hinted; R2 independent by user report, submission unverified; Q1–Q3 Partial / Hinted overall | DSU core independent, typo repaired and code tested; weighted inference guided; validation feedback corrected; actual times unknown |
 | [2026-10-13](2026-10-13.md) | Survival Mode — continued October 14 | Q1–Q5 Partial / Hinted on main questions; Q5 decision follow-up Pending | Q4 CLT/SE/CI and counterexample reviewed; Q5 Bayes odds explained; Q1 fixes completed by user report; Q1 multiplication follow-up unattempted; actual times unknown |

@@ -4,6 +4,8 @@ Categorized index of all finalized subject notes.
 
 ## Daily Testing Results
 
+- [October 17 drill](DailyTests/2026-10-17.md) — interval allocation, permutation cycles, uniform endpoint inference, and signal smoothing versus trading costs; independent subparts and assisted work distinguished.
+
 - [October 15 drill, continued October 16](DailyTests/2026-10-15.md) — median partition search, exact coin sampling and most-powerful variance testing; Q1–Q3 Partial / Hinted; **Q4 correlation feasibility Mastered**, independently solved with conceptual understanding; no further Q4 review needed.
 
 - [October 13 survival drill, continued October 14](DailyTests/2026-10-13.md) — all five main questions Partial / Hinted; Q1 repairs completed; Q4 inference and Q5 Bayes odds reviewed; **Q5 decision follow-up Pending**.

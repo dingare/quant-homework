@@ -210,6 +210,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-17: Recorded the [four-question interview drill](DailyTests/2026-10-17.md), including heap implementation evidence, independent cycle-length / endpoint-estimator derivations, exact confidence-bound review, and signal smoothing versus turnover costs. Updated review backlog; subject-note counts unchanged.
+
 - 2026-10-12: Added [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md), connecting sovereign repricing, repo margin and funding liquidity; recent market claims remain explicitly unverified.
 
 - 2026-10-09: Added [P020 — Uniform Sum: Half-Threshold Overshoot Probability](Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md) with the full conditional-distribution derivation, simplex geometry, the atom at zero, and the infinite-sequence assumption.

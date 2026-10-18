@@ -72,3 +72,5 @@ Track counts of finalized subject notes by category.
 - 2026-10-12: Added R001 on French OAT spread, repo funding and liquidity risk; Rates Research now has 1 note and the total is 63.
 
 - 2026-10-13: Added the SVD/QR/conditioning/least-squares/PCA knowledge card. Knowledge cards total 6; finalized subject-question counts unchanged. Updated October 11 make-up session with Q7/Q8 guided continuation, not cold mastery.
+
+- 2026-10-17: Recorded the four-question drill and review evidence in [DailyTests](DailyTests/2026-10-17.md). All four items Partial / Hinted overall; Q2.1 and Q3.1 independently correct. Subject-note and knowledge-card counts unchanged.
