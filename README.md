@@ -210,6 +210,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-18: Recorded the [four-question interview drill](DailyTests/2026-10-18.md): tree-path states, Gaussian sign geometry, duplicated-data inference and first-collision timing. Preserved user-reported code completion, arithmetic clarifications and the already-known tail-sum method; subject-note counts unchanged.
+
 - 2026-10-17: Recorded the [four-question interview drill](DailyTests/2026-10-17.md), including heap implementation evidence, independent cycle-length / endpoint-estimator derivations, exact confidence-bound review, and signal smoothing versus turnover costs. Updated review backlog; subject-note counts unchanged.
 
 - 2026-10-12: Added [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md), connecting sovereign repricing, repo margin and funding liquidity; recent market claims remain explicitly unverified.

@@ -517,3 +517,14 @@ Source: [October 17 drill](DailyTests/2026-10-17.md). All four questions discuss
 - Q4: after the shared-signal prompt, user supplied correct gross-return / turnover objectives and recognized the beta / cost trade-off. Correlation ranking versus cost-sensitive objective ranking was understood in discussion. Preserve original covariance expressions and `sqrt(s)` as clarified typos, not evidence of conceptual gaps. The threshold and detailed economic interpretation were supplied; no cold-mastery upgrade. Equal position variance does not imply equal P&L risk, and this objective is not Sharpe.
 
 Any near-term revisit must be labeled **intentional spaced repetition** with October 17, the exact item and gap. Keep four to five fresh interview questions, no separate retrieval/review block, and weekly topic balance across sessions.
+
+## October 18 Drill — Evidence and Focused Review
+
+Source: [October 18 drill](DailyTests/2026-10-18.md). All four questions discussed, overall Partial / Hinted; 55 minutes planned, all actual times unknown. No main question Pending and no Miss assigned.
+
+- [ ] **One focused check: Q1 tree-path states and reverse processing.** Distinguish the single branch that can attach to a parent from the complete best path anywhere in a subtree. The user articulated two state arrays; traversal and full reference algorithm were supplied. Code completed by user report, exact submission unverified, not unpracticed. Later independent explanation and submitted code remain open; no I gap inferred without a submission, K/R unresolved.
+- Q2: geometry and conditional normalization guided; final win-rate versus expected-return interpretation independently correct. Later check half-plane intersection and the conditional event-probability denominator; do not infer unfamiliarity from the joint-density request alone.
+- Q3: coefficients, RSS and R-squared independently correct. Preserve the user's clarification that ratio discrepancies were arithmetic and genuinely independent samples add information. Exact factors and explanation supplied, so overall remains Partial / Hinted; no additional conceptual K/R gap or remedial requirement established.
+- Q4: direct counting independently structured correctly; final repeat factor is k minus one, not k. Do not invent a broad counting gap. Tail-sum method already known by user report; expectation question reflected uncertainty about further simplification, not inability to use that method. Collision-scale approximation guided; final rearrangement error alone is not a knowledge gap.
+
+Near-term retests must name October 18, the item and the gap, and be labeled **intentional spaced repetition**. Keep code verification separate from self-reported practice, preserve arithmetic/wording clarifications, and do not add a dedicated review block.

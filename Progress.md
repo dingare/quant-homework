@@ -74,3 +74,5 @@ Track counts of finalized subject notes by category.
 - 2026-10-13: Added the SVD/QR/conditioning/least-squares/PCA knowledge card. Knowledge cards total 6; finalized subject-question counts unchanged. Updated October 11 make-up session with Q7/Q8 guided continuation, not cold mastery.
 
 - 2026-10-17: Recorded the four-question drill and review evidence in [DailyTests](DailyTests/2026-10-17.md). All four items Partial / Hinted overall; Q2.1 and Q3.1 independently correct. Subject-note and knowledge-card counts unchanged.
+
+- 2026-10-18: Recorded the [four-question drill](DailyTests/2026-10-18.md); all four Partial / Hinted. Q1 code completed by user report, exact version unverified. Q3 arithmetic/independent-sampling and Q4 known-tail-sum clarifications preserved. All actual times unknown; subject-note and knowledge-card counts unchanged.
