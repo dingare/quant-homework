@@ -528,3 +528,16 @@ Source: [October 18 drill](DailyTests/2026-10-18.md). All four questions discuss
 - Q4: direct counting independently structured correctly; final repeat factor is k minus one, not k. Do not invent a broad counting gap. Tail-sum method already known by user report; expectation question reflected uncertainty about further simplification, not inability to use that method. Collision-scale approximation guided; final rearrangement error alone is not a knowledge gap.
 
 Near-term retests must name October 18, the item and the gap, and be labeled **intentional spaced repetition**. Keep code verification separate from self-reported practice, preserve arithmetic/wording clarifications, and do not add a dedicated review block.
+
+## October 20 Drill — Stopped with Original Questions Preserved
+
+Source: [October 20 drill](DailyTests/2026-10-20.md). Q1 and Q2 parts 1–2 **Partial / Hinted**. Planned initial solving: 54 minutes; all actual times Not recorded. No Miss assigned.
+
+- [ ] **Resume Q2 part 3 first:** conditional variance of wins in the next ten trades versus an independent-trade risk engine. Original prompt preserved; no attempt, hint or solution for part 3 supplied.
+- [ ] **Then Q3:** pooled versus within-sector regression and stock-selection interpretation. Pending, original full prompt retained, no hints or solution supplied.
+- [ ] **Then Q4:** calibrated probability forecasts, squared probability loss and cutoff accuracy. Pending, original full prompt retained, no hints or solution supplied.
+- Q1: augmented-state analogy to weighted coupon shortest paths independently recognized; two distance grids proposed. FIFO operations, resource transition and visited-per-state logic guided. Exact submitted code has implementation errors (I); full BFS reference supplied on request, no corrected independent user submission. This is practiced but flawed code, not unpracticed work. Heap/pile terminology and the meaning of grid value 1 are clarifications, not conceptual failures.
+- Q2 parts 1–2: likelihood independently correct; 3/4 is a valid MLE point estimate but not the requested posterior density. Bayes evidence denominator/density notation guided. User correctly evaluated the normalizer and predictive integrals after setup; conditional-on-P versus conditional-on-data independence and the two-win integral were supplied. K/R unresolved; numerical correction is separate from the independence assertion.
+- [ ] One later focused check: Q1 FIFO and state-specific discovery/update implementation. Reproduce without reference and submit code; do not interrupt the pending questions with a separate retrieval block.
+
+The user asked to stop for now and preserve the remaining questions. Continue this set from Q2 part 3 before proposing a replacement set unless instructed otherwise. Any near-term revisit of completed parts must be labeled **intentional spaced repetition**, naming October 20, the item and the specific gap. Pending work is not a Miss; no elapsed time inferred.
