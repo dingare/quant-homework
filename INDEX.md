@@ -4,7 +4,7 @@ Categorized index of all finalized subject notes.
 
 ## Daily Testing Results
 
-- [October 20 drill](DailyTests/2026-10-20.md) — resource-state BFS and shared-probability prediction partially reviewed; **resume Q2 part 3, then Q3 sector regression and Q4 forecast scoring**. Remaining prompts preserved without solutions.
+- [October 20 drill, continued October 21](DailyTests/2026-10-20.md) — Q1–Q3 reviewed, overall Partial / Hinted; Q3 pooled slope/R-squared independently correct. Shared-parameter risk, sector demeaning, total covariance and omitted-variable bias recorded. **Only Q4 forecast scoring remains Pending; resume October 22**, original prompt preserved without hints or solutions.
 
 - [October 18 drill](DailyTests/2026-10-18.md) — maximum-sum tree paths, Gaussian sign prediction, duplicated regression observations and first-collision timing; all four Partial / Hinted, with user clarifications preserved.
 
