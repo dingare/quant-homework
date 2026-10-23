@@ -1,6 +1,6 @@
 # Index
 
-Categorized index of all finalized subject notes.
+Categorized question and subject library. Full prompts, solutions and reusable discussions live under `Questions/`; [DailyTests](DailyTests/INDEX.md) keeps dated assessments and links. Pending follow-ups remain explicitly marked in their question notes.
 
 ## Daily Testing Results
 
@@ -28,6 +28,9 @@ Categorized index of all finalized subject notes.
 - [L004 — Rank-One Covariance Update and Eigenvalue Interlacing](Questions/LinearAlgebra/L004_Rank_One_Covariance_Update_and_Eigenvalue_Interlacing.md)
 - [L005 — Low-Rank Covariance Update and Portfolio Risk](Questions/LinearAlgebra/L005_Low_Rank_Covariance_Update_and_Portfolio_Risk.md)
 - [L006 — Factor-Neutral Alpha in Eigenfactor Space](Questions/LinearAlgebra/L006_Factor_Neutral_Alpha_in_Eigenfactor_Space.md)
+- [L007 — Projection Matrices, Eigenvalues, and Rank](Questions/LinearAlgebra/L007_Projection_Matrices_Eigenvalues_and_Rank.md)
+- [L008 — Conditioning and Least Squares](Questions/LinearAlgebra/L008_Conditioning_and_Least_Squares.md)
+- [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
 
@@ -52,6 +55,21 @@ Categorized index of all finalized subject notes.
 - [P019 — HH vs HTT Pattern Race](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md)
 
 - [P020 — Uniform Sum: Half-Threshold Overshoot Probability](Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md)
+- [P021 — Conditional Red-Ball Positions](Questions/Probability/P021_Conditional_Red_Ball_Positions.md)
+- [P022 — Discrete Median and Symmetry](Questions/Probability/P022_Discrete_Median_and_Symmetry.md)
+- [P023 — Coin Pattern Waiting Times](Questions/Probability/P023_Coin_Pattern_Waiting_Times.md)
+- [P024 — Bayesian Coin Selection and Prediction](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md)
+- [P025 — Permutation Fixed Points and Dependent Indicators](Questions/Probability/P025_Permutation_Fixed_Points_and_Dependent_Indicators.md)
+- [P026 — Finite-Horizon Optimal Stopping](Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
+- [P027 — Dice Conditioned on a Sum](Questions/Probability/P027_Dice_Conditioned_on_a_Sum.md)
+- [P028 — Branching Process Extinction](Questions/Probability/P028_Branching_Process_Extinction.md)
+- [P029 — Random Inspection and Residual Wait](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md)
+- [P030 — Product Distribution and Event Conditioning](Questions/Probability/P030_Product_Distribution_and_Event_Conditioning.md)
+- [P031 — Exact Uniform Sampling from a Biased Coin](Questions/Probability/P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md)
+- [P032 — Cycles of a Uniform Random Permutation](Questions/Probability/P032_Cycles_of_a_Uniform_Random_Permutation.md)
+- [P033 — Gaussian Sign Prediction and Conditional Return](Questions/Probability/P033_Gaussian_Sign_Prediction_and_Conditional_Return.md)
+- [P034 — First Repeated Label](Questions/Probability/P034_First_Repeated_Label.md)
+- [P035 — Shared Unknown Win Probability and Predictive Risk](Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
 
 ## Statistics
 
@@ -65,6 +83,19 @@ Categorized index of all finalized subject notes.
 - [S008 — Selection Bias from Trading on Signals or Outcomes](Questions/Statistics/S008_Selection_Bias_from_Trading_on_Signals_or_Outcomes.md)
 - [S009 — Overlapping Three-Day Returns and Hansen–Hodrick Inference](Questions/Statistics/S009_Overlapping_Three_Day_Returns_and_Hansen_Hodrick_Inference.md)
 - [S010 — OLS Significance, Randomness, and Robust Standard Errors](Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md)
+- [S011 — Exponential MLE and Fisher Information](Questions/Statistics/S011_Exponential_MLE_and_Fisher_Information.md)
+- [S012 — Paired Return Tests and Dependence](Questions/Statistics/S012_Paired_Return_Tests_and_Dependence.md)
+- [S013 — One-Sided Normal Mean Test](Questions/Statistics/S013_One_Sided_Normal_Mean_Test.md)
+- [S014 — Exact Randomization and A/B Testing](Questions/Statistics/S014_Exact_Randomization_and_AB_Testing.md)
+- [S015 — Interaction and Recentering](Questions/Statistics/S015_Interaction_and_Recentering.md)
+- [S016 — Omitted-Variable Bias](Questions/Statistics/S016_Omitted_Variable_Bias.md)
+- [S017 — Confidence and Prediction Intervals](Questions/Statistics/S017_Confidence_and_Prediction_Intervals.md)
+- [S018 — Ratio-of-Means Inference](Questions/Statistics/S018_Ratio_of_Means_Inference.md)
+- [S019 — Weighted Common-Mean Inference](Questions/Statistics/S019_Weighted_Common_Mean_Inference.md)
+- [S020 — Most-Powerful Normal Variance Test](Questions/Statistics/S020_Most_Powerful_Normal_Variance_Test.md)
+- [S021 — Uniform Endpoint Estimation and Exact Bounds](Questions/Statistics/S021_Uniform_Endpoint_Estimation_and_Exact_Bounds.md)
+- [S022 — Duplicating Regression Observations](Questions/Statistics/S022_Duplicating_Regression_Observations.md)
+- [S023 — Pooled and Within-Sector Signal Evaluation](Questions/Statistics/S023_Pooled_and_Within_Sector_Signal_Evaluation.md)
 
 ## Time Series
 
@@ -75,6 +106,11 @@ Categorized index of all finalized subject notes.
 - [T005 — Two-Factor Kalman Update for Level and Slope](Questions/TimeSeries/T005_Two_Factor_Kalman_Update_for_Level_and_Slope.md)
 - [T006 — One-Step Kalman Update with Correlated Signals](Questions/TimeSeries/T006_One_Step_Kalman_Update_with_Correlated_Signals.md)
 - [T007 — Random Forest Rates Signals and Time-Series Validation](Questions/TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md)
+- [T008 — Tree Extrapolation and Deployment](Questions/TimeSeries/T008_Tree_Extrapolation_and_Deployment.md)
+- [T009 — MA(1) Equivalence, Invertibility, and Fitting](Questions/TimeSeries/T009_MA1_Equivalence_Invertibility_and_Fitting.md)
+- [T010 — Deployment Probabilities and Decisions](Questions/TimeSeries/T010_Deployment_Probabilities_and_Decisions.md)
+- [T011 — Signal Smoothing, Correlation, and Trading Costs](Questions/TimeSeries/T011_Signal_Smoothing_Correlation_and_Trading_Costs.md)
+- [T012 — Probability Forecasts, Calibration, and Evaluation](Questions/TimeSeries/T012_Probability_Forecasts_Calibration_and_Evaluation.md)
 
 ## Optimization
 
@@ -86,6 +122,7 @@ Categorized index of all finalized subject notes.
 - [O006 — Hedge-Constrained Execution with Position Limits](Questions/Optimization/O006_Hedge_Constrained_Execution_with_Position_Limits.md)
 - [O007 — Turnover-Constrained Mean-Variance Portfolio and KKT Active Set](Questions/Optimization/O007_Turnover_Constrained_Mean_Variance_Portfolio_and_KKT_Active_Set.md)
 - [O008 — Risk Budgeting with a Binding Factor Constraint](Questions/Optimization/O008_Risk_Budgeting_with_a_Binding_Factor_Constraint.md)
+- [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
 
@@ -96,6 +133,19 @@ Categorized index of all finalized subject notes.
 - [C004 — NeetCode Sliding Window Maximum](Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md)
 - [C005 — Maximum Subarray Sum with Fixed and Minimum Length](Questions/Coding/C005_Maximum_Subarray_Sum_Fixed_and_Minimum_Length.md)
 - [C006 — Longest Consecutive Sequence](Questions/Coding/C006_Longest_Consecutive_Sequence.md)
+- [C007 — Longest Balanced Binary Subarray](Questions/Coding/C007_Longest_Balanced_Binary_Subarray.md)
+- [C008 — Dependency Ordering and DAG Scheduling](Questions/Coding/C008_Dependency_Ordering_and_DAG_Scheduling.md)
+- [C009 — Minimize Maximum Contiguous Group Sum](Questions/Coding/C009_Minimize_Maximum_Contiguous_Group_Sum.md)
+- [C010 — Kth Largest: Heap and Quickselect](Questions/Coding/C010_Kth_Largest_Heap_and_Quickselect.md)
+- [C011 — Incremental Connectivity and Connected Pairs](Questions/Coding/C011_Incremental_Connectivity_and_Connected_Pairs.md)
+- [C012 — Edit Distance](Questions/Coding/C012_Edit_Distance.md)
+- [C013 — Shortest Path with an Optional Free Edge](Questions/Coding/C013_Shortest_Path_with_an_Optional_Free_Edge.md)
+- [C014 — Maximum-Profit Compatible Jobs](Questions/Coding/C014_Maximum_Profit_Compatible_Jobs.md)
+- [C015 — Arithmetic Expressions and Nested State](Questions/Coding/C015_Arithmetic_Expressions_and_Nested_State.md)
+- [C016 — Median of Two Sorted Arrays](Questions/Coding/C016_Median_of_Two_Sorted_Arrays.md)
+- [C017 — Minimum Units for Overlapping Tasks](Questions/Coding/C017_Minimum_Units_for_Overlapping_Tasks.md)
+- [C018 — Maximum-Sum Path in a Tree](Questions/Coding/C018_Maximum_Sum_Path_in_a_Tree.md)
+- [C019 — Shortest Grid Route with One Blocked Entry](Questions/Coding/C019_Shortest_Grid_Route_with_One_Blocked_Entry.md)
 
 ## Stochastic Calculus
 

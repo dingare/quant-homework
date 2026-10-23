@@ -117,3 +117,7 @@ $$
 ## Connections
 
 FWL, Residualization, Partial Correlation, Ridge, PCA, Factor Models, Signal Attribution, Rates RV
+
+## Related questions and knowledge
+
+- [S016 — Omitted-Variable Bias](S016_Omitted_Variable_Bias.md) — Projection coefficients, confounding and omitted-variable bias.

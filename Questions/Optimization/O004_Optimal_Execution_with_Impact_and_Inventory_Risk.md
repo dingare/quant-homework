@@ -47,13 +47,13 @@ $$
 
 Thus
 
-$$
+```math
 \begin{aligned}
 J(q_2,q_3)
 ={}&\frac12\left[(6-q_2-q_3)^2+q_2^2+q_3^2\right]\\
 &+\frac12\left[(q_2+q_3)^2+q_3^2\right].
 \end{aligned}
-$$
+```
 
 The first-order conditions are
 
@@ -143,11 +143,11 @@ This produces $q_1^*\gt q_2^*\gt q_3^*$.
 
 Consider
 
-$$
+```math
 \min_{\{q_t\}}
 \frac{\eta}{2}\sum_{t=1}^Tq_t^2
 +\frac{\lambda}{2}\sum_{t=1}^{T-1}R_t^2,
-$$
+```
 
 with
 
@@ -231,3 +231,6 @@ $$
 }.
 $$
 
+## Related questions and knowledge
+
+- [T011 — Signal Smoothing, Correlation, and Trading Costs](../TimeSeries/T011_Signal_Smoothing_Correlation_and_Trading_Costs.md) — Predictive fit versus turnover and execution costs.

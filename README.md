@@ -59,7 +59,7 @@ homework/
 
 ### Subject Template
 
-Each daily subject should be saved as one Markdown file using this structure:
+Each subject should be saved as one Markdown file using [SubjectTemplate](Templates/SubjectTemplate.md). Drill notes keep canonical question content here and dated performance in DailyTests:
 
 ```md
 # {ID} — {Subject Title}
@@ -92,6 +92,8 @@ Each daily subject should be saved as one Markdown file using this structure:
 ## Market / Rates Application
 
 ## Connections
+
+## Assessment History
 
 ## What to Remember
 ```
@@ -151,8 +153,8 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 
 ## Structure
 
-- `DailyTests/`: [Dated interview results](DailyTests/INDEX.md), concise questions, key solutions and highlighted weak points; use [the daily-test template](Templates/DailyTestTemplate.md). Keep only essential evidence for ratings, timing and verification; omit attempt-by-attempt transcripts.
-- `Questions/`: Canonical question and subject notes by category.
+- `DailyTests/`: [Dated interview results](DailyTests/INDEX.md), canonical question links, related concepts and assessment evidence. Keep ratings, timing, hints, specific gaps and verification here; use [the daily-test template](Templates/DailyTestTemplate.md). Full prompts and solutions belong in Questions.
+- `Questions/`: Canonical prompts, solutions, reference code and reusable discussions by category. Reuse existing notes for exact repeats; retain meaningful dated variants together. Link back to every assessment and to related questions / knowledge cards.
 - `Backlog.md`: Unfinished topics, future note clusters, and idea inventory.
 - `KnowledgeCards/`: Short-form review cards for later use.
 - `Connections/`: Cross-topic links and concept graph.
@@ -172,7 +174,7 @@ When the user provides a finalized ChatGPT prompt/answer to save:
 - Do not ask for confirmation before pushing; push by default after committing unless the user explicitly says not to push.
 - Keep commits small and descriptive, ideally one note or one cleanup per commit.
 - Do not commit local app settings, generated files, or OS-specific files.
-- If a note is incomplete, leave it out of the knowledge base until the user marks it finalized.
+- For new subject drafts, wait for finalized content. An explicitly requested archive of an existing drill may retain Pending questions/follow-ups with that status clear; do not invent their missing solutions or mark them mastered.
 
 ## Local Editing Checklist
 
@@ -209,6 +211,8 @@ When working locally on this repo:
 - One-time repository setup: in **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**. This was enabled on 2026-10-16. The workflow token can deploy to an enabled site but cannot perform the initial administrative setup; a `Configure Pages` error saying `Not Found` or `Resource not accessible by integration` calls for checking this setting.
 
 ## Latest Additions
+
+- 2026-10-22: Reorganized all 12 [DailyTests](DailyTests/INDEX.md) into linked assessment logs. Filed 50 additional canonical entries in the [question library](INDEX.md), reused existing notes for earlier questions and repeated variants, and retained all 73 item records, ratings, timing, pending follow-ups and old item anchors. Added reciprocal question / knowledge-card links. This is archival filing, not 50 new attempts or newly mastered topics.
 
 - 2026-10-18: Recorded the [four-question interview drill](DailyTests/2026-10-18.md): tree-path states, Gaussian sign geometry, duplicated-data inference and first-collision timing. Preserved user-reported code completion, arithmetic clarifications and the already-known tail-sum method; subject-note counts unchanged.
 

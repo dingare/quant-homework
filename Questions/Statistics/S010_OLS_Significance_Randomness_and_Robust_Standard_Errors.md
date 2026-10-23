@@ -11,7 +11,20 @@
 
 ## Core Question
 
-Given $y_t=\alpha+\beta x_t+\epsilon_t$, $\hat\beta=0.30$ and $SE(\hat\beta)=0.10$: Is beta significant? What is random? Does heteroskedasticity bias OLS? What does it break? Do robust standard errors fix endogeneity, and why?
+Given
+
+```math
+y_t=\alpha+\beta x_t+\epsilon_t,\qquad \hat\beta=0.30,\quad SE(\hat\beta)=0.10,
+```
+
+answer:
+
+1. Is beta significant?
+2. What exactly is random in that statement?
+3. Does heteroskedasticity bias OLS?
+4. What does heteroskedasticity break?
+5. Do robust standard errors fix endogeneity?
+6. Why not?
 
 ## Solution
 
@@ -47,3 +60,11 @@ For time-series data, heteroskedasticity-only robust standard errors need not ha
 ## What to Remember
 
 Separate the parameter from its estimator, and separate coefficient identification from uncertainty estimation.
+
+## Assessment history
+
+- [2026-10-06 Q3 — assessment](../../DailyTests/2026-10-06.md#q3--ols-and-inference-oral)
+
+## Related questions and knowledge
+
+- [S017 — Confidence and Prediction Intervals](S017_Confidence_and_Prediction_Intervals.md) — Sampling uncertainty and the target of an interval.

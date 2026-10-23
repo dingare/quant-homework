@@ -201,3 +201,40 @@ $$
 }
 $$
 
+## Interview drill — 2026-10-07 Q3
+
+Source and assessment: [2026-10-07 Q3](../../DailyTests/2026-10-07.md#q3--measurement-error-robust-se-and-iv). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+The true model is $`y=\alpha+\beta x+\epsilon`$, but only $`z=x+u`$ is observed. Assume x, u, and epsilon are mutually independent, $`E[u]=E[\epsilon]=0`$, $`\mathrm{Var}(x)=4`$, $`\mathrm{Var}(u)=1`$, and $`\beta=0.5`$. Regress y on z with an intercept.
+
+1. Derive the probability limit of the OLS slope from covariance divided by variance.
+2. Is the bias toward or away from zero?
+3. Would heteroskedasticity-robust standard errors fix it?
+4. Under what conditions could an instrumental variable help?
+
+### Recorded solution
+
+```math
+\mathrm{plim}\hat\beta
+=\frac{\mathrm{Cov}(z,y)}{\mathrm{Var}(z)}
+=\frac{\beta\mathrm{Var}(x)}
+{\mathrm{Var}(x)+\mathrm{Var}(u)}
+=\frac45\beta=0.4.
+```
+
+For an instrument W, state relevance and validity: it predicts the true x, is uncorrelated with both measurement error u and structural error epsilon, and affects y only through x. These conditions imply correlation with z and orthogonality to the observed-regression error $`\epsilon-\beta u`$.
+
+### Related Notes
+
+- [S006 — Two Noisy Proxies and Errors-in-Variables](S006_Two_Noisy_Proxies_and_Errors_in_Variables.md): attenuation and a valid second-proxy instrument.
+- [S010 — OLS Significance, Randomness, and Robust Standard Errors](S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md): inference corrections versus endogeneity.
+
+## Assessment history
+
+- [2026-10-07 Q3 — assessment](../../DailyTests/2026-10-07.md#q3--measurement-error-robust-se-and-iv)
+
+## Related questions and knowledge
+
+- [S019 — Weighted Common-Mean Inference](S019_Weighted_Common_Mean_Inference.md) — Precision weighting of noisy observations.

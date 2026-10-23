@@ -58,9 +58,9 @@ $$
 
 $h(t)dt$ 是在已存活到 $t$ 的条件下，未来极短区间内发生事件的近似概率。累计 hazard 为
 
-$$
+```math
 H(t)=\int_0^t h(u)\,du,
-$$
+```
 
 且
 
@@ -121,9 +121,9 @@ $$
 
 因此最终由原因 $i$ 获胜的概率是
 
-$$
+```math
 \boxed{P(i\text{ wins})=\int_0^\infty g_i(t)\,dt}.
-$$
+```
 
 而给定在时刻 $t$ 附近确有事件发生，其类型为 $i$ 的局部概率为
 
@@ -296,3 +296,14 @@ Erlang 是一串顺序阶段；hyperexponential 是初始时随机选择不同 r
 - [P007 — Unequal-Jump Random Walk and First-Step Analysis](../../Questions/Probability/P007_Unequal_Jump_Random_Walk_First_Step_Analysis.md) — 离散状态 hitting probability 与 expected time。
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](../../Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md) — 连续过程的 generator boundary-value method。
 - [T003 — AR(1) First Passage Time](../../Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md) — persistence 对 threshold-crossing time 的影响。
+
+## Related interview questions
+
+- [P023 — Coin Pattern Waiting Times](../../Questions/Probability/P023_Coin_Pattern_Waiting_Times.md)
+- [P026 — Finite-Horizon Optimal Stopping](../../Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
+- [P028 — Branching Process Extinction](../../Questions/Probability/P028_Branching_Process_Extinction.md)
+- [P029 — Random Inspection and Residual Wait](../../Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md)
+- [P034 — First Repeated Label](../../Questions/Probability/P034_First_Repeated_Label.md)
+- [S011 — Exponential MLE and Fisher Information](../../Questions/Statistics/S011_Exponential_MLE_and_Fisher_Information.md)
+
+Dated results and assistance/verification evidence are linked from each question’s assessment history. Filing these references does not change the recorded performance.

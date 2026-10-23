@@ -10,25 +10,27 @@
 
 ## Results
 
-| Item | Budget | Actual | Result | Review focus |
-| --- | --- | --- | --- | --- |
-| Q1 | | Not recorded | Cold Solve / Partial / Hinted / Miss / Pending | Specific weak point; K, R or I only when supported |
+| Item | Question link | Budget | Actual | Result | Review focus |
+| --- | --- | --- | --- | --- | --- |
+| Q1 | Link to its categorized question note | | Not recorded | Cold Solve / Partial / Hinted / Miss / Pending | Specific weak point; K, R or I only when supported |
 
 K = Knowledge; R = Retrieval; I = Implementation. Leave K/R unresolved if evidence is insufficient. Guided review is not cold mastery; pending work is not a Miss.
 
 ## Q1 — Short title
 
-### Question
+### Question reference and connections
 
-Keep the English prompt, assumptions, constraints and required outputs. No initial hints for unattempted questions.
+Link to the canonical `Questions/{Category}/{ID}_{Title}.md` entry and, when needed, its exact variant section. Keep the complete English prompt, assumptions, constraints, solutions and reusable discussion in that question note. Do not duplicate them in DailyTests. Reuse an existing question for the same problem; keep meaningful variants and dated retests together.
 
-### Key solution
+Link related questions and knowledge cards with a short explanation of the connection. Each question note must link back to the dated assessment. For intentional spaced repetition, retain the original date, item and identified gap here.
 
-Keep the essential reasoning, correctly rendered formulas and one useful reference implementation or link. Omit solutions for pending questions/follow-ups. Use math fences for displayed equations and protected inline math; see [Math Markdown Guide](../Tools/MathMarkdownGuide.md).
+Pending questions/follow-ups may be filed with their status explicit; do not add initial hints or solutions. Use the [subject template](SubjectTemplate.md) and [Math Markdown Guide](../Tools/MathMarkdownGuide.md) for question content.
 
 ### Review focus
 
 **Weak point:** identify the specific knowledge, retrieval or implementation issue in one short paragraph. End with the next independent check or reference reading. If no gap is established, say so. Include only the evidence needed to distinguish independent success from assisted work; preserve meaningful typo/wording clarifications and code-verification limits.
+
+Keep budgets, user-reported actual times, ratings and verification evidence in this dated log. Filing a reference solution is not evidence of a cold solve. Preserve older rating conventions without inventing retrospective grades.
 
 ## Next review
 

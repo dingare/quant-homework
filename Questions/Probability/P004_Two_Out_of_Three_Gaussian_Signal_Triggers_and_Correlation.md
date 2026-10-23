@@ -19,11 +19,11 @@ $$
 X_1,X_2,X_3 \sim N(0,1).
 $$
 
-A trade is triggered when at least two signals exceed the same threshold $a$. The desk chooses $a$ so that the unconditional trade probability is exactly $5\%$:
+A trade is triggered when at least two signals exceed the same threshold $`a`$. The desk chooses $`a`$ so that the unconditional trade probability is exactly $`5\%`$:
 
-$$
+```math
 \mathbb P\!\left(\left|\{i:X_i\gt a\}\right|\ge 2\right)=0.05.
-$$
+```
 
 1. Find $p=\mathbb P(X_i\gt a)$, and approximate $a$.
 2. Conditional on a trade occurring, compute the probability that all three signals exceed $a$.
@@ -35,9 +35,9 @@ $$
 
 Write an exact one-dimensional integral for
 
-$$
+```math
 \mathbb E[M\mid \left|\{i:X_i\gt a\}\right|\ge 2].
-$$
+```
 
 4. The signals are now equicorrelated:
 
@@ -51,9 +51,9 @@ with $0\lt \rho\lt 1$. Give a one-dimensional integral representation for the tr
 
 For the independent case, if
 
-$$
+```math
 N=\left|\{i:X_i\gt a\}\right|,
-$$
+```
 
 then
 
@@ -63,9 +63,9 @@ $$
 
 For the correlated case, use the common-factor representation
 
-$$
+```math
 X_i=\sqrt{\rho}\,Z+\sqrt{1-\rho}\,\varepsilon_i,
-$$
+```
 
 where $Z,\varepsilon_1,\varepsilon_2,\varepsilon_3$ are independent standard normals.
 
@@ -146,15 +146,15 @@ $$
 }.
 $$
 
-Only about $5\%$ of triggered trades have all three signals above threshold.
+Only about $`5\%`$ of triggered trades have all three signals above threshold.
 
 ### 3. Conditional Expected Maximum
 
 Let
 
-$$
+```math
 A=\{N\ge2\}.
-$$
+```
 
 On $A$, at least two variables exceed $a$, so necessarily
 
@@ -164,10 +164,10 @@ $$
 
 Therefore
 
-$$
+```math
 \mathbb E[M\mid A]=
 a+\int_a^\infty \mathbb P(M\gt t\mid A)\,dt.
-$$
+```
 
 For $t\ge a$, define
 
@@ -216,27 +216,27 @@ $$
 
 Write
 
-$$
+```math
 X_i=\sqrt{\rho}\,Z+\sqrt{1-\rho}\,\varepsilon_i.
-$$
+```
 
 Conditional on $Z=z$, the $X_i$ are independent and
 
-$$
+```math
 \mathbb P(X_i\gt a\mid Z=z)=
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
-$$
+```
 
 Define
 
-$$
+```math
 p(z)=
 \bar\Phi\left(
 \frac{a-\sqrt{\rho}\,z}{\sqrt{1-\rho}}
 \right).
-$$
+```
 
 Then
 
@@ -253,7 +253,7 @@ $$
 
 Integrating over $Z$,
 
-$$
+```math
 \boxed{
 \mathbb P(N\ge2)=
 \int_{-\infty}^{\infty}
@@ -261,7 +261,7 @@ $$
 3p(z)^2(1-p(z))+p(z)^3
 \right]\phi(z)\,dz
 }.
-$$
+```
 
 ## Key Knowledge Points
 
@@ -273,7 +273,7 @@ $$
 
 The trigger is a nonlinear aggregation rule.
 
-Even though each individual signal crosses only about $13.5\%$ of the time, requiring two out of three reduces the overall trade frequency to $5\%$.
+Even though each individual signal crosses only about $`13.5\%`$ of the time, requiring two out of three reduces the overall trade frequency to $`5\%`$.
 
 Positive correlation changes the clustering of exceedances:
 
@@ -335,3 +335,7 @@ But correlated signals can create hidden concentration: several apparently disti
 - Correlation can be handled by conditioning on a common Gaussian factor.
 - Multi-signal trigger rules are really joint-tail probability problems.
 - In practice, correlation matters as much as marginal thresholding.
+
+## Related questions and knowledge
+
+- [P033 — Gaussian Sign Prediction and Conditional Return](P033_Gaussian_Sign_Prediction_and_Conditional_Return.md) — Gaussian geometry, correlation and threshold events.

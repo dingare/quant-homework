@@ -273,12 +273,38 @@ $$
 
 Thus A is positive definite and invertible. Equivalently, for any nonzero real vector v,
 
-$$
+```math
 v^\top Av=\|Xv\|^2+\lambda\|v\|^2\gt0.
-$$
+```
 
 The crucial claim is that **every** eigenvalue is positive, not merely that one nonzero eigenvalue exists.
 
 ### Timed Attempt
 
 [2026-10-06 Q7](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round): Y/G, about 5 minutes for the combined lightning round; stopped at the recommended limit. Concepts were correct, but formulas were not automatic. Continue with the [mean-variance answer](../Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md#interview-drill--risk-aversion-and-a-budget-constraint).
+
+## Interview drill — 2026-10-08 Q5
+
+Source and assessment: [2026-10-08 Q5](../../DailyTests/2026-10-08.md#q5--lasso-versus-ridge). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+Predict daily Treasury yield changes using 50 strongly correlated features and 300 observations. LASSO selects one member of a correlated cluster, but its selection changes across training windows; Ridge coefficients are more stable. Explain why, choose a method for prediction, say when the alternative is preferable, and identify one deployment failure mode.
+
+### Recorded solution
+
+Correlated substitutes can exchange LASSO selection across samples. Ridge trades bias for lower variance; it does not simply retain only features explaining the most y variance. Standardize features and tune regularization within the training procedure.
+
+### Related Notes
+
+- [L001 — Ridge Regression as PCA Shrinkage](L001_Ridge_Regression_as_PCA_Shrinkage.md).
+- [T007 — Rates Signals and Time-Series Validation](../TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md): related deployment validation.
+
+## Assessment history
+
+- [2026-10-06 Q7 — assessment](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round)
+- [2026-10-08 Q5 — assessment](../../DailyTests/2026-10-08.md#q5--lasso-versus-ridge)
+
+## Related questions and knowledge
+
+- [L008 — Conditioning and Least Squares](L008_Conditioning_and_Least_Squares.md) — Singular values, conditioning and ridge regularization.

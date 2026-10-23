@@ -138,10 +138,10 @@ $F(X_{(r)})\sim\mathrm{Beta}(r,n+1-r)$; the untransformed order statistic need n
 
 Define the normalizing integral
 
-$$
+```math
 B(a,b)=\int_0^1 u^{a-1}(1-u)^{b-1}\,du
 =\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}.
-$$
+```
 
 If $U\sim\mathrm{Beta}(a,b)$, multiplying the density by u or $u^2$ shifts the first exponent:
 
@@ -154,18 +154,18 @@ $$
 
 Subtracting the squared mean gives
 
-$$
-\operatorname{Var}(U)=\frac{ab}{(a+b)^2(a+b+1)}.
-$$
+```math
+\mathrm{Var}(U)=\frac{ab}{(a+b)^2(a+b+1)}.
+```
 
 Therefore
 
-$$
+```math
 E[U_{(r)}]=\frac{r}{n+1},
 \qquad
-\operatorname{Var}(U_{(r)})
+\mathrm{Var}(U_{(r)})
 =\frac{r(n+1-r)}{(n+1)^2(n+2)}.
-$$
+```
 
 On Uniform(A,B), the expected r-th order statistic is
 $A+(B-A)r/(n+1)$. For arbitrary F, do not move expectation through its inverse:
@@ -177,7 +177,7 @@ In Section 2, $U_{(r)}=D_0+\cdots+D_{r-1}$. Aggregating the first r coordinates 
 
 ## 8. Discrete Order Statistics Without Replacement
 
-Choose a uniform k-element subset of $\{1,\ldots,N\}$, with $1\le k\le N$, and sort it as $X_{(1)}\lt\cdots\lt X_{(k)}$. These are distinct positions, not iid draws with replacement.
+Choose a uniform k-element subset of $`\{1,\ldots,N\}`$, with $`1\le k\le N`$, and sort it as $`X_{(1)}\lt\cdots\lt X_{(k)}`$. These are distinct positions, not iid draws with replacement.
 
 ### Distribution by Counting
 
@@ -236,11 +236,11 @@ $$
 
 Integrating out p yields
 
-$$
+```math
 P(Y=y)=\int_0^1\binom my p^y(1-p)^{m-y}
 \frac{p^{a-1}(1-p)^{b-1}}{B(a,b)}\,dp
 =\binom my\frac{B(y+a,m-y+b)}{B(a,b)}.
-$$
+```
 
 This is the parameterization used by [SciPy's Beta-binomial documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.betabinom.html). Here m is the number of binomial trials.
 
@@ -248,12 +248,12 @@ This is the parameterization used by [SciPy's Beta-binomial documentation](https
 
 Set $m=N-k$, $a=r$, $b=k+1-r$, and $Y=X_{(r)}-r$. Then y counts unselected positions before the r-th selected one. For integer parameters, $B(a,b)=(a-1)!(b-1)!/(a+b-1)!$, so
 
-$$
+```math
 \binom{N-k}{y}
 \frac{B(y+r,N-k-y+k+1-r)}{B(r,k+1-r)}
 =
 \frac{\binom{y+r-1}{r-1}\binom{N-y-r}{k-r}}{\binom Nk}.
-$$
+```
 
 The right side is exactly the discrete order-statistic PMF at x=y+r. Therefore
 
@@ -282,23 +282,23 @@ $$
 
 Also $E[P(1-P)]=ab/[s(s+1)]$, so
 
-$$
+```math
 \begin{aligned}
-\operatorname{Var}(Y)
-&=E[mP(1-P)]+\operatorname{Var}(mP)\\
+\mathrm{Var}(Y)
+&=E[mP(1-P)]+\mathrm{Var}(mP)\\
 &=\frac{mab}{s(s+1)}+\frac{m^2ab}{s^2(s+1)}
 =\frac{mab(s+m)}{s^2(s+1)}.
 \end{aligned}
-$$
+```
 
 Substituting the discrete order-statistic parameters recovers the gap-based mean and gives
 
-$$
+```math
 E[X_{(r)}]=\frac{r(N+1)}{k+1},
 \qquad
-\operatorname{Var}(X_{(r)})
+\mathrm{Var}(X_{(r)})
 =\frac{(N-k)r(k+1-r)(N+1)}{(k+1)^2(k+2)}.
-$$
+```
 
 When N=k, every position is selected and the variance is zero. For fixed k as N grows, the mixture construction gives
 $X_{(r)}/N\Rightarrow\mathrm{Beta}(r,k+1-r)$: conditional binomial noise divided by N vanishes. The finite-N law remains discrete.
@@ -356,3 +356,11 @@ This is also the count of non-Aces before the first Ace in a finite population, 
 
 Retrieval sequence: specify sampling and support → translate rank into a count or gaps → derive by counting / density → identify the distribution → check shifts and endpoints.
 
+
+## Related interview questions
+
+- [P021 — Conditional Red-Ball Positions](../../Questions/Probability/P021_Conditional_Red_Ball_Positions.md)
+- [P022 — Discrete Median and Symmetry](../../Questions/Probability/P022_Discrete_Median_and_Symmetry.md)
+- [S021 — Uniform Endpoint Estimation and Exact Bounds](../../Questions/Statistics/S021_Uniform_Endpoint_Estimation_and_Exact_Bounds.md)
+
+Dated results and assistance/verification evidence are linked from each question’s assessment history. Filing these references does not change the recorded performance.

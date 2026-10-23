@@ -11,19 +11,23 @@
 
 ## Core Question
 
-Flip a fair coin until HH or HTT first appears. Find $P(HTT\text{ before }HH)$.
+Flip a fair coin until either HH or HTT appears. Find
+
+```math
+P(HTT\text{ before }HH).
+```
 
 ## Solution
 
 Track the longest current suffix that is also a prefix of a target: empty, H, or HT. Let their HTT-win probabilities be $p_0,p_H,p_{HT}$. The absorbing values are 1 for HTT and 0 for HH.
 
-$$
+```math
 \begin{aligned}
 p_0 &= \tfrac12p_0+\tfrac12p_H,\\
 p_H &= \tfrac12\cdot0+\tfrac12p_{HT},\\
 p_{HT} &= \tfrac12p_H+\tfrac12\cdot1.
 \end{aligned}
-$$
+```
 
 The transition HT followed by H returns to state H: the trailing H can begin either future pattern. Thus $p_0=p_H$ and
 
@@ -54,3 +58,11 @@ Initial tails only delay the race. Once an H occurs, another H loses immediately
 ## What to Remember
 
 Choose suffix states first, then write transitions. HT plus H goes to H. The answer is 1/3.
+
+## Assessment history
+
+- [2026-10-06 Q5 — assessment](../../DailyTests/2026-10-06.md#q5--hh-vs-htt-pattern-race)
+
+## Related questions and knowledge
+
+- [P023 — Coin Pattern Waiting Times](P023_Coin_Pattern_Waiting_Times.md) — Suffix states; waiting time versus competing-pattern probability.

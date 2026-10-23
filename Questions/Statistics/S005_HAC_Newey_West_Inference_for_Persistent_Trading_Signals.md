@@ -142,3 +142,7 @@ Rates signals based on carry, rolldown, momentum, or overlapping forward returns
 ## What to Remember
 
 > HAC is about dependence in the regression score $x_tu_t$, not the residual $u_t$ alone.
+
+## Related questions and knowledge
+
+- [S012 — Paired Return Tests and Dependence](S012_Paired_Return_Tests_and_Dependence.md) — Within-pair covariance versus serial dependence in mean inference.

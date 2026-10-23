@@ -22,9 +22,9 @@ $$
 
 Stop at
 
-$$
+```math
 \tau=\inf\{n\ge0:S_n\in\{-1,2\}\}.
-$$
+```
 
 Define
 
@@ -38,11 +38,11 @@ Find the probability of hitting $+2$ first, $E[\tau]$, and $E[Y]$. Generalize th
 
 Rewrite
 
-$$
+```math
 Y=\sum_{i\ge1}iX_i\mathbf1_{\{\tau\ge i\}}.
-$$
+```
 
-The event $\{\tau\ge i\}$ is known before observing $X_i$.
+The event $`\{\tau\ge i\}`$ is known before observing $`X_i`$.
 
 ## Solution
 
@@ -95,13 +95,13 @@ $$
 
 Write
 
-$$
+```math
 Y=\sum_{i\ge1}iX_i\mathbf1_{\{\tau\ge i\}}.
-$$
+```
 
-Crucially, $\mathbf1_{\{\tau\ge i\}}$ is measurable with respect to $\mathcal F_{i-1}$: immediately before step $i$, we know whether the walk has already stopped. Therefore
+Crucially, $`\mathbf1_{\{\tau\ge i\}}`$ is measurable with respect to $`\mathcal F_{i-1}`$: immediately before step $`i`$, we know whether the walk has already stopped. Therefore
 
-$$
+```math
 \begin{aligned}
 E\left[iX_i\mathbf1_{\{\tau\ge i\}}\right]
 &=E\left[
@@ -110,7 +110,7 @@ E[X_i\mid\mathcal F_{i-1}]
 \right]\\
 &=0.
 \end{aligned}
-$$
+```
 
 Summing under the required integrability condition gives
 
@@ -118,16 +118,16 @@ $$
 \boxed{E[Y]=0}.
 $$
 
-This is a martingale-transform argument: the weight $i\mathbf1_{\{\tau\ge i\}}$ is predictable.
+This is a martingale-transform argument: the weight $`i\mathbf1_{\{\tau\ge i\}}`$ is predictable.
 
 ### Generalization
 
 For any deterministic function $f$ such that the stopped sum is integrable and expectation may be interchanged with summation,
 
-$$
+```math
 Y_f=\sum_{i=1}^{\tau}f(i)X_i
 =\sum_{i\ge1}f(i)X_i\mathbf1_{\{\tau\ge i\}}.
-$$
+```
 
 The same predictable-weight calculation yields
 
@@ -160,7 +160,7 @@ Stopping decides whether the next fair increment will be included before that in
 ## Interview Takeaways
 
 - Use $S_n$ for hitting probabilities and $S_n^2-n$ for expected duration in a fair walk.
-- Expand a stopped sum with survival indicators $\mathbf1_{\{\tau\ge i\}}$.
+- Expand a stopped sum with survival indicators $`\mathbf1_{\{\tau\ge i\}}`$.
 - Check that each multiplier is measurable before the increment it multiplies.
 - State an integrability condition before exchanging an infinite sum and expectation.
 
@@ -179,3 +179,7 @@ E[\tau]=2,
 E[Y]=0
 }.
 $$
+
+## Related questions and knowledge
+
+- [P029 — Random Inspection and Residual Wait](P029_Random_Inspection_and_Residual_Wait.md) — Sampling/inspection rules change conditional distributions.

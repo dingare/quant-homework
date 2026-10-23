@@ -15,25 +15,25 @@
 
 Given
 
-$$
+```math
 \mu=
 \begin{pmatrix}
 4\\
 2\\
 1
 \end{pmatrix},
-$$
+```
 
 and
 
-$$
+```math
 \Sigma=
 \begin{pmatrix}
 4&1&0\\
 1&2&1\\
 0&1&2
 \end{pmatrix},
-$$
+```
 
 maximize
 
@@ -95,7 +95,7 @@ $$
 
 gives
 
-$$
+```math
 \boxed{
 w_{\text{unc}}=
 \begin{pmatrix}
@@ -104,7 +104,7 @@ w_{\text{unc}}=
 0.3
 \end{pmatrix}
 }
-$$
+```
 
 with
 
@@ -118,10 +118,10 @@ So the unconstrained optimizer naturally wants a net long portfolio.
 
 Introduce the Lagrangian
 
-$$
+```math
 \mathcal L(w,\lambda)=
 \mu^\top w-\frac12 w^\top\Sigma w-\lambda\,1^\top w.
-$$
+```
 
 The first-order condition in `w` is
 
@@ -150,7 +150,7 @@ $$
 
 Here,
 
-$$
+```math
 \Sigma^{-1}\mu=
 \begin{pmatrix}
 0.9\\
@@ -164,7 +164,7 @@ $$
 0.2\\
 0.4
 \end{pmatrix},
-$$
+```
 
 so
 
@@ -182,7 +182,7 @@ $$
 
 Thus
 
-$$
+```math
 w^*=
 \Sigma^{-1}(\mu-2\,1)=
 \begin{pmatrix}
@@ -190,11 +190,11 @@ w^*=
 0\\
 -0.5
 \end{pmatrix}.
-$$
+```
 
 So the constrained optimum is
 
-$$
+```math
 \boxed{
 w^*=
 \begin{pmatrix}
@@ -203,7 +203,7 @@ w^*=
 -0.5
 \end{pmatrix}
 }
-$$
+```
 
 which is dollar neutral.
 
@@ -251,14 +251,14 @@ $$
 
 means the optimizer behaves as if the effective alpha vector were
 
-$$
+```math
 \mu-2\,1=
 \begin{pmatrix}
 2\\
 0\\
 -1
 \end{pmatrix}.
-$$
+```
 
 ## Geometry
 
@@ -382,3 +382,44 @@ $$
 ### Timed Attempt
 
 [2026-10-06 Q7](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round): Y/G, about 5 minutes for the combined round; stopped at the recommended limit. The answer direction was correct; crisp formulas need practice. See also the [ridge invertibility answer](../LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md#interview-drill--why-ridge-is-invertible).
+
+## Interview drill — 2026-10-07 Q7
+
+Source and assessment: [2026-10-07 Q7](../../DailyTests/2026-10-07.md#q7--global-minimum-variance-portfolio). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+For symmetric positive-definite Sigma, solve
+
+```math
+\min_w w^\top\Sigma w
+\quad\text{subject to}\quad \mathbf{1}^\top w=1.
+```
+
+Give the closed-form optimizer and one sentence explaining uniqueness.
+
+### Recorded solution
+
+```math
+L=w^\top\Sigma w+\lambda(\mathbf{1}^\top w-1),
+\qquad 2\Sigma w+\lambda\mathbf{1}=0.
+```
+
+```math
+w=-\frac{\lambda}{2}\Sigma^{-1}\mathbf{1},
+\qquad
+\lambda=-\frac{2}{\mathbf{1}^\top\Sigma^{-1}\mathbf{1}},
+\qquad
+w^*=\frac{\Sigma^{-1}\mathbf{1}}{\mathbf{1}^\top\Sigma^{-1}\mathbf{1}}.
+```
+
+Positive-definite Sigma makes the quadratic strictly convex; the affine budget constraint therefore admits a unique minimizer.
+
+### Related Notes
+
+- [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md): related equality-constrained quadratic derivation.
+
+## Assessment history
+
+- [2026-10-06 Q7 — shared lightning-round assessment](../../DailyTests/2026-10-06.md#q7--linear-algebra-and-optimization-lightning-round)
+- [2026-10-07 Q7 — assessment](../../DailyTests/2026-10-07.md#q7--global-minimum-variance-portfolio)

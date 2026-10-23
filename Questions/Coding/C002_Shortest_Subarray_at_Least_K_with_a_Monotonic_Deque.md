@@ -224,3 +224,22 @@ $$
 }.
 $$
 
+## Interview drill — 2026-10-07 Q1
+
+Source and assessment: [2026-10-07 Q1](../../DailyTests/2026-10-07.md#q1--shortest-subarray-with-sum-at-least-k). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+Given an integer array nums, which may contain negative values, and an integer $`K\gt0`$, return the length of the shortest nonempty contiguous subarray whose sum is at least K, or -1 if none exists. Example: [2, -1, 2, 1], K = 3 returns 2. Target $`O(n)`$ time. Explain the invariant, write Python 3, and explain why an ordinary two-pointer sliding window may fail.
+
+### Recorded solution
+
+Define $`P_0=0`$ and use $`P_j-P_i\ge K`$, minimizing $`j-i`$. Maintain increasing prefix values at increasing deque indices. Pop valid starts from the front while updating the answer; pop dominated starts from the back when the current prefix is no larger; append the current index last. Each index enters and leaves at most once.
+
+### Related Notes
+
+- [C002 — Shortest Subarray at Least K with a Monotonic Deque](C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md): same algorithm and dominance invariant.
+
+## Assessment history
+
+- [2026-10-07 Q1 — assessment](../../DailyTests/2026-10-07.md#q1--shortest-subarray-with-sum-at-least-k)

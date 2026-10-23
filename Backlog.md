@@ -1,6 +1,6 @@
 # Backlog
 
-Unfinished topics and future note clusters.
+Unfinished topics and future note clusters. Canonical prompts and solutions are in the [question library](INDEX.md); [DailyTests](DailyTests/INDEX.md) preserves dated assessment evidence. The October 22 filing migration does not close any outstanding independent check or Pending follow-up.
 
 ## Random Points and Spacings — To-Do List
 
@@ -365,13 +365,13 @@ Source: [2026-10-08 Daily Interview Test](DailyTests/2026-10-08.md). Status: Ope
 
 | Question / result | Future-review tags | Gap and next retrieval check |
 | --- | --- | --- |
-| [Q1 — M/P](DailyTests/2026-10-08.md#q1--dependency-ordering) | `graph`, `topological-sort` | Model prerequisites as directed edges; implement indegrees / zero-indegree queue, explain cycle detection and O(V+E) complexity. |
-| [Q2 — P/Y](DailyTests/2026-10-08.md#q2--hh-versus-ht-waiting-times) | `absorbing-markov-chains`, `state-recursion` | Choose useful suffix states; derive HH = 6 and HT = 4, then recover t = (I-Q) inverse times ones. Connect to [P019](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md), distinguishing waiting time from race probability. |
-| [Q3 — P/M](DailyTests/2026-10-08.md#q3--exponential-mle-and-fisher-information) | `mle`, `fisher-information`, `asymptotic-se` | Derive the exponential rate MLE, define score and expected information, distinguish per-observation from total information, and obtain plug-in SE. Explain regularity and asymptotic versus exact variance. |
-| [Q4 — P/Y](DailyTests/2026-10-08.md#q4--minimize-the-largest-group-sum) | `binary-search-on-answer` | Recognize minimize-maximum + monotone feasibility; prove greedy uses the fewest groups for a fixed limit on positive inputs, then implement first-feasible binary search. |
-| [Q7 — Y](DailyTests/2026-10-08.md#q7--projection-matrices-and-psd) | `projection-matrices` | Use symmetry plus idempotence to prove the quadratic form equals the squared norm of Px; distinguish PSD from PD and explain why zero is allowed. |
+| [Q1 — M/P](DailyTests/2026-10-08.md#q1--dependency-ordering) · [C008 — Dependency Ordering and DAG Scheduling](Questions/Coding/C008_Dependency_Ordering_and_DAG_Scheduling.md) | `graph`, `topological-sort` | Model prerequisites as directed edges; implement indegrees / zero-indegree queue, explain cycle detection and O(V+E) complexity. |
+| [Q2 — P/Y](DailyTests/2026-10-08.md#q2--hh-versus-ht-waiting-times) · [P023 — Coin Pattern Waiting Times](Questions/Probability/P023_Coin_Pattern_Waiting_Times.md) | `absorbing-markov-chains`, `state-recursion` | Choose useful suffix states; derive HH = 6 and HT = 4, then recover t = (I-Q) inverse times ones. Connect to [P019](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md), distinguishing waiting time from race probability. |
+| [Q3 — P/M](DailyTests/2026-10-08.md#q3--exponential-mle-and-fisher-information) · [S011 — Exponential MLE and Fisher Information](Questions/Statistics/S011_Exponential_MLE_and_Fisher_Information.md) | `mle`, `fisher-information`, `asymptotic-se` | Derive the exponential rate MLE, define score and expected information, distinguish per-observation from total information, and obtain plug-in SE. Explain regularity and asymptotic versus exact variance. |
+| [Q4 — P/Y](DailyTests/2026-10-08.md#q4--minimize-the-largest-group-sum) · [C009 — Minimize Maximum Contiguous Group Sum](Questions/Coding/C009_Minimize_Maximum_Contiguous_Group_Sum.md) | `binary-search-on-answer` | Recognize minimize-maximum + monotone feasibility; prove greedy uses the fewest groups for a fixed limit on positive inputs, then implement first-feasible binary search. |
+| [Q7 — Y](DailyTests/2026-10-08.md#q7--projection-matrices-and-psd) · [L007 — Projection Matrices, Eigenvalues, and Rank](Questions/LinearAlgebra/L007_Projection_Matrices_Eigenvalues_and_Rank.md) | `projection-matrices` | Use symmetry plus idempotence to prove the quadratic form equals the squared norm of Px; distinguish PSD from PD and explain why zero is allowed. |
 
-Secondary review: [Q8](DailyTests/2026-10-08.md#q8--paired-strategy-return-test), positive same-day covariance reduces the variance of differences at fixed marginal variances; serial dependence requires separate treatment. Q5–Q8 were completed in **5 minutes total**. Preserve the broader, harder coverage relative to October 6–7 while scheduling targeted retests.
+Secondary review: [Q8](DailyTests/2026-10-08.md#q8--paired-strategy-return-test) · [S012 — Paired Return Tests and Dependence](Questions/Statistics/S012_Paired_Return_Tests_and_Dependence.md), positive same-day covariance reduces the variance of differences at fixed marginal variances; serial dependence requires separate treatment. Q5–Q8 were completed in **5 minutes total**. Preserve the broader, harder coverage relative to October 6–7 while scheduling targeted retests.
 
 ## October 9 Interview Knowledge Gaps
 
@@ -379,19 +379,19 @@ Accidental repeats are retained for auditability but excluded from new-coverage 
 
 | Question / result | Future-review tags | Gap and next retrieval check |
 | --- | --- | --- |
-| [Q1 — P/Y](DailyTests/2026-10-09.md#q1--dag-scheduling-with-durations) | `dag-dp`, `earliest-finish`, `topological-sort` | Keep Kahn BFS; propagate maximum parent finish time, enqueue only at indegree zero, and detect cycles with processed count. Intentional revisit of October 8 Q1. |
-| [Q2 — Y/G](DailyTests/2026-10-09.md#q2--expected-waiting-time-for-hth) | `state-recursion`, `pattern-waiting-time`, `self-overlap` | Preserve the correct suffix states and audit every transition, especially fallback from HT on T. |
-| [Q3 replacement — Y](DailyTests/2026-10-09.md#q3--one-sided-z-test-with-known-variance) | `sampling-distribution`, `one-sided-z-test`, `hypothesis-testing` | Write the sample-mean distribution first; known variance implies z, and `mu > 0` implies a right-tail rejection region. |
-| [Q4 replacement — G](DailyTests/2026-10-09.md#q4--original-repeat-and-kth-largest-replacement) | `min-heap`, `quickselect`, `off-by-one` | Keep exactly k heap elements using `< k`; reproduce Quickselect as the expected-O(n) follow-up. |
-| [Q5 — P/Y](DailyTests/2026-10-09.md#q5--time-series-validation-and-ridge) | `time-series-validation`, `ridge`, `multicollinearity` | Name temporal leakage, regime shift, and serial / overlapping dependence concretely; explain Ridge as variance reduction and coefficient stabilization. |
-| [Q6(a) — M/P](DailyTests/2026-10-09.md#q6--competing-poisson-processes) | `poisson-superposition`, `merged-process-labels`, `erlang` | Use A/B labels in the merged process; do not model the second arrival as exponential. |
-| [Q7 — Y](DailyTests/2026-10-09.md#q7--projection-matrix) | `projection-rank`, `column-space`, `eigenvalue-multiplicity` | Rank equals the dimension of the projected subspace; connect rank / trace to the number of eigenvalue ones. Intentional revisit of October 8 Q7. |
+| [Q1 — P/Y](DailyTests/2026-10-09.md#q1--dag-scheduling-with-durations) · [C008 — Dependency Ordering and DAG Scheduling](Questions/Coding/C008_Dependency_Ordering_and_DAG_Scheduling.md) | `dag-dp`, `earliest-finish`, `topological-sort` | Keep Kahn BFS; propagate maximum parent finish time, enqueue only at indegree zero, and detect cycles with processed count. Intentional revisit of October 8 Q1. |
+| [Q2 — Y/G](DailyTests/2026-10-09.md#q2--expected-waiting-time-for-hth) · [P023 — Coin Pattern Waiting Times](Questions/Probability/P023_Coin_Pattern_Waiting_Times.md) | `state-recursion`, `pattern-waiting-time`, `self-overlap` | Preserve the correct suffix states and audit every transition, especially fallback from HT on T. |
+| [Q3 replacement — Y](DailyTests/2026-10-09.md#q3--one-sided-z-test-with-known-variance) · [S013 — One-Sided Normal Mean Test](Questions/Statistics/S013_One_Sided_Normal_Mean_Test.md) | `sampling-distribution`, `one-sided-z-test`, `hypothesis-testing` | Write the sample-mean distribution first; known variance implies z, and `mu > 0` implies a right-tail rejection region. |
+| [Q4 replacement — G](DailyTests/2026-10-09.md#q4--original-repeat-and-kth-largest-replacement) · [C010 — Kth Largest: Heap and Quickselect](Questions/Coding/C010_Kth_Largest_Heap_and_Quickselect.md) | `min-heap`, `quickselect`, `off-by-one` | Keep exactly k heap elements using `< k`; reproduce Quickselect as the expected-O(n) follow-up. |
+| [Q5 — P/Y](DailyTests/2026-10-09.md#q5--time-series-validation-and-ridge) · [T007 — Random Forest Rates Signals and Time-Series Validation](Questions/TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md) | `time-series-validation`, `ridge`, `multicollinearity` | Name temporal leakage, regime shift, and serial / overlapping dependence concretely; explain Ridge as variance reduction and coefficient stabilization. |
+| [Q6(a) — M/P](DailyTests/2026-10-09.md#q6--competing-poisson-processes) · [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) | `poisson-superposition`, `merged-process-labels`, `erlang` | Use A/B labels in the merged process; do not model the second arrival as exponential. |
+| [Q7 — Y](DailyTests/2026-10-09.md#q7--projection-matrix) · [L007 — Projection Matrices, Eigenvalues, and Rank](Questions/LinearAlgebra/L007_Projection_Matrices_Eigenvalues_and_Rank.md) | `projection-rank`, `column-space`, `eigenvalue-multiplicity` | Rank equals the dimension of the projected subspace; connect rank / trace to the number of eigenvalue ones. Intentional revisit of October 8 Q7. |
 
 Repeat-control rule for future drills: compare candidate questions against the previous **2–3 Daily Stress Tests** by solution pattern. A documented weak spot may be deliberately repeated only when labeled **intentional spaced repetition**; otherwise replace it and do not count it as new coverage.
 
 ## A/B Testing — Review To-Do
 
-Source: [October 10–11 Q3](DailyTests/2026-10-10.md#q3--exact-randomization-and-ab-testing). **Miss / K**, explicitly confirmed by the user; detailed review requested. Explanations received afterward; independent mastery unverified.
+Source: [October 10–11 Q3](DailyTests/2026-10-10.md#q3--exact-randomization-and-ab-testing) · [S014 — Exact Randomization and A/B Testing](Questions/Statistics/S014_Exact_Randomization_and_AB_Testing.md). **Miss / K**, explicitly confirmed by the user; detailed review requested. Explanations received afterward; independent mastery unverified.
 
 - [ ] Experimental design: random assignment, treatment/control groups, randomization units, and interference.
 - [ ] Potential outcomes, individual and average treatment effects, and difference-in-means estimation.
@@ -406,6 +406,8 @@ Source: [October 10–11 Q3](DailyTests/2026-10-10.md#q3--exact-randomization-an
 ## October 10–11 Interview Review Priorities
 
 Source: [eight-question Survival Mode drill](DailyTests/2026-10-10.md). User requested keeping the broader coverage despite many unfamiliar or unretrieved ideas. K = knowledge, R = retrieval, I = implementation; do not force K/R classification where prior familiarity was not established.
+
+Question references: [Q1 / C011](Questions/Coding/C011_Incremental_Connectivity_and_Connected_Pairs.md) · [Q2 / P025](Questions/Probability/P025_Permutation_Fixed_Points_and_Dependent_Indicators.md) · [Q3 / S014](Questions/Statistics/S014_Exact_Randomization_and_AB_Testing.md) · [Q4 / C012](Questions/Coding/C012_Edit_Distance.md) · [Q5 / T008](Questions/TimeSeries/T008_Tree_Extrapolation_and_Deployment.md) · [Q6 / P026](Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md) · [Q7 / S015](Questions/Statistics/S015_Interaction_and_Recentering.md) · [Q8 / O009](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md).
 
 | Question | Status and next independent check |
 | --- | --- |
@@ -427,7 +429,7 @@ No final independently verified rewrite was submitted for Q1 or Q4. Do not mark 
 
 ## Time-Series Fitting — Review To-Do
 
-Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q5--ma1-equivalence-invertibility-and-fitting). Review remains open; explanations received are not independent mastery.
+Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q5--ma1-equivalence-invertibility-and-fitting) · [T009 — MA(1) Equivalence, Invertibility, and Fitting](Questions/TimeSeries/T009_MA1_Equivalence_Invertibility_and_Fitting.md). Review remains open; explanations received are not independent mastery.
 
 - [ ] MA(1) moment estimation: sample variance and lag-one autocovariance, invertible root, innovation variance.
 - [ ] Gaussian maximum likelihood with unobserved innovations and observation covariance.
@@ -438,8 +440,8 @@ Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q
 
 ## Pending Drill and Workload Preference — October 12
 
-- [x] Resume [Q7 — confidence versus prediction intervals](DailyTests/2026-10-11.md#q7--confidence-vs-prediction-intervals): guided review October 13; independent mastery not yet checked.
-- [x] Resume [Q8 — conditioning and least squares](DailyTests/2026-10-11.md#q8--conditioning-and-least-squares): guided review October 13; independent mastery not yet checked.
+- [x] Resume [Q7 — confidence versus prediction intervals](DailyTests/2026-10-11.md#q7--confidence-vs-prediction-intervals) · [S017 — Confidence and Prediction Intervals](Questions/Statistics/S017_Confidence_and_Prediction_Intervals.md): guided review October 13; independent mastery not yet checked.
+- [x] Resume [Q8 — conditioning and least squares](DailyTests/2026-10-11.md#q8--conditioning-and-least-squares) · [L008 — Conditioning and Least Squares](Questions/LinearAlgebra/L008_Conditioning_and_Least_Squares.md): guided review October 13; independent mastery not yet checked.
 - Both are now Partial / Hinted following the October 13 guided continuation. New drills: 4–5 questions, 30–40 minutes; mainly core interview material, at most one stretch question. Keep breadth and repeat checks, but reduce simultaneous new-foundation teaching.
 
 ## October 13 Follow-Up Review
@@ -453,8 +455,10 @@ Requested October 12 during [Q5 of the make-up drill](DailyTests/2026-10-11.md#q
 
 Source: [October 13 session, continued October 14](DailyTests/2026-10-13.md). All five main questions Partial / Hinted. Q4 is reviewed; Q5's cost-sensitive decision/recalibration follow-up **Pending, not Miss**. Actual times unknown. Latest explicit workload request is 4–6 substantive questions and 45–60 minutes initial solving; this supersedes the earlier 30–40-minute preference for new drills.
 
-- [x] Resume [Q4](DailyTests/2026-10-13.md#q4--ratio-of-means-inference), original 11-minute budget. Guided CLT/Slutsky, standard error, confidence interval, counterexample, and denominator-risk review completed October 14; later cold retrieval remains open.
-- [ ] Finish [Q5's decision/recalibration follow-up](DailyTests/2026-10-13.md#q5--deployment-probabilities-and-decisions). Main Bayes/odds probability question reviewed October 14; original combined budget 8 minutes, actual time unknown. No solution or hint supplied for the decision follow-up.
+Question references: [Q1 / C015](Questions/Coding/C015_Arithmetic_Expressions_and_Nested_State.md) · [Q2 / P029](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md) · [Q3 / P030](Questions/Probability/P030_Product_Distribution_and_Event_Conditioning.md) · [Q4 / S018](Questions/Statistics/S018_Ratio_of_Means_Inference.md) · [Q5 / T010](Questions/TimeSeries/T010_Deployment_Probabilities_and_Decisions.md).
+
+- [x] Resume [Q4](DailyTests/2026-10-13.md#q4--ratio-of-means-inference) · [S018 — Ratio-of-Means Inference](Questions/Statistics/S018_Ratio_of_Means_Inference.md), original 11-minute budget. Guided CLT/Slutsky, standard error, confidence interval, counterexample, and denominator-risk review completed October 14; later cold retrieval remains open.
+- [ ] Finish [Q5's decision/recalibration follow-up](DailyTests/2026-10-13.md#q5--deployment-probabilities-and-decisions) · [T010 — Deployment Probabilities and Decisions](Questions/TimeSeries/T010_Deployment_Probabilities_and_Decisions.md). Main Bayes/odds probability question reviewed October 14; original combined budget 8 minutes, actual time unknown. No solution or hint supplied for the decision follow-up.
 - [x] Q1 user rewrite: apply whitespace pointer advancement, digit-to-int conversion, and continue after reading a number. User explicitly confirmed completion during recording. Assistant verified the corresponding minimal repair; final exact user submission not re-read.
 - [ ] Q1 later cold retest: stack invariant, unary/binary signs, pointer movement, nested and whitespace tests. Original multiplication follow-up remains unattempted.
 - [ ] Q2 later retest: random-time length bias plus conditional residual position. First probability, mean (4.5 typo clarified), and completion-start follow-up were independently correct.
@@ -476,6 +480,8 @@ All seven dated DailyTests were audited October 14 for mathematical content and 
 
 Source: [October 14 session](DailyTests/2026-10-14.md). All actual times unknown. Initial solving/review discussed; dedicated reading block and final independent reproduction **Pending**.
 
+Question references: [R1 / P025](Questions/Probability/P025_Permutation_Fixed_Points_and_Dependent_Indicators.md) · [R2 / P029](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md) · [Q1 / C011](Questions/Coding/C011_Incremental_Connectivity_and_Connected_Pairs.md) · [Q2 / S019](Questions/Statistics/S019_Weighted_Common_Mean_Inference.md) · [Q3 / T007](Questions/TimeSeries/T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md).
+
 - [ ] **Priority: R1**, intentional spaced repetition of October 10–11 Q2. Review [indicator cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md), then independently reconstruct fixed-point indicators, marginal/joint probabilities, covariance and variance. Generic setup needed assistance; K/R unresolved. This is the ONE selected focused gap.
 - R2: user reports independently solving the residual-service question before seeing the answer. Exact working not submitted, timing unverified. Supersedes initial Partial / Hinted classification; do not invent a fresh gap or treat it as a Miss.
 - Q1: independent DSU structure and pair-count identity recovered. Root-link typo explicitly clarified and corrected submission verified by assistant tests, including 1,000 randomized comparisons. Do not treat typo as conceptual DSU failure or leave the code unverified. Overall Partial / Hinted because complexity required assistance.
@@ -491,7 +497,9 @@ Future near-term retests must name the originating date/item and be labeled **in
 
 Source: [October 15 drill, continued October 16](DailyTests/2026-10-15.md). Q1–Q3 discussed; Q4 initially deferred and subsequently independently completed. This is one study set across the date boundary.
 
-- [x] **Q4 Mastered — correlation feasibility and zero-variance portfolios.** On October 16 the user confirmed an independent solve and understanding of PSD correlation matrices, determinant constraints, singular covariance matrices, null space and zero-variance portfolios. Correct range and endpoint portfolios are recorded with the unchanged original question in the daily record. No additional review or remedial practice needed; remove Q4 from the pending queue.
+Question references: [Q1 / C016](Questions/Coding/C016_Median_of_Two_Sorted_Arrays.md) · [Q2 / P031](Questions/Probability/P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md) · [Q3 / S020](Questions/Statistics/S020_Most_Powerful_Normal_Variance_Test.md) · [Q4 / L009](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md).
+
+- [x] **Q4 Mastered — correlation feasibility and zero-variance portfolios.** On October 16 the user confirmed an independent solve and understanding of PSD correlation matrices, determinant constraints, singular covariance matrices, null space and zero-variance portfolios. Correct range and endpoint portfolios are recorded with the unchanged original question in [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md); dated mastery evidence remains in DailyTests. No additional review or remedial practice needed; remove Q4 from the pending queue.
 - Q1: user independently chose partial merging, initial attempt approximately 22–23 minutes. Guided boundary repairs followed. Last exact submission still used floating-point division for an even midpoint: 1,194/1,224 small cases passed, with 30 slice-index exceptions. Assistant's one-line integer-midpoint fix passed all 1,224. Supplied binary-partition solution also passed all cases and input-mutation checks; independent reproduction remains unverified. I gap: ranks versus indices, suffix skip, loop bounds, preserving accumulated results and integer indices; K/R for partition search unresolved.
 - Q2: independently constructed a valid rejection sampler using seven selected six-flip patterns with three heads and three tails, and gave the correct termination intuition. The 15-versus-20 count was explicitly a typo, not a combinatorics gap. Expected-cost reasoning omitted seven acceptable patterns and six raw flips per block; corrected with explanation. Full independent cost/independence derivation remains unverified; K/R unresolved.
 - Q3: Neyman–Pearson / most-powerful testing explicitly new to the user: **K gap**, not retrieval failure. Full solution and conceptual explanations supplied. User reported emerging understanding; no independent derivation verified. Keep Partial / Hinted. Treat this as an intermediate-priority stretch extension; interview frequency of the lemma itself was not established. Do not treat the 11-minute familiar-topic budget as first-learning time.
@@ -511,6 +519,8 @@ Source: [October 15 drill, continued October 16](DailyTests/2026-10-15.md). Q1�
 
 Source: [October 17 drill](DailyTests/2026-10-17.md). All four questions discussed; 54 minutes was the planned initial budget, not actual elapsed time. All actual times unknown. No Miss assigned; overall Partial / Hinted preserves independently correct subparts.
 
+Question references: [Q1 / C017](Questions/Coding/C017_Minimum_Units_for_Overlapping_Tasks.md) · [Q2 / P032](Questions/Probability/P032_Cycles_of_a_Uniform_Random_Permutation.md) · [Q3 / S021](Questions/Statistics/S021_Uniform_Endpoint_Estimation_and_Exact_Bounds.md) · [Q4 / T011](Questions/TimeSeries/T011_Signal_Smoothing_Correlation_and_Trading_Costs.md).
+
 - [ ] **Priority: Q1 heap state updates (I, user-confirmed).** Maintain one current `(end, unit_id)` entry per allocated unit. Distinguish peek, pop, push and replacement. Final exact user submission left stale entries and failed `[(0,1),(1,4),(2,3)]`, assigning all tasks to one unit. Conditional-pop repair supplied; final user rewrite and independent optimality / complexity explanation remain unverified. Core sorting / earliest-end algorithm was independent; do not label code unpracticed.
 - [ ] Q2: independently count long cycles by choosing labels, arranging one cycle, and permuting the remainder. Uniform permutations do not give iid uniform cycle lengths conditioned on their sum. Part 1's uniform cycle-length distribution and chain proof were Cold Solve. User reports being able to do part 3 given part 2; no submitted derivation, no inferred asymptotics gap, and no longer Pending. Terminology clarifications are not conceptual failures; K/R for counting remains unresolved.
 - [ ] Q3: independently reconstruct the variance scaling and exact upper-bound coverage calculation. Part 1's maximum CDF, mean integration and unbiased coefficient were Cold Solve. Correct variance of the maximum was submitted, but the estimator's squared scaling factor and the sample-mean variance sum needed correction. Exact upper bound, mean-based alternative and sufficiency were explained; acknowledged understanding is not independent mastery. K/R unresolved.
@@ -522,6 +532,8 @@ Any near-term revisit must be labeled **intentional spaced repetition** with Oct
 
 Source: [October 18 drill](DailyTests/2026-10-18.md). All four questions discussed, overall Partial / Hinted; 55 minutes planned, all actual times unknown. No main question Pending and no Miss assigned.
 
+Question references: [Q1 / C018](Questions/Coding/C018_Maximum_Sum_Path_in_a_Tree.md) · [Q2 / P033](Questions/Probability/P033_Gaussian_Sign_Prediction_and_Conditional_Return.md) · [Q3 / S022](Questions/Statistics/S022_Duplicating_Regression_Observations.md) · [Q4 / P034](Questions/Probability/P034_First_Repeated_Label.md).
+
 - [ ] **One focused check: Q1 tree-path states and reverse processing.** Distinguish the single branch that can attach to a parent from the complete best path anywhere in a subtree. The user articulated two state arrays; traversal and full reference algorithm were supplied. Code completed by user report, exact submission unverified, not unpracticed. Later independent explanation and submitted code remain open; no I gap inferred without a submission, K/R unresolved.
 - Q2: geometry and conditional normalization guided; final win-rate versus expected-return interpretation independently correct. Later check half-plane intersection and the conditional event-probability denominator; do not infer unfamiliarity from the joint-density request alone.
 - Q3: coefficients, RSS and R-squared independently correct. Preserve the user's clarification that ratio discrepancies were arithmetic and genuinely independent samples add information. Exact factors and explanation supplied, so overall remains Partial / Hinted; no additional conceptual K/R gap or remedial requirement established.
@@ -532,6 +544,8 @@ Near-term retests must name October 18, the item and the gap, and be labeled **i
 ## October 20 Drill, Continued October 21–22 — All Questions Discussed
 
 Source: [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md). Q1–Q4 **Partial / Hinted** overall, with independent subparts preserved; Q3 part 1 numerical answers/method Cold Solve, full moment working not submitted. One study set across all three dates. All four main questions discussed; none Pending. Planned initial solving: 54 minutes; all actual times Not recorded. No Miss assigned.
+
+Question references: [Q1 / C019](Questions/Coding/C019_Shortest_Grid_Route_with_One_Blocked_Entry.md) · [Q2 / P035](Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md) · [Q3 / S023](Questions/Statistics/S023_Pooled_and_Within_Sector_Signal_Evaluation.md) · [Q4 / T012](Questions/TimeSeries/T012_Probability_Forecasts_Calibration_and_Evaluation.md).
 
 - [x] Q2 part 3 discussed October 21: user supplied correct 320/63 after the covariance-sum setup was given. Conditional-on-P versus conditional-on-data independence, risk-engine variance 20/9, parameter-uncertainty intuition and Bayesian evaluation implications explained. Correct guided calculation, not a full independently submitted derivation. No longer Pending; K/R unresolved.
 - [x] Q3 discussed October 21: pooled beta 3/10 and R-squared 9/40 independently correct; sector dummy wording clarified without scoring an error. Normal equations, within-sector demeaning / beta -1/2, total-covariance derivation and numeric omitted-variable shift 0.8 supplied on request. User correctly interpreted removal of sector means and rejected pooled positive beta as proof of within-sector value. Overall Partial / Hinted, no longer Pending; K/R unresolved.

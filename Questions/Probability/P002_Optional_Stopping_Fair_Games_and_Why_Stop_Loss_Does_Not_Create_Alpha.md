@@ -15,9 +15,9 @@
 
 Suppose $X_t$ is a martingale with $X_0=0$, and define the stopping time
 
-$$
+```math
 \tau=\inf\{t: X_t\in\{a,-b\}\}
-$$
+```
 
 for $a,b\gt 0$.
 
@@ -60,9 +60,9 @@ but not the expected value, provided the stopping argument is valid.
 
 At the stopping time, the process ends at either $a$ or $-b$, so
 
-$$
+```math
 X_\tau\in\{a,-b\}.
-$$
+```
 
 Let
 
@@ -158,3 +158,7 @@ Stopping Rule $\neq$ Alpha.
 If the underlying process is a martingale, clever exits can change distribution, hit rate, and path behavior, but not expected profit.
 
 Related review path: [首次命中、奇偶增强、覆盖与轮流归属框架](../../KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md).
+
+## Related questions and knowledge
+
+- [P026 — Finite-Horizon Optimal Stopping](P026_Finite_Horizon_Optimal_Stopping.md) — Stopping policies and the assumptions behind stopping results.

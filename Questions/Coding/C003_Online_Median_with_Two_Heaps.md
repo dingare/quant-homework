@@ -80,3 +80,8 @@ rolling median 的新增难点是删除过期值。普通 heap 不支持任意�
 $$
 \boxed{\text{lower max-heap}+\text{upper min-heap}=\text{online median}.}
 $$
+
+## Related questions and knowledge
+
+- [C010 — Kth Largest: Heap and Quickselect](C010_Kth_Largest_Heap_and_Quickselect.md) — Heap size and ordering invariants.
+- [C016 — Median of Two Sorted Arrays](C016_Median_of_Two_Sorted_Arrays.md) — Median selection from sorted data versus online median maintenance.

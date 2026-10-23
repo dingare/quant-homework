@@ -27,13 +27,13 @@ $$
 
 The first gap $G_1=T-1$ has a beta-binomial count distribution with $n=48$, $\alpha=1$, and $\beta=4$. Adding one does not change variance. Hence,
 
-$$
+```math
 \begin{aligned}
 Var(T) &= \frac{n\alpha\beta(n+\alpha+\beta)}{(\alpha+\beta)^2(\alpha+\beta+1)} \\
 &= \frac{48\cdot1\cdot4\cdot53}{5^2\cdot6} \\
 &= \boxed{\frac{1696}{25}=67.84}.
 \end{aligned}
-$$
+```
 
 ## Conditioning on a Face Card at the Top
 
@@ -45,12 +45,12 @@ $$
 
 The original top card adds one to the position, so
 
-$$
+```math
 \begin{aligned}
 E[T\mid\text{top card is a face card}] &= 1+E[T'] \\
 &= \boxed{\frac{57}{5}=11.4}.
 \end{aligned}
-$$
+```
 
 The identity of the particular face card does not matter: conditional on any particular face card being on top, the remaining 51 cards are uniformly shuffled. Thus the same expectation holds when conditioning only on the top card being a face card.
 
@@ -69,7 +69,7 @@ The identity of the particular face card does not matter: conditional on any par
 
 ### Question
 
-Given that the first Ace is at position 10, what is the probability that the second Ace appears before position 20?
+In a 52-card deck with 4 Aces, given that the first Ace is at position 10, what is the probability that the second Ace appears before position 20?
 
 ### Solution
 
@@ -77,13 +77,13 @@ Positions 1–9 are non-Aces, position 10 is an Ace, and the remaining three Ace
 
 Use the complement: no remaining Ace in those nine positions means all three remaining Aces lie among positions 20–52, which contain 33 positions.
 
-$$
+```math
 \begin{aligned}
 P(T_2\lt20\mid T_1=10)
 &=1-\frac{\binom{33}{3}}{\binom{42}{3}}\\
 &=\frac{753}{1435}\approx0.5247.
 \end{aligned}
-$$
+```
 
 An equivalent disjoint count sums over exactly j Aces in the nine eligible positions:
 
@@ -96,3 +96,11 @@ Choosing “an Ace in the first nine remaining positions” and then freely choo
 ### Timed Attempt
 
 [2026-10-06 Q2](../../DailyTests/2026-10-06.md#q2--conditional-ace-positions): Y, about 12 minutes; stopped at the recommended time limit. Conditioning was understood, but the count overcounted. The worked answer above was added after the attempt.
+
+## Assessment history
+
+- [2026-10-06 Q2 — assessment](../../DailyTests/2026-10-06.md#q2--conditional-ace-positions)
+
+## Related questions and knowledge
+
+- [P021 — Conditional Red-Ball Positions](P021_Conditional_Red_Ball_Positions.md) — Conditional positions in sampling without replacement.

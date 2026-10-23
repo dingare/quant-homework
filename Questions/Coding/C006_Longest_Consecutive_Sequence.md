@@ -11,7 +11,9 @@
 
 ## Core Question
 
-Given an unsorted integer array, return the longest consecutive sequence length in expected $O(n)$ time. Example: [100, 4, 200, 1, 3, 2] returns 4.
+Given an unsorted integer array, return the length of the longest consecutive sequence in expected $`O(n)`$.
+
+Example: [100, 4, 200, 1, 3, 2] returns 4.
 
 ## Solution
 
@@ -78,3 +80,7 @@ Expected $O(n)$ time and $O(n)$ space. Store x to track membership, update both 
 ## What to Remember
 
 Either expand only from starts, or maintain correct lengths at both endpoints of each interval.
+
+## Assessment history
+
+- [2026-10-06 Q4 — assessment](../../DailyTests/2026-10-06.md#q4--longest-consecutive-sequence)

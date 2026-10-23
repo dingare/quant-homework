@@ -22,13 +22,13 @@ graph motifs, and many other quant-interview probability problems.
 
 For an event $A$, define
 
-$$
+```math
 I_A=\mathbf 1_A=
 \begin{cases}
 1,&A\text{ occurs},\\
 0,&A\text{ does not occur}.
 \end{cases}
-$$
+```
 
 The fundamental identity is
 
@@ -47,11 +47,11 @@ $$
 If $X$ counts how many objects satisfy a property, define one indicator per
 candidate object:
 
-$$
+```math
 I_i=\mathbf 1\{\text{object }i\text{ satisfies the property}\},
 \qquad
 X=\sum_i I_i.
-$$
+```
 
 Then linearity of expectation gives
 
@@ -182,9 +182,9 @@ so all marginal and joint probabilities must respect the conditioning.
 
 For $n$ people and $d$ equally likely birthdays, let
 
-$$
+```math
 I_{ij}=\mathbf 1\{\text{people }i,j\text{ share a birthday}\}.
-$$
+```
 
 Then the number of colliding pairs is $X=\sum_{i\lt j}I_{ij}$, and
 
@@ -196,7 +196,7 @@ For variance, classify two pairs according to whether they share a person.
 
 ### Permutation fixed points
 
-Let $I_i=\mathbf 1\{\pi(i)=i\}$. Then
+Let $`I_i=\mathbf 1\{\pi(i)=i\}`$. Then
 
 $$
 E[X]=\sum_{i=1}^n\frac1n=1.
@@ -212,9 +212,9 @@ $$
 
 Let
 
-$$
+```math
 I_{ij}=\mathbf 1\{\pi_i\gt\pi_j\},\qquad i\lt j.
-$$
+```
 
 Then
 
@@ -229,9 +229,9 @@ For variance, classify pairs of comparisons by whether they share an index. See
 
 In a uniformly random perfect matching of $2n$ labeled people, let
 
-$$
+```math
 I_i=\mathbf 1\{\text{target couple }i\text{ is matched together}\}.
-$$
+```
 
 The count $X=\sum_i I_i$ illustrates the full indicator toolkit: linearity of
 expectation, dependent joint-success probabilities, overlap-based covariance,
@@ -242,9 +242,9 @@ factorial moments, and a Poisson limit. See
 
 If $n$ balls are placed independently and uniformly into $m$ boxes, let
 
-$$
+```math
 I_j=\mathbf 1\{\text{box }j\text{ is nonempty}\}.
-$$
+```
 
 Then
 
@@ -258,11 +258,11 @@ For variance, compute the probability that two specified boxes are both nonempty
 
 Let
 
-$$
+```math
 I_i=\mathbf 1\{X_i\ne X_{i+1}\},
 \qquad
 C=\sum_{i=1}^{N-1}I_i.
-$$
+```
 
 If $R$ is the number of runs, then $R=C+1$. For a random ordering of $m$
 heads and $n$ tails,
@@ -377,3 +377,12 @@ $$
 $$
 
 Related review path: [首次命中、奇偶增强、覆盖与轮流归属框架](First_Hitting_Parity_Coverage_and_Alternating_Ownership.md).
+
+## Related interview questions
+
+- [P025 — Permutation Fixed Points and Dependent Indicators](../../Questions/Probability/P025_Permutation_Fixed_Points_and_Dependent_Indicators.md)
+- [P032 — Cycles of a Uniform Random Permutation](../../Questions/Probability/P032_Cycles_of_a_Uniform_Random_Permutation.md)
+- [P034 — First Repeated Label](../../Questions/Probability/P034_First_Repeated_Label.md)
+- [P035 — Shared Unknown Win Probability and Predictive Risk](../../Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
+
+Dated results and assistance/verification evidence are linked from each question’s assessment history. Filing these references does not change the recorded performance.

@@ -97,3 +97,7 @@ $$
 retains precisely the information needed for future transitions. Once a face has
 appeared twice, its exact count is irrelevant. This compressed state turns a
 history-dependent problem into a small Markov-chain dynamic program.
+
+## Related questions and knowledge
+
+- [P034 — First Repeated Label](P034_First_Repeated_Label.md) — Repeated labels versus full coverage; different stopping scales.

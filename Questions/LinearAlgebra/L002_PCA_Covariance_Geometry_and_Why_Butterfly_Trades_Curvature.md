@@ -11,17 +11,17 @@
 
 Given the covariance matrix
 
-$$
+```math
 \Sigma=
 \begin{pmatrix}
 4 & 3\\
 3 & 4
 \end{pmatrix}
-$$
+```
 
 with eigenvectors
 
-$$
+```math
 v_1=\frac{1}{\sqrt2}
 \begin{pmatrix}
 1\\
@@ -33,7 +33,7 @@ v_2=\frac{1}{\sqrt2}
 1\\
 -1
 \end{pmatrix}
-$$
+```
 
 and eigenvalues
 
@@ -49,13 +49,13 @@ what do these principal components mean geometrically, and how does the same ide
 
 For
 
-$$
+```math
 \Sigma=
 \begin{pmatrix}
 4 & 3\\
 3 & 4
 \end{pmatrix},
-$$
+```
 
 the high-variance direction is
 
@@ -71,13 +71,13 @@ $$
 
 If the covariance flips sign so that
 
-$$
+```math
 \Sigma=
 \begin{pmatrix}
 4 & -3\\
 -3 & 4
 \end{pmatrix},
-$$
+```
 
 then the roles reverse:
 
@@ -262,3 +262,7 @@ $$
 $$
 \boxed{\text{In rates, curvature means the belly moves differently from the wings.}}
 $$
+
+## Related questions and knowledge
+
+- [L009 — Feasible Correlations and Zero-Variance Portfolios](L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md) — Covariance feasibility, geometry and zero-variance directions.

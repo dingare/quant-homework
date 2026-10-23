@@ -20,26 +20,26 @@ Applications: covariance eigenvectors give PCA directions; eigenvalues govern gr
 
 ## 2. Vector and matrix 2-norm; condition number
 
-$$
+```math
 \|x\|_2=\sqrt{\sum_i x_i^2},\qquad
 \|A\|_2=\max_{x\ne0}\frac{\|Ax\|_2}{\|x\|_2}=\sigma_{\max}(A).
-$$
+```
 
 For square invertible A:
 
-$$
+```math
 \kappa_2(A)=\|A\|_2\|A^{-1}\|_2
 =\frac{\sigma_{\max}}{\sigma_{\min}}.
-$$
+```
 
 For a tall full-column-rank matrix, the same ratio describes conditioning on the identifiable input space; use the pseudoinverse instead of an inverse. Rank deficiency gives infinite condition number under the usual full-column identification convention.
 
 Conditioning is a property of the problem; numerical stability is a property of the algorithm. A correct stable algorithm cannot remove inherent sensitivity. For fixed square invertible A and perturbation only to b in $Ax=b$:
 
-$$
+```math
 \frac{\|\delta x\|_2}{\|x\|_2}
 \le \kappa_2(A)\frac{\|\delta b\|_2}{\|b\|_2}.
-$$
+```
 
 This is a worst-case bound, not a statement that every perturbation is amplified equally. General least-squares perturbation bounds also depend on the residual and perturbation type.
 
@@ -74,7 +74,7 @@ This explains where singular vectors come from. **Do not explicitly form $A^\top
 
 ## 4. Least squares with SVD
 
-Solve $\min_x\|Ax-b\|_2^2$. For tall full-column-rank A:
+Solve $`\min_x\|Ax-b\|_2^2`$. For tall full-column-rank A:
 
 $$
 \hat x=V\Sigma^{-1}U^\top b.
@@ -100,10 +100,10 @@ $$
 
 with Q m by n and R n by n upper triangular. Then:
 
-$$
+```math
 \|Ax-b\|_2^2
 =\|Rx-Q^\top b\|_2^2+\|(I-QQ^\top)b\|_2^2.
-$$
+```
 
 The second term does not depend on x. Solve:
 
@@ -213,3 +213,13 @@ Interview answer: "QR is a standard stable choice for full-rank least squares. S
 - [ ] Run the code and explain each output independently.
 
 Related: [L001 — Ridge / PCA shrinkage](../../Questions/LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md), [L002 — PCA covariance geometry](../../Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md).
+
+## Related interview questions
+
+- [L007 — Projection Matrices, Eigenvalues, and Rank](../../Questions/LinearAlgebra/L007_Projection_Matrices_Eigenvalues_and_Rank.md)
+- [L008 — Conditioning and Least Squares](../../Questions/LinearAlgebra/L008_Conditioning_and_Least_Squares.md)
+- [L009 — Feasible Correlations and Zero-Variance Portfolios](../../Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
+- [O009 — Gradient Descent and Spectral Contraction](../../Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
+- [S023 — Pooled and Within-Sector Signal Evaluation](../../Questions/Statistics/S023_Pooled_and_Within_Sector_Signal_Evaluation.md)
+
+Dated results and assistance/verification evidence are linked from each question’s assessment history. Filing these references does not change the recorded performance.

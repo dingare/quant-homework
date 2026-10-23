@@ -1,20 +1,20 @@
 # Progress
 
-Track counts of finalized subject notes by category.
+Track canonical question/subject files by category. These are filing counts, not numbers of attempts, completed follow-ups or mastered topics; archived pending follow-ups remain explicit.
 
 ## Counts by Category
 
 | Category | Prefix | Count |
 | --- | --- | ---: |
-| Linear Algebra | L | 6 |
-| Probability | P | 19 |
-| Statistics | S | 10 |
-| Time Series | T | 7 |
-| Optimization | O | 8 |
-| Coding | C | 6 |
+| Linear Algebra | L | 9 |
+| Probability | P | 34 |
+| Statistics | S | 23 |
+| Time Series | T | 12 |
+| Optimization | O | 9 |
+| Coding | C | 19 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 1 |
-| Total | All | 63 |
+| Total | All | 113 |
 
 ## Knowledge Cards
 
@@ -82,3 +82,5 @@ Track counts of finalized subject notes by category.
 - 2026-10-21: Continued the [October 20 drill](DailyTests/2026-10-20.md), not a new session. Q2 part 3 and Q3 are now Partial / Hinted overall; Q3 part 1 slope/R-squared independently correct. Recorded shared-parameter predictive variance, normal equations, sector demeaning, total covariance and omitted-variable bias. **Only Q4 remains Pending**, original prompt preserved without hints/solution for October 22. All actual times unknown; subject-note and knowledge-card counts unchanged.
 
 - 2026-10-22: Finished Q4 of the [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md). **All four main questions discussed; none Pending.** Q4 independent calibration/core answers and user-confirmed arithmetic/writing clarifications preserved; overall Partial / Hinted without a new K/R/I gap. Added probability scoring, calibration/decision evaluation and hit-rate-curve discussion with references. Continuation of one set, not a new daily drill; all actual times unknown, subject-note and knowledge-card counts unchanged.
+
+- 2026-10-22: Reorganized 12 DailyTests / 73 item records into linked assessment logs and filed 50 additional canonical question notes (63 → 113 files). Reused existing notes, grouped dated retests/variants, and added reciprocal concept/card links. All results, timing, continuation dates, pending follow-ups and verification limits are retained; no new solves or mastery inferred. Knowledge cards remain six.

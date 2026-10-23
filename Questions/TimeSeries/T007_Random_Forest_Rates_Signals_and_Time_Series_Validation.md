@@ -11,7 +11,7 @@
 
 ## Core Question
 
-Train a Random Forest rates signal on three years of daily observations. Randomly shuffle the data and run five-fold cross-validation. OOS $R^2$ looks great. Give at least three distinct reasons for skepticism and redesign validation.
+You train a Random Forest rates signal on 3 years of daily data, randomly shuffle observations, and run 5-fold CV. OOS $`R^2`$ looks great. Why might you not trust it? Give at least three distinct mechanisms, and redesign the validation.
 
 ## Solution
 
@@ -54,3 +54,63 @@ Train a Random Forest rates signal on three years of daily observations. Randoml
 ## What to Remember
 
 Name the mechanism, identify the information crossing the boundary, and make validation resemble deployment.
+
+## Interview drill — 2026-10-07 Q6
+
+Source and assessment: [2026-10-07 Q6](../../DailyTests/2026-10-07.md#q6--five-day-labels-and-walk-forward-validation). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+A rates signal predicts the next five trading days' cumulative return. Train through T and test from T+1; validation looks excellent. Identify two contamination risks despite chronological ordering, give a concrete safeguard for each, and name a trading-oriented metric alongside predictive fit.
+
+### Recorded solution
+
+1. **Boundary leakage:** a label dated t uses returns through t+5. Purge training rows whose label windows overlap the test window and ensure labels are available at training time. Set any gap from exact information intervals; “start at T+5” alone is not a universal boundary rule.
+2. **Dependent test observations:** adjacent five-day labels share four return days. Use non-overlapping test blocks or overlap-aware uncertainty estimates such as block bootstrap / appropriate HAC. Dependence alone is not proof of leakage, but treating it as iid can overstate precision.
+
+Maximum drawdown was the user's metric. Sharpe, turnover, and PnL after costs were additional interviewer suggestions.
+
+### Related Notes
+
+- [T007 — Random Forest Rates Signals and Time-Series Validation](T007_Random_Forest_Rates_Signals_and_Time_Series_Validation.md): chronological validation and label purging.
+- [S009 — Overlapping Three-Day Returns and Hansen–Hodrick Inference](../Statistics/S009_Overlapping_Three_Day_Returns_and_Hansen_Hodrick_Inference.md): related overlap-aware inference, with a different horizon.
+
+## Interview drill — 2026-10-09 Q5
+
+Source and assessment: [2026-10-09 Q5](../../DailyTests/2026-10-09.md#q5--time-series-validation-and-ridge). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+A next-day Treasury-return model uses 30 highly correlated lagged features. Randomly shuffled five-fold cross-validation looks excellent, but subsequent-month deployment fails. Explain two misleading-validation mechanisms, redesign validation, and choose Ridge or LASSO.
+
+### Recorded answer details
+
+The discussion preferred rolling validation and Ridge. Name concrete information leakage, regime/covariance shift, and serial or label dependence; do not equate dependence alone with leakage. Ridge distributes weight across correlated predictors; LASSO is useful when sparsity or interpretability is central. See the validation protocol in this note and [L001 — Ridge Regression as PCA Shrinkage](../LinearAlgebra/L001_Ridge_Regression_as_PCA_Shrinkage.md).
+
+## Interview drill — 2026-10-14 Q3
+
+Source and assessment: [2026-10-14 Q3](../../DailyTests/2026-10-14.md#q3--forecast-validation). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+Using 1,000 consecutive daily observations, compare two configurations for predicting tomorrow's return from today's information. Specify training/validation windows, refitting and selection. Assess standardizing with all 1,000 days and reporting the selected winner on the same validation periods. What would you investigate if the latest 100 days lose money?
+
+### Key solution
+
+Use chronological rolling or expanding training windows, a specified refit schedule, validation for selection, and a later untouched test for final evaluation. Fit preprocessing parameters only on the training data available at each prediction date.
+
+Whether scaling helps is model-dependent: flags need not be standardized, and tree models often do not benefit. Lagged features can be scaled with fixed training-fitted parameters without losing lag alignment; rolling/window transformations may change level information.
+
+Investigate data/pipeline changes, feature and predictive-relationship shifts, overfitting, regime changes and sampling variation. Recent losses alone do not prove model failure.
+
+## Assessment history
+
+- [2026-10-06 Q6 — assessment](../../DailyTests/2026-10-06.md#q6--rates-signals-and-time-series-validation)
+- [2026-10-07 Q6 — assessment](../../DailyTests/2026-10-07.md#q6--five-day-labels-and-walk-forward-validation)
+- [2026-10-09 Q5 — assessment](../../DailyTests/2026-10-09.md#q5--time-series-validation-and-ridge)
+- [2026-10-14 Q3 — assessment](../../DailyTests/2026-10-14.md#q3--forecast-validation)
+
+## Related questions and knowledge
+
+- [T008 — Tree Extrapolation and Deployment](T008_Tree_Extrapolation_and_Deployment.md) — Match validation to deployment and the model extrapolation limit.
+- [T012 — Probability Forecasts, Calibration, and Evaluation](T012_Probability_Forecasts_Calibration_and_Evaluation.md) — Probability scoring requires chronological out-of-sample evaluation.

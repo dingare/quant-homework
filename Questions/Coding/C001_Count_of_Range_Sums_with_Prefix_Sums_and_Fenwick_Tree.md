@@ -72,9 +72,9 @@ $$
 
 For the general problem, scan prefix sums from left to right. Before inserting the current prefix sum $P_r$, query how many previously inserted values fall in
 
-$$
+```math
 [P_r-U,\;P_r-L].
-$$
+```
 
 A coordinate-compressed Fenwick tree supports both the range-count query and insertion in $O(\log n)$ time, so total time is $O(n\log n)$ and storage is $O(n)$.
 
@@ -146,13 +146,13 @@ assert count_range_sums([2, -1, 3, -2, 1], 1, 3) == 10
 
 Divide the prefix sums by index. After recursively sorting the left and right halves, use two forward-moving pointers in the right half for each left prefix $P_i$:
 
-$$
+```math
 j_{\mathrm{low}}=\min\{j:P_j-P_i\ge L\},
-$$
+```
 
-$$
+```math
 j_{\mathrm{high}}=\min\{j:P_j-P_i\gt U\}.
-$$
+```
 
 Then $j_{\mathrm{high}}-j_{\mathrm{low}}$ is the number of valid cross-half pairs. Each merge level costs $O(n)$, giving
 
@@ -203,3 +203,7 @@ The pattern appears when examining all possible holding periods in a P&L or sign
 ## What to Remember
 
 > Count range sums by querying earlier prefix sums in $[P_r-U,P_r-L]$ before inserting $P_r$.
+
+## Related questions and knowledge
+
+- [C007 — Longest Balanced Binary Subarray](C007_Longest_Balanced_Binary_Subarray.md) — Prefix differences; earliest-index hashing versus ordered range counting.

@@ -104,3 +104,27 @@ $$
 
 - [Waiting Time and Competing Risks Cookbook](../../KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md) — 从 exponential race 扩展到 Poisson arrivals、Gamma / Weibull hazards、queue position、inspection paradox 与 phase-type CTMC 的结构化复习卡。
 - [SC004 — Competing Exponential Clocks and CTMC Hitting](SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md) — 状态依赖 rates 和有限状态 first-step analysis。
+
+## Interview drill — 2026-10-09 Q6
+
+Source and assessment: [2026-10-09 Q6](../../DailyTests/2026-10-09.md#q6--competing-poisson-processes). The reference material below does not change that attempt’s recorded result.
+
+### Question
+
+Independent Poisson processes have rates 2 and 3 per hour. Find (a) the probability the first A event occurs before the second B event and (b) the expected time to the first event of either process.
+
+### Recorded solution
+
+In the merged process, each arrival is labeled A with probability 2/5 and B with probability 3/5. A arrives before the second B if the first label is A, or the first is B and the second is A:
+
+```math
+\frac25+\frac35\frac25=\frac{16}{25}.
+```
+
+### Recorded answer details
+
+The second B arrival is Erlang/Gamma, not exponential with half the rate. Superposition gives rate 5 and an expected first-arrival wait of 1/5 hour.
+
+## Assessment history
+
+- [2026-10-09 Q6 — assessment](../../DailyTests/2026-10-09.md#q6--competing-poisson-processes)

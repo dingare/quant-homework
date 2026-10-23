@@ -15,13 +15,13 @@
 
 Suppose
 
-$$
+```math
 z=
 \begin{pmatrix}
 z_1\\
 z_2
 \end{pmatrix}
-$$
+```
 
 are two correlated instruments, and we want to construct a single instrument
 
@@ -122,11 +122,11 @@ $$
 
 Hence
 
-$$
+```math
 \boxed{
 a=c\,Q^{-1}q
 }
-$$
+```
 
 for an irrelevant scaling constant `c`.
 
@@ -250,3 +250,7 @@ Q^{-1}
 $$
 
 removes redundancy, so the optimal instrument loads on incremental predictive content rather than duplicated correlation.
+
+## Related questions and knowledge
+
+- [S019 — Weighted Common-Mean Inference](S019_Weighted_Common_Mean_Inference.md) — Covariance-weighted estimators and efficiency.

@@ -162,3 +162,7 @@ Overlapping weekly or monthly forward returns are common in signal research beca
 ## What to Remember
 
 > Three-day overlap produces residual autocovariances $3,2,1,0$ and requires HAC lag $2$, but standard errors are governed by the score $x_tu_t$. With a highly persistent predictor, the limiting inflation is $\sqrt3\approx1.73$.
+
+## Related questions and knowledge
+
+- [S022 — Duplicating Regression Observations](S022_Duplicating_Regression_Observations.md) — Reused information invalidates naive independent-observation inference.

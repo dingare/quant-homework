@@ -11,7 +11,9 @@
 
 ## Core Question
 
-Given nums and fixed k, return the starting index of the length-k subarray with maximum sum. Follow-up: allow any length at least k and target linear time. Values may be negative. Use zero-based indices; for equal sums, keep the earliest starting index.
+Given nums and fixed k, return the starting index of the length-k subarray with maximum sum. Follow-up: if the length is at least k, how would you solve it and what complexity would you target?
+
+Reference conventions: values may be negative; use zero-based indices and keep the earliest starting index on ties. The minimum-length follow-up targets linear time.
 
 ## Solution
 
@@ -90,3 +92,7 @@ Negative values destroy the monotonic behavior needed for a greedy two-pointer r
 ## What to Remember
 
 Fixed length: update one window sum. Minimum length: subtract the smallest eligible prefix.
+
+## Assessment history
+
+- [2026-10-06 Q1 — assessment](../../DailyTests/2026-10-06.md#q1--maximum-sum-subarray)
