@@ -162,6 +162,10 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Knowledge Cards
 
+### Statistics
+
+- [线性回归：期望、方差、残差与预测区间](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — 中文流程图与分步矩阵推导；区分真实误差、残差、两种样本方差、均值 CI / 新观测 PI，以及 LLN、CLT 与正态条件。
+
 ### Probability
 
 - [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)

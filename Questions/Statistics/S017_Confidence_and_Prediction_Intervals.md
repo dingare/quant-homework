@@ -56,4 +56,5 @@ The conditional response variance remains $`\sigma^2`$; estimator uncertainty in
 
 ## Related questions and knowledge
 
+- [线性回归：期望、方差、残差与预测区间](../../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — 中文流程图与分步矩阵推导；串联估计误差、残差、自由度、均值 CI / 新观测 PI 及正态条件。
 - [S010 — OLS Significance, Randomness, and Robust Standard Errors](S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md) — Sampling uncertainty and the target of an interval.

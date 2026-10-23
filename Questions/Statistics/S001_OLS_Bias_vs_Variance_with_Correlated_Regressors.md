@@ -120,4 +120,5 @@ FWL, Residualization, Partial Correlation, Ridge, PCA, Factor Models, Signal Att
 
 ## Related questions and knowledge
 
+- [线性回归：期望、方差、残差与预测区间](../../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — 中文流程图、估计误差与 bias 的区分、条件协方差、自由度及预测推断。
 - [S016 — Omitted-Variable Bias](S016_Omitted_Variable_Bias.md) — Projection coefficients, confounding and omitted-variable bias.
