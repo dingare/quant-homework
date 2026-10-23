@@ -37,15 +37,15 @@ and
 
 maximize
 
-$$
+```math
 \mu^\top w-\frac12 w^\top \Sigma w
-$$
+```
 
 subject to
 
-$$
+```math
 1^\top w=0.
-$$
+```
 
 How do we:
 
@@ -77,21 +77,21 @@ So the constrained problem is not just "same objective, smaller domain." It is e
 
 Without the constraint, the first-order condition is
 
-$$
+```math
 \mu-\Sigma w=0,
-$$
+```
 
 so
 
-$$
+```math
 w_{\text{unc}}=\Sigma^{-1}\mu.
-$$
+```
 
 Solving
 
-$$
+```math
 \Sigma w=\mu
-$$
+```
 
 gives
 
@@ -108,9 +108,9 @@ w_{\text{unc}}=
 
 with
 
-$$
+```math
 1^\top w_{\text{unc}}=1.6\gt 0.
-$$
+```
 
 So the unconstrained optimizer naturally wants a net long portfolio.
 
@@ -125,28 +125,28 @@ Introduce the Lagrangian
 
 The first-order condition in `w` is
 
-$$
+```math
 \mu-\Sigma w-\lambda 1=0,
-$$
+```
 
 so
 
-$$
+```math
 w=\Sigma^{-1}(\mu-\lambda 1).
-$$
+```
 
 Imposing
 
-$$
+```math
 1^\top w=0
-$$
+```
 
 gives
 
-$$
+```math
 \lambda=
 \frac{1^\top\Sigma^{-1}\mu}{1^\top\Sigma^{-1}1}.
-$$
+```
 
 Here,
 
@@ -168,17 +168,17 @@ Here,
 
 so
 
-$$
+```math
 1^\top\Sigma^{-1}\mu=1.6,
 \qquad
 1^\top\Sigma^{-1}1=0.8,
-$$
+```
 
 and therefore
 
-$$
+```math
 \boxed{\lambda=2.}
-$$
+```
 
 Thus
 
@@ -211,23 +211,23 @@ which is dollar neutral.
 
 The constraint
 
-$$
+```math
 1^\top w=0
-$$
+```
 
 forbids net long exposure.
 
 That means the optimizer cannot use the part of the signal that points in the all-ones direction. Instead of optimizing the raw vector
 
-$$
+```math
 \mu,
-$$
+```
 
 it optimizes the adjusted signal
 
-$$
+```math
 \mu-\lambda 1.
-$$
+```
 
 So the constraint effectively subtracts the same amount from every expected return until the neutral portfolio condition is satisfied.
 
@@ -235,9 +235,9 @@ So the constraint effectively subtracts the same amount from every expected retu
 
 The multiplier
 
-$$
+```math
 \lambda
-$$
+```
 
 has two linked meanings.
 
@@ -245,9 +245,9 @@ First, it is the shadow value of relaxing the neutrality constraint. It tells us
 
 Second, it is the uniform shift applied to expected returns in order to remove the forbidden direction. Here
 
-$$
+```math
 \lambda=2
-$$
+```
 
 means the optimizer behaves as if the effective alpha vector were
 
@@ -266,9 +266,9 @@ Without constraints, the optimizer searches the full space.
 
 With
 
-$$
+```math
 1^\top w=0,
-$$
+```
 
 the feasible set becomes a plane. The constrained solution is the covariance-metric projection of the unconstrained optimum onto that plane.
 
@@ -313,27 +313,27 @@ Only the constraint vector or constraint matrix changes.
 
 - Unconstrained optimum:
 
-$$
+```math
 w_{\text{unc}}=\Sigma^{-1}\mu.
-$$
+```
 
 - Constrained optimum:
 
-$$
+```math
 w^*=\Sigma^{-1}(\mu-\lambda 1),
 \qquad
 \lambda=\frac{1^\top\Sigma^{-1}\mu}{1^\top\Sigma^{-1}1}.
-$$
+```
 
 - In this example:
 
-$$
+```math
 w_{\text{unc}}=(0.9,0.4,0.3)^\top,
 \qquad
 \lambda=2,
 \qquad
 w^*=(0.5,0,-0.5)^\top.
-$$
+```
 
 - Constraints change the effective signal being optimized.
 
@@ -343,39 +343,39 @@ $$
 
 Find the unconstrained optimum of
 
-$$
+```math
 \max_w\mu^\top w-\frac{\gamma}{2}w^\top\Sigma w.
-$$
+```
 
-Then add $\mathbf{1}^\top w=1$. What is the first step?
+Then add $`\mathbf{1}^\top w=1`$. What is the first step?
 
 ### Answer
 
-Assume $\gamma\gt0$ and a symmetric positive-definite covariance matrix Sigma. The first-order condition and unique optimum are
+Assume $`\gamma\gt0`$ and a symmetric positive-definite covariance matrix Sigma. The first-order condition and unique optimum are
 
-$$
+```math
 \mu-\gamma\Sigma w=0,\qquad
 w^*=\frac{1}{\gamma}\Sigma^{-1}\mu.
-$$
+```
 
-The Hessian is $-\gamma\Sigma$, which is negative definite, so this stationary point is the unique maximum.
+The Hessian is $`-\gamma\Sigma`$, which is negative definite, so this stationary point is the unique maximum.
 
 For the budget constraint, introduce a Lagrange multiplier eta:
 
-$$
+```math
 \mathcal L(w,\eta)
 =\mu^\top w-\frac{\gamma}{2}w^\top\Sigma w
 -\eta(\mathbf{1}^\top w-1).
-$$
+```
 
 The first-order conditions imply
 
-$$
+```math
 w=\frac{1}{\gamma}\Sigma^{-1}(\mu-\eta\mathbf{1}),
 \qquad
 \eta=\frac{\mathbf{1}^\top\Sigma^{-1}\mu-\gamma}
 {\mathbf{1}^\top\Sigma^{-1}\mathbf{1}}.
-$$
+```
 
 “Set up the Lagrangian” is the concise interview response; this is also an equality-constrained KKT system. The inverse formula requires invertible Sigma. With singular covariance, existence and uniqueness need separate analysis.
 

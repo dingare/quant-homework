@@ -15,67 +15,67 @@
 
 给定
 
-$$
+```math
 \mu=(4,3,2)^\top,
 \qquad
 H=\begin{pmatrix}4&1&0\\1&2&0\\0&0&1\end{pmatrix},
-$$
+```
 
 求
 
-$$
+```math
 \max_x\ \mu^\top x-\frac12x^\top Hx
-$$
+```
 
-满足 $x_1+x_2+x_3=0$ 和 $|x_i|\le2$。求无约束解、仅含 hedge constraint 的解、最终最优值及活跃约束的 KKT multiplier。
+满足 $`x_1+x_2+x_3=0`$ 和 $`|x_i|\le2`$。求无约束解、仅含 hedge constraint 的解、最终最优值及活跃约束的 KKT multiplier。
 
 ## Solution
 
-无约束一阶条件 $Hx=\mu$ 给出
+无约束一阶条件 $`Hx=\mu`$ 给出
 
-$$
+```math
 x^{\rm unc}=H^{-1}\mu=\left(\frac57,\frac87,2\right)^\top.
-$$
+```
 
-它不满足净头寸为零。令 $a=(1,1,1)^\top$，Lagrangian 为
+它不满足净头寸为零。令 $`a=(1,1,1)^\top`$，Lagrangian 为
 
-$$
+```math
 L=\mu^\top x-\frac12x^\top Hx-\lambda a^\top x.
-$$
+```
 
 于是
 
-$$
+```math
 x=H^{-1}(\mu-\lambda a),
 \qquad
 \lambda=\frac{a^\top H^{-1}\mu}{a^\top H^{-1}a}.
-$$
+```
 
 由
 
-$$
+```math
 H^{-1}\mu=\left(\frac57,\frac87,2\right)^\top,
 \qquad
 H^{-1}a=\left(\frac17,\frac37,1\right)^\top,
-$$
+```
 
-得到 $\lambda=27/11$，从而
+得到 $`\lambda=27/11`$，从而
 
-$$
+```math
 \boxed{x^\star=\left(\frac4{11},\frac1{11},-\frac5{11}\right)^\top}.
-$$
+```
 
-三个分量都严格位于 $(-2,2)$，所以 box constraints 均不活跃，其 multiplier 全为零。由 $Hx^\star=\mu-\lambda a$ 和 $a^\top x^\star=0$，有
+三个分量都严格位于 $`(-2,2)`$，所以 box constraints 均不活跃，其 multiplier 全为零。由 $`Hx^\star=\mu-\lambda a`$ 和 $`a^\top x^\star=0`$，有
 
-$$
+```math
 (x^\star)^\top Hx^\star=(x^\star)^\top\mu.
-$$
+```
 
 因此最优值为
 
-$$
+```math
 \boxed{\frac12\mu^\top x^\star=\frac9{22}}.
-$$
+```
 
 ## Reusable Checklist
 
@@ -87,8 +87,8 @@ $$
 
 ## What to Remember
 
-$$
+```math
 \boxed{x^\star=H^{-1}\mu-H^{-1}a\frac{a^\top H^{-1}\mu}{a^\top H^{-1}a}}
-$$
+```
 
 只在该解满足其余不等式约束时才是最终答案。

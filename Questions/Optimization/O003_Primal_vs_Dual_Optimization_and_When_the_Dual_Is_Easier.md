@@ -9,7 +9,7 @@
 - Review Priority: High
 - Date Added: 2026-07-13
 - Status: Finalized
-- Personal Note: The key interview edge is to distinguish "eliminate $x$" from the formal dual problem and then talk about dimensions, structure, and sensitivity.
+- Personal Note: The key interview edge is to distinguish "eliminate $`x`$" from the formal dual problem and then talk about dimensions, structure, and sensitivity.
 
 ## Core Question
 
@@ -33,7 +33,7 @@ The primal problem is the original optimization over the decision variables.
 
 The dual problem is built from the Lagrangian by minimizing over the primal variable first and then maximizing the resulting dual function over the multipliers.
 
-In many quadratic finance problems, the algebra lets us solve for $x$ as a function of $\lambda$, so the dual reduces the problem to constraint space.
+In many quadratic finance problems, the algebra lets us solve for $`x`$ as a function of $`\lambda`$, so the dual reduces the problem to constraint space.
 
 That is especially attractive when the number of constraints is far smaller than the number of variables.
 
@@ -41,27 +41,27 @@ That is especially attractive when the number of constraints is far smaller than
 
 Consider the equality-constrained problem
 
-$$
+```math
 \min_x \frac12\|x-a\|^2
 \quad\text{subject to}\quad
 Bx=c,
-$$
+```
 
 with
 
-$$
+```math
 x\in\mathbb R^n,
 \qquad
 B\in\mathbb R^{m\times n},
 \qquad
 c\in\mathbb R^m.
-$$
+```
 
 Here:
 
-- $x$ is the primal variable,
-- $n$ is the number of decision variables,
-- $m$ is the number of equality constraints.
+- $`x`$ is the primal variable,
+- $`n`$ is the number of decision variables,
+- $`m`$ is the number of equality constraints.
 
 In finance, the primal variables could be:
 
@@ -74,72 +74,72 @@ In finance, the primal variables could be:
 
 Introduce one multiplier for each equality constraint:
 
-$$
+```math
 \lambda\in\mathbb R^m.
-$$
+```
 
 Using the convention
 
-$$
+```math
 \mathcal L(x,\lambda)=
 \frac12(x-a)^\top(x-a)+\lambda^\top(Bx-c),
-$$
+```
 
-the first-order condition in $x$ is
+the first-order condition in $`x`$ is
 
-$$
+```math
 \nabla_x \mathcal L=
 x-a+B^\top\lambda=
 0.
-$$
+```
 
 So
 
-$$
+```math
 x(\lambda)=a-B^\top\lambda.
-$$
+```
 
 ## The Formal Dual Problem
 
 The dual function is
 
-$$
+```math
 g(\lambda)=\inf_x \mathcal L(x,\lambda).
-$$
+```
 
 The dual problem is therefore
 
-$$
+```math
 \max_\lambda g(\lambda).
-$$
+```
 
-This matters in interviews because the dual is not merely "substitute $x(\lambda)$ back somewhere." Formally, we minimize the Lagrangian over $x$ first and then maximize over $\lambda$.
+This matters in interviews because the dual is not merely "substitute $`x(\lambda)`$ back somewhere." Formally, we minimize the Lagrangian over $`x`$ first and then maximize over $`\lambda`$.
 
-For this quadratic problem, substituting $x(\lambda)$ back into the constraint gives
+For this quadratic problem, substituting $`x(\lambda)`$ back into the constraint gives
 
-$$
+```math
 B(a-B^\top\lambda)=c,
-$$
+```
 
 so
 
-$$
+```math
 BB^\top\lambda=Ba-c.
-$$
+```
 
-If $B$ has full row rank, then $BB^\top$ is invertible and
+If $`B`$ has full row rank, then $`BB^\top`$ is invertible and
 
-$$
+```math
 \lambda=(BB^\top)^{-1}(Ba-c).
-$$
+```
 
 Then
 
-$$
+```math
 x^*=a-B^\top\lambda.
-$$
+```
 
-If $B$ does not have full row rank, we should not write an inverse blindly. We instead solve the linear system in a least-norm or pseudoinverse sense.
+If $`B`$ does not have full row rank, we should not write an inverse blindly. We instead solve the linear system in a least-norm or pseudoinverse sense.
 
 ## Dimension Comparison
 
@@ -147,15 +147,15 @@ The dimensions are:
 
 | Quantity | Dimension |
 | --- | --- |
-| Primal variable | $x\in\mathbb R^n$ |
-| Dual variable | $\lambda\in\mathbb R^m$ |
-| Constraint matrix | $B\in\mathbb R^{m\times n}$ |
+| Primal variable | $`x\in\mathbb R^n`$ |
+| Dual variable | $`\lambda\in\mathbb R^m`$ |
+| Constraint matrix | $`B\in\mathbb R^{m\times n}`$ |
 
 The practical question is:
 
 > Which dimension is smaller and better structured?
 
-If $m\ll n$, the dual can be dramatically cheaper because it works in constraint space rather than variable space.
+If $`m\ll n`$, the dual can be dramatically cheaper because it works in constraint space rather than variable space.
 
 ## When the Dual Is Easier
 
@@ -163,13 +163,13 @@ The dual is often attractive when:
 
 - there are very few constraints relative to variables,
 - the primal variables can be eliminated analytically,
-- the reduced system in $\lambda$ has favorable structure,
+- the reduced system in $`\lambda`$ has favorable structure,
 - the multipliers themselves are economically meaningful.
 
 Example:
 
-- $n=10^7$ variables,
-- $m=10$ constraints.
+- $`n=10^7`$ variables,
+- $`m=10`$ constraints.
 
 Then the primal lives in a 10 million dimensional space, while the dual only has 10 unknown multipliers.
 
@@ -180,7 +180,7 @@ This is common in:
 - constrained least squares,
 - projection problems.
 
-If instead $m\approx n$ or $m\gt n$, the dual may not be smaller and we often solve the primal directly or use iterative methods.
+If instead $`m\approx n`$ or $`m\gt n`$, the dual may not be smaller and we often solve the primal directly or use iterative methods.
 
 ## KKT and Convexity
 
@@ -194,15 +194,15 @@ For equality-constrained convex problems, the key conditions are:
 
 For inequality constraints such as
 
-$$
+```math
 h(x)\le 0,
-$$
+```
 
 the multipliers also satisfy
 
-$$
+```math
 \lambda\ge 0,
-$$
+```
 
 and complementary slackness enters the picture.
 
@@ -226,25 +226,25 @@ The multiplier also gives sensitivity information.
 
 Suppose the constraint right-hand side changes from
 
-$$
+```math
 c
 \to
 c+\Delta c.
-$$
+```
 
 Then the optimal objective changes at first order according to the multiplier.
 
 With the convention
 
-$$
+```math
 \mathcal L(x,\lambda)=f(x)+\lambda^\top(Bx-c),
-$$
+```
 
-the sensitivity of the optimal value with respect to $c$ is
+the sensitivity of the optimal value with respect to $`c`$ is
 
-$$
+```math
 -\lambda^*.
-$$
+```
 
 So the sign depends on the Lagrangian convention. That is an easy place to lose points if I state the shadow-price rule too casually.
 
@@ -254,11 +254,11 @@ Economically, the multiplier measures how valuable it would be to relax or tight
 
 Interviewers usually want to hear this point clearly.
 
-If $n=10^7$, then a dense $n\times n$ matrix has
+If $`n=10^7`$, then a dense $`n\times n`$ matrix has
 
-$$
+```math
 10^{14}
-$$
+```
 
 entries, which is computationally absurd to store and invert directly.
 
@@ -266,9 +266,9 @@ Even when the inverse exists mathematically, numerical work almost never forms i
 
 Instead we solve systems such as
 
-$$
+```math
 Qx=b
-$$
+```
 
 using factorization or iterative methods.
 
@@ -292,7 +292,7 @@ The interview answer should always connect the formulation to structure:
 ## Common Mistakes
 
 - Saying the dual is always smaller.
-- Writing $(BB^\top)^{-1}$ without checking rank conditions.
+- Writing $`(BB^\top)^{-1}`$ without checking rank conditions.
 - Claiming the dual variable is always the derivative with the same sign regardless of convention.
 - Talking only about algebra and never mentioning KKT, weak duality, or strong duality.
 - Saying "compute the inverse" instead of "solve the linear system."
@@ -301,8 +301,8 @@ The interview answer should always connect the formulation to structure:
 
 Good follow-up points to volunteer:
 
-- If $m\ll n$, solve in dual space when possible.
-- If $n\ll m$, primal space may be preferable.
+- If $`m\ll n`$, solve in dual space when possible.
+- If $`n\ll m`$, primal space may be preferable.
 - In convex problems, KKT conditions often characterize the optimum.
 - Dual variables are useful both computationally and economically.
 - Numerical linear algebra is about solves, sparsity, and structure, not symbolic inversion.

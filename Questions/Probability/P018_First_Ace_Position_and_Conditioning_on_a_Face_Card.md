@@ -2,30 +2,30 @@
 
 ## Problem
 
-In a uniformly shuffled 52-card deck, let $T$ be the position of the first Ace. Find its distribution, mean, and variance. Then condition on the top card being a face card and recompute the expected position. A face card means a Jack, Queen, or King, so it cannot be an Ace.
+In a uniformly shuffled 52-card deck, let $`T`$ be the position of the first Ace. Find its distribution, mean, and variance. Then condition on the top card being a face card and recompute the expected position. A face card means a Jack, Queen, or King, so it cannot be an Ace.
 
 ## Distribution
 
-The four Ace positions are a uniformly chosen four-element subset of the 52 positions. If the first Ace is at $k$, the other three Aces must be among positions $k+1,\ldots,52$. Therefore,
+The four Ace positions are a uniformly chosen four-element subset of the 52 positions. If the first Ace is at $`k`$, the other three Aces must be among positions $`k+1,\ldots,52`$. Therefore,
 
-$$
+```math
 P(T=k)=\frac{\binom{52-k}{3}}{\binom{52}{4}},
 \qquad k=1,\ldots,49.
-$$
+```
 
 This is the negative hypergeometric waiting time through the first success, or equivalently the minimum of the four Ace positions.
 
 ## Mean
 
-The four Aces split the 48 non-Aces into five exchangeable gaps. If $G_1$ is the gap before the first Ace, then $T=G_1+1$. Each gap has mean $48/5$, so
+The four Aces split the 48 non-Aces into five exchangeable gaps. If $`G_1`$ is the gap before the first Ace, then $`T=G_1+1`$. Each gap has mean $`48/5`$, so
 
-$$
+```math
 E[T]=1+\frac{48}{5}=\boxed{\frac{53}{5}=10.6}.
-$$
+```
 
 ## Variance
 
-The first gap $G_1=T-1$ has a beta-binomial count distribution with $n=48$, $\alpha=1$, and $\beta=4$. Adding one does not change variance. Hence,
+The first gap $`G_1=T-1`$ has a beta-binomial count distribution with $`n=48`$, $`\alpha=1`$, and $`\beta=4`$. Adding one does not change variance. Hence,
 
 ```math
 \begin{aligned}
@@ -37,11 +37,11 @@ Var(T) &= \frac{n\alpha\beta(n+\alpha+\beta)}{(\alpha+\beta)^2(\alpha+\beta+1)} 
 
 ## Conditioning on a Face Card at the Top
 
-Given that the top card is a Jack, Queen, or King, it is known to be a non-Ace. Remove it. The remaining 51 cards contain all four Aces and 47 non-Aces. Let $T'$ be the position of the first Ace in this remaining deck. The gap argument gives
+Given that the top card is a Jack, Queen, or King, it is known to be a non-Ace. Remove it. The remaining 51 cards contain all four Aces and 47 non-Aces. Let $`T'`$ be the position of the first Ace in this remaining deck. The gap argument gives
 
-$$
+```math
 E[T']=1+\frac{47}{5}=\frac{52}{5}.
-$$
+```
 
 The original top card adds one to the position, so
 
@@ -56,8 +56,8 @@ The identity of the particular face card does not matter: conditional on any par
 
 ## Common Mistakes
 
-- Dividing 52 by four gives 13, but the four Aces create five exchangeable gaps. The first Ace occurs after the first gap, with mean position $53/5$.
-- A geometric model with fixed Ace probability $4/52$ assumes replacement and gives the wrong expectation.
+- Dividing 52 by four gives 13, but the four Aces create five exchangeable gaps. The first Ace occurs after the first gap, with mean position $`53/5`$.
+- A geometric model with fixed Ace probability $`4/52`$ assumes replacement and gives the wrong expectation.
 - Conditioning on a face card fixes the first position as a non-Ace. Count that position when returning from the 51-card deck to the original position.
 
 ## Connections
@@ -87,9 +87,9 @@ P(T_2\lt20\mid T_1=10)
 
 An equivalent disjoint count sums over exactly j Aces in the nine eligible positions:
 
-$$
+```math
 \frac{\sum_{j=1}^{3}\binom{9}{j}\binom{33}{3-j}}{\binom{42}{3}}.
-$$
+```
 
 Choosing “an Ace in the first nine remaining positions” and then freely choosing the others overcounts outcomes with two or three Aces there. These nine positions are 11–19 in the original deck, not its original positions 1–9.
 

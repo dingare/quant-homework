@@ -205,12 +205,14 @@ When working locally on this repo:
 ### Website Maintenance
 
 - Maintain the website alongside the notes. After changing notes or website tools, install `Tools/requirements-site.txt`, run `python3 -m unittest discover -s Tools -p 'test_*.py'`, and run `python3 Tools/build_site.py` before committing and pushing.
-- The build checks DailyTests math markup and all generated local page and section links. It includes the backlog, dated review summaries, and math-formatting guide as well as the question notes and daily tests.
+- The build checks math markup in all Questions and DailyTests, plus all generated local page and section links. It includes the backlog, dated review summaries, and math-formatting guide as well as the question notes and daily tests.
 - Keep build dependencies in `Tools/requirements-site.txt` so local previews and GitHub Actions use the same versions.
 - After pushing, check the matching [Pages workflow run](https://github.com/dingare/quant-homework/actions/workflows/pages.yml) and confirm deployment succeeds.
 - One-time repository setup: in **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**. This was enabled on 2026-10-16. The workflow token can deploy to an enabled site but cannot perform the initial administrative setup; a `Configure Pages` error saying `Not Found` or `Resource not accessible by integration` calls for checking this setting.
 
 ## Latest Additions
+
+- 2026-10-22: Audited formula rendering across all 113 question notes, standardized math delimiters, repaired three corrupted matrix commands, and extended publication checks to the full question library. See the [math audit](Tools/MathMarkdownGuide.md#october-22-question-library-audit).
 
 - 2026-10-22: Reorganized all 12 [DailyTests](DailyTests/INDEX.md) into linked assessment logs. Filed 50 additional canonical entries in the [question library](INDEX.md), reused existing notes for earlier questions and repeated variants, and retained all 73 item records, ratings, timing, pending follow-ups and old item anchors. Added reciprocal question / knowledge-card links. This is archival filing, not 50 new attempts or newly mastered topics.
 

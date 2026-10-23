@@ -15,68 +15,68 @@
 
 A trading strategy produces daily P&L increments
 
-$$
+```math
 a=[2,-1,3,-2,1].
-$$
+```
 
-For every contiguous interval $[i,j]$, define
+For every contiguous interval $`[i,j]`$, define
 
-$$
+```math
 S_{i,j}=\sum_{t=i}^j a_t.
-$$
+```
 
 Count the intervals satisfying
 
-$$
+```math
 1\le S_{i,j}\le3,
-$$
+```
 
-then design an $O(n\log n)$ algorithm that also works when the array contains negative values.
+then design an $`O(n\log n)`$ algorithm that also works when the array contains negative values.
 
 ## Hint
 
 Define prefix sums
 
-$$
+```math
 P_0=0,
 \qquad
 P_k=\sum_{t=0}^{k-1}a_t.
-$$
+```
 
-Because $S_{i,j}=P_{j+1}-P_i$, for each new $P_r$ count earlier $P_\ell$ satisfying
+Because $`S_{i,j}=P_{j+1}-P_i`$, for each new $`P_r`$ count earlier $`P_\ell`$ satisfying
 
-$$
+```math
 P_r-U\le P_\ell\le P_r-L.
-$$
+```
 
 ## Solution
 
 The prefix sums are
 
-$$
+```math
 P=[0,2,1,4,2,3].
-$$
+```
 
 The ten valid intervals, written with zero-based inclusive endpoints, are
 
-$$
+```math
 (0,0),(0,1),(0,3),(0,4),(1,2),
 (1,4),(2,2),(2,3),(2,4),(4,4).
-$$
+```
 
 Therefore the answer is
 
-$$
+```math
 \boxed{10}.
-$$
+```
 
-For the general problem, scan prefix sums from left to right. Before inserting the current prefix sum $P_r$, query how many previously inserted values fall in
+For the general problem, scan prefix sums from left to right. Before inserting the current prefix sum $`P_r`$, query how many previously inserted values fall in
 
 ```math
 [P_r-U,\;P_r-L].
 ```
 
-A coordinate-compressed Fenwick tree supports both the range-count query and insertion in $O(\log n)$ time, so total time is $O(n\log n)$ and storage is $O(n)$.
+A coordinate-compressed Fenwick tree supports both the range-count query and insertion in $`O(\log n)`$ time, so total time is $`O(n\log n)`$ and storage is $`O(n)`$.
 
 ```python
 from bisect import bisect_left, bisect_right
@@ -144,7 +144,7 @@ assert count_range_sums([2, -1, 3, -2, 1], 1, 3) == 10
 
 ## Alternative: Modified Merge Sort
 
-Divide the prefix sums by index. After recursively sorting the left and right halves, use two forward-moving pointers in the right half for each left prefix $P_i$:
+Divide the prefix sums by index. After recursively sorting the left and right halves, use two forward-moving pointers in the right half for each left prefix $`P_i`$:
 
 ```math
 j_{\mathrm{low}}=\min\{j:P_j-P_i\ge L\},
@@ -154,39 +154,39 @@ j_{\mathrm{low}}=\min\{j:P_j-P_i\ge L\},
 j_{\mathrm{high}}=\min\{j:P_j-P_i\gt U\}.
 ```
 
-Then $j_{\mathrm{high}}-j_{\mathrm{low}}$ is the number of valid cross-half pairs. Each merge level costs $O(n)$, giving
+Then $`j_{\mathrm{high}}-j_{\mathrm{low}}`$ is the number of valid cross-half pairs. Each merge level costs $`O(n)`$, giving
 
-$$
+```math
 T(n)=2T(n/2)+O(n)=O(n\log n).
-$$
+```
 
 ## Key Knowledge Points
 
 - Prefix sums convert contiguous-interval sums into differences of two values.
-- The ordering condition $\ell\lt r$ must be preserved.
+- The ordering condition $`\ell\lt r`$ must be preserved.
 - A Fenwick tree needs coordinate compression because prefix sums may be negative or large.
-- Modified merge sort is an equally valid $O(n\log n)$ solution.
+- Modified merge sort is an equally valid $`O(n\log n)`$ solution.
 - A standard sliding window fails because negative increments destroy monotonicity.
 
 ## Intuition
 
-The brute-force algorithm enumerates all $O(n^2)$ intervals. The prefix-sum transformation asks a different question: for each current prefix, how many earlier prefixes lie inside a numerical range? An ordered counting structure answers that without revisiting every earlier index.
+The brute-force algorithm enumerates all $`O(n^2)`$ intervals. The prefix-sum transformation asks a different question: for each current prefix, how many earlier prefixes lie inside a numerical range? An ordered counting structure answers that without revisiting every earlier index.
 
 ## Common Mistakes
 
-- Sorting all prefix sums once and losing the temporal condition $\ell\lt r$.
+- Sorting all prefix sums once and losing the temporal condition $`\ell\lt r`$.
 - Inserting the current prefix before querying, which may count an empty interval.
 - Mishandling inclusive endpoints with `bisect_left` and `bisect_right`.
 - Using a two-pointer sliding window when negative values are allowed.
-- Forgetting the initial prefix sum $P_0=0$.
+- Forgetting the initial prefix sum $`P_0=0`$.
 
 ## Interview Follow-ups
 
-1. Count intervals satisfying $|S_{i,j}|\le K$.
+1. Count intervals satisfying $`|S_{i,j}|\le K`$.
 2. Return the shortest valid interval rather than the count.
 3. Explain precisely why a sliding window fails with negative values.
 4. Adapt the Fenwick approach to an online stream.
-5. Count intervals whose average lies in $[\alpha,\beta]$.
+5. Count intervals whose average lies in $`[\alpha,\beta]`$.
 
 ## Market / Rates Application
 
@@ -202,7 +202,7 @@ The pattern appears when examining all possible holding periods in a P&L or sign
 
 ## What to Remember
 
-> Count range sums by querying earlier prefix sums in $[P_r-U,P_r-L]$ before inserting $P_r$.
+> Count range sums by querying earlier prefix sums in $`[P_r-U,P_r-L]`$ before inserting $`P_r`$.
 
 ## Related questions and knowledge
 

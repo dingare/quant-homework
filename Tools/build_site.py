@@ -397,11 +397,12 @@ def build_site(output_dir: Path) -> None:
     markdown_files = collect_markdown_files()
     math_errors = [
         f"{path.relative_to(ROOT)}:{error}"
-        for path in markdown_files if path.parent.name == "DailyTests"
+        for path in markdown_files
+        if path.relative_to(ROOT).parts[0] in {"Questions", "DailyTests"}
         for error in check_file(path)
     ]
     if math_errors:
-        raise ValueError("DailyTests math checks failed:\n" + "\n".join(math_errors))
+        raise ValueError("Question/DailyTests math checks failed:\n" + "\n".join(math_errors))
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True)

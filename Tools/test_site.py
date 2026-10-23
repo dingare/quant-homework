@@ -79,6 +79,13 @@ class SiteTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "missing section note.html#review"):
             site.check_site_links(self.root / "preview")
 
+    def test_build_rejects_broken_question_math(self):
+        self.write("README.md", "# Handbook\n")
+        self.write("Questions/Optimization/O007.md",
+                   "# Matrix\n\n```math\nw=\x08egin{pmatrix}1\\end{pmatrix}\n```\n")
+        with self.assertRaisesRegex(ValueError, "Questions/Optimization/O007.md"):
+            site.build_site(self.root / "preview")
+
 
 if __name__ == "__main__":
     unittest.main()

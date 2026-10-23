@@ -33,7 +33,7 @@ For the specified ordered record, the user's independently correct likelihood is
 ```math
 P(D)=\int_0^1p^3(1-p)\,dp=\frac14-\frac15=\frac1{20},
 \qquad
-f_{P\mid D}(p)=20p^3(1-p),\quad 0<p<1.
+f_{P\mid D}(p)=20p^3(1-p),\quad 0\lt p\lt 1.
 ```
 
 The density is zero outside that interval. The next-win probability averages p over this density:

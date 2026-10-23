@@ -35,16 +35,16 @@ def max_sum_fixed_k(nums, k):
     return best_start
 ```
 
-Time $O(n)$; auxiliary space $O(1)$.
+Time $`O(n)`$; auxiliary space $`O(1)`$.
 
 ### Length at Least k
 
-Let $P[0]=0$ and $P[j]=\sum_{i=0}^{j-1}nums[i]$. The sum of the half-open interval $[i,j)$ is $P[j]-P[i]$. For each endpoint j, eligible starts satisfy $0\le i\le j-k$.
+Let $`P[0]=0`$ and $`P[j]=\sum_{i=0}^{j-1}nums[i]`$. The sum of the half-open interval $`[i,j)`$ is $`P[j]-P[i]`$. For each endpoint j, eligible starts satisfy $`0\le i\le j-k`$.
 
-$$
+```math
 \max_{0\le i\le j-k}(P[j]-P[i])
 =P[j]-\min_{0\le i\le j-k}P[i].
-$$
+```
 
 **Invariant:** before evaluating j, the running minimum is the smallest prefix sum among indices 0 through j-k, with the earliest minimizing index. Add the newly eligible prefix before evaluating the candidate.
 
@@ -72,7 +72,7 @@ def max_sum_at_least_k(nums, k):
     return best_start, best_end, best_sum
 ```
 
-Returns the start, exclusive end, and sum. Time $O(n)$ and space $O(n)$. A streaming pair of running sums can reduce auxiliary space to $O(1)$.
+Returns the start, exclusive end, and sum. Time $`O(n)`$ and space $`O(n)`$. A streaming pair of running sums can reduce auxiliary space to $`O(1)`$.
 
 Negative values destroy the monotonic behavior needed for a greedy two-pointer rule. Prefix sums convert interval optimization into choosing the smallest eligible left prefix.
 

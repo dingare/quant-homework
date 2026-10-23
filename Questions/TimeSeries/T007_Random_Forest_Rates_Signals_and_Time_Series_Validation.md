@@ -31,7 +31,7 @@ You train a Random Forest rates signal on 3 years of daily data, randomly shuffl
 - At each boundary, purge training observations whose label information extends into the validation interval. Add a gap appropriate to the horizon and information availability. If the split design allows training after a validation block, consider an embargo as well; its length should follow the actual dependence / information structure.
 - Fit preprocessing, feature selection, and model tuning within each training fold.
 - Inspect fold-by-fold and regime-specific performance, rather than only an average. Three years may cover few independent regimes.
-- Evaluate metrics aligned with the objective. Prediction $R^2$ can be useful, but also inspect signal quality and, where a trading strategy is defined, costs, turnover, risk, and drawdowns.
+- Evaluate metrics aligned with the objective. Prediction $`R^2`$ can be useful, but also inspect signal quality and, where a trading strategy is defined, costs, turnover, risk, and drawdowns.
 
 ## Interview-Short Answer
 

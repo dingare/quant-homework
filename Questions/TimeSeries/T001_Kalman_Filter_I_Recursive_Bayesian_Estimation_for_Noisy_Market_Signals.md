@@ -65,75 +65,75 @@ So the filter is:
 
 State equation:
 
-$$
+```math
 x_t = F x_{t-1} + w_t
-$$
+```
 
 Observation equation:
 
-$$
+```math
 y_t = H x_t + v_t
-$$
+```
 
 with
 
-$$
+```math
 x_t \in \mathbb{R}^n,\qquad y_t \in \mathbb{R}^m
-$$
+```
 
 State vector:
 
-- dimension: $n \times 1$
+- dimension: $`n \times 1`$
 - meaning: latent economic object
 - why it appears: what we want is hidden
 
 Observation vector:
 
-- dimension: $m \times 1$
+- dimension: $`m \times 1`$
 - meaning: noisy market measurements
 - why it appears: the market reveals the state imperfectly
 
-Transition matrix $F$:
+Transition matrix $`F`$:
 
-- dimension: $n \times n$
+- dimension: $`n \times n`$
 - meaning: state dynamics
 - why it appears: latent states evolve over time
 
-Observation matrix $H$:
+Observation matrix $`H`$:
 
-- dimension: $m \times n$
+- dimension: $`m \times n`$
 - meaning: maps hidden state into observable signals
 - why it appears: each signal sees some linear projection of the state
 
-State covariance $P$:
+State covariance $`P`$:
 
-- dimension: $n \times n$
+- dimension: $`n \times n`$
 - meaning: uncertainty of the state estimate
 - why it appears: update size must depend on uncertainty
 
-Observation covariance $R$:
+Observation covariance $`R`$:
 
-- dimension: $m \times m$
+- dimension: $`m \times m`$
 - meaning: noise level and correlation of observed signals
 - why it appears: correlated signals should not be double counted
 
-Innovation covariance $S$:
+Innovation covariance $`S`$:
 
-$$
+```math
 S = HPH^\top + R
-$$
+```
 
-- dimension: $m \times m$
+- dimension: $`m \times m`$
 - meaning: total uncertainty of the observation surprise
 - why it appears: surprise comes from both state uncertainty and observation noise
 
-Kalman gain $K$:
+Kalman gain $`K`$:
 
-$$
+```math
 K = PH^\top(HPH^\top + R)^{-1}
-$$
+```
 
-- dimension: $n \times m$
+- dimension: $`n \times m`$
 - meaning: maps observation surprise back into latent-state correction
 - why it appears: innovation lives in observation space, but the update must occur in state space
 
@@ -141,55 +141,55 @@ $$
 
 Prediction:
 
-$$
+```math
 \hat{x}_{t|t-1}=F\hat{x}_{t-1|t-1}
-$$
+```
 
 Prediction covariance:
 
-$$
+```math
 P_{t|t-1}=FP_{t-1|t-1}F^\top+Q
-$$
+```
 
 Predicted observation:
 
-$$
+```math
 \hat{y}_{t|t-1}=H\hat{x}_{t|t-1}
-$$
+```
 
 Innovation:
 
-$$
+```math
 \nu_t=y_t-H\hat{x}_{t|t-1}
-$$
+```
 
 Innovation covariance:
 
-$$
+```math
 S_t=HP_{t|t-1}H^\top+R
-$$
+```
 
 Kalman gain:
 
-$$
+```math
 K_t=P_{t|t-1}H^\top(HP_{t|t-1}H^\top+R)^{-1}=P_{t|t-1}H^\top S_t^{-1}
-$$
+```
 
 Posterior update:
 
-$$
+```math
 \hat{x}_{t|t}=\hat{x}_{t|t-1}+K_t(y_t-H\hat{x}_{t|t-1})
-$$
+```
 
 Posterior covariance:
 
-$$
+```math
 P_{t|t}=(I-K_tH)P_{t|t-1}
-$$
+```
 
 For the one-dimensional latent state with two observations:
 
-$$
+```math
 H=
 \begin{bmatrix}
 1\\
@@ -200,22 +200,22 @@ H^\top=
 \begin{bmatrix}
 1&1
 \end{bmatrix}
-$$
+```
 
-If $P$ is scalar, then:
+If $`P`$ is scalar, then:
 
-$$
+```math
 PH^\top=
 P
 \begin{bmatrix}
 1&1
 \end{bmatrix}=
 P(1,1)
-$$
+```
 
 Also:
 
-$$
+```math
 HPH^\top=
 \begin{bmatrix}
 1\\
@@ -230,19 +230,19 @@ P
 1&1\\
 1&1
 \end{bmatrix}
-$$
+```
 
 So if
 
-$$
+```math
 S=HPH^\top+R
-$$
+```
 
 then:
 
-$$
+```math
 K=PH^\top S^{-1}=P(1,1)S^{-1}
-$$
+```
 
 This matters because two observation surprises are being aggregated into one latent-state correction.
 
@@ -258,9 +258,9 @@ The posterior is the revised belief after combining the two.
 
 The most important mental model is:
 
-$$
+```math
 \text{Posterior}=\text{Prior}+\text{Gain}\times\text{Surprise}
-$$
+```
 
 If surprise is zero, nothing changes.
 If surprise is large but noisy, update modestly.
@@ -271,23 +271,23 @@ If surprise is large and precise, update aggressively.
 The latent state lives in state space.
 The noisy measurements live in observation space.
 
-$H$ projects the latent state into observation space.
+$`H`$ projects the latent state into observation space.
 Innovation is the gap between actual observation and projected prediction.
 Kalman gain maps that gap back into state space.
 
 If one latent state is observed by two signals, then:
 
-$$
+```math
 (1,1)
-$$
+```
 
 is the informative direction because both coordinates move together when the latent state moves.
 
 By contrast:
 
-$$
+```math
 (1,-1)
-$$
+```
 
 mostly reflects disagreement between the two observations, which is usually observation noise rather than real state movement.
 
@@ -309,7 +309,7 @@ Why correlated observations should not be double counted:
 
 - resolved by recognizing that duplicated noise is not duplicated information
 
-Why $\rho\to1$ makes the second signal contribute almost no extra information:
+Why $`\rho\to1`$ makes the second signal contribute almost no extra information:
 
 - resolved by seeing that the second signal becomes mostly the same noisy direction as the first
 
@@ -352,7 +352,7 @@ Why the framework is so useful:
 - Why is the update based on innovation?
 - How does correlation between observations change the update?
 - Why is the filter Bayesian?
-- What is the geometry of $(1,1)$ versus $(1,-1)$?
+- What is the geometry of $`(1,1)`$ versus $`(1,-1)`$?
 - How is Kalman filtering related to recursive least squares?
 
 ## Common Mistakes
@@ -376,17 +376,17 @@ Why the framework is so useful:
 
 ## What to Remember
 
-$$
+```math
 \boxed{\text{Kalman filter = recursive Bayesian estimation for latent state extraction from noisy signals.}}
-$$
+```
 
-$$
+```math
 \boxed{\text{Gain tells you how much to move; innovation tells you why to move.}}
-$$
+```
 
-$$
+```math
 \boxed{\text{Correlated signals must be precision-weighted, not naively averaged.}}
-$$
+```
 
 ## Connections
 

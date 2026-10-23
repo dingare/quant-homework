@@ -46,7 +46,9 @@ def math_regions(text: str) -> tuple[list[tuple[int, str, str]], list[str]]:
     fence = None
     dollar_start = None
     body = []
-    for number, line in enumerate(text.splitlines(), start=1):
+    for number, line in enumerate(text.split("\n"), start=1):
+        if re.search(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", line):
+            errors.append(f"{number}: invisible control character can corrupt a TeX command")
         marker = FENCE_RE.match(line)
         if fence is not None:
             char, width, kind, start = fence
@@ -107,9 +109,16 @@ def check_text(text: str) -> list[str]:
                 errors.append(f"{line}: raw angle brackets in unprotected math; use \\lt / \\gt")
             if kind == "dollar-block" and re.search(r"^\s*=+\s*$", expression, re.M):
                 errors.append(f"{line}: standalone equals line can become a Markdown heading; use a math fence")
-        opened = re.findall(r"\\begin\{([^}]+)\}", expression)
-        closed = re.findall(r"\\end\{([^}]+)\}", expression)
-        if sorted(opened) != sorted(closed):
+        environments = []
+        invalid_environment = False
+        for slashes, action, name in re.findall(r"(\\+)(begin|end)\{([^}]+)\}", expression):
+            if len(slashes) % 2 == 0:
+                continue
+            if action == "begin":
+                environments.append(name)
+            elif not environments or environments.pop() != name:
+                invalid_environment = True
+        if environments or invalid_environment:
             errors.append(f"{line}: unmatched TeX environment")
     return errors
 
@@ -119,7 +128,7 @@ def check_file(path: Path) -> list[str]:
 
 
 def main() -> int:
-    arguments = sys.argv[1:] or ["DailyTests"]
+    arguments = sys.argv[1:] or ["Questions", "DailyTests"]
     paths = []
     for argument in arguments:
         path = Path(argument)

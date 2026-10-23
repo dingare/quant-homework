@@ -2,63 +2,63 @@
 
 ## Problem
 
-Let $X\sim N(0,1)$ and
+Let $`X\sim N(0,1)`$ and
 
-$$
+```math
 Y=2X+\varepsilon,qquad \varepsilon\sim N(0,4),\quad \varepsilon\perp X.
-$$
+```
 
-Find the population regression of $Y$ on $X$, including an intercept, when the
-sample is selected first by $X\gt 0$, and then instead by $Y\gt 0$.
+Find the population regression of $`Y`$ on $`X`$, including an intercept, when the
+sample is selected first by $`X\gt 0`$, and then instead by $`Y\gt 0`$.
 
 ## Selection on the Regressor
 
-Conditioning on $X\gt 0$ preserves $E[\varepsilon\mid X]=0$. Thus
+Conditioning on $`X\gt 0`$ preserves $`E[\varepsilon\mid X]=0`$. Thus
 
-$$
+```math
 \boxed{\alpha_{X\gt 0}=0,qquad \beta_{X\gt 0}=2}.
-$$
+```
 
 Truncating the regressor changes its distribution but does not break exogeneity.
 
 ## Selection on the Outcome
 
-Now low-$X$ observations survive only when $\varepsilon$ is unusually positive,
-inducing negative selected-sample covariance between $X$ and $\varepsilon$.
+Now low-$`X`$ observations survive only when $`\varepsilon`$ is unusually positive,
+inducing negative selected-sample covariance between $`X`$ and $`\varepsilon`$.
 
-Because $\mathrm{Var}(Y)=8$ and $\mathrm{Cov}(X,Y)=2$, write
+Because $`\mathrm{Var}(Y)=8`$ and $`\mathrm{Cov}(X,Y)=2`$, write
 
-$$
+```math
 X=\frac14Y+\eta,qquad \eta\perp Y,qquad \mathrm{Var}(\eta)=\frac12.
-$$
+```
 
 For a half-normal truncation,
 
-$$
+```math
 \mathrm{Var}(Y\mid Y\gt 0)=8\left(1-\frac2\pi\right).
-$$
+```
 
 Therefore,
 
-$$
+```math
 \mathrm{Cov}(X,Y\mid Y\gt 0)=2\left(1-\frac2\pi\right),
-$$
+```
 
-$$
+```math
 \mathrm{Var}(X\mid Y\gt 0)=1-\frac1\pi,
-$$
+```
 
 and
 
-$$
+```math
 \boxed{\beta_{Y\gt 0}=\frac{2(\pi-2)}{\pi-1}\approx1.066}.
-$$
+```
 
-Also $E[Y\mid Y\gt 0]=4/\sqrt\pi$ and $E[X\mid Y\gt 0]=1/\sqrt\pi$, so
+Also $`E[Y\mid Y\gt 0]=4/\sqrt\pi`$ and $`E[X\mid Y\gt 0]=1/\sqrt\pi`$, so
 
-$$
+```math
 \alpha_{Y\gt 0}=\frac{4-\beta_{Y\gt 0}}{\sqrt\pi}.
-$$
+```
 
 ## Interview Takeaways
 

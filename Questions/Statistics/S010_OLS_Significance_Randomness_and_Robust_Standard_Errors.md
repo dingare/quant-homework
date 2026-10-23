@@ -28,17 +28,17 @@ answer:
 
 ## Solution
 
-1. **Significance:** For a two-sided test of $H_0:\beta=0$, the statistic is $t=0.30/0.10=3$. With a valid standard error and a large-sample normal approximation, the two-sided p-value is about 0.0027 and the 95% interval is $0.30\pm1.96(0.10)=[0.104,0.496]$. This rejects at 5% and 1% under that approximation. Exact finite-sample significance requires degrees of freedom and the relevant assumptions; the prompt alone does not specify them.
+1. **Significance:** For a two-sided test of $`H_0:\beta=0`$, the statistic is $`t=0.30/0.10=3`$. With a valid standard error and a large-sample normal approximation, the two-sided p-value is about 0.0027 and the 95% interval is $`0.30\pm1.96(0.10)=[0.104,0.496]`$. This rejects at 5% and 1% under that approximation. Exact finite-sample significance requires degrees of freedom and the relevant assumptions; the prompt alone does not specify them.
 2. **What is random:** In frequentist inference, the population parameter beta is fixed but unknown. Across repeated samples, the estimator, estimated standard error, test statistic, and confidence interval are random. Conditional on fixed regressors, the response varies through the errors; with random design, regressors vary too. The observed estimate is one realization.
-3. **Bias:** Heteroskedasticity alone does not bias OLS. Conditional mean-zero errors, $E[\epsilon\mid X]=0$, plus full rank yield conditional unbiasedness. Changing conditional variance does not violate that mean restriction.
+3. **Bias:** Heteroskedasticity alone does not bias OLS. Conditional mean-zero errors, $`E[\epsilon\mid X]=0`$, plus full rank yield conditional unbiasedness. Changing conditional variance does not violate that mean restriction.
 4. **What breaks:** The usual homoskedastic variance formula and its standard errors are generally wrong; tests and confidence intervals based on them can be misleading. OLS also loses its general efficiency guarantee among linear unbiased estimators.
 5. **Robust standard errors:** They change estimated uncertainty, not the OLS coefficient. They do not fix endogeneity.
 6. **Why:** With an intercept, the population slope under suitable laws of large numbers is
 
-$$
+```math
 \text{plim}\hat\beta
 =\beta+\frac{Cov(x,\epsilon)}{Var(x)}.
-$$
+```
 
 A nonzero covariance shifts the probability limit. Adjusting the estimated variance does not remove that shift. Appropriate identification methods, such as valid instruments, require additional assumptions.
 

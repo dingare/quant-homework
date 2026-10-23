@@ -15,18 +15,18 @@
 
 Suppose
 
-$$
+```math
 X\sim N(0,1)
-$$
+```
 
-under the physical measure $\mathbb P$, and define a new measure $\mathbb Q$ by
+under the physical measure $`\mathbb P`$, and define a new measure $`\mathbb Q`$ by
 
-$$
+```math
 \frac{d\mathbb Q}{d\mathbb P}=
 e^{\theta X-\frac12\theta^2}.
-$$
+```
 
-What does this change of measure mean, what is the Radon-Nikodym derivative doing, and what is the distribution of $X$ under $\mathbb Q$?
+What does this change of measure mean, what is the Radon-Nikodym derivative doing, and what is the distribution of $`X`$ under $`\mathbb Q`$?
 
 ## Why This Topic Matters
 
@@ -44,82 +44,82 @@ Changing measure does not change the sample space. It changes the probability as
 
 The Radon-Nikodym derivative
 
-$$
+```math
 \frac{d\mathbb Q}{d\mathbb P}
-$$
+```
 
 is the state-by-state weight conversion factor from old probabilities to new probabilities.
 
-For any integrable random variable $Y$,
+For any integrable random variable $`Y`$,
 
-$$
+```math
 E_{\mathbb Q}[Y]=
 E_{\mathbb P}\left[Y\frac{d\mathbb Q}{d\mathbb P}\right].
-$$
+```
 
 ## Why the Exponential Term Is Valid
 
 To define a probability measure, the density ratio must integrate to one:
 
-$$
+```math
 E_{\mathbb P}\left[e^{\theta X-\frac12\theta^2}\right]=
 e^{-\frac12\theta^2}E_{\mathbb P}[e^{\theta X}].
-$$
+```
 
-Since $X\sim N(0,1)$ under $\mathbb P$,
+Since $`X\sim N(0,1)`$ under $`\mathbb P`$,
 
-$$
+```math
 E_{\mathbb P}[e^{\theta X}]=e^{\frac12\theta^2},
-$$
+```
 
 so
 
-$$
+```math
 E_{\mathbb P}\left[e^{\theta X-\frac12\theta^2}\right]=1.
-$$
+```
 
-The term $-\frac12\theta^2$ is just the normalization that makes total probability stay equal to one.
+The term $`-\frac12\theta^2`$ is just the normalization that makes total probability stay equal to one.
 
 ## Distribution of X Under Q
 
-Compute the moment generating function under $\mathbb Q$:
+Compute the moment generating function under $`\mathbb Q`$:
 
-$$
+```math
 E_{\mathbb Q}[e^{tX}]=
 E_{\mathbb P}\left[e^{tX}\frac{d\mathbb Q}{d\mathbb P}\right]=
 E_{\mathbb P}\left[e^{(t+\theta)X-\frac12\theta^2}\right].
-$$
+```
 
-Using the Gaussian MGF under $\mathbb P$:
+Using the Gaussian MGF under $`\mathbb P`$:
 
-$$
+```math
 E_{\mathbb P}[e^{(t+\theta)X}]=
 e^{\frac12(t+\theta)^2},
-$$
+```
 
 so
 
-$$
+```math
 E_{\mathbb Q}[e^{tX}]=
 e^{-\frac12\theta^2}e^{\frac12(t+\theta)^2}=
 e^{\theta t+\frac12 t^2}.
-$$
+```
 
-This is the MGF of a normal random variable with mean $\theta$ and variance $1$, hence
+This is the MGF of a normal random variable with mean $`\theta`$ and variance $`1`$, hence
 
-$$
+```math
 \boxed{X\sim N(\theta,1)\text{ under }\mathbb Q.}
-$$
+```
 
 ## Intuition
 
 The factor
 
-$$
+```math
 e^{\theta X}
-$$
+```
 
-tilts probability toward larger values of $X$ when $\theta\gt 0$ and toward smaller values when $\theta\lt 0$.
+tilts probability toward larger values of $`X`$ when $`\theta\gt 0`$ and toward smaller values when $`\theta\lt 0`$.
 
 So under the new measure, the same random variable looks like it has shifted mean.
 
@@ -145,4 +145,4 @@ Pricing often becomes tractable under a measure chosen so that discounted tradab
 
 Changing measure means reweighting the same world.
 
-The Radon-Nikodym derivative converts expectations from $\mathbb P$ to $\mathbb Q$, and in this Gaussian example it shifts the mean from $0$ to $\theta$ while leaving the variance unchanged.
+The Radon-Nikodym derivative converts expectations from $`\mathbb P`$ to $`\mathbb Q`$, and in this Gaussian example it shifts the mean from $`0`$ to $`\theta`$ while leaving the variance unchanged.

@@ -19,7 +19,7 @@ P(HTT\text{ before }HH).
 
 ## Solution
 
-Track the longest current suffix that is also a prefix of a target: empty, H, or HT. Let their HTT-win probabilities be $p_0,p_H,p_{HT}$. The absorbing values are 1 for HTT and 0 for HH.
+Track the longest current suffix that is also a prefix of a target: empty, H, or HT. Let their HTT-win probabilities be $`p_0,p_H,p_{HT}`$. The absorbing values are 1 for HTT and 0 for HH.
 
 ```math
 \begin{aligned}
@@ -29,15 +29,15 @@ p_{HT} &= \tfrac12p_H+\tfrac12\cdot1.
 \end{aligned}
 ```
 
-The transition HT followed by H returns to state H: the trailing H can begin either future pattern. Thus $p_0=p_H$ and
+The transition HT followed by H returns to state H: the trailing H can begin either future pattern. Thus $`p_0=p_H`$ and
 
-$$
+```math
 p_H=\tfrac14p_H+\tfrac14,
 \qquad
 \boxed{P(HTT\text{ before }HH)=\tfrac13}.
-$$
+```
 
-The complementary HH-win probability is $2/3$. Absorption occurs almost surely; for example, independent blocks of two flips each have probability 1/4 of being HH, so the chance of avoiding HH forever is zero.
+The complementary HH-win probability is $`2/3`$. Absorption occurs almost surely; for example, independent blocks of two flips each have probability 1/4 of being HH, so the chance of avoiding HH forever is zero.
 
 ## Intuition
 

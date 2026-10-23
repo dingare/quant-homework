@@ -12,13 +12,13 @@
 
 ## Core Question
 
-Let $X_1,X_2,\ldots$ be iid with
+Let $`X_1,X_2,\ldots`$ be iid with
 
-$$
+```math
 P(X_i=1)=P(X_i=-1)=\frac12,
 \qquad
 S_n=\sum_{i=1}^n X_i.
-$$
+```
 
 Stop at
 
@@ -28,11 +28,11 @@ Stop at
 
 Define
 
-$$
+```math
 Y=\sum_{i=1}^{\tau}iX_i.
-$$
+```
 
-Find the probability of hitting $+2$ first, $E[\tau]$, and $E[Y]$. Generalize the last result to $Y_f=\sum_{i=1}^{\tau}f(i)X_i$ for deterministic $f$ under suitable integrability.
+Find the probability of hitting $`+2`$ first, $`E[\tau]`$, and $`E[Y]`$. Generalize the last result to $`Y_f=\sum_{i=1}^{\tau}f(i)X_i`$ for deterministic $`f`$ under suitable integrability.
 
 ## Hint
 
@@ -48,17 +48,17 @@ The event $`\{\tau\ge i\}`$ is known before observing $`X_i`$.
 
 ### Hitting Probability
 
-Let $h=P(S_\tau=2)$. Since $S_n$ is a martingale and the stopped walk is bounded,
+Let $`h=P(S_\tau=2)`$. Since $`S_n`$ is a martingale and the stopped walk is bounded,
 
-$$
+```math
 0=E[S_\tau]=2h-1(1-h).
-$$
+```
 
 Therefore
 
-$$
+```math
 \boxed{h=\frac13}.
-$$
+```
 
 This also follows from the fair gambler's-ruin formula: the start is one step above the lower barrier in an interval of width three.
 
@@ -66,30 +66,30 @@ This also follows from the fair gambler's-ruin formula: the start is one step ab
 
 For a symmetric random walk,
 
-$$
+```math
 S_n^2-n
-$$
+```
 
 is a martingale. Optional stopping gives
 
-$$
+```math
 E[\tau]=E[S_\tau^2].
-$$
+```
 
 Using the terminal probabilities,
 
-$$
+```math
 E[S_\tau^2]
 =4\left(\frac13\right)
 +1\left(\frac23\right)
 =2.
-$$
+```
 
 Hence
 
-$$
+```math
 \boxed{E[\tau]=2}.
-$$
+```
 
 ### Expected Weighted Sum
 
@@ -114,15 +114,15 @@ E[X_i\mid\mathcal F_{i-1}]
 
 Summing under the required integrability condition gives
 
-$$
+```math
 \boxed{E[Y]=0}.
-$$
+```
 
 This is a martingale-transform argument: the weight $`i\mathbf1_{\{\tau\ge i\}}`$ is predictable.
 
 ### Generalization
 
-For any deterministic function $f$ such that the stopped sum is integrable and expectation may be interchanged with summation,
+For any deterministic function $`f`$ such that the stopped sum is integrable and expectation may be interchanged with summation,
 
 ```math
 Y_f=\sum_{i=1}^{\tau}f(i)X_i
@@ -131,27 +131,27 @@ Y_f=\sum_{i=1}^{\tau}f(i)X_i
 
 The same predictable-weight calculation yields
 
-$$
+```math
 \boxed{E[Y_f]=0}.
-$$
+```
 
 A sufficient condition is
 
-$$
+```math
 E\left[\sum_{i=1}^{\tau}|f(i)|\right]\lt\infty.
-$$
+```
 
-## Why Substituting $E[\tau]$ Is Invalid
+## Why Substituting $`E[\tau]`$ Is Invalid
 
 It is generally wrong to replace the random upper limit by its mean and write
 
-$$
+```math
 E\left[\sum_{i=1}^{\tau}iX_i\right]
 \stackrel{\text{wrong}}{=}
 E\left[\sum_{i=1}^{E[\tau]}iX_i\right].
-$$
+```
 
-Here $E[\tau]=2$, but $\tau$ is not identically $2$, and it depends on the realized increments. Nonlinear functions and randomly stopped sums are not determined by the mean stopping time. The answer is zero because the inclusion decision for $X_i$ is predictable, not because $\tau$ can be replaced by $2$.
+Here $`E[\tau]=2`$, but $`\tau`$ is not identically $`2`$, and it depends on the realized increments. Nonlinear functions and randomly stopped sums are not determined by the mean stopping time. The answer is zero because the inclusion decision for $`X_i`$ is predictable, not because $`\tau`$ can be replaced by $`2`$.
 
 ## Intuition
 
@@ -159,18 +159,18 @@ Stopping decides whether the next fair increment will be included before that in
 
 ## Interview Takeaways
 
-- Use $S_n$ for hitting probabilities and $S_n^2-n$ for expected duration in a fair walk.
+- Use $`S_n`$ for hitting probabilities and $`S_n^2-n`$ for expected duration in a fair walk.
 - Expand a stopped sum with survival indicators $`\mathbf1_{\{\tau\ge i\}}`$.
 - Check that each multiplier is measurable before the increment it multiplies.
 - State an integrability condition before exchanging an infinite sum and expectation.
 
 ## Finance / Market Application
 
-A trading strategy may choose whether to hold a position at time $i$ using information available at time $i-1$. Multiplying a martingale return by such a predictable exposure still has zero expected gain, provided the strategy is integrable. Adaptive timing alone does not manufacture alpha.
+A trading strategy may choose whether to hold a position at time $`i`$ using information available at time $`i-1`$. Multiplying a martingale return by such a predictable exposure still has zero expected gain, provided the strategy is integrable. Adaptive timing alone does not manufacture alpha.
 
 ## What to Remember
 
-$$
+```math
 \boxed{
 P(S_\tau=2)=\frac13,
 \qquad
@@ -178,7 +178,7 @@ E[\tau]=2,
 \qquad
 E[Y]=0
 }.
-$$
+```
 
 ## Related questions and knowledge
 

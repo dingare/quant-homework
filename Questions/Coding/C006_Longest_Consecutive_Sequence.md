@@ -34,15 +34,15 @@ def longest_consecutive(nums):
     return best
 ```
 
-Each distinct value is scanned as part of exactly one run. Under expected constant-time hashing, total time is $O(n)$ and auxiliary space is $O(n)$. Empty input returns zero; duplicates are removed.
+Each distinct value is scanned as part of exactly one run. Under expected constant-time hashing, total time is $`O(n)`$ and auxiliary space is $`O(n)`$. Empty input returns zero; duplicates are removed.
 
 ### Boundary-Length Map: Complete the Interview Idea
 
 For each new x, let left and right be the lengths of the intervals ending at x-1 and starting at x+1. Merge them with x:
 
-$$
+```math
 length=left+right+1.
-$$
+```
 
 **Invariant:** each interval's two endpoints store its full length. Interior entries may be stale. If x is unseen, any present neighbor x-1 must be a right endpoint and any present neighbor x+1 must be a left endpoint; otherwise x would already belong to that interval.
 
@@ -63,7 +63,7 @@ def longest_consecutive_boundary(nums):
     return best
 ```
 
-Expected $O(n)$ time and $O(n)$ space. Store x to track membership, update both outer endpoints, and skip duplicates.
+Expected $`O(n)`$ time and $`O(n)`$ space. Store x to track membership, update both outer endpoints, and skip duplicates.
 
 ## Common Mistakes
 

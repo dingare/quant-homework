@@ -15,23 +15,23 @@
 
 Suppose the hidden state evolves as
 
-$$
+```math
 x_t=A_{s_t}x_{t-1}+w_t
-$$
+```
 
 where
 
-$$
+```math
 s_t\in\{0,1\}
-$$
+```
 
 is an unobserved Markov regime, and observations satisfy
 
-$$
+```math
 y_t=Hx_t+v_t.
-$$
+```
 
-How do we estimate both the latent factor $x_t$ and the hidden regime $s_t$ at the same time?
+How do we estimate both the latent factor $`x_t`$ and the hidden regime $`s_t`$ at the same time?
 
 ## Why This Topic Matters
 
@@ -54,8 +54,8 @@ This note extends that idea by allowing several candidate models and continuousl
 
 There are now two hidden objects:
 
-- a continuous latent state $x_t$,
-- a discrete hidden regime $s_t$.
+- a continuous latent state $`x_t`$,
+- a discrete hidden regime $`s_t`$.
 
 Each regime has its own dynamics, such as:
 
@@ -78,12 +78,12 @@ That is why this feels like Bayesian model selection running in real time.
 
 ## Conceptual Filtering Loop
 
-At time $t-1$, carry forward:
+At time $`t-1`$, carry forward:
 
 - the posterior state estimate for each regime path,
 - the posterior probability of each regime.
 
-At time $t$:
+At time $`t`$:
 
 1. Use the regime transition matrix to predict regime probabilities.
 2. For each candidate regime, run the corresponding Kalman prediction and update.
