@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-24: Archived the [October 23 drill](DailyTests/2026-10-23.md). Filed worked notes for [C020 — minimum deletions / LIS](Questions/Coding/C020_Minimum_Deletions_for_a_Strictly_Increasing_Subsequence.md) and [P036 — live Poisson arrivals](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md). Both are Partial / Hinted; Q1 exact user code is verified. Q3 / S024 and Q4 / O010 remain Pending with original prompts only. Resume Q3 next; all actual times unknown. Four canonical files were added, including two unattempted prompts; this does not imply four completed questions.
+
 - 2026-10-23: Added [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md), an English knowledge card with the OLS flowchart, step-by-step matrix derivations, degrees of freedom, CI / PI, and LLN / CLT / normality conditions. Formulas and assumptions reviewed; question counts and assessment records are unchanged.
 
 - 2026-10-22: Audited formula rendering across all 113 question notes, standardized math delimiters, repaired three corrupted matrix commands, and extended publication checks to the full question library. See the [math audit](Tools/MathMarkdownGuide.md#october-22-question-library-audit).

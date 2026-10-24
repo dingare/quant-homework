@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [October 23 drill, archived October 24](DailyTests/2026-10-23.md) — Q1 and Q2 Partial / Hinted: LIS state compression with verified user code; Poisson retention, transition and limiting law supplied. **Q3 and Q4 Pending**, original prompts preserved without hints or solutions; resume Q3 next.
+
 - [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md) — **all four questions discussed; none Pending**. BFS resource states, shared-parameter risk, sector demeaning / omitted-variable bias, probability calibration and scoring. Independent subparts, arithmetic/writing clarifications, practical evaluation and hit-rate-curve distinctions preserved.
 
 - [October 18 drill](DailyTests/2026-10-18.md) — maximum-sum tree paths, Gaussian sign prediction, duplicated regression observations and first-collision timing; all four Partial / Hinted, with user clarifications preserved.
@@ -33,6 +35,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
+
+- [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md)
 
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
@@ -72,6 +76,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P035 — Shared Unknown Win Probability and Predictive Risk](Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
 
 ## Statistics
+
+- [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md) — Pending; prompt only.
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md)
@@ -114,6 +120,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Optimization
 
+- [O010 — Single-Asset Position with Proportional Trading Costs](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md) — Pending; prompt only.
+
 - [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
@@ -125,6 +133,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
+
+- [C020 — Minimum Deletions for a Strictly Increasing Subsequence](Questions/Coding/C020_Minimum_Deletions_for_a_Strictly_Increasing_Subsequence.md)
 
 - [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md)
 - [C002 — Shortest Subarray at Least K with a Monotonic Deque](Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)

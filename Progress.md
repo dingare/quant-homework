@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 34 |
-| Statistics | S | 23 |
+| Probability | P | 35 |
+| Statistics | S | 24 |
 | Time Series | T | 12 |
-| Optimization | O | 9 |
-| Coding | C | 19 |
+| Optimization | O | 10 |
+| Coding | C | 20 |
 | Stochastic Calculus | SC | 6 |
 | Rates Research | R | 1 |
-| Total | All | 113 |
+| Total | All | 117 |
 
 ## Knowledge Cards
 
@@ -85,3 +85,5 @@ Track canonical question/subject files by category. These are filing counts, not
 - 2026-10-22: Finished Q4 of the [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md). **All four main questions discussed; none Pending.** Q4 independent calibration/core answers and user-confirmed arithmetic/writing clarifications preserved; overall Partial / Hinted without a new K/R/I gap. Added probability scoring, calibration/decision evaluation and hit-rate-curve discussion with references. Continuation of one set, not a new daily drill; all actual times unknown, subject-note and knowledge-card counts unchanged.
 
 - 2026-10-22: Reorganized 12 DailyTests / 73 item records into linked assessment logs and filed 50 additional canonical question notes (63 → 113 files). Reused existing notes, grouped dated retests/variants, and added reciprocal concept/card links. All results, timing, continuation dates, pending follow-ups and verification limits are retained; no new solves or mastery inferred. Knowledge cards remain six.
+
+- 2026-10-24: Archived the [October 23 drill](DailyTests/2026-10-23.md). Added worked C020 / P036 and prompt-only Pending S024 / O010 (113 → 117 canonical files). Q1 and Q2 are Partial / Hinted; Q1 exact user code verified without repair. Q3 and Q4 are unattempted, not completed or mastered. K/R unresolved; all actual times unknown. Knowledge-card counts unchanged.

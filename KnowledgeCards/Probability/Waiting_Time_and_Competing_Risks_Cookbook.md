@@ -299,6 +299,8 @@ Erlang 是一串顺序阶段；hyperexponential 是初始时随机选择不同 r
 
 ## Related interview questions
 
+- [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](../../Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md) — Time-dependent retention, exact Poisson thinning proof, and old survivors versus new arrivals; guided assessment is separate.
+
 - [P023 — Coin Pattern Waiting Times](../../Questions/Probability/P023_Coin_Pattern_Waiting_Times.md)
 - [P026 — Finite-Horizon Optimal Stopping](../../Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
 - [P028 — Branching Process Extinction](../../Questions/Probability/P028_Branching_Process_Extinction.md)
