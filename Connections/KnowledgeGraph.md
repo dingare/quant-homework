@@ -15,7 +15,7 @@ Cross-topic relationship map for finalized concepts and interview themes.
 
 ## Relationship Notes
 
-- [线性回归：期望、方差、残差与预测区间](../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) ↔ [S017](../Questions/Statistics/S017_Confidence_and_Prediction_Intervals.md), [S001](../Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md), [S010](../Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md): 重复抽样 → OLS 估计误差 → 投影与残差 → 自由度与标准误 → 均值 CI / 新观测 PI → LLN、CLT 与精确正态推断。
+- [OLS: Expectation, Variance, Residuals, and Prediction](../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) ↔ [S017](../Questions/Statistics/S017_Confidence_and_Prediction_Intervals.md), [S001](../Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md), [S010](../Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md): Repeated sampling → OLS estimation error → Projections and residuals → Degrees of freedom and standard errors → Mean CI / new-observation PI → LLN, CLT, and exact normal inference.
 
 - [C005 — Q1 drill answer](../Questions/Coding/C005_Maximum_Subarray_Sum_Fixed_and_Minimum_Length.md) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Window invariant → Prefix difference → Eligible running minimum
 - [P018 — Q2 drill answer](../Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md#interview-drill--second-ace-before-position-20) ↔ [2026-10-06 timed drill](../DailyTests/2026-10-06.md): Conditional sample space → Complement counting → Order statistics

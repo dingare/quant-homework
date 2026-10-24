@@ -164,7 +164,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ### Statistics
 
-- [线性回归：期望、方差、残差与预测区间](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — 中文流程图与分步矩阵推导；区分真实误差、残差、两种样本方差、均值 CI / 新观测 PI，以及 LLN、CLT 与正态条件。
+- [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations; true errors versus residuals, feature versus error variance, mean CI / new-observation PI, LLN, CLT, and normality conditions.
 
 ### Probability
 
