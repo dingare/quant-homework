@@ -22,7 +22,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | --- | ---: |
 | Probability | 5 |
 | Linear Algebra | 1 |
-| Total | 6 |
+| Statistics | 1 |
+| Total | 7 |
 
 ## Notes
 

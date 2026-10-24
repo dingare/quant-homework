@@ -56,4 +56,5 @@ The conditional response variance remains $`\sigma^2`$; estimator uncertainty in
 
 ## Related questions and knowledge
 
+- [OLS: Expectation, Variance, Residuals, and Prediction](../../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations linking estimation error, residuals, degrees of freedom, mean CI / new-observation PI, and normality conditions.
 - [S010 — OLS Significance, Randomness, and Robust Standard Errors](S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md) — Sampling uncertainty and the target of an interval.

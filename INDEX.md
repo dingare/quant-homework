@@ -162,6 +162,10 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Knowledge Cards
 
+### Statistics
+
+- [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations; true errors versus residuals, feature versus error variance, mean CI / new-observation PI, LLN, CLT, and normality conditions.
+
 ### Probability
 
 - [Indicator Random Variables Cookbook](KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md)

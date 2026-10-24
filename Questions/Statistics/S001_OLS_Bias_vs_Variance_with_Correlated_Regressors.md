@@ -120,4 +120,5 @@ FWL, Residualization, Partial Correlation, Ridge, PCA, Factor Models, Signal Att
 
 ## Related questions and knowledge
 
+- [OLS: Expectation, Variance, Residuals, and Prediction](../../KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart, estimation error versus bias, conditional covariance, degrees of freedom, and prediction inference.
 - [S016 — Omitted-Variable Bias](S016_Omitted_Variable_Bias.md) — Projection coefficients, confounding and omitted-variable bias.

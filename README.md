@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-23: Added [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md), an English knowledge card with the OLS flowchart, step-by-step matrix derivations, degrees of freedom, CI / PI, and LLN / CLT / normality conditions. Formulas and assumptions reviewed; question counts and assessment records are unchanged.
+
 - 2026-10-22: Audited formula rendering across all 113 question notes, standardized math delimiters, repaired three corrupted matrix commands, and extended publication checks to the full question library. See the [math audit](Tools/MathMarkdownGuide.md#october-22-question-library-audit).
 
 - 2026-10-22: Reorganized all 12 [DailyTests](DailyTests/INDEX.md) into linked assessment logs. Filed 50 additional canonical entries in the [question library](INDEX.md), reused existing notes for earlier questions and repeated variants, and retained all 73 item records, ratings, timing, pending follow-ups and old item anchors. Added reciprocal question / knowledge-card links. This is archival filing, not 50 new attempts or newly mastered topics.
