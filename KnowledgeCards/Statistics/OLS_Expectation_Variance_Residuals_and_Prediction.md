@@ -8,7 +8,7 @@
 - Source: [2026-10-11 Q7](../../DailyTests/2026-10-11.md#q7--confidence-vs-prediction-intervals) and the subsequent regression review discussion.
 - Status: Review reference containing the discussed flowchart and derivations; this card does not change the original assessment record.
 
-**Reading order: start with the flowchart, then Sections 1–6. Expand the random-design discussion in Section 7 as needed.** Section 8 distinguishes the roles of normality, the law of large numbers (LLN), and the central limit theorem (CLT).
+**Reading order: start with the flowchart, then Sections 1–6. Section 7 provides an optional random-design extension.** Section 8 distinguishes the roles of normality, the law of large numbers (LLN), and the central limit theorem (CLT).
 
 ## 1. Repeated sampling: what is the expectation taken over?
 
@@ -300,8 +300,7 @@ E\!\left[\sum_i(X_i-\bar X)^2\right]
 
 Dividing by $`n-1`$ therefore gives an unbiased estimator. If the population mean $`\mu`$ is known, $`\sum_i(X_i-\mu)^2/n`$ is already unbiased. Neither result requires normality.
 
-<details>
-<summary>Matrix centering connects the two degrees-of-freedom calculations</summary>
+### Matrix centering connects the two degrees-of-freedom calculations
 
 Write $`v=(X_1,\ldots,X_n)^\top`$ and define the centering matrix:
 
@@ -319,8 +318,6 @@ E(v^\top Cv)=\sigma_x^2\mathrm{tr}(C)=(n-1)\sigma_x^2.
 ```
 
 Sample centering removes the constant direction. General OLS residualization removes the entire $`p`$-dimensional column space of $`X`$. The corresponding degrees of freedom are $`n-1`$ and $`n-p`$.
-
-</details>
 
 ## 6. Estimating a mean versus predicting a new observation
 
@@ -394,8 +391,7 @@ The vector input is then $`x_0=(1,u_0)^\top`$. Mean-estimation uncertainty grows
 
 ## 7. Extension: unconditional covariance when X is random
 
-<details>
-<summary>Expand: total covariance, training-point variability, and fixed new inputs</summary>
+This extension covers total covariance, training-point variability, and fixed new inputs.
 
 ### Condition first, then average over the design
 
@@ -487,8 +483,6 @@ For a fixed new feature vector $`u_0`$, write the full input as $`x_0=(1,u_0^\to
 ```
 
 With the additional moment-convergence conditions just described, the same approximation applies to $`\mathrm{Var}(\hat m_0)`$. At a fixed new input, the target $`m_0=x_0^\top\beta`$ is fixed. Do not add the cross-input true-mean variation $`b^\top\Sigma_xb`$.
-
-</details>
 
 ## 8. What do normality, the LLN, and the CLT each provide?
 
