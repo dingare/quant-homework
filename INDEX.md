@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [October 23 drill, archived October 24](DailyTests/2026-10-23.md) — Q1 and Q2 Partial / Hinted: LIS state compression with verified user code; Poisson retention, transition and limiting law supplied. **Q3 and Q4 Pending**, original prompts preserved without hints or solutions; resume Q3 next.
+- [October 23 drill, continued through October 25](DailyTests/2026-10-23.md) — **All four main questions discussed; none Pending.** Q1–Q3 Partial / Hinted, preserving Q1 verified user code and Q3 independent correct decisions. Q4 Cold Solve by user report, written working unverified; typing inconvenience is not a knowledge gap. Full S024 / O010 references are filed.
 
 - [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md) — **all four questions discussed; none Pending**. BFS resource states, shared-parameter risk, sector demeaning / omitted-variable bias, probability calibration and scoring. Independent subparts, arithmetic/writing clarifications, practical evaluation and hit-rate-curve distinctions preserved.
 
@@ -77,7 +77,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Statistics
 
-- [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md) — Pending; prompt only.
+- [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md)
@@ -120,7 +120,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Optimization
 
-- [O010 — Single-Asset Position with Proportional Trading Costs](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md) — Pending; prompt only.
+- [O010 — Single-Asset Position with Proportional Trading Costs](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md)
 
 - [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)

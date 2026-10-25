@@ -4,11 +4,11 @@ Dated interview performance logs. Full prompts, solutions and reusable discussio
 
 ## Sessions
 
-The October 23 set is partially discussed; resume Q3, then Q4. The earlier twelve logs through October 20 retain their October 22 migration history.
+The October 23 set was completed in discussion through October 25; no main item remains Pending. Q4 is an independent solve by user report, with written working unverified. The earlier twelve logs through October 20 retain their October 22 migration history.
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
-| [2026-10-23](2026-10-23.md) | Four-question drill; archived October 24 after pausing following Q2 | Q1–Q2 Partial / Hinted; Q3–Q4 Pending | Q1 exact user code verified after state/update explanation; Q2 full derivation supplied; resume Q3 next; actual times unknown |
+| [2026-10-23](2026-10-23.md) | Four-question drill, continued through October 25; all discussed | Q1–Q3 Partial / Hinted; Q4 Cold Solve (user-reported, written working unverified); none Pending | Q1 user code verified; Q3 correct decisions preserved with supplied derivations; Q4 typing-burden clarification supersedes initial assisted rating; actual times unknown |
 | [2026-10-20](2026-10-20.md) | Four-question drill, continued October 21–22; all discussed | Q1–Q4 Partial / Hinted overall; independent subparts preserved; none Pending | Q3 part 1 Cold Solve; Q4 calibration/core scoring and accuracy-limit interpretation correct, arithmetic/writing clarifications preserved; probability evaluation and hit-rate/calibration curves discussed; actual times unknown |
 | [2026-10-18](2026-10-18.md) | Four-question drill; all discussed | Q1–Q4 Partial / Hinted | Tree-path states, Gaussian sign geometry, duplicated-data inference and collision timing; Q1 rewrite self-reported/unverified; Q3 arithmetic and Q4 known-method clarifications preserved; actual times unknown |
 | [2026-10-17](2026-10-17.md) | Four-question drill; all discussed | Q1–Q4 Partial / Hinted overall; Q2.1 and Q3.1 Cold Solve | Heap state updates (I), long-cycle counting, exact endpoint bounds, signal smoothing / costs; final Q1 user repair unsubmitted; actual times unknown |
