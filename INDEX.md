@@ -172,6 +172,10 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Knowledge Cards
 
+### Coding
+
+- [Dynamic Programming — 经典逻辑题复习包](KnowledgeCards/Coding/DynamicProgramming/README.md) — 状态设计与正确性、七道经典题、今晚核心安排、分级提示、独立解答与可运行验证；不改变历史评分和题库计数。
+
 ### Statistics
 
 - [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations; true errors versus residuals, feature versus error variance, mean CI / new-observation PI, LLN, CLT, and normality conditions.
