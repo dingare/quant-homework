@@ -10,6 +10,8 @@
 
 **Reading order: start with the flowchart, then Sections 1–6. Section 7 provides an optional random-design extension.** Section 8 distinguishes the roles of normality, the law of large numbers (LLN), and the central limit theorem (CLT).
 
+For explicit coefficient formulas with two correlated features, see [Two correlated predictors: coefficients and derivation](#two-correlated-predictors-coefficients-and-derivation).
+
 ## 1. Repeated sampling: what is the expectation taken over?
 
 First hold the design matrix $`X`$ fixed. The true coefficient vector $`\beta`$ and error variance $`\sigma^2`$ are fixed but unknown. Each new error vector $`\varepsilon`$ produces a new response vector $`y`$, and therefore new coefficient estimates, fitted values, residuals, and a new variance estimate.
@@ -319,6 +321,207 @@ E(v^\top Cv)=\sigma_x^2\mathrm{tr}(C)=(n-1)\sigma_x^2.
 
 Sample centering removes the constant direction. General OLS residualization removes the entire $`p`$-dimensional column space of $`X`$. The corresponding degrees of freedom are $`n-1`$ and $`n-p`$.
 
+### Two correlated predictors: coefficients and derivation
+
+Consider a regression with an intercept and two scalar features:
+
+```math
+y=\alpha+\beta_1x_1+\beta_2x_2+\varepsilon,
+\qquad E(\varepsilon\mid x_1,x_2)=0.
+```
+
+Assume finite second moments. Define the feature standard deviations, feature correlation, and feature–response covariances:
+
+```math
+\sigma_j^2=\mathrm{Var}(x_j)\gt0,\qquad
+\rho=\mathrm{Corr}(x_1,x_2),\qquad |\rho|\lt1,
+```
+
+```math
+c_1=\mathrm{Cov}(x_1,y),\qquad
+c_2=\mathrm{Cov}(x_2,y).
+```
+
+**The correlation between the two features alone does not determine either coefficient.** The coefficients also depend on their relationships with the response and on their scales. Here $`\beta_1,\beta_2`$ are population coefficients; the exact sample OLS estimates are given separately below. The feature variances $`\sigma_1^2,\sigma_2^2`$ are distinct from the regression error variance $`\sigma^2`$ used elsewhere in this card.
+
+#### Step 1: take the covariance of the model with each feature
+
+The mean-zero condition implies $`\mathrm{Cov}(x_j,\varepsilon)=0`$. The intercept is constant, and $`\mathrm{Cov}(x_1,x_2)=\rho\sigma_1\sigma_2`$. Therefore:
+
+```math
+c_1=\sigma_1^2\beta_1+\rho\sigma_1\sigma_2\beta_2,
+```
+
+```math
+c_2=\rho\sigma_1\sigma_2\beta_1+\sigma_2^2\beta_2.
+```
+
+These are the population normal equations. In matrix form:
+
+```math
+\underbrace{
+\begin{pmatrix}
+\sigma_1^2&\rho\sigma_1\sigma_2\\
+\rho\sigma_1\sigma_2&\sigma_2^2
+\end{pmatrix}}_{\Sigma_x}
+\begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}
+=\begin{pmatrix}c_1\\c_2\end{pmatrix}.
+```
+
+#### Step 2: invert the two-by-two covariance matrix
+
+Its determinant is:
+
+```math
+\det(\Sigma_x)=\sigma_1^2\sigma_2^2(1-\rho^2)\gt0.
+```
+
+Using the two-by-two inverse formula:
+
+```math
+\Sigma_x^{-1}
+=\frac1{1-\rho^2}
+\begin{pmatrix}
+1/\sigma_1^2&-\rho/(\sigma_1\sigma_2)\\
+-\rho/(\sigma_1\sigma_2)&1/\sigma_2^2
+\end{pmatrix}.
+```
+
+Multiply the inverse by the feature–response covariance vector:
+
+```math
+\begin{pmatrix}\beta_1\\\beta_2\end{pmatrix}
+=\Sigma_x^{-1}\begin{pmatrix}c_1\\c_2\end{pmatrix}.
+```
+
+The resulting coefficients are:
+
+```math
+\boxed{\beta_1=
+\frac{c_1/\sigma_1^2-\rho c_2/(\sigma_1\sigma_2)}{1-\rho^2}.}
+```
+
+```math
+\boxed{\beta_2=
+\frac{c_2/\sigma_2^2-\rho c_1/(\sigma_1\sigma_2)}{1-\rho^2}.}
+```
+
+The intercept is $`\alpha=E(y)-\beta_1E(x_1)-\beta_2E(x_2)`$. No normality or homoskedasticity assumption is needed for these population coefficient identities. More generally, the same equations define the best linear projection when its residual is orthogonal to the features; without exogeneity, that projection need not recover structural coefficients.
+
+#### Step 3: simplify when both features have unit variance
+
+If $`\sigma_1=\sigma_2=1`$, the two equations become:
+
+```math
+c_1=\beta_1+\rho\beta_2,\qquad
+c_2=\rho\beta_1+\beta_2.
+```
+
+Subtract $`\rho`$ times the second equation from the first to eliminate $`\beta_2`$:
+
+```math
+c_1-\rho c_2=(1-\rho^2)\beta_1.
+```
+
+Reverse their roles to eliminate $`\beta_1`$:
+
+```math
+c_2-\rho c_1=(1-\rho^2)\beta_2.
+```
+
+Thus, for unit-variance features:
+
+```math
+\boxed{\beta_1=\frac{c_1-\rho c_2}{1-\rho^2},\qquad
+\beta_2=\frac{c_2-\rho c_1}{1-\rho^2}.}
+```
+
+Unit feature variance does not turn $`c_j`$ into a correlation unless the response also has unit variance. If $`\sigma_y^2=\mathrm{Var}(y)\gt0`$, let $`r_{jy}=\mathrm{Corr}(x_j,y)`$. The general formulas can also be written as:
+
+```math
+\beta_1=\frac{\sigma_y}{\sigma_1}
+\frac{r_{1y}-\rho r_{2y}}{1-\rho^2},\qquad
+\beta_2=\frac{\sigma_y}{\sigma_2}
+\frac{r_{2y}-\rho r_{1y}}{1-\rho^2}.
+```
+
+When the response and both features are all standardized, the scale ratios are 1. For example, $`\rho=0.5`$, $`r_{1y}=0.6`$, and $`r_{2y}=0.4`$ give:
+
+```math
+\beta_1=\frac{0.6-0.5(0.4)}{1-0.5^2}
+=\frac8{15}\approx0.5333,
+\qquad
+\beta_2=\frac{0.4-0.5(0.6)}{1-0.5^2}
+=\frac2{15}\approx0.1333.
+```
+
+These are joint-regression coefficients: they adjust each feature's relationship with the response for the other feature.
+
+#### Step 4: translate population covariances into exact sample OLS formulas
+
+For a sample of $`n\gt3`$ observations, define the centered sample covariances:
+
+```math
+S_{jk}=\frac1{n-1}\sum_i(x_{ij}-\bar x_j)(x_{ik}-\bar x_k),
+```
+
+```math
+S_{jy}=\frac1{n-1}\sum_i(x_{ij}-\bar x_j)(y_i-\bar y),
+\qquad s_j^2=S_{jj},\qquad
+r_{12}=\frac{S_{12}}{s_1s_2}.
+```
+
+With $`s_1,s_2\gt0`$ and $`|r_{12}|\lt1`$, the centered sample normal equations give:
+
+```math
+\begin{pmatrix}\hat\beta_1\\\hat\beta_2\end{pmatrix}
+=\begin{pmatrix}S_{11}&S_{12}\\S_{12}&S_{22}\end{pmatrix}^{-1}
+\begin{pmatrix}S_{1y}\\S_{2y}\end{pmatrix}.
+```
+
+The factors of $`n-1`$ cancel between the feature cross-product matrix and the feature–response cross-product vector. Consequently:
+
+```math
+\hat\beta_1=
+\frac{S_{1y}/s_1^2-r_{12}S_{2y}/(s_1s_2)}{1-r_{12}^2},
+```
+
+```math
+\hat\beta_2=
+\frac{S_{2y}/s_2^2-r_{12}S_{1y}/(s_1s_2)}{1-r_{12}^2},
+```
+
+```math
+\hat\alpha=\bar y-\hat\beta_1\bar x_1-\hat\beta_2\bar x_2.
+```
+
+These are exact sample identities. If the given $`\rho`$ means the observed sample correlation, set $`r_{12}=\rho`$ here. If it means a population correlation, it generally differs from the realized $`r_{12}`$; it does not determine the realized OLS estimates by itself.
+
+#### Step 5: connect the same inverse to coefficient variance
+
+Under the Cov assumption, conditional on the observed design:
+
+```math
+\mathrm{Cov}\!\left(
+\begin{pmatrix}\hat\beta_1\\\hat\beta_2\end{pmatrix}\Biggm|X\right)
+=\frac{\sigma^2}{(n-1)(1-r_{12}^2)}
+\begin{pmatrix}
+1/s_1^2&-r_{12}/(s_1s_2)\\
+-r_{12}/(s_1s_2)&1/s_2^2
+\end{pmatrix}.
+```
+
+In particular:
+
+```math
+\mathrm{Var}(\hat\beta_j\mid X)
+=\frac{\sigma^2}{(n-1)s_j^2(1-r_{12}^2)},\qquad j=1,2.
+```
+
+The variance inflation factor is $`1/(1-r_{12}^2)`$, holding feature scales and the error variance fixed. For estimation, use $`s^2=\mathrm{RSS}/(n-3)`$ in place of $`\sigma^2`$, since there are two slopes and an intercept.
+
+At exact sample correlation $`r_{12}=\pm1`$, the centered design is rank deficient and the two slopes are not separately identified. At population correlation $`\rho=\pm1`$, the features are affinely dependent almost surely, so the population covariance matrix is singular as well. Near collinearity can make coefficient estimates unstable; it does not by itself violate conditional mean zero or create bias. See [S001](../../Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md) and the [partitioned-regression derivation](https://www.statlect.com/fundamentals-of-statistics/partitioned-regression) for the connection to controlling for other features.
+
 ## 6. Estimating a mean versus predicting a new observation
 
 Fix a new input vector $`x_0\in\mathbb R^p`$ that includes an intercept. Define:
@@ -573,6 +776,7 @@ Normality does not remove omitted-variable bias or endogeneity. Under heterosked
 5. Which quantities have variances $`\sigma^2h_0`$, $`\sigma^2`$, and $`\sigma^2(1+h_0)`$?
 6. Which conclusions use only moment conditions, and which exact inference results use normality?
 7. How do conditional variance, random-design unconditional variance, and prediction variance at a fixed input differ?
+8. For two features with correlation $`\rho`$, derive both coefficients from the two normal equations. What else must be known, and how do the population and sample formulas differ?
 
 ## Related questions and knowledge
 
