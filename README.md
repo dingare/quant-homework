@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-26: Added [Regularized Regression: Ridge, Lasso, Elastic Net, and LAR](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) beside the OLS card, covering prediction and bias–variance, Bayesian Ridge, effective df, penalty geometry, sparsity, grouping, and qualified path / df comparisons. Existing OLS and L001 notes are linked; question counts and assessment records are unchanged.
+
 - 2026-10-25: Added the [Dynamic Programming review pack](KnowledgeCards/Coding/DynamicProgramming/README.md): Chinese explanations, seven classic Medium / Hard problems, a 90–120 minute core plan, separate practice and solutions, runnable Python, and independent small-case verification. This is review material; question counts and assessment records are unchanged.
 
 - 2026-10-25: Completed discussion of the [October 23 drill](DailyTests/2026-10-23.md). Added the [S024 multiple-testing / independent-confirmation derivation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md) and [O010 proportional-cost position reference](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md). Q1–Q3 Partial / Hinted; Q4 Cold Solve by user report, exact written working unverified. The user clarified that displaying Q4's answer was for typing convenience, not inability to solve. No main question remains Pending; counts and actual-time records are unchanged.

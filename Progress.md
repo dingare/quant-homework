@@ -22,10 +22,12 @@ Track canonical question/subject files by category. These are filing counts, not
 | --- | ---: |
 | Probability | 5 |
 | Linear Algebra | 1 |
-| Statistics | 1 |
-| Total | 7 |
+| Statistics | 2 |
+| Total | 8 |
 
 ## Notes
+
+- 2026-10-26: Added the [regularized regression knowledge card](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) beside OLS. Statistics cards increase from 1 to 2; the existing table's total increases from 7 to 8. The separately filed Dynamic Programming review pack is not included in this standalone-card table. Canonical question counts and assessment records are unchanged.
 
 - Initial scaffold created on 2026-06-25.
 - Counts should be updated whenever a finalized subject is added.

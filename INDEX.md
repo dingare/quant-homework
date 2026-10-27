@@ -179,6 +179,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 ### Statistics
 
 - [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations; true errors versus residuals, feature versus error variance, mean CI / new-observation PI, LLN, CLT, and normality conditions.
+- [Regularized Regression: Ridge, Lasso, Elastic Net, and LAR](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) — Ridge predictions, SVD, bias–variance, Gaussian prior and effective df; Lq geometry, sparsity, grouping, LAR / Lasso paths, and the conditions behind their df rules.
 
 ### Probability
 
