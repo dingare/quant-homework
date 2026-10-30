@@ -1,170 +1,37 @@
-# Call Payoff vs Threshold Trading: Tanaka and Local Time
+# Call Payoff vs Threshold Trading: Review Map
 
-## Purpose and review status
+## Metadata
 
 - Category: Stochastic Calculus
-- Tags: European Call, Threshold Trading, Self-Financing, Finite Variation, Brownian Motion, Tanaka Formula, Local Time, Itô Integral
+- Tags: Call Replication, Self-Financing, Tanaka Formula, Local Time
 - Date Added: 2026-10-30
-- Source: “解释期权复制策略”中的提问与手绘穿越示意图，以及本次明确要求的整理；原助手回复只返回引用占位符，因此本文是重新核对的综合笔记，非逐字转录。
-- Status: **待复习 / 理解尚未稳固**。保存参考结论，不代表独立推导、完成新题或已掌握。
+- Status: Companion review card; understanding remains provisional. Reorganization does not establish an independent solve.
 
-**核心结论：** 对连续有限变差路径，“高于执行价时持有一股”的路径积分确实给出内在价值的变化。但在 Brownian 扩散模型中，自融资交易收益是 Itô 积分，少了半个局部时项。路径连续不等于有限变差；也不能仅凭持仓的账面价值就认定策略自融资。
+## Core Question and Solution
+
+The full prompt, intuition, worked examples, and mathematical solution now have one canonical home:
+
+**[SC007 — Call Replication, Threshold Trading, and Local Time](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md).**
+
+## Intuition and Reading Order
+
+1. [Intuition](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#intuition): why a drawn path supports the proposed strategy and why discrete crossings create a discrepancy.
+2. [Solution](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#solution): define the cash account, work through the numerical example, then introduce Brownian roughness, Tanaka's formula, and local time.
+3. [Common Mistakes](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#common-mistakes): distinguish intrinsic value, funded wealth, option premium, and pre-expiry delta.
+4. [What to Remember](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#what-to-remember): short interview answer and independent-review checklist.
 
 ## Interview assessment — 2026-10-30
 
-- 用户确认本笔记对应当天真实面试中的 option replication 问题。
-- 最新作答完成度自评：**最多约 20%**。用户从最初的 40–50% 更正为“可能只有 20%，顶多”；以最新自评为准，不是面试官评分或通过概率。
-- 当场已经提出的思路：考虑临近到期的一小段时间，价格从 100 上方跌到 100 下方，用这一情形指出所讨论策略与期权的差异。具体当场现金流计算、提示情况及用时未记录；后续完整论证尚未独立验证。
-- 面后复盘重点：先说明该例子中的观察／调仓时点、成交价与所比较的现金流。单次穿越可以展示离散调仓误差，但不能单独否定连续有限变差路径上的理想阈值交易；再对照第 2、3、5 节，理解连续 Brownian 模型中的自融资收益与局部时差额。
-- 本卡的完整推导属于面后参考，不计为当场已答出；保持待复习状态，不额外认定 Hinted 或 K / R / I 类型。
+[Preserved assessment and answer boundary](../../Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#interview-assessment--2026-10-30).
 
-## 1. 先固定假设与比较对象
+Latest completion self-report remains **at most about 20%**. The recorded answer was a short near-expiry downward crossing through 100. Hint usage and actual time were not recorded; the full continuous-time explanation remains unverified. This was a real interview, not a DailyTests session.
 
-设执行价为 $`K`$、到期日为 $`T`$，令 $`g(s)=(s-K)^+`$。欧式 call 的到期 **payoff** 是 $`g(S_T)`$，不是无条件的 $`S_T-K`$；零利率时，买入期权的到期净利润还须减去初始 premium $`C_0`$。
+## Connections
 
-本文先取 **利率为零、无股息、无交易费用和买卖价差、允许按同一利率借贷、连续观察**。固定执行价的现货阈值规则为：
+- [SC001 — Itô's Lemma](../../Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md): the smooth chain rule and its quadratic-variation correction.
+- [SC002 — Change of Measure](../../Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md): risk-neutral expectation versus physical-measure dynamics.
+- [P002 — Fair Games and Stop-Loss](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md): martingale reasoning for trading and stopping rules.
 
-```math
-H_t=\mathbf1_{\{S_t\gt K\}},\qquad
-G_t=\int_0^t H_u\,dS_u,\qquad
-V_t=V_0+G_t.
-```
+## What to Remember
 
-这里 $`H_t`$ 是股票持仓，$`G_t`$ 是交易收益，$`V_t`$ 才是包括现金/债务的总财富。上式最后一个等式就是零利率下的**自融资条件**：调仓资金来自账户内部，没有外部注资。初始价内时不能忘记初始资金；下文比较取 $`V_0=g(S_0)`$，初始价外时它为零。
-
-随机模型取通常条件下的 Brownian 过滤，$`S`$ 是连续 Itô 扩散 $`dS_t=\mu_t\,dt+\nu_t\,dW_t`$，满足通常的局部可积条件，并在执行价附近非退化（例如 GBM 且 $`K\gt0`$）。$`H`$ 是有界可预测过程，收益按 **Itô 积分**定义。取期望时再要求相应平方可积条件。本文不涉及跳跃、黏滞或反射边界模型；在本设定下，阈值处取零还是一不改变收益积分。
-
-“上穿买、下穿卖”先当作理想持仓规则理解。上穿后才买的触发单与普通被动买入限价单并非同一种订单；现实成交还涉及撮合和延迟。下面的数学差额即使没有这些摩擦也存在。
-
-## 2. 为什么手绘曲线或有限折线上确实成立？
-
-对连续有限变差路径，普通链式法则成立（积分按 Lebesgue–Stieltjes 定义）：
-
-```math
-g(S_T)-g(S_0)=\int_0^T\mathbf1_{\{S_t\gt K\}}\,dS_t.
-```
-
-有限段折线属于这类路径。假设 $`S_0\lt K`$：每次完整的价内 excursion 都从 $`K`$ 买入、回到 $`K`$ 卖出，净收益为零；如果最后仍价内，最后一段贡献 $`S_T-K`$。因此在这种路径模型与理想交易假设下，直觉正确。一般有限变差路径即使有无限次穿越，上述积分恒等式也仍成立，不能把关键仅归结为“交易次数有限”。
-
-Brownian 路径几乎必然在任意非平凡区间上有无限总变差，并且具有非零二次变差；连续有限变差路径的二次变差为零。对于扩散：
-
-```math
-[S]_t=\int_0^t\nu_u^2\,du,\qquad [W]_t=t.
-```
-
-Brownian 命中阈值后，局部两侧振荡会累积，不能列成一串彼此隔开的“下一次买、下一次卖”，再逐笔按零利润相加。问题在于这套逐笔极限论证失效；有界可预测持仓的 Itô 收益本身仍有定义。
-
-## 3. Tanaka 公式精确给出差额
-
-对这里的扩散，采用下列归一化的局部时 $`L_t^K(S)`$，Tanaka 公式给出：
-
-```math
-\boxed{
-(S_T-K)^+=(S_0-K)^+
-+\int_0^T\mathbf1_{\{S_t\gt K\}}\,dS_t
-+\frac12 L_T^K(S).
-}
-```
-
-局部时可以理解为执行价附近的**二次变差占用密度**：
-
-```math
-L_T^K(S)=\lim_{\varepsilon\downarrow0}
-\frac{1}{2\varepsilon}
-\int_0^T\mathbf1_{\{|S_t-K|\lt\varepsilon\}}\,d[S]_t.
-```
-
-它不是普通的“恰好停在执行价上的钟表时间”。非退化扩散恰在某个固定价位的钟表时间几乎必然为零，而这个密度仍可为正。$`L_t^K`$ 非负、随时间不减，只在命中 $`K`$ 的时刻增加；有限变差路径对应的局部时为零。正部公式的系数是 **1/2**；绝对值版本的系数是 **1**。公式及归一化见 [Björk，§4 与 §5.2–5.3](https://arxiv.org/pdf/1512.08912)。
-
-因此自融资阈值策略的终值是：
-
-```math
-\boxed{V_T=g(S_T)-\frac12L_T^K(S)}
-\qquad\text{when }V_0=g(S_0).
-```
-
-这不是说每条路径都必有正差额：例如始终没有触及执行价时，局部时为零。但复制要求在模型中几乎处处兑现目标 payoff，不能只挑没有差额的路径。
-
-## 4. “持有一股、借入执行价”漏掉了什么？
-
-如果直接规定现金余额 $`B_t=-KH_t`$，账面价值确实等于 $`H_tS_t+B_t=g(S_t)`$。但这只是持仓恒等式，**没有证明自融资**。Tanaka 公式说明，维持这条价值曲线需要累计外部注资 $`A_t=L_t^K(S)/2`$：
-
-```math
-g(S_t)=g(S_0)+G_t+A_t.
-```
-
-所以要区分：阈值股票持仓可以产生一个自融资 Itô 收益过程；强行让同一持仓的财富始终等于内在价值，则需要注资。这正是经典 [Carr–Jarrow stop-loss/start-gain 悖论](https://engineering.nyu.edu/sites/default/files/2019-03/Carr-stop-loss-start-gain-strategy.pdf) 的内容。局部时并非额外假设的手续费，也不是价格跳空造成的。
-
-进一步，在 Black–Scholes 等可复制模型中，在零利率风险中性测度 $`Q`$ 下，若 $`S`$ 及阈值收益满足上述平方可积条件，则收益期望为零，从而：
-
-```math
-C_0=E_Q[g(S_T)]=g(S_0)+\frac12E_Q[L_T^K(S)].
-```
-
-右边的期望差额解释本设定下的时间价值。实现的局部时是随机量，期权 premium 是事先确定的价格；即使给阈值策略同样的 premium，也只消除了期望差额，仍不逐路径复制。Black–Scholes 的自融资复制使用到期前的 $`\partial C/\partial S`$ 与现金账户，并预先投入 $`C_0`$；这个 delta 通常不是零/一阈值。利率或股息不为零时必须重新处理融资、折现和边界，不能原样套用以上固定执行价分解。
-
-## 5. 可手算例子：局部穿越误差怎样累积？
-
-取 $`K=100`$、初始财富零。只在表中的观测时刻调仓，每段收益是左端持仓乘价格变化：
-
-| 起点价格 | 终点价格 | 本段持股 | 本段收益 | 内在价值变化减本段收益 |
-| ---: | ---: | ---: | ---: | ---: |
-| 99.8 | 100.3 | 0 | 0.0 | 0.3 |
-| 100.3 | 100.1 | 1 | -0.2 | 0.0 |
-| 100.1 | 99.7 | 1 | -0.4 | 0.3 |
-| 99.7 | 100.2 | 0 | 0.0 | 0.2 |
-| 100.2 | 101.0 | 1 | 0.8 | 0.0 |
-| **合计** | | | **0.2** | **0.8** |
-
-Call payoff 是 1，交易收益仅 0.2，差额 0.8。可把观测点之间画成连续折线：若能在这条折线上每次穿越 100 时精确调仓，则收益又是 1。**这张表展示观测调仓误差，不是 Brownian 局部时的精确数值。** 对一条固定有限折线不断加密观测，误差会消失；对真正 Brownian 路径加密，持续出现的小尺度穿越会留下局部时极限。
-
-作为期望上的校验，玩具模型 $`S_t=100+20W_t`$、$`K=100`$、$`T=1`$ 给出 $`E_Q[G_T]=0`$，而 $`C_0=20/\sqrt{2\pi}\approx7.98`$，也等于 $`E_Q[L_T^{100}(S)]/2`$。这是允许负价格的算术 Brownian 示例，用于说明机制；GBM 下也有同样的 Tanaka 差额。
-
-## 6. 路径逼近为什么不保证交易收益逼近？
-
-在确定性网格上对 Brownian 扩散 $`S`$ 作线性插值得 $`S^{(n)}`$。网格趋细时，它们在紧区间上一致收敛到 $`S`$，每条插值路径却都是有限变差。普通路径积分满足：
-
-```math
-\int_0^T\mathbf1_{\{S_t^{(n)}\gt K\}}\,dS_t^{(n)}
-=g(S_T^{(n)})-g(S_0^{(n)})
-\longrightarrow g(S_T)-g(S_0).
-```
-
-而真实价格上的因果调仓采用已知的左端价格。对标准非退化 Brownian 扩散，左端和依概率收敛为：
-
-```math
-\sum_i\mathbf1_{\{S_{t_i}\gt K\}}(S_{t_{i+1}}-S_{t_i})
-\longrightarrow\int_0^T H_t\,dS_t
-=g(S_T)-g(S_0)-\frac12L_T^K(S).
-```
-
-两种极限不同。可直接定义非负穿越余项：
-
-```math
-R_i=g(S_{t_{i+1}})-g(S_{t_i})
--\mathbf1_{\{S_{t_i}\gt K\}}(S_{t_{i+1}}-S_{t_i})\ge0,
-\qquad \sum_iR_i\longrightarrow\frac12L_T^K(S).
-```
-
-每个余项都可很小，总和仍可不趋零。还有一个更光滑的反例，已经足以说明一致路径收敛不控制 Itô 收益：
-
-```math
-\int_0^T S_t^{(n)}\,dS_t^{(n)}
-=\frac12\big((S_T^{(n)})^2-(S_0^{(n)})^2\big),
-\qquad
-\int_0^T S_t\,dS_t
-=\frac12\big(S_T^2-S_0^2-[S]_T\big).
-```
-
-插值段内部使用了下一网格点的未来端点，通常不适应原 Brownian 过滤；因此“沿已画好的折线交易”不能直接当成原市场中可实施策略的逼近。光滑情形下，这与 [Wong–Zakai / Stratonovich 极限](https://arxiv.org/abs/0808.0337) 的普通链式法则有关。阈值函数不连续，不应直接套用光滑版定理；这里的差额由 Tanaka 公式精确处理。
-
-## 7. 下次复习：目前仍需自己讲清楚
-
-- [ ] 不看笔记区分 payoff、交易收益、含现金的财富、期权 premium 和净利润。
-- [ ] 能独立核对自融资条件，并区分自融资与财富下界等 admissibility 要求；解释为什么规定 $`B_t=-KH_t`$ 本身不够。
-- [ ] 从 Tanaka 正部公式写出差额，核对局部时归一化及 1/2 系数。
-- [ ] 解释“恰在执行价的钟表时间为零”为什么不推出局部时为零。
-- [ ] 重算上表，再解释固定折线与 Brownian 网格加密为什么产生不同极限。
-- [ ] 分清光滑插值积分、可预测左端和、Itô 积分以及相关 Stratonovich 极限；能指出未来信息进入插值的位置。
-
-相关基础：[SC001 — Itô 引理与折现价格鞅](../../Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)、[SC002 — P、Q 与测度变换](../../Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)、[P002 — 公平游戏与停损规则](../../Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)。
+Matching the slope of intrinsic value is only the beginning. Check the financing condition and the path model. In a continuous Brownian model, the intrinsic-value change exceeds the self-financing threshold gain by half the local time at the strike.

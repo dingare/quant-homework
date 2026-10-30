@@ -166,6 +166,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [SC005 — Brownian Hitting Probability with Drift](Questions/StochasticCalculus/SC005_Brownian_Hitting_Probability_with_Drift.md)
 - [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) — Includes [two Poisson bus routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30): why survival probabilities multiply, rate addition, and competition versus random route selection.
 
+- [SC007 — Call Replication, Threshold Trading, and Local Time](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) — English question and solution; intuition first, followed by crossing examples, self-financing, Tanaka, and local time. Original real-interview self-assessment is preserved.
+
 ## Rates Research
 
 - [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md)
@@ -174,7 +176,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ### Stochastic Calculus
 
-- [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — 连续有限变差与 Brownian 路径、自融资、局部时差额和折线逼近；附 [2026-10-30 面试作答复盘](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)，最新完成度自评最多约 20%；待复习，不代表已掌握。
+- [Call Payoff vs Threshold Trading: Review Map](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — Companion reading map for [SC007](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md); preserves the original assessment link. Review remains pending; latest completion self-report is at most about 20%.
 
 ### Coding
 

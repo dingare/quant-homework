@@ -571,9 +571,9 @@ Optional later focused check: independently derive Q3 part 2's dependence-free f
 
 ## October 30 — Option Replication Interview Review
 
-Source: [题目与当场作答记录](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)。最新完成度自评最多约 20%；已想到最后极短时间内价格从 100 上方跌到下方的情形。完整独立论证未验证；提示情况与实际用时未记录，K / R / I 未判定。
+Source: [SC007 — question and recorded answer](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md#interview-assessment--2026-10-30). Latest completion self-report: at most about 20%. The recorded answer concerns a very short final interval crossing down through 100. The full independent argument is unverified; hints and elapsed time were not recorded, and K / R / I remains unclassified.
 
-- [ ] 先讲清楚该穿越例子的调仓时点、成交价及比较的现金流，区分离散调仓误差与连续有限变差路径上的理想交易。
-- [ ] 对照参考笔记第 2、3、5 节，从单次穿越思路推进到连续 Brownian 模型中的自融资收益与局部时差额。
+- [ ] State the crossing example's observation times, execution prices, and cash flows; distinguish discrete rebalancing from ideal trading on a continuous finite-variation path.
+- [ ] Follow SC007's Intuition and Solution: proceed from a discrete crossing example to self-financing gains and the local-time correction in a Brownian model.
 
-若近期重测，标为 intentional spaced repetition，并注明 October 30 / option replication 及上述未完成论证；不自动新增独立复习题块或提醒。
+Any near-term retest must be labeled intentional spaced repetition and identify October 30 / option replication and the unfinished argument. Do not automatically add a separate review block or reminder.

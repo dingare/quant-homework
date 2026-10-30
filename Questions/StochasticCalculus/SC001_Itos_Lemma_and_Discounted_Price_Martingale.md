@@ -352,4 +352,6 @@ e^{-rt}S_t \text{ is martingale under } Q
 
 ## Related review card
 
-- [Call Payoff vs Threshold Trading: Tanaka and Local Time](../../KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) extends the smooth Itô chain rule to a call payoff kink and separates self-financing gains from intrinsic value. Understanding remains provisional; see the card's review checklist.
+- [Call Payoff vs Threshold Trading: Review Map](../../KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) links to the staged reading plan and preserved interview assessment. Understanding remains provisional.
+
+- [SC007 — Call Replication, Threshold Trading, and Local Time](SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) develops the call-payoff kink from intuition and discrete crossings to the Tanaka correction; this is the canonical question and solution.

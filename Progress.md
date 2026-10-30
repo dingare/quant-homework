@@ -12,9 +12,9 @@ Track canonical question/subject files by category. These are filing counts, not
 | Time Series | T | 12 |
 | Optimization | O | 10 |
 | Coding | C | 20 |
-| Stochastic Calculus | SC | 6 |
+| Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 117 |
+| Total | All | 118 |
 
 ## Knowledge Cards
 
@@ -27,6 +27,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 9 |
 
 ## Notes
+
+- 2026-10-30: Reorganized the existing call-replication material into [SC007](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) using the subject-note format and English throughout. Intuition and discrete examples precede the continuous-time derivation. The original knowledge-card URL remains a companion reading map; its count stays unchanged at 9. Canonical question files increase from 117 to 118 (Stochastic Calculus: 6 to 7) because the existing topic now has a question-file home, not because of a new attempt or solve. The at-most-20% interview self-report is unchanged; no DailyTests record was added.
 
 - 2026-10-30: Added the [option-replication interview assessment](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30). Latest completion self-report is at most about 20%; the last short interval crossing down through 100 is preserved as the extent of the recorded answer. Full independent explanation remains unverified; reference material is not demonstrated mastery. Canonical question and knowledge-card counts remain 117 and 9.
 

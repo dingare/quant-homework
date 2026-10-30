@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-30: Reorganized [SC007 — Call Replication, Threshold Trading, and Local Time](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) into an English subject note: Core Question, Hint, Intuition, Geometry, progressive Solution, common mistakes, follow-ups, connections, assessment history, and a short interview answer. The original knowledge card remains a reading map. The recorded interview completion remains at most about 20%; post-interview derivations do not establish mastery.
+
 - 2026-10-30: 补充 [option replication 面试作答复盘](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)：最新完成度自评最多约 20%，当场已提出临近到期向下穿越 100 的情形；明确离散调仓例子与连续模型完整论证的区别。仅更新题目相关复盘，未新增题目或知识卡，未计为独立掌握。
 
 - 2026-10-30: Added [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md), a Chinese study card on the stop-loss/start-gain paradox, finite variation versus Brownian paths, self-financing, local-time funding, and why uniform path approximation does not preserve Itô trading gains. Includes a hand-checkable example and explicit review questions; understanding remains provisional, with no new question attempt or mastery claim.
