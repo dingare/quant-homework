@@ -67,7 +67,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P026 — Finite-Horizon Optimal Stopping](Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
 - [P027 — Dice Conditioned on a Sum](Questions/Probability/P027_Dice_Conditioned_on_a_Sum.md)
 - [P028 — Branching Process Extinction](Questions/Probability/P028_Branching_Process_Extinction.md)
-- [P029 — Random Inspection and Residual Wait](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md)
+- [P029 — Random Inspection and Residual Wait](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md) — Includes the [10/20-minute bus loop](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30): length-biased intervals, conditional uniform wait, and the general stopping-probability formula.
 - [P030 — Product Distribution and Event Conditioning](Questions/Probability/P030_Product_Distribution_and_Event_Conditioning.md)
 - [P031 — Exact Uniform Sampling from a Biased Coin](Questions/Probability/P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md)
 - [P032 — Cycles of a Uniform Random Permutation](Questions/Probability/P032_Cycles_of_a_Uniform_Random_Permutation.md)
@@ -164,7 +164,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
 - [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md)
 - [SC005 — Brownian Hitting Probability with Drift](Questions/StochasticCalculus/SC005_Brownian_Hitting_Probability_with_Drift.md)
-- [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md)
+- [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) — Includes [two Poisson bus routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30): why survival probabilities multiply, rate addition, and competition versus random route selection.
 
 ## Rates Research
 

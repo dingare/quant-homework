@@ -27,6 +27,8 @@ Track canonical question/subject files by category. These are filing counts, not
 
 ## Notes
 
+- 2026-10-30: Extended [P029](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30) and [SC006](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30) with the two finalized bus-waiting discussions: discrete loop intervals and length bias versus independent Poisson routes and competing exponentials. Guided review references; no new question files, timed assessments, ratings, or mastery claims. All counts are unchanged.
+
 - 2026-10-30: Extended [P024](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md) with the completed ten-heads discussion: exact confidence bounds, fair-versus-unknown-bias model comparison, and the Beta(11, 1) posterior derivation. This is a discussion reference, not a new timed attempt or mastery claim; question counts, knowledge-card counts, and prior assessment records are unchanged.
 
 - 2026-10-26: Added the [regularized regression knowledge card](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) beside OLS. Statistics cards increase from 1 to 2; the existing table's total increases from 7 to 8. The separately filed Dynamic Programming review pack is not included in this standalone-card table. Canonical question counts and assessment records are unchanged.

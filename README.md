@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-30: Added two bus-waiting examples to existing notes: [P029 — random arrival on a 10/20-minute loop](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30) derives length bias and the general stopping-probability formula; [SC006 — two independent Poisson routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30) derives the product survival function and distinguishes first-arrival competition from choosing a route with equal probability. Guided review; question counts and dated assessments are unchanged.
+
 - 2026-10-30: Extended [P024 — Bayesian Coin Selection and Prediction](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md) with Chinese notes from the ten-heads discussion: why the exact confidence lower bound uses the 1/10 power of 0.025, integrating over a uniform unknown bias, the 98.94% unfair-model posterior under equal model priors, and why the conditional parameter posterior is Beta(11, 1). Linked to P035; question counts and assessment records are unchanged.
 
 - 2026-10-26: Added [Regularized Regression: Ridge, Lasso, Elastic Net, and LAR](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) beside the OLS card, covering prediction and bias–variance, Bayesian Ridge, effective df, penalty geometry, sparsity, grouping, and qualified path / df comparisons. Existing OLS and L001 notes are linked; question counts and assessment records are unchanged.
