@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-30: Extended [P024 — Bayesian Coin Selection and Prediction](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md) with Chinese notes from the ten-heads discussion: why the exact confidence lower bound uses the 1/10 power of 0.025, integrating over a uniform unknown bias, the 98.94% unfair-model posterior under equal model priors, and why the conditional parameter posterior is Beta(11, 1). Linked to P035; question counts and assessment records are unchanged.
+
 - 2026-10-26: Added [Regularized Regression: Ridge, Lasso, Elastic Net, and LAR](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) beside the OLS card, covering prediction and bias–variance, Bayesian Ridge, effective df, penalty geometry, sparsity, grouping, and qualified path / df comparisons. Existing OLS and L001 notes are linked; question counts and assessment records are unchanged.
 
 - 2026-10-25: Added the [Dynamic Programming review pack](KnowledgeCards/Coding/DynamicProgramming/README.md): Chinese explanations, seven classic Medium / Hard problems, a 90–120 minute core plan, separate practice and solutions, runnable Python, and independent small-case verification. This is review material; question counts and assessment records are unchanged.

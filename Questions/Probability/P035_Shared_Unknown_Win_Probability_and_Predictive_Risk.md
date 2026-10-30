@@ -96,7 +96,7 @@ At fixed current information, averaging more future outcomes reduces independent
 
 ## Related questions and knowledge
 
-- [P024 — Bayesian Coin Selection and Prediction](P024_Bayesian_Coin_Selection_and_Prediction.md) — Posterior predictive averaging over a shared latent parameter.
+- [P024 — Bayesian Coin Selection and Prediction](P024_Bayesian_Coin_Selection_and_Prediction.md) — Posterior predictive averaging over a shared latent parameter; the October 30 discussion derives Beta updating and compares an unknown coin bias with a separate fair-coin model.
 - [P030 — Product Distribution and Event Conditioning](P030_Product_Distribution_and_Event_Conditioning.md) — Conditioning and independence depend on the information retained.
 - [T012 — Probability Forecasts, Calibration, and Evaluation](../TimeSeries/T012_Probability_Forecasts_Calibration_and_Evaluation.md) — Predictive probability and the evaluation of its quality.
 - [Indicator Random Variables Cookbook](../../KnowledgeCards/Probability/Indicator_Random_Variables_Cookbook.md) — Knowledge card.

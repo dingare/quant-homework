@@ -62,7 +62,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P021 — Conditional Red-Ball Positions](Questions/Probability/P021_Conditional_Red_Ball_Positions.md)
 - [P022 — Discrete Median and Symmetry](Questions/Probability/P022_Discrete_Median_and_Symmetry.md)
 - [P023 — Coin Pattern Waiting Times](Questions/Probability/P023_Coin_Pattern_Waiting_Times.md)
-- [P024 — Bayesian Coin Selection and Prediction](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md)
+- [P024 — Bayesian Coin Selection and Prediction](Questions/Probability/P024_Bayesian_Coin_Selection_and_Prediction.md) — Extended 2026-10-30: ten heads, exact binomial confidence bounds, uniform unknown bias, and the Beta(11, 1) posterior.
 - [P025 — Permutation Fixed Points and Dependent Indicators](Questions/Probability/P025_Permutation_Fixed_Points_and_Dependent_Indicators.md)
 - [P026 — Finite-Horizon Optimal Stopping](Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
 - [P027 — Dice Conditioned on a Sum](Questions/Probability/P027_Dice_Conditioned_on_a_Sum.md)
