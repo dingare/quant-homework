@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-10-30: 补充 [option replication 面试作答复盘](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)：最新完成度自评最多约 20%，当场已提出临近到期向下穿越 100 的情形；明确离散调仓例子与连续模型完整论证的区别。仅更新题目相关复盘，未新增题目或知识卡，未计为独立掌握。
+
 - 2026-10-30: Added [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md), a Chinese study card on the stop-loss/start-gain paradox, finite variation versus Brownian paths, self-financing, local-time funding, and why uniform path approximation does not preserve Itô trading gains. Includes a hand-checkable example and explicit review questions; understanding remains provisional, with no new question attempt or mastery claim.
 
 - 2026-10-30: Added two bus-waiting examples to existing notes: [P029 — random arrival on a 10/20-minute loop](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30) derives length bias and the general stopping-probability formula; [SC006 — two independent Poisson routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30) derives the product survival function and distinguishes first-arrival competition from choosing a route with equal probability. Guided review; question counts and dated assessments are unchanged.

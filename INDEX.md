@@ -174,7 +174,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ### Stochastic Calculus
 
-- [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — 连续有限变差与 Brownian 路径、自融资、局部时差额和折线逼近；待复习，不代表已掌握。
+- [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — 连续有限变差与 Brownian 路径、自融资、局部时差额和折线逼近；附 [2026-10-30 面试作答复盘](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)，最新完成度自评最多约 20%；待复习，不代表已掌握。
 
 ### Coding
 

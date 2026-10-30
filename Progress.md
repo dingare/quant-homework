@@ -28,6 +28,8 @@ Track canonical question/subject files by category. These are filing counts, not
 
 ## Notes
 
+- 2026-10-30: Added the [option-replication interview assessment](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30). Latest completion self-report is at most about 20%; the last short interval crossing down through 100 is preserved as the extent of the recorded answer. Full independent explanation remains unverified; reference material is not demonstrated mastery. Canonical question and knowledge-card counts remain 117 and 9.
+
 - 2026-10-30: Added the [call payoff / threshold trading / Tanaka study card](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md). Stochastic Calculus cards increase from 0 to 1 and standalone knowledge cards from 8 to 9. Review remains pending; canonical question counts, ratings and assessment history are unchanged.
 
 - 2026-10-30: Extended [P029](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30) and [SC006](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30) with the two finalized bus-waiting discussions: discrete loop intervals and length bias versus independent Poisson routes and competing exponentials. Guided review references; no new question files, timed assessments, ratings, or mastery claims. All counts are unchanged.

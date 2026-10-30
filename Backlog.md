@@ -568,3 +568,12 @@ Source: [October 23 session, continued through October 25](DailyTests/2026-10-23
 - [x] [O010 / Q4](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md) discussed: user explicitly reports independently writing the same answer before the reference was shown. Request was about typing inconvenience. Final record Cold Solve by user report; exact written derivation unsubmitted/unverified, no K/R gap established. This supersedes the assistant’s initial Partial / Hinted label. Original 8-minute budget is not actual time; no remedial Q4 check is required on this evidence.
 
 Optional later focused check: independently derive Q3 part 2's dependence-free false-rejection bound, then explain the independent confirmation distinction. Q2's thinning derivation also remains assisted; no compulsory extra review block is added. Any near-term Q1–Q3 retest must name October 23, the item and assisted step (including Q3's October 24–25 continuation), and be labeled intentional spaced repetition. Do not schedule Q4 remediation based on the typing-burden clarification.
+
+## October 30 — Option Replication Interview Review
+
+Source: [题目与当场作答记录](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md#interview-assessment--2026-10-30)。最新完成度自评最多约 20%；已想到最后极短时间内价格从 100 上方跌到下方的情形。完整独立论证未验证；提示情况与实际用时未记录，K / R / I 未判定。
+
+- [ ] 先讲清楚该穿越例子的调仓时点、成交价及比较的现金流，区分离散调仓误差与连续有限变差路径上的理想交易。
+- [ ] 对照参考笔记第 2、3、5 节，从单次穿越思路推进到连续 Brownian 模型中的自融资收益与局部时差额。
+
+若近期重测，标为 intentional spaced repetition，并注明 October 30 / option replication 及上述未完成论证；不自动新增独立复习题块或提醒。
