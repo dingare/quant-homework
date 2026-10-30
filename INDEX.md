@@ -172,6 +172,10 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Knowledge Cards
 
+### Stochastic Calculus
+
+- [Call Payoff vs Threshold Trading: Tanaka and Local Time](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — 连续有限变差与 Brownian 路径、自融资、局部时差额和折线逼近；待复习，不代表已掌握。
+
 ### Coding
 
 - [Dynamic Programming — 经典逻辑题复习包](KnowledgeCards/Coding/DynamicProgramming/README.md) — 状态设计与正确性、七道经典题、今晚核心安排、分级提示、独立解答与可运行验证；不改变历史评分和题库计数。

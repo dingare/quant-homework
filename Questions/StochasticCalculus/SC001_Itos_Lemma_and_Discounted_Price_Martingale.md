@@ -348,3 +348,8 @@ e^{-rt}S_t \text{ is martingale under } Q
 - HJM
 - SOFR Convexity
 - Treasury Futures CTD Optionality
+
+
+## Related review card
+
+- [Call Payoff vs Threshold Trading: Tanaka and Local Time](../../KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) extends the smooth Itô chain rule to a call payoff kink and separates self-financing gains from intrinsic value. Understanding remains provisional; see the card's review checklist.
