@@ -4,13 +4,13 @@ Dated interview performance logs. Full prompts, solutions and reusable discussio
 
 ## Sessions
 
-Latest archived set: [October 31, continued through November 1](2026-10-31.md). Q1–Q3 Partial / Hinted; **Q4 Pending**, unattempted with no hints or solution. All actual times Not recorded.
+Latest archived set: [October 31, continued through November 1](2026-10-31.md). All four questions discussed; Q1–Q4 Partial / Hinted overall. Q4 part 3 limits and core interpretation independently correct; time-series foundations not yet reviewed by user report. All actual times Not recorded.
 
 The October 23 set was completed in discussion through October 25; no main item remains Pending. Q4 is an independent solve by user report, with written working unverified. The earlier twelve logs through October 20 retain their October 22 migration history.
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
-| [2026-10-31](2026-10-31.md) | Four-question drill, continued through November 1 | Q1–Q3 Partial / Hinted; Q4 Pending | Q1 exact code tested and flawed (I), reference separately verified; Q2 first-hit classification independent, reflection assisted; Q3 median recalled, derivations guided; median card filed; actual times unknown |
+| [2026-10-31](2026-10-31.md) | Four-question drill, continued through November 1; all discussed | Q1–Q4 Partial / Hinted overall; Q4 part 3 independently correct; none Pending | Q1 exact code flawed (I), reference separately verified; Q2 first-hit approach independent; Q3 median recalled, derivations guided; Q4 stationary variance / forecast-risk derivations supplied, final limits and interpretation independent; time series unreviewed by user report; actual times unknown |
 | [2026-10-23](2026-10-23.md) | Four-question drill, continued through October 25; all discussed | Q1–Q3 Partial / Hinted; Q4 Cold Solve (user-reported, written working unverified); none Pending | Q1 user code verified; Q3 correct decisions preserved with supplied derivations; Q4 typing-burden clarification supersedes initial assisted rating; actual times unknown |
 | [2026-10-20](2026-10-20.md) | Four-question drill, continued October 21–22; all discussed | Q1–Q4 Partial / Hinted overall; independent subparts preserved; none Pending | Q3 part 1 Cold Solve; Q4 calibration/core scoring and accuracy-limit interpretation correct, arithmetic/writing clarifications preserved; probability evaluation and hit-rate/calibration curves discussed; actual times unknown |
 | [2026-10-18](2026-10-18.md) | Four-question drill; all discussed | Q1–Q4 Partial / Hinted | Tree-path states, Gaussian sign geometry, duplicated-data inference and collision timing; Q1 rewrite self-reported/unverified; Q3 arithmetic and Q4 known-method clarifications preserved; actual times unknown |

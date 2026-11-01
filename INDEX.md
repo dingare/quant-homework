@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — Q1–Q3 **Partial / Hinted**; Q4 **Pending**, original prompt only. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
+- [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
 
 - [October 23 drill, continued through October 25](DailyTests/2026-10-23.md) — **All four main questions discussed; none Pending.** Q1–Q3 Partial / Hinted, preserving Q1 verified user code and Q3 independent correct decisions. Q4 Cold Solve by user report, written working unverified; typing inconvenience is not a knowledge gap. Full S024 / O010 references are filed.
 
@@ -124,7 +124,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [T011 — Signal Smoothing, Correlation, and Trading Costs](Questions/TimeSeries/T011_Signal_Smoothing_Correlation_and_Trading_Costs.md)
 - [T012 — Probability Forecasts, Calibration, and Evaluation](Questions/TimeSeries/T012_Probability_Forecasts_Calibration_and_Evaluation.md)
 
-- [T013 — Multihorizon AR(1): Level and Change Forecasts](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) — **Pending**, prompt only.
+- [T013 — Multihorizon AR(1): Level and Change Forecasts](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) — Discussed; full reference and targeted foundational reading filed. Independent final interpretation preserved.
 
 ## Optimization
 
