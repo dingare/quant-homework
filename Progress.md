@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 35 |
-| Statistics | S | 24 |
-| Time Series | T | 12 |
+| Probability | P | 36 |
+| Statistics | S | 25 |
+| Time Series | T | 13 |
 | Optimization | O | 10 |
-| Coding | C | 20 |
+| Coding | C | 21 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 118 |
+| Total | All | 122 |
 
 ## Knowledge Cards
 
@@ -22,11 +22,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | --- | ---: |
 | Probability | 5 |
 | Linear Algebra | 1 |
-| Statistics | 2 |
+| Statistics | 3 |
 | Stochastic Calculus | 1 |
-| Total | 9 |
+| Total | 10 |
 
 ## Notes
+
+- 2026-11-01: Archived the [October 31 drill, continued through November 1](DailyTests/2026-10-31.md). Filed C021 / P037 / S025 and prompt-only Pending T013: canonical question files 118 → 122. Q1–Q3 Partial / Hinted; Q4 remains Pending. Q1 original user code was executed and found flawed; the tested assistant reference is not an independent corrected submission. Q2 first-hit decomposition and Q3 median recall are preserved. Added the [median study card](KnowledgeCards/Statistics/Median_Laplace_MLE_Binomial_Counts_and_Asymptotic_Normality.md), increasing Statistics cards 2 → 3 and standalone cards 9 → 10. All actual times Not recorded; no independent mastery or new solve inferred from filing.
+
 
 - 2026-10-30: Reorganized the existing call-replication material into [SC007](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) using the subject-note format and English throughout. Intuition and discrete examples precede the continuous-time derivation. The original knowledge-card URL remains a companion reading map; its count stays unchanged at 9. Canonical question files increase from 117 to 118 (Stochastic Calculus: 6 to 7) because the existing topic now has a question-file home, not because of a new attempt or solve. The at-most-20% interview self-report is unchanged; no DailyTests record was added.
 

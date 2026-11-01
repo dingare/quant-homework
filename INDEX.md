@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — Q1–Q3 **Partial / Hinted**; Q4 **Pending**, original prompt only. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
+
 - [October 23 drill, continued through October 25](DailyTests/2026-10-23.md) — **All four main questions discussed; none Pending.** Q1–Q3 Partial / Hinted, preserving Q1 verified user code and Q3 independent correct decisions. Q4 Cold Solve by user report, written working unverified; typing inconvenience is not a knowledge gap. Full S024 / O010 references are filed.
 
 - [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md) — **all four questions discussed; none Pending**. BFS resource states, shared-parameter risk, sector demeaning / omitted-variable bias, probability calibration and scoring. Independent subparts, arithmetic/writing clarifications, practical evaluation and hit-rate-curve distinctions preserved.
@@ -75,6 +77,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P034 — First Repeated Label](Questions/Probability/P034_First_Repeated_Label.md)
 - [P035 — Shared Unknown Win Probability and Predictive Risk](Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
 
+- [P037 — Nonnegative Bridges and the Reflection Bijection](Questions/Probability/P037_Nonnegative_Bridges_and_the_Reflection_Bijection.md)
+
 ## Statistics
 
 - [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
@@ -103,6 +107,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [S022 — Duplicating Regression Observations](Questions/Statistics/S022_Duplicating_Regression_Observations.md)
 - [S023 — Pooled and Within-Sector Signal Evaluation](Questions/Statistics/S023_Pooled_and_Within_Sector_Signal_Evaluation.md)
 
+- [S025 — Laplace Location: Median MLE and Asymptotic Variance](Questions/Statistics/S025_Laplace_Location_Median_MLE_and_Asymptotic_Variance.md) — Links the detailed English median study card.
+
 ## Time Series
 
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
@@ -117,6 +123,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [T010 — Deployment Probabilities and Decisions](Questions/TimeSeries/T010_Deployment_Probabilities_and_Decisions.md)
 - [T011 — Signal Smoothing, Correlation, and Trading Costs](Questions/TimeSeries/T011_Signal_Smoothing_Correlation_and_Trading_Costs.md)
 - [T012 — Probability Forecasts, Calibration, and Evaluation](Questions/TimeSeries/T012_Probability_Forecasts_Calibration_and_Evaluation.md)
+
+- [T013 — Multihorizon AR(1): Level and Change Forecasts](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) — **Pending**, prompt only.
 
 ## Optimization
 
@@ -157,6 +165,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [C018 — Maximum-Sum Path in a Tree](Questions/Coding/C018_Maximum_Sum_Path_in_a_Tree.md)
 - [C019 — Shortest Grid Route with One Blocked Entry](Questions/Coding/C019_Shortest_Grid_Route_with_One_Blocked_Entry.md)
 
+- [C021 — Count Subarrays with Exactly K Distinct Values](Questions/Coding/C021_Count_Subarrays_with_Exactly_K_Distinct_Values.md)
+
 ## Stochastic Calculus
 
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)
@@ -186,6 +196,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 - [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) — Flowchart and step-by-step matrix derivations; true errors versus residuals, feature versus error variance, mean CI / new-observation PI, LLN, CLT, and normality conditions.
 - [Regularized Regression: Ridge, Lasso, Elastic Net, and LAR](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md) — Ridge predictions, SVD, bias–variance, Gaussian prior and effective df; Lq geometry, sparsity, grouping, LAR / Lasso paths, and the conditions behind their df rules.
+
+- [Median: Laplace MLE, Binomial Counts, and Asymptotic Normality](KnowledgeCards/Statistics/Median_Laplace_MLE_Binomial_Counts_and_Asymptotic_Normality.md) — English walkthrough of event equivalence, standardization, integration by parts, mean comparison and outlier behavior. Assisted review, not a mastery claim.
 
 ### Probability
 

@@ -142,6 +142,14 @@ Full content is filed by category; each question links back to its dated assessm
 | [L009 — Feasible Correlations and Zero-Variance Portfolios](../Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md) ↔ [L002 — PCA, Covariance Geometry, and Why Butterfly Trades Curvature](../Questions/LinearAlgebra/L002_PCA_Covariance_Geometry_and_Why_Butterfly_Trades_Curvature.md) | Covariance feasibility, geometry and zero-variance directions |
 | [O009 — Gradient Descent and Spectral Contraction](../Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md) ↔ [L008 — Conditioning and Least Squares](../Questions/LinearAlgebra/L008_Conditioning_and_Least_Squares.md) | Extreme eigenvalues govern numerical sensitivity and convergence |
 
+## October 31 Drill and Median Review
+
+- [C021 — Exactly-K Distinct Subarrays](../Questions/Coding/C021_Count_Subarrays_with_Exactly_K_Distinct_Values.md) ↔ [C004 — Sliding Window Maximum](../Questions/Coding/C004_NeetCode_Sliding_Window_Maximum.md): pointer monotonicity is shared, while frequency feasibility and deque dominance use different invariants.
+- [P037 — Nonnegative Bridges](../Questions/Probability/P037_Nonnegative_Bridges_and_the_Reflection_Bijection.md) ↔ [P008 — Conditioned Coin-Toss Runs](../Questions/Probability/P008_Runs_in_a_Conditioned_Coin_Toss_Sequence.md): fixed totals induce dependence; reflection counts a whole-path event while indicators count local changes.
+- [S025 — Laplace Median Estimation](../Questions/Statistics/S025_Laplace_Location_Median_MLE_and_Asymptotic_Variance.md) ↔ [Median study card](../KnowledgeCards/Statistics/Median_Laplace_MLE_Binomial_Counts_and_Asymptotic_Normality.md) ↔ [P022 — Discrete Median](../Questions/Probability/P022_Discrete_Median_and_Symmetry.md): order-statistic rank → threshold-count event; the Laplace discussion adds binomial normal approximation and robustness.
+- [T013 — Multihorizon AR(1) Forecasts](../Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) ↔ [T003 — AR(1) First Passage](../Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md): fixed-horizon and stopping-time questions for a related process. **T013 remains Pending; no solution filed.**
+- Dated independent-versus-assisted evidence: [October 31, continued through November 1](../DailyTests/2026-10-31.md).
+
 ## Update Rule
 
 When a new finalized subject is added:

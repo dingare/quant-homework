@@ -577,3 +577,16 @@ Source: [SC007 — question and recorded answer](Questions/StochasticCalculus/SC
 - [ ] Follow SC007's Intuition and Solution: proceed from a discrete crossing example to self-financing gains and the local-time correction in a Brownian model.
 
 Any near-term retest must be labeled intentional spaced repetition and identify October 30 / option replication and the unfinished argument. Do not automatically add a separate review block or reminder.
+
+
+## October 31 Drill, Continued Through November 1 — Q4 Pending
+
+Source: [October 31 session](DailyTests/2026-10-31.md). Q1–Q3 Partial / Hinted overall; all actual times Not recorded. User-reported understanding after the median explanation is preserved without a cold-mastery claim.
+
+- [ ] Resume [Q4 / T013](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md), original 9-minute budget. Unattempted and Pending; no hints or solution supplied. This archive does not create a reminder or an extra drill.
+- [ ] Optional focused later check: [Q3 / S025](Questions/Statistics/S025_Laplace_Location_Median_MLE_and_Asymptotic_Variance.md), using the [English median study card](KnowledgeCards/Statistics/Median_Laplace_MLE_Binomial_Counts_and_Asymptotic_Normality.md). Independently explain median rank → majority-count event → binomial CLT → limiting CDF, including scaling and the mean comparison. Median conclusion independently recalled; log likelihood completed by user report, exact expression unsubmitted; proofs and calculations supplied.
+- Q1 / C021: quadratic intervals and two pointers independently suggested; exact submitted code practiced but flawed (I). Multiple legal starts were undercounted, a temporarily empty window terminated the loop, and index-list operations threatened linear time. The assistant's at-most reference passed 5,465 exhaustive comparisons plus large cases. No independent corrected user submission followed; K/R unresolved.
+- Q2 / P037: first-hit-time partition independently proposed. Reflection through first -1 / first +1, the nonnegative-prefix requirement and conditional uniformity explained. The later explicit statement that reflection was guessed but not constructed supersedes the initial provisional Cold Solve self-report. Typing inconvenience and fixed-j versus every-j wording clarification are not the basis for a conceptual-error label. Part 3's reference was displayed; an independent answer was not assessed. K/R unresolved.
+- Q3 / S025: requests about event equivalence, standardization and integration by parts are clarification/assistance evidence, not by themselves confirmed new knowledge gaps. No implementation gap applies. Do not infer independent reconstruction from acknowledgments of understanding.
+
+Any near-term revisit of Q1–Q3 must be labeled **intentional spaced repetition**, naming October 31, the exact item and assisted step (including the November 1 continuation where relevant). Keep the no-separate-retrieval-block preference. Q4 remains the only unattempted main question in this set.
