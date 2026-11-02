@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [November 1 drill](DailyTests/2026-11-01.md) — Q1 **Partial / Hinted** after algorithm explanation and requested reference code; K/R unresolved, no user implementation submitted. **Q2–Q4 Pending**, original prompts only; resume November 2 at Q2.
+
 - [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
 
 - [October 23 drill, continued through October 25](DailyTests/2026-10-23.md) — **All four main questions discussed; none Pending.** Q1–Q3 Partial / Hinted, preserving Q1 verified user code and Q3 independent correct decisions. Q4 Cold Solve by user report, written working unverified; typing inconvenience is not a knowledge gap. Full S024 / O010 references are filed.
@@ -37,6 +39,9 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
+
+- [P038 — Sequential Selection of the Overall Maximum](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) — **Pending**, prompt only.
+- [P039 — Expected Wealth and Typical Multiplicative Growth](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) — **Pending**, prompt only.
 
 - [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md)
 
@@ -80,6 +85,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P037 — Nonnegative Bridges and the Reflection Bijection](Questions/Probability/P037_Nonnegative_Bridges_and_the_Reflection_Bijection.md)
 
 ## Statistics
+
+- [S026 — Normal Tail Estimation with Shifted Simulation](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) — **Pending**, prompt only.
 
 - [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
 
@@ -141,6 +148,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
+
+- [C022 — K Smallest Pair Sums with K-Way Merge](Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md) — Assistant reference supplied; independent user implementation unverified.
 
 - [C020 — Minimum Deletions for a Strictly Increasing Subsequence](Questions/Coding/C020_Minimum_Deletions_for_a_Strictly_Increasing_Subsequence.md)
 

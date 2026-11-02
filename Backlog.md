@@ -592,3 +592,14 @@ Source: [October 31 session](DailyTests/2026-10-31.md). All four main questions 
 - [ ] Time-series foundation review, explicitly requested November 1: the user has not yet reviewed time series and reports many unfamiliar foundations. Prioritize stationarity and autocovariance, AR(1)/MA(1), conditional-mean optimality, multistep forecast errors and chronological evaluation. Use [T013's reading recommendations](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md#reading-recommendations-and-study-priorities). Do not call the need retrieval-only; K/R for specific concepts remains unresolved, and no I gap applies.
 
 Any near-term revisit of Q1–Q4 must be labeled **intentional spaced repetition**, naming October 31, the exact item and assisted step (including the November 1 continuation where relevant). Keep the no-separate-retrieval-block preference. No main question remains Pending in this set; foundation study and later independent reproduction remain open.
+
+
+## November 1 Drill — Paused After Q1
+
+Source: [November 1 session](DailyTests/2026-11-01.md). Q1 **Partial / Hinted**; **Q2–Q4 Pending**. The user requested saving progress and continuing Q2 and later questions tomorrow, November 2, America/New_York. This is a continuation of the existing set. All actual times Not recorded.
+
+- [ ] Resume [Q2 / P038](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md), then [Q3 / S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) and [Q4 / P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md). All three are unattempted; original prompts only, without hints or solutions. Pending is not Miss.
+- [C022 / Q1](Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md): brute-force idea reported; sorted-row / min-heap representation, invariant, initialization cap, complexity and reference code supplied. User found it interesting and asked to move on. No exact user code submitted; unverified is not unpracticed. K/R unresolved; no observed I error or independent-mastery claim.
+- Optional later single independent check: reconstruct Q1's invariant and row cap, then submit runnable code. A near-term retest must be labeled **intentional spaced repetition of November 1 Q1**, identifying the supplied representation / implementation. Do not add a separate retrieval block.
+
+Resume Q2 before generating a replacement set unless instructed otherwise. No reminder was requested or scheduled.

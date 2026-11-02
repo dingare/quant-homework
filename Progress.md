@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 36 |
-| Statistics | S | 25 |
+| Probability | P | 38 |
+| Statistics | S | 26 |
 | Time Series | T | 13 |
 | Optimization | O | 10 |
-| Coding | C | 21 |
+| Coding | C | 22 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 122 |
+| Total | All | 126 |
 
 ## Knowledge Cards
 
@@ -27,6 +27,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 10 |
 
 ## Notes
+
+- 2026-11-01: Archived the [November 1 drill](DailyTests/2026-11-01.md), paused after Q1. Filed C022 and prompt-only Pending P038 / S026 / P039: canonical files 122 → 126 (Coding 22, Probability 38, Statistics 26). Q1 Partial / Hinted: brute-force idea reported, heap representation and assistant code supplied; K/R unresolved, no user code submitted or I error observed. Q2–Q4 remain unattempted; resume November 2 at Q2. All actual times Not recorded; no mastery inferred. Knowledge cards unchanged at 10.
 
 - 2026-11-01: Finished discussion of [Q4 / T013](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) from the [October 31 set](DailyTests/2026-10-31.md). All four main questions discussed; none Pending. Q4 overall Partial / Hinted, preserving independent final limits and interpretation after earlier supplied formulas. User reports time series has not yet been reviewed and many foundations are unfamiliar; targeted reading and later independent checks remain open. Counts unchanged at 122 question files and 10 standalone cards; actual times Not recorded.
 
