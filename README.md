@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-02: Continued the [November 1 drill](DailyTests/2026-11-01.md) through [Q2 / P038](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md), now discussed and **Partial / Hinted**. The exact selection probability, finite-cutoff comparison, and large-n limit are filed with independent versus assisted evidence. **Q3–Q4 remain Pending** for November 3; no new question files or mastery claims.
+
 - 2026-11-01: Saved the [November 1 drill](DailyTests/2026-11-01.md), paused after Q1. Filed [C022](Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md) with the supplied heap / k-way-merge explanation and assistant reference; Q1 Partial / Hinted, independent user implementation unverified. Preserved [P038](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md), [S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) and [P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) as **Pending prompts only**. Resume Q2 on November 2; no hints or solutions added to Q2–Q4, no actual time inferred.
 
 - 2026-11-01: Completed discussion of [Q4 / T013](Questions/TimeSeries/T013_Multihorizon_AR1_Level_and_Change_Forecasts.md) in the [October 31 set](DailyTests/2026-10-31.md). All four main questions discussed; Q4 overall Partial / Hinted, with independently correct final limits and known-current-value interpretation. Filed the conditional-mean optimality proof, stationary-variance balance, multihorizon forecasts and score comparison. Added targeted reading for the user-reported unreviewed time-series foundations; no elapsed time or independent mastery inferred.

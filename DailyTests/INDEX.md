@@ -4,7 +4,7 @@ Dated interview performance logs. Full prompts, solutions and reusable discussio
 
 ## Sessions
 
-Latest archived set: [November 1](2026-11-01.md), paused after Q1. Q1 Partial / Hinted: brute-force idea reported, algorithm and assistant reference code supplied; no user implementation submitted. **Q2–Q4 Pending**, to resume November 2 starting at Q2, with original prompts and no hints/solutions. All actual times Not recorded.
+Latest archived set: [November 1, continued November 2](2026-11-01.md). Q1–Q2 Partial / Hinted; Q2's independent position condition, adjacent-cutoff comparison and correct final values are preserved alongside supplied weighting, algebra and integral steps. **Q3–Q4 Pending**, to resume November 3 starting at Q3. All actual times Not recorded.
 
 The October 31 set, continued through November 1, is fully discussed; its prior performance records and time-series foundation needs remain unchanged.
 
@@ -12,7 +12,7 @@ The October 23 set was completed in discussion through October 25; no main item 
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
-| [2026-11-01](2026-11-01.md) | Four-question drill; paused after Q1 | Q1 Partial / Hinted; Q2–Q4 Pending | K-way-merge explanation and reference supplied; K/R unresolved, no user code submitted; resume Q2 November 2; actual times unknown |
+| [2026-11-01](2026-11-01.md) | Four-question drill, continued November 2; paused after Q2 | Q1–Q2 Partial / Hinted; Q3–Q4 Pending | Q2 position condition and cutoff-difference approach independent; weighting, algebra and integral supplied; final n/e and 1/e correct after hints; resume Q3 November 3; actual times unknown |
 | [2026-10-31](2026-10-31.md) | Four-question drill, continued through November 1; all discussed | Q1–Q4 Partial / Hinted overall; Q4 part 3 independently correct; none Pending | Q1 exact code flawed (I), reference separately verified; Q2 first-hit approach independent; Q3 median recalled, derivations guided; Q4 stationary variance / forecast-risk derivations supplied, final limits and interpretation independent; time series unreviewed by user report; actual times unknown |
 | [2026-10-23](2026-10-23.md) | Four-question drill, continued through October 25; all discussed | Q1–Q3 Partial / Hinted; Q4 Cold Solve (user-reported, written working unverified); none Pending | Q1 user code verified; Q3 correct decisions preserved with supplied derivations; Q4 typing-burden clarification supersedes initial assisted rating; actual times unknown |
 | [2026-10-20](2026-10-20.md) | Four-question drill, continued October 21–22; all discussed | Q1–Q4 Partial / Hinted overall; independent subparts preserved; none Pending | Q3 part 1 Cold Solve; Q4 calibration/core scoring and accuracy-limit interpretation correct, arithmetic/writing clarifications preserved; probability evaluation and hit-rate/calibration curves discussed; actual times unknown |

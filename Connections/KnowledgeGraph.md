@@ -153,8 +153,9 @@ Full content is filed by category; each question links back to its dated assessm
 ## November 1 Drill — Partial Review and Pending Prompts
 
 - [C022 — K Smallest Pair Sums](../Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md) ↔ [C017 — Resource Allocation](../Questions/Coding/C017_Minimum_Units_for_Overlapping_Tasks.md) ↔ [C010 — Kth Largest](../Questions/Coding/C010_Kth_Largest_Heap_and_Quickselect.md): heaps support different invariants; C022 merges sorted row heads rather than tracking resource availability or retaining k values. Algorithm and assistant reference supplied; independent implementation unverified.
-- [P038 — Sequential Selection](../Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md), [S026 — Shifted Simulation](../Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md), and [P039 — Multiplicative Wealth](../Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) are **Pending prompts only**; no derivations or solution links are added here.
-- [Dated performance and continuation queue](../DailyTests/2026-11-01.md): Q1 Partial / Hinted; resume Q2–Q4 November 2.
+- [P038 — Sequential Selection](../Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) ↔ [P026 — Finite-Horizon Optimal Stopping](../Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md): rank-based selection in a random order versus value-based stopping; P038 now includes the conditional-position count, harmonic cutoff criterion and large-n approximation, with assisted versus independent steps kept in the dated log.
+- [S026 — Shifted Simulation](../Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) and [P039 — Multiplicative Wealth](../Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) remain **Pending prompts only**.
+- [Dated performance and continuation queue](../DailyTests/2026-11-01.md): Q1–Q2 Partial / Hinted; resume Q3–Q4 November 3.
 
 ## Update Rule
 

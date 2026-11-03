@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [November 1 drill](DailyTests/2026-11-01.md) — Q1 **Partial / Hinted** after algorithm explanation and requested reference code; K/R unresolved, no user implementation submitted. **Q2–Q4 Pending**, original prompts only; resume November 2 at Q2.
+- [November 1 drill, continued November 2](DailyTests/2026-11-01.md) — Q1–Q2 **Partial / Hinted**; Q2 complete with independent position condition and cutoff-difference idea, assisted derivations and correct final values. **Q3–Q4 Pending**; resume November 3 at Q3.
 
 - [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
 
@@ -40,7 +40,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Probability
 
-- [P038 — Sequential Selection of the Overall Maximum](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) — **Pending**, prompt only.
+- [P038 — Sequential Selection of the Overall Maximum](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) — Discussed November 2; full reference and Partial / Hinted assessment filed.
 - [P039 — Expected Wealth and Typical Multiplicative Growth](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) — **Pending**, prompt only.
 
 - [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md)
