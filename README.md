@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-03: Completed discussion of [replacement Q3 / S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) and [Q4 / P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) from the [November 1 drill](DailyTests/2026-11-01.md). Both Partial / Hinted; none Pending. Q3's full likelihood-ratio/variance solution was requested and supplied after a hint; the original flawed prompt remains withdrawn without a user-gap label. Q4's expected wealth and rare-path interpretation were independent, while typical-growth reasoning used a hint. No elapsed time or new question/card count inferred.
+
 - 2026-11-03: Replaced the flawed [Q3 / S026 normal-tail prompt](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) in the [November 1 drill](DailyTests/2026-11-01.md). The original prompt and the user's valid recentering objection remain on record without a Miss or K/R/I label. A ten-day rare-drawdown estimator question is now **Pending**; Q4 remains Pending. No new question file or completed solve is inferred.
 
 - 2026-11-02: Continued the [November 1 drill](DailyTests/2026-11-01.md) through [Q2 / P038](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md), now discussed and **Partial / Hinted**. The exact selection probability, finite-cutoff comparison, and large-n limit are filed with independent versus assisted evidence. **Q3–Q4 remain Pending** for November 3; no new question files or mastery claims.

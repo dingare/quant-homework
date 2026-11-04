@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q2 **Partial / Hinted**. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; replacement Q3 and Q4 **Pending**. Original Q3 is not scored as a Miss.
+- [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q4 **Partial / Hinted** overall; none Pending. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; only the rare-drawdown replacement is scored. Q4's expected value and rare-path explanation were independent.
 
 - [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
 

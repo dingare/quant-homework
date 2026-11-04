@@ -6,7 +6,7 @@
 - Tags: Monte Carlo, Estimator Unbiasedness, Variance, Rare Events, Shifted Sampling
 - Date Added: 2026-11-01
 - Original drill: November 1, 2026, Q3
-- Status: Original prompt withdrawn November 3 after a valid alternative and an exact calculation exposed its design flaw. Replacement Q3 below is Pending, unattempted, with no hint or solution supplied.
+- Status: Original prompt withdrawn November 3 after a valid alternative and an exact calculation exposed its design flaw. Replacement Q3 is Partial / Hinted after a hint and complete worked answer on November 3.
 
 ## Original Q3 — Withdrawn After Discussion
 
@@ -42,8 +42,43 @@ To generate more downside paths, the researcher draws independent shocks $`X_i\s
 2. Express the variance of this estimator using an expectation under the shifted simulation. Compare its structure with the variance of direct simulation under the original model. You need not evaluate a multivariate integral.
 3. If a is so large that almost every shifted path hits the barrier, does that guarantee better precision? Explain what evidence from the weighted simulated outputs would help you choose a shift.
 
-Keep the derivation interview-length. No code is required. Replacement budget: 14 minutes; actual time Not recorded. No hint or solution has been supplied for this replacement.
+Keep the derivation interview-length. No code is required. Replacement budget: 14 minutes; actual time Not recorded.
+
+## Replacement Q3 — Worked Discussion
+
+Write $`A(x)`$ for the event that the cumulative path made from $`x_1,\ldots,x_{10}`$ reaches the barrier, and $`I_A(x)`$ for its indicator. Under the shifted law, the unweighted hit fraction estimates $`q_a=P_a(A)`$, not the target $`p=P_0(A)`$. The original and shifted joint densities are
+
+```math
+f_0(x)=\prod_{i=1}^{10}\phi(x_i),\qquad f_a(x)=\prod_{i=1}^{10}\phi(x_i+a).
+```
+
+The second expression uses $`X_i\sim N(-a,1)`$, whose density at $`x_i`$ is $`\phi(x_i+a)`$. For one shock, expansion of the two normal densities gives
+
+```math
+\frac{\phi(x_i)}{\phi(x_i+a)}
+=\exp\!\left(\frac{(x_i+a)^2-x_i^2}{2}\right)
+=\exp\!\left(ax_i+\frac{a^2}{2}\right).
+```
+
+Independence therefore yields the complete-path weight and estimator
+
+```math
+w_a(x)=\frac{f_0(x)}{f_a(x)}
+=\exp\!\left(a\sum_{i=1}^{10}x_i+5a^2\right),\qquad
+\widehat p_a=\frac1N\sum_{j=1}^N I_A(X^{(j)})w_a(X^{(j)}).
+```
+
+The density ratio cancels the shifted density in the expectation: $`E_a[I_A(X)w_a(X)]=\int_A f_0(x)\,dx=p`$. With independent paths, the variance is
+
+```math
+Var_a(\widehat p_a)=\frac{E_a[I_A(X)w_a(X)^2]-p^2}{N},
+\qquad Var_0(\widehat p_{\mathrm{direct}})=\frac{p(1-p)}{N}.
+```
+
+For fixed $`p`$ and $`N`$, minimizing variance within this shift family means minimizing $`E_a[I_Aw_a^2]`$, not maximizing the shifted hit rate. A shift near $`a=0.8`$ is a heuristic starting point because ten shocks with mean $`-0.8`$ have cumulative mean $`-8`$; pilot simulations can compare the sample variance or standard error of the weighted hit contributions for nearby shifts. A very large shift can make almost every path hit while a few large weights dominate. The theoretical zero-variance proposal is the original path law conditional on $`A`$, with density $`f_0(x)I_A(x)/p`$; it is a guide to proposal choice rather than a directly available estimator.
+
+The identity needs a known target law, a proposal that assigns positive probability wherever event paths have positive target density, and a computable full-path density ratio. Normality is specific to this prompt, not to importance sampling. Finite variance further requires a finite second moment. In applications, reweighting reduces Monte Carlo error under a chosen model; it does not repair a misspecified tail model. For rare-payoff option simulation, the target law is the pricing model's risk-neutral measure, which differs from the physical law used to forecast losses.
 
 ## Assessment History
 
-- [November 1 Q3, discussed November 3](../../DailyTests/2026-11-01.md#q3--shifted-simulation): original prompt withdrawn after the user identified a valid recentering estimator and questioned the point of simulating an exactly available normal tail. No Miss or K/R/I gap assigned. Replacement prompt above remains Pending with no hint or solution.
+- [November 1 Q3, discussed November 3](../../DailyTests/2026-11-01.md#q3--shifted-simulation): original prompt withdrawn after the user identified a valid recentering estimator and questioned the point of simulating an exactly available normal tail. No Miss or K/R/I gap assigned to that objection. For the replacement, the user requested a hint and then the full answer; the assistant supplied the likelihood ratio, variance and shift-selection reasoning. Follow-up questions explored the exponential algebra, assumptions and applications. Overall replacement status Partial / Hinted; no independent full derivation submitted, K/R unresolved, no I task.
