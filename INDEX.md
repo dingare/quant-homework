@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [November 1 drill, continued November 2](DailyTests/2026-11-01.md) — Q1–Q2 **Partial / Hinted**; Q2 complete with independent position condition and cutoff-difference idea, assisted derivations and correct final values. **Q3–Q4 Pending**; resume November 3 at Q3.
+- [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q2 **Partial / Hinted**. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; replacement Q3 and Q4 **Pending**. Original Q3 is not scored as a Miss.
 
 - [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
 
@@ -86,7 +86,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Statistics
 
-- [S026 — Normal Tail Estimation with Shifted Simulation](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) — **Pending**, prompt only.
+- [S026 — Shifted Simulation: Normal Tail and Rare Drawdown](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) — Original prompt withdrawn for design flaw; replacement rare-drawdown question **Pending**, prompt only.
 
 - [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
 

@@ -594,13 +594,14 @@ Source: [October 31 session](DailyTests/2026-10-31.md). All four main questions 
 Any near-term revisit of Q1–Q4 must be labeled **intentional spaced repetition**, naming October 31, the exact item and assisted step (including the November 1 continuation where relevant). Keep the no-separate-retrieval-block preference. No main question remains Pending in this set; foundation study and later independent reproduction remain open.
 
 
-## November 1 Drill, Continued November 2 — Q3–Q4 Pending
+## November 1 Drill, Continued Through November 3 — Replacement Q3 and Q4 Pending
 
-Source: [November 1 session, continued November 2](DailyTests/2026-11-01.md). Q1–Q2 **Partial / Hinted**; **Q3–Q4 Pending**. User asked to pause after Q2 and continue the remaining questions November 3, America/New_York. One study set across both dates; all actual times Not recorded.
+Source: [November 1 session, continued through November 3](DailyTests/2026-11-01.md). Q1–Q2 **Partial / Hinted**. The original Q3 was withdrawn for a prompt-design flaw after a valid user alternative and exact-CDF objection. Replacement Q3 and Q4 are **Pending**. All actual times Not recorded.
 
 - [x] [Q2 / P038](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) discussed November 2. The user independently identified the first-r location condition and proposed comparing adjacent cutoff probabilities. The assistant supplied the exact position weight, harmonic-tail difference and integral approximation. The user then correctly answered n/e and 1/e after these hints. The user reported that the integral representation had not occurred to them initially; K/R for earlier familiarity remains unresolved. No independent full derivation verified.
-- [ ] Resume [Q3 / S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md), then [Q4 / P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) on November 3. Both are unattempted; original prompts only, without hints or solutions. Pending is not Miss.
+- [ ] Resume [replacement Q3 / S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md#replacement-q3--rare-drawdown-from-shifted-paths), then [Q4 / P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md). Both remain unattempted with no hints or solutions. Pending is not Miss.
+- [x] Original Q3 withdrawn November 3: the user proposed counting shifted draws beyond known m + 3, a valid unbiased construction under the original wording, and noted that the standard-normal tail is directly available from its CDF. Preserve this as question-quality feedback, not a user K/R/I gap or an attempted failure.
 - [C022 / Q1](Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md): brute-force idea reported; sorted-row / min-heap representation, invariant, initialization cap, complexity and reference code supplied. No exact user code submitted; unverified is not unpracticed. K/R unresolved; no observed I error or independent-mastery claim.
 - Optional later independent check: reconstruct Q1's invariant and row cap, then submit runnable code; for Q2, rederive the conditional weighting, cutoff-difference sign and harmonic-to-integral approximation without cues. Near-term retests must be labeled **intentional spaced repetition** of the original November 1 item, including the November 2 Q2 continuation and the assisted step. No separate retrieval block.
 
-Resume Q3 before generating a replacement set unless instructed otherwise. No reminder was requested or scheduled.
+Resume the replacement Q3 before generating a new set unless instructed otherwise. No reminder was requested or scheduled.
