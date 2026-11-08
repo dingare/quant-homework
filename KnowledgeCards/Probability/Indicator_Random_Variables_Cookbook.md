@@ -386,3 +386,5 @@ Related review path: [首次命中、奇偶增强、覆盖与轮流归属框架]
 - [P035 — Shared Unknown Win Probability and Predictive Risk](../../Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
 
 Dated results and assistance/verification evidence are linked from each question’s assessment history. Filing these references does not change the recorded performance.
+
+- [P040 — Occupied Assets: Moments and Concentration](../../Questions/Probability/P040_Occupied_Assets_Moments_and_Concentration.md) — Exact occupancy variance, negative covariance and concentration; independent versus assisted steps recorded in the November 7 DailyTest.

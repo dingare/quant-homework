@@ -4,7 +4,9 @@ Dated interview performance logs. Full prompts, solutions and reusable discussio
 
 ## Sessions
 
-Latest archived set: [November 1, continued through November 3](2026-11-01.md). Q1–Q4 Partial / Hinted overall; none Pending. The original Q3 normal-tail prompt was withdrawn after the user identified a valid recentering estimator and an exact-CDF shortcut; only the rare-drawdown replacement is scored. All actual times Not recorded.
+Latest archived set: [November 7](2026-11-07.md). Q1–Q2 Partial / Hinted; Q1 exact user code verified. **Q3–Q4 Pending**, prompt only. Resume Q3 on November 8. All actual times Not recorded.
+
+The [November 1 set, continued through November 3](2026-11-01.md), is fully discussed. Q1–Q4 Partial / Hinted overall; none Pending. The original Q3 normal-tail prompt was withdrawn after the user identified a valid recentering estimator and an exact-CDF shortcut; only the rare-drawdown replacement is scored. All actual times Not recorded.
 
 The October 31 set, continued through November 1, is fully discussed; its prior performance records and time-series foundation needs remain unchanged.
 
@@ -12,6 +14,7 @@ The October 23 set was completed in discussion through October 25; no main item 
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
+| [2026-11-07](2026-11-07.md) | Four-question drill; paused after Q2 | Q1–Q2 Partial / Hinted; Q3–Q4 Pending | Q1 supplied algorithm, verified user code; Q2 independent indicator/inclusion-exclusion and negative-sign intuition, supplied concentration proof; resume Q3 November 8; actual times unknown |
 | [2026-11-01](2026-11-01.md) | Four-question drill, continued through November 3; all discussed | Q1–Q4 Partial / Hinted overall; none Pending | Original Q3 withdrawn for prompt flaw, without a user-gap label; replacement Q3 solution requested and supplied; Q4 expected value and rare-path explanation independently correct, typical decay prompted; actual times unknown |
 | [2026-10-31](2026-10-31.md) | Four-question drill, continued through November 1; all discussed | Q1–Q4 Partial / Hinted overall; Q4 part 3 independently correct; none Pending | Q1 exact code flawed (I), reference separately verified; Q2 first-hit approach independent; Q3 median recalled, derivations guided; Q4 stationary variance / forecast-risk derivations supplied, final limits and interpretation independent; time series unreviewed by user report; actual times unknown |
 | [2026-10-23](2026-10-23.md) | Four-question drill, continued through October 25; all discussed | Q1–Q3 Partial / Hinted; Q4 Cold Solve (user-reported, written working unverified); none Pending | Q1 user code verified; Q3 correct decisions preserved with supplied derivations; Q4 typing-burden clarification supersedes initial assisted rating; actual times unknown |

@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 38 |
-| Statistics | S | 26 |
-| Time Series | T | 13 |
+| Probability | P | 39 |
+| Statistics | S | 27 |
+| Time Series | T | 14 |
 | Optimization | O | 10 |
-| Coding | C | 22 |
+| Coding | C | 23 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 126 |
+| Total | All | 130 |
 
 ## Knowledge Cards
 
@@ -27,6 +27,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 10 |
 
 ## Notes
+
+- 2026-11-07: Archived the [November 7 drill](DailyTests/2026-11-07.md), paused after Q2. Added C023 / P040 worked notes and S027 / T014 Pending prompts: 126 to 130 canonical files. Q1–Q2 Partial / Hinted; Q1 exact user code verified unchanged; Q2 independent indicator/inclusion-exclusion and negative-sign intuition retained, pair coefficient and full concentration proof supplied. Resume Q3 November 8. Actual times Not recorded; K/R unresolved; no observed I error in Q1. Knowledge-card count remains 10. Pending files are not completed solves.
 
 - 2026-11-03: Completed discussion of replacement [Q3 / S026](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) and [Q4 / P039](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) in the [November 1 drill](DailyTests/2026-11-01.md). Both are Partial / Hinted; none of the four main items remains Pending. Q3 likelihood-ratio derivation and variance comparison were supplied after a hint/full-answer request; the original withdrawn prompt is still unscored. Q4 expected wealth and rare-path explanation were independently correct, while typical decay followed a hint. K/R unresolved, no I task for Q3–Q4; actual times Not recorded. Question count 126 and standalone card count 10 unchanged.
 

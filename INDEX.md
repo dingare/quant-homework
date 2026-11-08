@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [November 7 drill](DailyTests/2026-11-07.md) — Q1–Q2 **Partial / Hinted**; Q1 exact user code verified without repair; Q2 independent indicator / inclusion-exclusion reasoning and negative-sign intuition preserved. **Q3–Q4 Pending**, original prompts only; resume Q3 on November 8. Actual times Not recorded.
+
 - [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q4 **Partial / Hinted** overall; none Pending. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; only the rare-drawdown replacement is scored. Q4's expected value and rare-path explanation were independent.
 
 - [October 31 drill, continued through November 1](DailyTests/2026-10-31.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, preserving Q4 part 3 independently correct limits and interpretation. Time-series foundations and targeted reading recorded. Exactly-k subarrays, nonnegative bridges, Laplace median estimation and multihorizon forecast targets; independent contributions, reference-code verification and wording clarifications preserved.
@@ -39,6 +41,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
+
+- [P040 — Occupied Assets: Moments and Concentration](Questions/Probability/P040_Occupied_Assets_Moments_and_Concentration.md) — Discussed; independent and assisted steps distinguished.
 
 - [P038 — Sequential Selection of the Overall Maximum](Questions/Probability/P038_Sequential_Selection_of_the_Overall_Maximum.md) — Discussed November 2; full reference and Partial / Hinted assessment filed.
 - [P039 — Expected Wealth and Typical Multiplicative Growth](Questions/Probability/P039_Expected_Wealth_and_Typical_Multiplicative_Growth.md) — **Pending**, prompt only.
@@ -86,6 +90,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Statistics
 
+- [S027 — Estimating a Squared Mean](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) — **Pending**, prompt only.
+
 - [S026 — Shifted Simulation: Normal Tail and Rare Drawdown](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) — Original prompt withdrawn for design flaw; replacement rare-drawdown question **Pending**, prompt only.
 
 - [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
@@ -118,6 +124,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Time Series
 
+- [T014 — Observed Price Noise and Return Reversal](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) — **Pending**, prompt only.
+
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
 - [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
 - [T003 — AR(1) First Passage Time and Why Persistence Changes Waiting Time](Questions/TimeSeries/T003_AR1_First_Passage_Time_and_Why_Persistence_Changes_Waiting_Time.md)
@@ -148,6 +156,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
+
+- [C023 — Trapping Rain Water with Two Pointers](Questions/Coding/C023_Trapping_Rain_Water_with_Two_Pointers.md) — Algorithm supplied; exact user implementation verified.
 
 - [C022 — K Smallest Pair Sums with K-Way Merge](Questions/Coding/C022_K_Smallest_Pair_Sums_with_K_Way_Merge.md) — Assistant reference supplied; independent user implementation unverified.
 
