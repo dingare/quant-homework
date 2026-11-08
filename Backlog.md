@@ -608,13 +608,14 @@ Source: [November 1 session, continued through November 3](DailyTests/2026-11-01
 All four main items have been discussed. No reminder was requested or scheduled.
 
 
-## November 7 Drill — Paused after Q2; Resume Q3 November 8
+## November 7 Drill, Continued November 8 — All Items Discussed
 
-Source: [November 7 drill](DailyTests/2026-11-07.md). Q1–Q2 **Partial / Hinted**; Q3–Q4 **Pending**, unattempted, prompt only. All actual times Not recorded.
+Source: [November 7 drill, continued November 8](DailyTests/2026-11-07.md). All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, none Pending. All actual times Not recorded.
 
-- [ ] Resume [Q3 / S027](Questions/Statistics/S027_Estimating_a_Squared_Mean.md), then [Q4 / T014](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) on November 8. Continue this set without a new drill or separate retrieval block. No hints or solutions supplied for either item.
+- [x] [Q3 / S027](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) discussed November 8: bias correction independently correct; fourth-moment/MGF route proposed, full expansion supplied. Negative-estimate, clipping bias and sample-size interpretation explained. The ambiguous “应该不行” is not a separately verified independent clipping argument. K/R unresolved; no I task.
+- [x] [Q4 / T014](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) discussed November 8: all moment and linear-forecast answers in parts 1–2 independently correct, including zero covariance for the efficient target. Core part-3 judgments independent; executable-price and cost reasoning supplied. Target wording, return-reversal phrasing and efficient-return definition were clarified without adding conceptual-error labels. No compulsory remedial check follows from those questions; K/R unresolved, no I task.
 - [C023 / Q1](Questions/Coding/C023_Trapping_Rain_Water_with_Two_Pointers.md): user clarified incremental volume updates; do not attribute the assistant's initial interpretation to the user. Per-column representation, invariant and pseudocode supplied. Exact subsequent user code verified without repair: 10 edge/examples, 5,000 seeded oracle comparisons, input preservation and three 200,000-element cases. No observed I error; independent discovery/proof unverified, K/R unresolved. The user identified per-column contribution as the important insight; reported understanding is not cold mastery.
 - [P040 / Q2](Questions/Probability/P040_Occupied_Assets_Moments_and_Concentration.md): independent indicator/covariance and inclusion-exclusion setup, negative sign and competition intuition preserved. Initial occupancy-independence assertion corrected; covariance-pair coefficient and full concentration proof supplied. Power parentheses and repeated i intended as j were notation/typo clarifications; Bernoulli versus one-trial binomial was terminology. Using a complementary probability in the symmetric marginal variance product was not an error. K/R unresolved, no I task.
 - Optional later focused check: independently reconstruct Q1's per-column contribution and weaker-boundary finalization proof. Near-term retests must be labeled intentional spaced repetition of November 7, naming the item and assisted step. Do not reopen correct code as unsubmitted or unpracticed.
 
-User requested continuation tomorrow, not a reminder; no reminder or automation scheduled.
+All four items are discussed. Near-term Q3/Q4 retests must identify November 7, the November 8 continuation and the assisted step, and be labeled intentional spaced repetition. No separate retrieval block, reminder or automation scheduled.

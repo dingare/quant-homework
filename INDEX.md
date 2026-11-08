@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [November 7 drill](DailyTests/2026-11-07.md) — Q1–Q2 **Partial / Hinted**; Q1 exact user code verified without repair; Q2 independent indicator / inclusion-exclusion reasoning and negative-sign intuition preserved. **Q3–Q4 Pending**, original prompts only; resume Q3 on November 8. Actual times Not recorded.
+- [November 7 drill, continued November 8](DailyTests/2026-11-07.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, none Pending. Q1 exact user code verified; Q3 bias correction and Q4 moments/forecast coefficients independently correct. Q4 target/terminology clarifications preserved; actual times Not recorded.
 
 - [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q4 **Partial / Hinted** overall; none Pending. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; only the rare-drawdown replacement is scored. Q4's expected value and rare-path explanation were independent.
 
@@ -90,7 +90,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Statistics
 
-- [S027 — Estimating a Squared Mean](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) — **Pending**, prompt only.
+- [S027 — Estimating a Squared Mean](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) — Discussed November 8; bias correction independent, full variance/clipping explanation supplied.
 
 - [S026 — Shifted Simulation: Normal Tail and Rare Drawdown](Questions/Statistics/S026_Normal_Tail_Estimation_with_Shifted_Simulation.md) — Original prompt withdrawn for design flaw; replacement rare-drawdown question **Pending**, prompt only.
 
@@ -124,7 +124,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Time Series
 
-- [T014 — Observed Price Noise and Return Reversal](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) — **Pending**, prompt only.
+- [T014 — Observed Price Noise and Return Reversal](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) — Discussed November 8; moments and forecast coefficients independent, execution/cost reasoning supplied.
 
 - [T001 — Kalman Filter I: Recursive Bayesian Estimation for Noisy Market Signals](Questions/TimeSeries/T001_Kalman_Filter_I_Recursive_Bayesian_Estimation_for_Noisy_Market_Signals.md)
 - [T002 — Regime-Switching Kalman Filter: Hidden Market Regimes and Dynamic Signal Extraction](Questions/TimeSeries/T002_Regime_Switching_Kalman_Filter_Hidden_Market_Regimes_and_Dynamic_Signal_Extraction.md)
