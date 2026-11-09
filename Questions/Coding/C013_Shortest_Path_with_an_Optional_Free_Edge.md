@@ -77,3 +77,4 @@ Reference added during the code-completion review; historical assessment results
 ## Related questions and knowledge
 
 - [C019 — Shortest Grid Route with One Blocked Entry](C019_Shortest_Grid_Route_with_One_Blocked_Entry.md) — Resource-augmented shortest paths; weighted Dijkstra versus unit-cost BFS.
+- [Graph algorithm knowledge card](../../KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md): BFS, Dijkstra with a min-heap, topological sorting, invariants, implementation pitfalls and algorithm selection.

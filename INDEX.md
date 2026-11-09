@@ -209,6 +209,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ### Coding
 
+- [Graph Algorithms — BFS, Dijkstra, DAG, and Topological Sort](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) — adjacency lists, two-group constraints, heap/stale-entry shortest paths, prerequisite ordering, DAG DP, and runnable references. Guided study; no mastery inferred.
+
 - [Dynamic Programming — 经典逻辑题复习包](KnowledgeCards/Coding/DynamicProgramming/README.md) — 状态设计与正确性、七道经典题、今晚核心安排、分级提示、独立解答与可运行验证；不改变历史评分和题库计数。
 
 ### Statistics

@@ -117,3 +117,4 @@ Reference added during the code-completion review; historical assessment results
 
 - [C018 — Maximum-Sum Path in a Tree](C018_Maximum_Sum_Path_in_a_Tree.md) — Dependency order and propagation of dynamic-programming states.
 - [C011 — Incremental Connectivity and Connected Pairs](C011_Incremental_Connectivity_and_Connected_Pairs.md) — Undirected component connectivity versus directed dependency ordering.
+- [Graph algorithm knowledge card](../../KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md): BFS, Dijkstra with a min-heap, topological sorting, invariants, implementation pitfalls and algorithm selection.

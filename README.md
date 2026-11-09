@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-08: Added the [graph-algorithm knowledge card](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) covering BFS grouping, Dijkstra with a min-heap, DAG/topological sort and DAG DP. Includes the user's edge-scanning counterexamples, runnable references, and links to C008/C013/C019. Guided reference, not independent mastery; canonical question counts unchanged.
+
 - 2026-11-08: Completed missing Python implementations in C007–C010 and C013–C014; added merge-sort range counting, bounded-space rolling medians, constant-space minimum-length subarray optimization, rolling-row edit distance and runnable edge tests. All 23 coding notes are checked by `python3 Tools/verify_coding.py`; original assessment records and question counts are unchanged.
 
 - 2026-11-08: Finished Q3–Q4 of the [November 7 drill](DailyTests/2026-11-07.md); all four questions now discussed, none Pending. Filed [S027](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) exact variance and negative-estimate/clipping explanation, and [T014](Questions/TimeSeries/T014_Observed_Price_Noise_and_Return_Reversal.md) observed-return moments, target-specific linear forecasts and efficient-return terminology. Overall Partial / Hinted; Q3 bias correction and Q4 parts 1–2 independently correct. Preserve target/wording clarifications without extra conceptual-error labels. Counts remain 130 canonical files and 10 standalone cards; all actual times Not recorded.

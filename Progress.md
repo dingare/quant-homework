@@ -20,13 +20,16 @@ Track canonical question/subject files by category. These are filing counts, not
 
 | Category | Count |
 | --- | ---: |
+| Coding | 1 |
 | Probability | 5 |
 | Linear Algebra | 1 |
 | Statistics | 3 |
 | Stochastic Calculus | 1 |
-| Total | 10 |
+| Total | 11 |
 
 ## Notes
+
+- 2026-11-08: Added the [BFS / Dijkstra / DAG / topological-sort card](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) from the current drill discussion. Standalone Coding cards 0 to 1 and total cards 10 to 11; the separate DP review pack remains excluded from this standalone-card table. Canonical question counts remain 130. Q1 Partial / Hinted: both submitted edge-scanning versions were tested and flawed; assistant BFS reference supplied and verified, independent corrected user code not yet submitted. I errors observed, K/R unresolved; naming/typing clarifications do not add conceptual errors. Actual time Not recorded. No new solve or mastery claim.
 
 - 2026-11-08: Completed Q3–Q4 of the [November 7 drill](DailyTests/2026-11-07.md), one set continued across dates. Q1–Q4 Partial / Hinted overall; none Pending. Q3 bias correction independent; fourth-moment/MGF route proposed, full calculation and clipping/sample-size interpretation supplied. Q4 all part-1 moments and part-2 coefficients independently correct; part-3 judgments correct, execution/cost reasoning supplied. Target and efficient-return terminology questions are clarification evidence, not extra conceptual-error labels. K/R unresolved; no implementation task for Q3/Q4; actual times Not recorded. Counts unchanged at 130 canonical files and 10 standalone cards.
 
