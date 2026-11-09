@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 39 |
+| Probability | P | 40 |
 | Statistics | S | 27 |
 | Time Series | T | 14 |
 | Optimization | O | 10 |
 | Coding | C | 23 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 130 |
+| Total | All | 131 |
 
 ## Knowledge Cards
 
@@ -28,6 +28,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 11 |
 
 ## Notes
+
+- 2026-11-08: Filed [P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) and the [November 8 Q2 checkpoint](DailyTests/2026-11-08.md), increasing Probability canonical files 39 to 40 and total canonical files 130 to 131. Q2 Partial / Hinted: joint density, Jacobian, independence factorization and integrals supplied; conditional mean as m E[R] and the direct-marginal route independently proposed. User clarified incorrectly written extrema densities; no separate independence-concept error inferred. K/R unresolved, no I task, actual time Not recorded. Independent rederivation planned November 9 but not completed. Q3–Q4 remain Pending; standalone cards unchanged at 11.
 
 - 2026-11-08: Added the [BFS / Dijkstra / DAG / topological-sort card](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) from the current drill discussion. Standalone Coding cards 0 to 1 and total cards 10 to 11; the separate DP review pack remains excluded from this standalone-card table. Canonical question counts remain 130. Q1 Partial / Hinted: both submitted edge-scanning versions were tested and flawed; assistant BFS reference supplied and verified, independent corrected user code not yet submitted. I errors observed, K/R unresolved; naming/typing clarifications do not add conceptual errors. Actual time Not recorded. No new solve or mastery claim.
 

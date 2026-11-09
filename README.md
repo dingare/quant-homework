@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-08: Archived [Q2 / P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) from the [November 8 drill](DailyTests/2026-11-08.md): joint extrema density, Jacobian/support, ratio/maximum independence, conditional expectation and the direct minimum-marginal route. Q2 Partial / Hinted; independent observations and density-expression clarification preserved. User plans independent rederivation November 9; Q3–Q4 remain Pending.
+
 - 2026-11-08: Added the [graph-algorithm knowledge card](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) covering BFS grouping, Dijkstra with a min-heap, DAG/topological sort and DAG DP. Includes the user's edge-scanning counterexamples, runnable references, and links to C008/C013/C019. Guided reference, not independent mastery; canonical question counts unchanged.
 
 - 2026-11-08: Completed missing Python implementations in C007–C010 and C013–C014; added merge-sort range counting, bounded-space rolling medians, constant-space minimum-length subarray optimization, rolling-row edit distance and runnable edge tests. All 23 coding notes are checked by `python3 Tools/verify_coding.py`; original assessment records and question counts are unchanged.

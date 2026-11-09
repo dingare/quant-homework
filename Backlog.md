@@ -619,3 +619,11 @@ Source: [November 7 drill, continued November 8](DailyTests/2026-11-07.md). All 
 - Optional later focused check: independently reconstruct Q1's per-column contribution and weaker-boundary finalization proof. Near-term retests must be labeled intentional spaced repetition of November 7, naming the item and assisted step. Do not reopen correct code as unsubmitted or unpracticed.
 
 All four items are discussed. Near-term Q3/Q4 retests must identify November 7, the November 8 continuation and the assisted step, and be labeled intentional spaced repetition. No separate retrieval block, reminder or automation scheduled.
+
+## November 8 Q2 — Independent Rederivation Planned
+
+Source: [November 8 Q2](DailyTests/2026-11-08.md#q2--uniform-extremes-and-ratio) · [P041 worked note](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md). The main question is discussed, overall Partial / Hinted; this queue tracks independent reproduction rather than an undiscussed main item.
+
+- [ ] User plans to work through Q2 carefully on November 9. Derive the extrema joint density, inverse-map Jacobian and transformed support; prove ratio/maximum independence; evaluate the conditional mean and compare the ratio-based and direct-marginal routes to the unconditional mean. No independent complete derivation has been submitted yet.
+- Preserve the independently proposed conditional mean as m E[R] and the observation that E[A] can be computed directly from its marginal. The user attributed the earlier dependence conclusion to incorrectly written densities; do not diagnose an extra independence-concept error or invent a K/R classification. The subsequent minimum-density derivation and integral evaluations were supplied.
+- Any near-term retest must be labeled **intentional spaced repetition of November 8 Q2 / P041**, naming the assisted density/transformation/integration steps. No separate review block or reminder was requested or scheduled. Q3–Q4 of this session remain Pending; resume the main drill at Q3 when requested.

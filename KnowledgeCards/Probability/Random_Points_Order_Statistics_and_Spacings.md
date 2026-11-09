@@ -359,6 +359,8 @@ Retrieval sequence: specify sampling and support → translate rank into a count
 
 ## Related interview questions
 
+- [P041 — Uniform Extremes: Ratio and Maximum Independence](../../Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) — minimum/maximum joint density, inverse-map area scaling, transformed independence, conditional expectation, and the direct minimum-marginal method. [November 8 Q2](../../DailyTests/2026-11-08.md#q2--uniform-extremes-and-ratio) is Partial / Hinted; independent rederivation planned, not yet verified.
+
 - [P021 — Conditional Red-Ball Positions](../../Questions/Probability/P021_Conditional_Red_Ball_Positions.md)
 - [P022 — Discrete Median and Symmetry](../../Questions/Probability/P022_Discrete_Median_and_Symmetry.md)
 - [S021 — Uniform Endpoint Estimation and Exact Bounds](../../Questions/Statistics/S021_Uniform_Endpoint_Estimation_and_Exact_Bounds.md)

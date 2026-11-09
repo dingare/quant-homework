@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [November 8 drill — Q2 archive checkpoint](DailyTests/2026-11-08.md) — Q1–Q2 Partial / Hinted; Q3–Q4 Pending. [P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) records uniform extrema, ratio/maximum independence, conditional expectation and the direct marginal alternative. Independent conditional-mean and marginal-route observations preserved; rederivation planned November 9, not yet completed.
+
 - [November 7 drill, continued November 8](DailyTests/2026-11-07.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, none Pending. Q1 exact user code verified; Q3 bias correction and Q4 moments/forecast coefficients independently correct. Q4 target/terminology clarifications preserved; actual times Not recorded.
 
 - [November 1 drill, continued through November 3](DailyTests/2026-11-01.md) — Q1–Q4 **Partial / Hinted** overall; none Pending. Original Q3 normal-tail question withdrawn after the user identified a valid alternative and exact-CDF shortcut; only the rare-drawdown replacement is scored. Q4's expected value and rare-path explanation were independent.
@@ -41,6 +43,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
+
+- [P041 — Uniform Extremes: Ratio and Maximum Independence](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md)
 
 - [P040 — Occupied Assets: Moments and Concentration](Questions/Probability/P040_Occupied_Assets_Moments_and_Concentration.md) — Discussed; independent and assisted steps distinguished.
 
