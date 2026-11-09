@@ -71,6 +71,18 @@ def evaluate(expression: str) -> int:
 
 Each character is scanned once: time $`O(n)`$, auxiliary space $`O(d)`$ for maximum nesting depth $`d`$.
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+assert evaluate("1 - (2 - (3 + 4))") == 6
+assert evaluate("-(-3 + 2) - 4") == -3
+assert evaluate("1--2") == 3
+assert evaluate(" --+-5 + 12 ") == 7
+assert evaluate("(" * 5000 + "1" + ")" * 5000) == 1
+```
+
 ## Assessment history
 
 - [2026-10-13 Q1 — assessment](../../DailyTests/2026-10-13.md#q1--arithmetic-expressions-and-nested-state)

@@ -160,6 +160,54 @@ Then $`j_{\mathrm{high}}-j_{\mathrm{low}}`$ is the number of valid cross-half pa
 T(n)=2T(n/2)+O(n)=O(n\log n).
 ```
 
+### Merge-sort implementation
+
+Split by original prefix index, so each cross-half pair automatically has its left endpoint before its right endpoint. Recursively sort each half by value. For each sorted left prefix, two pointers delimit right-prefix differences inside the inclusive range. Both pointers move only forward. A linear merge preserves O(n) work per recursion level.
+
+```python
+def count_range_sums_merge(nums, lower, upper):
+    if lower > upper:
+        return 0
+    prefix = [0]
+    for value in nums:
+        prefix.append(prefix[-1] + value)
+    temporary = [0] * len(prefix)
+
+    def solve(lo, hi):
+        if hi - lo <= 1:
+            return 0
+        mid = (lo + hi) // 2
+        count = solve(lo, mid) + solve(mid, hi)
+        left_bound = right_bound = mid
+        for i in range(lo, mid):
+            while left_bound < hi and prefix[left_bound] - prefix[i] < lower:
+                left_bound += 1
+            while right_bound < hi and prefix[right_bound] - prefix[i] <= upper:
+                right_bound += 1
+            count += right_bound - left_bound
+
+        i, j = lo, mid
+        for out in range(lo, hi):
+            if j == hi or (i < mid and prefix[i] <= prefix[j]):
+                temporary[out] = prefix[i]
+                i += 1
+            else:
+                temporary[out] = prefix[j]
+                j += 1
+        prefix[lo:hi] = temporary[lo:hi]
+        return count
+
+    return solve(0, len(prefix))
+
+
+assert count_range_sums_merge([2, -1, 3, -2, 1], 1, 3) == 10
+assert count_range_sums_merge([0, 0], 0, 0) == 3
+assert count_range_sums_merge([-2, 5, -1], -2, 2) == 3
+assert count_range_sums_merge([], 0, 0) == 0
+```
+
+Time O(n log n); auxiliary space O(n), including prefix and merge arrays. Input is unchanged.
+
 ## Key Knowledge Points
 
 - Prefix sums convert contiguous-interval sums into differences of two values.

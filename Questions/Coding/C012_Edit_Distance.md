@@ -48,6 +48,36 @@ def min_changes(source, target):
 
 Time and space $`O(nm)`$; two rolling rows reduce auxiliary space to $`O(\min(n,m))`$.
 
+## Rolling-Row Implementation
+
+Only the previous row and the current row's left cell are needed. Place the shorter string along columns to bound storage. Before row i, `previous[j]` is the distance from the first i-1 source characters to the first j target characters. The newly built row applies the same insertion/deletion/replacement recurrence, then becomes `previous`.
+
+```python
+def min_changes_rolling(source: str, target: str) -> int:
+    if len(target) > len(source):
+        source, target = target, source
+    previous = list(range(len(target) + 1))
+    for i, source_char in enumerate(source, 1):
+        current = [i] + [0] * len(target)
+        for j, target_char in enumerate(target, 1):
+            current[j] = min(
+                previous[j] + 1,       # Delete source_char.
+                current[j - 1] + 1,   # Insert target_char.
+                previous[j - 1] + (source_char != target_char),
+            )
+        previous = current
+    return previous[-1]
+
+
+for source, target, expected in [("cat", "cut", 1), ("", "abc", 3),
+                                  ("ab", "ba", 2), ("", "", 0),
+                                  ("same", "same", 0)]:
+    assert min_changes(source, target) == expected
+    assert min_changes_rolling(source, target) == expected
+```
+
+Time O((n+1)(m+1)), including empty-string initialization; auxiliary space O(min(n,m)+1). The full table remains useful for reconstructing an edit sequence; the rolling version returns only its cost.
+
 ## Assessment history
 
 - [2026-10-10 Q4 — assessment](../../DailyTests/2026-10-10.md#q4--edit-distance)

@@ -70,6 +70,17 @@ T(n,M)=O(n+M\alpha(n)).
 
 Auxiliary space is $`O(n)`$, or $`O(n+M)`$ including output. A single find is at worst $`O(\log n)`$; amortized cost is $`O(\alpha(n))`$.
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+assert connected_pairs(4, [(0, 1), (1, 2), (2, 3), (0, 3)]) == [1, 3, 6, 6]
+assert connected_pairs(4, [(0, 1), (2, 3), (1, 2), (0, 3)]) == [1, 2, 6, 6]
+assert connected_pairs(2, [(0, 0), (0, 1), (0, 1)]) == [0, 1, 1]
+assert connected_pairs(0, []) == []
+```
+
 ## Assessment history
 
 - [2026-10-10 Q1 — assessment](../../DailyTests/2026-10-10.md#q1--incremental-connectivity)

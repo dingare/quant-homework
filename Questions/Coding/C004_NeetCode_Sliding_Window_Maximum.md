@@ -119,6 +119,21 @@ class Solution:
         return output
 ```
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+expected = [3, 3, 5, 5, 6, 7]
+values = [1, 3, -1, -3, 5, 3, 6, 7]
+for method in (max_sliding_window_tree, max_sliding_window_dp,
+               max_sliding_window_deque, Solution().maxSlidingWindow):
+    assert method(values, 3) == expected
+    assert method([-3, -1, -2], 2) == [-1, -1]
+    assert method([2, 2], 1) == [2, 2]
+    assert method([2, 2], 2) == [2]
+```
+
 ## Connections
 
 - [C002 — Shortest Subarray at Least K](C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md): same dominance-removal idea; different deque invariant.

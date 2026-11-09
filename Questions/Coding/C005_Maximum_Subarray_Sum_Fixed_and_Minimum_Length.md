@@ -93,6 +93,42 @@ Negative values destroy the monotonic behavior needed for a greedy two-pointer r
 
 Fixed length: update one window sum. Minimum length: subtract the smallest eligible prefix.
 
+### Constant-space minimum-length implementation
+
+For each exclusive endpoint, `total` is its prefix sum. `eligible_prefix` tracks the newly eligible starting prefix by adding exactly one earlier input value per step. Keep its smallest value and earliest index. This implements the same recurrence without storing the full prefix array; return conventions match `max_sum_at_least_k`.
+
+```python
+def max_sum_at_least_k_constant_space(nums, k):
+    if not 1 <= k <= len(nums):
+        raise ValueError("Require 1 <= k <= len(nums)")
+    total = eligible_prefix = min_prefix = 0
+    min_index = 0
+    best_sum = float("-inf")
+    best_start, best_end = 0, k
+    for end, value in enumerate(nums, 1):
+        total += value
+        if end < k:
+            continue
+        eligible = end - k
+        if eligible > 0:
+            eligible_prefix += nums[eligible - 1]
+        if eligible_prefix < min_prefix:
+            min_prefix, min_index = eligible_prefix, eligible
+        candidate = total - min_prefix
+        if candidate > best_sum or (candidate == best_sum and min_index < best_start):
+            best_start, best_end, best_sum = min_index, end, candidate
+    return best_start, best_end, best_sum
+
+
+assert max_sum_fixed_k([-5, -2, -3], 2) == 1
+assert max_sum_fixed_k([1, 1, 1], 2) == 0
+assert max_sum_at_least_k([-5, -2, -3], 2) == (1, 3, -5)
+assert max_sum_at_least_k_constant_space([-5, -2, -3], 2) == (1, 3, -5)
+assert max_sum_at_least_k_constant_space([1, 1, 1], 2) == (0, 3, 3)
+```
+
+Time O(n), auxiliary space O(1); input is unchanged.
+
 ## Assessment history
 
 - [2026-10-06 Q1 — assessment](../../DailyTests/2026-10-06.md#q1--maximum-sum-subarray)

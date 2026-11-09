@@ -49,6 +49,20 @@ def allocate_units(intervals):
 
 When a new unit is required, every existing unit's latest task is still active at the current start. Those tasks and the new task overlap, so every feasible allocation needs at least this many units. Reuse preserves feasibility. This proves minimum count. Time is $`O(n\log n)`$; the heap uses $`O(R)`$ for R units, the sorted task copy uses $`O(n)`$ auxiliary space, and output uses $`O(n)`$ space.
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+assert allocate_units([]) == (0, [])
+assert allocate_units([(1, 2), (2, 3)]) == (1, [0, 0])
+count, assignment = allocate_units([(1, 3), (1, 3), (1, 3)])
+assert count == 3 and len(set(assignment)) == 3
+count, assignment = allocate_units([(4, 5), (1, 4), (2, 3)])
+assert count == 2 and len(assignment) == 3
+assert assignment[1] != assignment[2]
+```
+
 ## Assessment history
 
 - [2026-10-17 Q1 — assessment](../../DailyTests/2026-10-17.md#q1--minimum-units-for-overlapping-tasks)
