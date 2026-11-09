@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-08: Completed missing Python implementations in C007–C010 and C013–C014; added merge-sort range counting, bounded-space rolling medians, constant-space minimum-length subarray optimization, rolling-row edit distance and runnable edge tests. All 21 coding notes are checked by `python3 Tools/verify_coding.py`; original assessment records and question counts are unchanged.
+
 - 2026-10-23: Added [OLS: Expectation, Variance, Residuals, and Prediction](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md), an English knowledge card with the OLS flowchart, step-by-step matrix derivations, degrees of freedom, CI / PI, and LLN / CLT / normality conditions. Formulas and assumptions reviewed; question counts and assessment records are unchanged.
 
 - 2026-10-22: Audited formula rendering across all 113 question notes, standardized math delimiters, repaired three corrupted matrix commands, and extended publication checks to the full question library. See the [math audit](Tools/MathMarkdownGuide.md#october-22-question-library-audit).
