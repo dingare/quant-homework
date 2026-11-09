@@ -67,6 +67,17 @@ def combined_median(a, b):
 
 Time is logarithmic in the shorter array length, with constant time when it is empty; auxiliary space is constant. Rebinding `a, b` does not mutate inputs.
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+assert combined_median([1, 3], [2]) == 2
+assert combined_median([1, 2], [3, 4]) == 2.5
+assert combined_median([], [7]) == 7
+assert combined_median([0, 0], [0, 0]) == 0
+```
+
 ## Assessment history
 
 - [2026-10-15 Q1 — assessment](../../DailyTests/2026-10-15.md#q1--median-of-two-sorted-arrays)

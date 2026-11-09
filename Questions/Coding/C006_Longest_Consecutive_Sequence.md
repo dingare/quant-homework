@@ -72,6 +72,18 @@ Expected $`O(n)`$ time and $`O(n)`$ space. Store x to track membership, update b
 - Updating only x leaves endpoint lengths wrong.
 - Assuming all interior map lengths are current.
 
+## Runnable Edge Tests
+
+Run after the implementation blocks above.
+
+```python
+for method in (longest_consecutive, longest_consecutive_boundary):
+    assert method([100, 4, 200, 1, 3, 2]) == 4
+    assert method([1, 1, 2, 0]) == 3
+    assert method([-2, -1, 0]) == 3
+    assert method([]) == 0
+```
+
 ## Connections
 
 - [C005 — Maximum subarray sum and implementation invariants](C005_Maximum_Subarray_Sum_Fixed_and_Minimum_Length.md)

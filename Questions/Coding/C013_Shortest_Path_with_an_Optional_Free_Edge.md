@@ -26,6 +26,50 @@ For at most $`k`$ free traversals, use $`L=k+1`$ state layers. A lazy heap gives
 T=O\!\left(LV+LE\log(LE+1)\right),\qquad S=O(LV+LE).
 ```
 
+## Algorithm to Implementation
+
+Store two distances per node: coupon unused (0) and used (1). For each directed edge, try its ordinary cost without changing the flag; from layer 0, also try cost zero into layer 1. The heap stores `(distance, node, flag)`. Ignore stale entries by comparing against that exact layer's distance. The first nonstale destination entry is optimal across both layers because every expanded edge has nonnegative cost.
+
+```python
+from heapq import heappop, heappush
+
+
+def cheapest_trip(n, edges, s, t):
+    adjacency = [[] for _ in range(n)]
+    for u, v, cost in edges:
+        adjacency[u].append((v, cost))
+
+    distance = [[float("inf"), float("inf")] for _ in range(n)]
+    distance[s][0] = 0
+    heap = [(0, s, 0)]
+    while heap:
+        current, u, used = heappop(heap)
+        if current != distance[u][used]:
+            continue
+        if u == t:
+            return current
+        for v, cost in adjacency[u]:
+            paid = current + cost
+            if paid < distance[v][used]:
+                distance[v][used] = paid
+                heappush(heap, (paid, v, used))
+            if used == 0 and current < distance[v][1]:
+                distance[v][1] = current
+                heappush(heap, (current, v, 1))
+    return -1
+
+
+assert cheapest_trip(3, [(0, 1, 5), (1, 2, 5), (0, 2, 20)], 0, 2) == 0
+assert cheapest_trip(3, [(0, 1, 5), (1, 2, 5)], 0, 2) == 5
+assert cheapest_trip(3, [(0, 1, 0)], 0, 2) == -1
+assert cheapest_trip(1, [(0, 0, 7)], 0, 0) == 0
+assert cheapest_trip(2, [(0, 1, 8), (0, 1, 0)], 0, 1) == 0
+```
+
+For this two-layer lazy-heap implementation, time is O(V + E log(E+1)) and auxiliary space O(V+E), including adjacency and heap entries. Inputs are unchanged. Keeping just one distance per node can discard a more expensive arrival that still has its coupon, even when that arrival is the best route to a later destination.
+
+Reference added during the code-completion review; historical assessment results are unchanged.
+
 ## Assessment history
 
 - [2026-10-11 Q1 — assessment](../../DailyTests/2026-10-11.md#q1--cheapest-trip-with-an-optional-free-edge)
