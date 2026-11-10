@@ -444,3 +444,7 @@ For many weak, correlated signals and a prediction objective, Ridge is a natural
 - [Efron, Hastie, Johnstone, and Tibshirani (2004), Least Angle Regression](https://doi.org/10.1214/009053604000000067): LAR, the Lasso modification, and the qualified step-count df result.
 - [Zou and Hastie (2005), Regularization and Variable Selection via the Elastic Net](https://doi.org/10.1111/j.1467-9868.2005.00503.x): grouping effect and original estimator conventions.
 - [Tibshirani and Taylor (2012), Degrees of Freedom in Lasso Problems](https://arxiv.org/abs/1111.0653): fixed-lambda df for general design matrices.
+
+## Dated practice links
+
+- [November 8 Q4, answered November 9: Cold Solve of the existing identical-feature example. Accidental repeat, not new coverage; question clarification was not a solution hint.](../../DailyTests/2026-11-08.md#q4--duplicate-features-under-ridge-and-lasso)

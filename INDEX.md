@@ -4,7 +4,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
-- [November 8 drill — Q2 archive checkpoint](DailyTests/2026-11-08.md) — Q1–Q2 Partial / Hinted; Q3–Q4 Pending. [P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) records uniform extrema, ratio/maximum independence, conditional expectation and the direct marginal alternative. Independent conditional-mean and marginal-route observations preserved; rederivation planned November 9, not yet completed.
+- [November 8 drill, continued November 9](DailyTests/2026-11-08.md) — Q1–Q3 Partial / Hinted; Q4 Cold Solve on previously covered material; all four main questions discussed, none Pending. Q4 is an accidental repeat of the October 26 identical-feature card, not new coverage or a planned retest. Q3 independent substeps and calculation/setup clarifications preserved; training-only risk correction supplied. Q2 independent rederivation remains unverified; actual times Not recorded.
 
 - [November 7 drill, continued November 8](DailyTests/2026-11-07.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, none Pending. Q1 exact user code verified; Q3 bias correction and Q4 moments/forecast coefficients independently correct. Q4 target/terminology clarifications preserved; actual times Not recorded.
 

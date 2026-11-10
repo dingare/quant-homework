@@ -626,4 +626,12 @@ Source: [November 8 Q2](DailyTests/2026-11-08.md#q2--uniform-extremes-and-ratio)
 
 - [ ] User plans to work through Q2 carefully on November 9. Derive the extrema joint density, inverse-map Jacobian and transformed support; prove ratio/maximum independence; evaluate the conditional mean and compare the ratio-based and direct-marginal routes to the unconditional mean. No independent complete derivation has been submitted yet.
 - Preserve the independently proposed conditional mean as m E[R] and the observation that E[A] can be computed directly from its marginal. The user attributed the earlier dependence conclusion to incorrectly written densities; do not diagnose an extra independence-concept error or invent a K/R classification. The subsequent minimum-density derivation and integral evaluations were supplied.
-- Any near-term retest must be labeled **intentional spaced repetition of November 8 Q2 / P041**, naming the assisted density/transformation/integration steps. No separate review block or reminder was requested or scheduled. Q3–Q4 of this session remain Pending; resume the main drill at Q3 when requested.
+- Any near-term retest must be labeled **intentional spaced repetition of November 8 Q2 / P041**, naming the assisted density/transformation/integration steps. No separate review block or reminder was requested or scheduled. Q3–Q4 were subsequently discussed November 9; the main session is complete. Independent Q2 rederivation is still unverified.
+
+## November 9 — Completion of the November 8 Drill
+
+Source: [completed dated assessment](DailyTests/2026-11-08.md). All four main questions discussed; Q1–Q3 Partial / Hinted, Q4 Cold Solve on existing coverage. Reuse [OLS Sections 3–4 and 6](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) and the [October 26 identical-feature example](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md#identical-feature-example); no duplicate subject notes.
+
+- Q3: retain the user's calculation-error clarification and correct same-X identity, while keeping the supplied training-only risk correction and covariate-shift explanation assisted. If independently checked later, label intentional spaced repetition of November 8 Q3, continued November 9, naming that assisted step. K/R unresolved; no I task or recorded time.
+- Q4: accidental repeat discovered by the user, independently answered correctly. Not new coverage and not a planned spaced-repetition exercise. No prior miss or remedial task is inferred.
+- The existing Q2 independent-rederivation task remains open; passage of its planned date is not evidence of completion. No new reminder or separate retrieval block.

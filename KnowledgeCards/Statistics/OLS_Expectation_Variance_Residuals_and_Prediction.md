@@ -785,3 +785,7 @@ Normality does not remove omitted-variable bias or endogeneity. Under heterosked
 - [S010 — OLS Significance, Randomness, and Robust Standard Errors](../../Questions/Statistics/S010_OLS_Significance_Randomness_and_Robust_Standard_Errors.md) — Inference targets, heteroskedasticity, and robust standard errors.
 - [SVD / QR / Conditioning / Least Squares / PCA](../LinearAlgebra/SVD_QR_Conditioning_Least_Squares_and_PCA.md) — Design matrices, projections, and numerical stability.
 - [2026-10-11 Q7 review record](../../DailyTests/2026-10-11.md#q7--confidence-vs-prediction-intervals).
+
+## Dated practice links
+
+- [November 8 Q3, continued November 9: same-design training/repeat loss and changed-design limitation; Partial / Hinted, independent substeps and calculation/setup clarifications preserved.](../../DailyTests/2026-11-08.md#q3--training-and-independent-repeat-ols-loss)

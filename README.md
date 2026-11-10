@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-09: Finished the [November 8 drill, continued November 9](DailyTests/2026-11-08.md). Q1–Q3 Partial / Hinted; Q4 Cold Solve, all main questions discussed. Linked Q3 to the [OLS card](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) and Q4 to the [existing identical-feature example](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md#identical-feature-example) instead of duplicating material. Q4 accidental-repeat status and independent answers preserved; no new coverage or file-count increase.
+
 - 2026-11-08: Archived [Q2 / P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) from the [November 8 drill](DailyTests/2026-11-08.md): joint extrema density, Jacobian/support, ratio/maximum independence, conditional expectation and the direct minimum-marginal route. Q2 Partial / Hinted; independent observations and density-expression clarification preserved. User plans independent rederivation November 9; Q3–Q4 remain Pending.
 
 - 2026-11-08: Added the [graph-algorithm knowledge card](KnowledgeCards/Coding/Graph_Traversal_BFS_Dijkstra_and_Topological_Sort.md) covering BFS grouping, Dijkstra with a min-heap, DAG/topological sort and DAG DP. Includes the user's edge-scanning counterexamples, runnable references, and links to C008/C013/C019. Guided reference, not independent mastery; canonical question counts unchanged.
