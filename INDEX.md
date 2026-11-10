@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [October 23 drill, continued through October 25](DailyTests/2026-10-23.md) — **All four main questions discussed; none Pending.** Q1–Q3 Partial / Hinted, preserving Q1 verified user code and Q3 independent correct decisions. Q4 Cold Solve by user report, written working unverified; typing inconvenience is not a knowledge gap. Full S024 / O010 references are filed.
+
 - [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md) — **all four questions discussed; none Pending**. BFS resource states, shared-parameter risk, sector demeaning / omitted-variable bias, probability calibration and scoring. Independent subparts, arithmetic/writing clarifications, practical evaluation and hit-rate-curve distinctions preserved.
 
 - [October 18 drill](DailyTests/2026-10-18.md) — maximum-sum tree paths, Gaussian sign prediction, duplicated regression observations and first-collision timing; all four Partial / Hinted, with user clarifications preserved.
@@ -34,6 +36,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Probability
 
+- [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md)
+
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
 - [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
 - [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
@@ -63,7 +67,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P026 — Finite-Horizon Optimal Stopping](Questions/Probability/P026_Finite_Horizon_Optimal_Stopping.md)
 - [P027 — Dice Conditioned on a Sum](Questions/Probability/P027_Dice_Conditioned_on_a_Sum.md)
 - [P028 — Branching Process Extinction](Questions/Probability/P028_Branching_Process_Extinction.md)
-- [P029 — Random Inspection and Residual Wait](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md)
+- [P029 — Random Inspection and Residual Wait](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md) — Includes the [10/20-minute bus loop](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30): length-biased intervals, conditional uniform wait, and the general stopping-probability formula.
 - [P030 — Product Distribution and Event Conditioning](Questions/Probability/P030_Product_Distribution_and_Event_Conditioning.md)
 - [P031 — Exact Uniform Sampling from a Biased Coin](Questions/Probability/P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md)
 - [P032 — Cycles of a Uniform Random Permutation](Questions/Probability/P032_Cycles_of_a_Uniform_Random_Permutation.md)
@@ -72,6 +76,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P035 — Shared Unknown Win Probability and Predictive Risk](Questions/Probability/P035_Shared_Unknown_Win_Probability_and_Predictive_Risk.md)
 
 ## Statistics
+
+- [S024 — Multiple Testing and Independent Confirmation](Questions/Statistics/S024_Multiple_Testing_and_Independent_Confirmation.md)
 
 - [S001 — OLS Bias vs Variance with Correlated Regressors](Questions/Statistics/S001_OLS_Bias_vs_Variance_with_Correlated_Regressors.md)
 - [S002 — Leave-One-Out OLS via Sherman-Morrison](Questions/Statistics/S002_Leave_One_Out_OLS_via_Sherman_Morrison.md)
@@ -114,6 +120,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Optimization
 
+- [O010 — Single-Asset Position with Proportional Trading Costs](Questions/Optimization/O010_Single_Asset_Position_with_Proportional_Trading_Costs.md)
+
 - [O001 — Convex Duality I: No-Arbitrage Pricing through Primal and Dual Optimization](Questions/Optimization/O001_Convex_Duality_I_No_Arbitrage_Pricing_through_Primal_and_Dual_Optimization.md)
 - [O002 — Constrained Mean-Variance Optimization and the Meaning of Lagrange Multipliers](Questions/Optimization/O002_Constrained_Mean_Variance_Optimization_and_the_Meaning_of_Lagrange_Multipliers.md)
 - [O003 — Primal vs Dual Optimization and When the Dual Is Easier](Questions/Optimization/O003_Primal_vs_Dual_Optimization_and_When_the_Dual_Is_Easier.md)
@@ -125,6 +133,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
+
+- [C020 — Minimum Deletions for a Strictly Increasing Subsequence](Questions/Coding/C020_Minimum_Deletions_for_a_Strictly_Increasing_Subsequence.md)
 
 - [C001 — Count of Range Sums with Prefix Sums and a Fenwick Tree](Questions/Coding/C001_Count_of_Range_Sums_with_Prefix_Sums_and_Fenwick_Tree.md)
 - [C002 — Shortest Subarray at Least K with a Monotonic Deque](Questions/Coding/C002_Shortest_Subarray_at_Least_K_with_a_Monotonic_Deque.md)
@@ -154,13 +164,23 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
 - [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md)
 - [SC005 — Brownian Hitting Probability with Drift](Questions/StochasticCalculus/SC005_Brownian_Hitting_Probability_with_Drift.md)
-- [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md)
+- [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) — Includes [two Poisson bus routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30): why survival probabilities multiply, rate addition, and competition versus random route selection.
+
+- [SC007 — Call Replication, Threshold Trading, and Local Time](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) — English question and solution, starting with intuition and discrete examples before self-financing, Tanaka, and local time.
 
 ## Rates Research
 
 - [R001 — French OAT: Sovereign Spread, Repo Funding & Liquidity Risk](Questions/RatesResearch/R001_French_OAT_Spread_Repo_Funding_and_Liquidity_Risk.md)
 
 ## Knowledge Cards
+
+### Stochastic Calculus
+
+- [Call Payoff vs Threshold Trading: Review Map](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) — Reading plan for SC007 and the preserved real-interview assessment; at most about 20% by user self-report.
+
+### Coding
+
+- [Dynamic Programming — 经典逻辑题复习包](KnowledgeCards/Coding/DynamicProgramming/README.md) — 状态设计与正确性、七道经典题、今晚核心安排、分级提示、独立解答与可运行验证；不改变历史评分和题库计数。
 
 ### Statistics
 

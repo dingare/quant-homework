@@ -125,6 +125,97 @@ In the merged process, each arrival is labeled A with probability 2/5 and B with
 
 The second B arrival is Erlang/Gamma, not exponential with half the rate. Superposition gives rate 5 and an expected first-arrival wait of 1/5 hour.
 
+## Bus variant — 2026-10-30
+
+Source: Finalized October 30 discussion of two bus routes and the survival-function derivation. This is a guided review reference, not a new timed assessment.
+
+### Question and assumptions
+
+有两条公交线路都可以坐，一条平均每 10 分钟来一辆，另一条平均每 20 分钟来一辆。两条线路独立，并且各自到站遵循泊松过程。你在与公交独立的时刻到达，哪辆先来就坐哪辆，求期望等待时间。
+
+只有平均到站间隔不足以决定答案；这里明确采用独立泊松到站假设，而不是固定时刻表或其他间隔分布。
+
+### 1. 把平均时间换成速率
+
+令 $`T_1,T_2`$ 为你到站后，两条线路分别还要等的时间。指数分布的参数使用 rate convention：
+
+```math
+T_1\sim Exp(\lambda_1),\quad \lambda_1=\frac1{10},
+\qquad
+T_2\sim Exp(\lambda_2),\quad \lambda_2=\frac1{20}.
+```
+
+时间单位是分钟，速率单位是每分钟。由于泊松过程的独立增量和指数分布的无记忆性，独立到达后的剩余等待仍具有上述分布。
+
+### 2. 为什么生存概率可以相乘？
+
+实际等待时间为
+
+```math
+W=\min(T_1,T_2).
+```
+
+“等了 $`t`$ 分钟还没坐上车”意味着“两条线路的车都还没来”，所以事件满足
+
+```math
+\{W\gt t\}=\{T_1\gt t\}\cap\{T_2\gt t\}.
+```
+
+两条线路独立，因此两个事件同时发生的概率等于概率之积：
+
+```math
+P(W\gt t)=P(T_1\gt t)P(T_2\gt t).
+```
+
+对指数分布，$`P(T_i\gt t)=e^{-\lambda_i t}`$。逐项代入得到
+
+```math
+P(W\gt t)
+=e^{-t/10}e^{-t/20}
+=e^{-(1/10+1/20)t},\qquad t\ge0.
+```
+
+最后一步使用 $`e^a e^b=e^{a+b}`$。所得生存函数仍是指数形式，因此最小值的速率是两条线路的速率之和：
+
+```math
+W\sim Exp\left(\frac1{10}+\frac1{20}\right),
+\qquad
+\boxed{E[W]=\frac{1}{1/10+1/20}
+=\frac{20}{3}\text{ minutes}.}
+```
+
+即 **6 分 40 秒**。
+
+### 3. “每辆概率相同”要明确选择规则
+
+如果哪辆先来就坐哪辆，两条线路先来的概率并不相同。由指数时钟竞争的速率占比公式：
+
+```math
+P(T_1\lt T_2)=\frac{1/10}{1/10+1/20}=\frac23,
+\qquad
+P(T_2\lt T_1)=\frac{1/20}{1/10+1/20}=\frac13.
+```
+
+如果“概率相同”指先各以一半概率选定一条线路，然后只等选中的那条，即使另一条先来也不坐，那么这是先选择再等待的混合模型：
+
+```math
+\boxed{E[W_{\rm choose}]
+=\frac12\times10+\frac12\times20
+=15\text{ minutes}.}
+```
+
+这个选择规则与“两个时钟同时竞争，取最小值”不同。
+
+### 4. 与单辆环线公交题对照
+
+| 场景 | 对象与抽样规则 | 期望等待 |
+| --- | --- | --- |
+| 单辆环线车，每圈 10 或 20 分钟，各一半 | 随机到达，先按长度加权，再取间隔内剩余时间 | 8 分 20 秒 |
+| 两条独立泊松线路，平均间隔 10、20 分钟 | 两个指数时钟同时竞争，谁先来就坐谁 | 6 分 40 秒 |
+| 同样的泊松线路，先各以一半概率选定一条 | 只等选中的线路，对其均值加权 | 15 分钟 |
+
+第一行的离散间隔、长度偏差及一般停留概率公式见 [P029 — 单辆环线公交的随机到站问题](../Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30)。
+
 ## Assessment history
 
 - [2026-10-09 Q6 — assessment](../../DailyTests/2026-10-09.md#q6--competing-poisson-processes)

@@ -348,3 +348,7 @@ e^{-rt}S_t \text{ is martingale under } Q
 - HJM
 - SOFR Convexity
 - Treasury Futures CTD Optionality
+
+## Related question
+
+- [SC007 — Call Replication, Threshold Trading, and Local Time](SC007_Call_Replication_Threshold_Trading_and_Local_Time.md) extends the smooth Itô chain rule to the payoff kink, starting with intuition and discrete crossing examples.

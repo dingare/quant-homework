@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 34 |
-| Statistics | S | 23 |
+| Probability | P | 35 |
+| Statistics | S | 24 |
 | Time Series | T | 12 |
-| Optimization | O | 9 |
-| Coding | C | 19 |
-| Stochastic Calculus | SC | 6 |
+| Optimization | O | 10 |
+| Coding | C | 20 |
+| Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 113 |
+| Total | All | 118 |
 
 ## Knowledge Cards
 
@@ -23,9 +23,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Probability | 5 |
 | Linear Algebra | 1 |
 | Statistics | 1 |
-| Total | 7 |
+| Stochastic Calculus | 1 |
+| Total | 8 |
 
 ## Notes
+
+- 2026-10-30: Filed the existing call-replication discussion as [SC007](Questions/StochasticCalculus/SC007_Call_Replication_Threshold_Trading_and_Local_Time.md), in English and in the subject-note format. Intuition, geometry, and discrete examples precede the continuous-time solution. Added the companion [review map](KnowledgeCards/StochasticCalculus/Call_Payoff_Threshold_Trading_Tanaka_and_Local_Time.md) to this checkout. Canonical question files now total 118; this is reorganization of an existing topic, not a new solve. Original interview completion remains at most about 20%; no DailyTests record was added.
+
+- 2026-10-30: Extended [P029](Questions/Probability/P029_Random_Inspection_and_Residual_Wait.md#bus-variant--2026-10-30) and [SC006](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30) with the two finalized bus-waiting discussions: discrete loop intervals and length bias versus independent Poisson routes and competing exponentials. Guided review references; no new question files, timed assessments, ratings, or mastery claims. All counts are unchanged.
 
 - Initial scaffold created on 2026-06-25.
 - Counts should be updated whenever a finalized subject is added.
@@ -85,3 +90,7 @@ Track canonical question/subject files by category. These are filing counts, not
 - 2026-10-22: Finished Q4 of the [October 20 drill, continued October 21–22](DailyTests/2026-10-20.md). **All four main questions discussed; none Pending.** Q4 independent calibration/core answers and user-confirmed arithmetic/writing clarifications preserved; overall Partial / Hinted without a new K/R/I gap. Added probability scoring, calibration/decision evaluation and hit-rate-curve discussion with references. Continuation of one set, not a new daily drill; all actual times unknown, subject-note and knowledge-card counts unchanged.
 
 - 2026-10-22: Reorganized 12 DailyTests / 73 item records into linked assessment logs and filed 50 additional canonical question notes (63 → 113 files). Reused existing notes, grouped dated retests/variants, and added reciprocal concept/card links. All results, timing, continuation dates, pending follow-ups and verification limits are retained; no new solves or mastery inferred. Knowledge cards remain six.
+
+- 2026-10-24: Archived the [October 23 drill](DailyTests/2026-10-23.md). Added worked C020 / P036 and prompt-only Pending S024 / O010 (113 → 117 canonical files). Q1 and Q2 are Partial / Hinted; Q1 exact user code verified without repair. Q3 and Q4 are unattempted, not completed or mastered. K/R unresolved; all actual times unknown. Knowledge-card counts unchanged.
+
+- 2026-10-25: Continued and finished discussion of the [October 23 drill](DailyTests/2026-10-23.md); no main question remains Pending. Q3 is Partial / Hinted: correct no-rejection and confirmation-yes decisions preserved, complement probability / union bound / confirmation proof supplied. Q4 is Cold Solve by user report; exact written working unverified. The user's typing-burden clarification supersedes the initial assisted rating, with no K/R gap established. Filed S024 and O010 solutions without adding new question files: all category counts remain unchanged at 117 total. Actual times Not recorded.
