@@ -146,7 +146,7 @@ A strict successor exists on the pivot branch because the immediate right neighb
 
 ## Connections
 
-- [C025 — Rotated-Array Search](C025_Search_in_a_Rotated_Sorted_Array.md): another invariant-based array problem in the same drill; still Pending, with no solution filed.
+- [C025 — Rotated-Array Search](C025_Search_in_a_Rotated_Sorted_Array.md): another invariant-based array problem in the same drill; its submitted code, correction and completed assessment are now filed.
 - [C023 — Trapping Rain Water](C023_Trapping_Rain_Water_with_Two_Pointers.md): both require a correctness invariant and constant auxiliary space, but their safe-decision arguments differ.
 
 ## Assessment History

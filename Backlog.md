@@ -2,13 +2,15 @@
 
 Unfinished topics and future note clusters. Canonical prompts and solutions are in the [question library](INDEX.md); [DailyTests](DailyTests/INDEX.md) preserves dated assessment evidence. The October 22 filing migration does not close any outstanding independent check or Pending follow-up.
 
-## November 10 Drill — Paused After Q1 on November 11
+## November 10 Drill, Continued November 11 — All Items Discussed
 
-Source: [dated assessment](DailyTests/2026-11-10.md). Q1 Partial / Hinted; Q2–Q4 Pending. The user plans to continue November 12, starting at Q2. No reminder requested or scheduled; actual times Not recorded.
+Source: [completed assessment](DailyTests/2026-11-10.md). Q1/Q3/Q4 Partial / Hinted; Q2 Cold Solve by explicit user report. No main item Pending. This supersedes the earlier pause and planned November 12 Q2 continuation. No reminder requested or scheduled; all actual times Not recorded.
 
-- [x] [Q1 / C024](Questions/Coding/C024_Next_Permutation_in_Place.md) discussed. Core pivot/successor/reversal algorithm independently proposed. Latest exact handwritten code returned all 1,093 oracle permutations correctly, but sliced copies left the original list incorrect in 472 cases and used linear extra space. Minimal original-array/index-boundary correction supplied and verified separately. I observed; K/R unresolved. Final independent corrected user submission remains unverified; do not call the submitted practice unpracticed.
-- [ ] Resume [Q2 / P043](Questions/Probability/P043_Random_Walk_on_a_Cube.md) on November 12, then [Q3 / S028](Questions/Statistics/S028_Exponential_Fill_Times_with_Timeout_Censoring.md) and [Q4 / C025](Questions/Coding/C025_Search_in_a_Rotated_Sorted_Array.md). Prompts only; no hints, solutions or inferred gaps.
-- Optional later Q1 check: rewrite the helpers to operate on index ranges and explain slice allocation. Label any near-term revisit intentional spaced repetition of November 10 Q1, continued November 11, naming the assisted space/in-place step. No separate retrieval block.
+- [x] [Q1 / C024](Questions/Coding/C024_Next_Permutation_in_Place.md) discussed; preserve its independent algorithm, correct returned values and assisted space/in-place correction. Independent final user repair remains unverified.
+- [x] [Q2 / P043](Questions/Probability/P043_Random_Walk_on_a_Cube.md): 10 and 2/5 independently derived by user report using a Markov chain; detailed working unsubmitted/unverified. The 3/5 entry was explicitly a typo. No remedial task based on that typo or the untyped equations.
+- [x] [Q3 / S028](Questions/Statistics/S028_Exponential_Fill_Times_with_Timeout_Censoring.md): valid binomial indicator-only setup and correct additive single-order contribution; compact likelihood/MLE and Fisher definition supplied. Larger-timeout precision direction independent; forgetting Fisher definition self-reported (R). Displayed formulas requested for checking/typing convenience, not proof of inability; expected/observed question is clarification. Completed-only selection recognized, reciprocal distortion direction corrected. No I task; other K/R unresolved.
+- [x] [Q4 / C025](Questions/Coding/C025_Search_in_a_Rotated_Sorted_Array.md): exact submitted recursive code tested (4,041 cases: 111 incorrect returns, 56 RecursionErrors, no mutations); discard/progress and slice/stack issues observed (I). Minimal iterative reference supplied and verified separately; no independent corrected resubmission. Duplicate worst-case direction independent, concrete hidden-zero family/proof supplied.
+- [ ] Optional later focused check: independently write Q4's strictly shrinking loop without slices and justify each half-interval discard. Near-term revisits must be labeled intentional spaced repetition of November 10 Q4, continued November 11, naming the assisted discard/progress/space steps. No separate retrieval block. This reproduction check does not reopen the completed main-question queue.
 
 ## Random Points and Spacings — To-Do List
 

@@ -213,6 +213,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-11: Completed the [November 10 drill](DailyTests/2026-11-10.md). Q1/Q3/Q4 Partial / Hinted; Q2 Cold Solve by user report; none Pending. Updated existing P043 / S028 / C025 with the answer record, censored-likelihood/information discussion, and exact rotated-search submission plus minimal correction. Preserve Q2 typo and Q3 formula-typing clarification. Counts unchanged at 136 canonical files and 11 cards; no elapsed time inferred.
+
 - 2026-11-11: Archived the [November 10 drill, continued November 11](DailyTests/2026-11-10.md), paused after Q1. Added [C024 — Next Permutation](Questions/Coding/C024_Next_Permutation_in_Place.md) with the independent core algorithm, verified handwritten returned values, slice/in-place issue and minimal constant-space correction. Q1 Partial / Hinted; [P043](Questions/Probability/P043_Random_Walk_on_a_Cube.md), [S028](Questions/Statistics/S028_Exponential_Fill_Times_with_Timeout_Censoring.md) and [C025](Questions/Coding/C025_Search_in_a_Rotated_Sorted_Array.md) remain Pending, prompts only. Resume Q2 November 12. Counts: 136 canonical files, including Pending prompts; no mastery or elapsed-time inference.
 
 - 2026-11-10: Added [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md), summarizing the user's recursion, the completed backward induction, and the even-minus-odd product proof. Includes the extension from equal to unequal head probabilities, the independence assumption, and the sign convention for arbitrary coin counts.
