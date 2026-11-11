@@ -44,6 +44,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Probability
 
+- [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md) — Recursion, signed product expansion, and the extension from equal to unequal head probabilities.
+
 - [P041 — Uniform Extremes: Ratio and Maximum Independence](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md)
 
 - [P040 — Occupied Assets: Moments and Concentration](Questions/Probability/P040_Occupied_Assets_Moments_and_Concentration.md) — Discussed; independent and assisted steps distinguished.

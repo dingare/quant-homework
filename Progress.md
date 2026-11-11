@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 40 |
+| Probability | P | 41 |
 | Statistics | S | 27 |
 | Time Series | T | 14 |
 | Optimization | O | 10 |
 | Coding | C | 23 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 131 |
+| Total | All | 132 |
 
 ## Knowledge Cards
 
@@ -28,6 +28,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 11 |
 
 ## Notes
+
+- 2026-11-10: Added [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md) from the user-provided discussion: recursion/backward induction, signed product proof, and equal-to-unequal-probability extension. Probability canonical files 40 to 41; total 131 to 132; standalone cards unchanged at 11. User-proposed recursion and identical-probability expansion preserved; no timed assessment or mastery claim added.
 
 - 2026-11-09: Completed Q3–Q4 of the [November 8 drill](DailyTests/2026-11-08.md), one set across dates. Q1–Q3 Partial / Hinted; Q4 Cold Solve on existing coverage; no main item Pending. Reused the OLS and regularization knowledge cards, adding assessment backlinks rather than duplicate subjects. Q3 same-X identity and correct subanswers preserved; risk correction supplied, K/R unresolved, no I task. Q4 is an accidental repeat of the October 26 identical-feature example, not a planned retest or new coverage; independent solve retained without a new mastery label or remedial queue. Q2 independent rederivation remains unverified. Counts unchanged at 131 canonical files and 11 standalone cards; all actual times Not recorded.
 

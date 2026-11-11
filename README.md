@@ -212,6 +212,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-10: Added [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md), summarizing the user's recursion, the completed backward induction, and the even-minus-odd product proof. Includes the extension from equal to unequal head probabilities, the independence assumption, and the sign convention for arbitrary coin counts.
+
 - 2026-11-09: Finished the [November 8 drill, continued November 9](DailyTests/2026-11-08.md). Q1–Q3 Partial / Hinted; Q4 Cold Solve, all main questions discussed. Linked Q3 to the [OLS card](KnowledgeCards/Statistics/OLS_Expectation_Variance_Residuals_and_Prediction.md) and Q4 to the [existing identical-feature example](KnowledgeCards/Statistics/Regularized_Regression_Ridge_Lasso_Elastic_Net_and_LAR.md#identical-feature-example) instead of duplicating material. Q4 accidental-repeat status and independent answers preserved; no new coverage or file-count increase.
 
 - 2026-11-08: Archived [Q2 / P041](Questions/Probability/P041_Uniform_Extremes_Ratio_and_Maximum_Independence.md) from the [November 8 drill](DailyTests/2026-11-08.md): joint extrema density, Jacobian/support, ratio/maximum independence, conditional expectation and the direct minimum-marginal route. Q2 Partial / Hinted; independent observations and density-expression clarification preserved. User plans independent rederivation November 9; Q3–Q4 remain Pending.
