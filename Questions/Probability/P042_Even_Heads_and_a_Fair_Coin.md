@@ -24,14 +24,14 @@ Track the difference between the probabilities of an even and an odd number of h
 
 ### 1. User's approach: recursion and backward induction
 
-设前 $`n-1`$ 枚硬币出现偶数个正面的概率为 $`m`$，奇数个正面的概率为 $`1-m`$。最后一枚反面时保留奇偶性，正面时翻转奇偶性，因此：
+Let $`m`$ be the probability of an even number of heads among the first $`n-1`$ coins. The probability of an odd number is $`1-m`$. A tail on the last coin preserves parity, while a head flips it. Therefore:
 
 ```math
 P(\text{even heads among }n)
 =m(1-p_n)+(1-m)p_n.
 ```
 
-若这个概率等于 $`1/2`$，则：
+If this probability equals $`1/2`$, then:
 
 ```math
 m(1-p_n)+(1-m)p_n=\frac12
@@ -39,30 +39,30 @@ m(1-p_n)+(1-m)p_n=\frac12
 (2m-1)(2p_n-1)=0.
 ```
 
-所以，要么 $`p_n=1/2`$，要么 $`m=1/2`$。第二种情况表示前 $`n-1`$ 枚硬币也满足原条件，可以继续往前推。如果中途都没有遇到公平硬币，最终只剩第一枚，此时：
+Thus either $`p_n=1/2`$ or $`m=1/2`$. In the second case, the first $`n-1`$ coins satisfy the same condition, so repeat the argument. If no fair coin has been found by the time only the first coin remains, then:
 
 ```math
 P(\text{even heads among one coin})=1-p_1=\frac12.
 ```
 
-仍然得到 $`p_1=1/2`$。因此至少有一个公平硬币。
+This gives $`p_1=1/2`$. Hence at least one coin is fair.
 
 ### 2. Short proof: even probability minus odd probability
 
-考虑乘积：
+Consider the product:
 
 ```math
 \prod_{i=1}^{n}\big[(1-p_i)-p_i\big].
 ```
 
-展开时，每个因子选择 $`1-p_i`$ 代表该枚硬币反面，选择 $`-p_i`$ 代表正面。独立性保证每项的绝对值就是对应完整结果的概率；正面个数决定符号：偶数个正面带正号，奇数个正面带负号。所以：
+In the expansion, choosing $`1-p_i`$ from a factor represents a tail, and choosing $`-p_i`$ represents a head. Independence makes the absolute value of each term the probability of its corresponding complete outcome. An even number of heads gives a positive term; an odd number gives a negative term. Consequently:
 
 ```math
 \prod_{i=1}^{n}(1-2p_i)
 =P(\text{even heads})-P(\text{odd heads}).
 ```
 
-已知偶数概率为 $`1/2`$，奇数概率也为 $`1/2`$，故：
+Since the even probability is $`1/2`$, the odd probability is also $`1/2`$. Hence:
 
 ```math
 \prod_{i=1}^{n}(1-2p_i)=0
@@ -70,7 +70,7 @@ P(\text{even heads among one coin})=1-p_1=\frac12.
 \exists i:\ p_i=\frac12.
 ```
 
-反过来，只要其中一枚公平，乘积就是零，奇偶概率相等，因此二者均为 $`1/2`$。与两种概率之和为 1 联立，还得到通式：
+Conversely, if any coin is fair, the product is zero. The even and odd probabilities are equal and sum to one, so both equal $`1/2`$. Combining the sum and difference of the two probabilities also gives the general formula:
 
 ```math
 \boxed{
@@ -81,13 +81,13 @@ P(\text{even heads})
 
 ### 3. User's takeaway: equal probabilities are not required
 
-用户已经想到相同正面概率时的表达式：
+The user had already recognized the following expression when all head probabilities are equal:
 
 ```math
 \bigl(p-(1-p)\bigr)^n.
 ```
 
-推广到不同的正面概率，只需把同一个因子的幂写成不同因子的乘积：
+To allow different head probabilities, replace the power of one factor with a product of different factors:
 
 ```math
 \bigl(p-(1-p)\bigr)^n
@@ -95,40 +95,40 @@ P(\text{even heads})
 \prod_{i=1}^{n}\bigl(p_i-(1-p_i)\bigr).
 ```
 
-相同的概率允许用二项式系数合并同类项；不同的概率虽然不能这样合并，乘法展开和正负号规律仍然成立。
+Equal probabilities allow terms to be grouped using binomial coefficients. With unequal probabilities, that grouping is unavailable, but the product expansion and its sign pattern still apply.
 
-注意符号约定：这里正面取正、反面取负，所以第 $`k`$ 个正面计数对应的符号是 $`(-1)^{n-k}`$。本题 $`n=10`$ 为偶数，乘积仍是偶数概率减奇数概率；若希望通式对任意 $`n`$ 都保持这个方向，统一使用第二种解法中的 $`(1-p_i)-p_i`$。
+Check the sign convention: this expression assigns a positive factor to a head and a negative factor to a tail, so an outcome with $`k`$ heads has sign $`(-1)^{n-k}`$. Here $`n=10`$ is even, so the product is still the even probability minus the odd probability. To preserve that direction for every $`n`$, use $`(1-p_i)-p_i`$ as in the second proof.
 
 ## Key Knowledge Points
 
-- 奇偶性只有两个状态；新硬币只会保留或翻转状态。
-- 偶数概率减奇数概率可以压缩为一个乘积。
-- 乘积结构要求独立性，不要求各枚硬币有相同的正面概率。
-- 本题结论是至少一枚公平，不能推出每一枚都公平。
+- Parity has only two states; each new coin preserves or flips the state.
+- The even probability minus the odd probability can be expressed as one product.
+- The product structure requires independence, but not identical head probabilities.
+- The conclusion requires at least one fair coin; it does not imply that every coin is fair.
 
 ## Intuition
 
-递推法每次去掉一枚硬币，乘积法则一次性展开所有硬币的奇偶贡献。两种方法表达的是同一个结构。
+The recursive proof removes one coin at a time. The product proof combines every coin's contribution to parity at once. Both express the same structure.
 
 ## Common Mistakes
 
-- 停在“前面的偶数概率为一半，或者最后一枚公平”，没有补上往前归纳的过程。
-- 将正面概率相同误当成乘积展开的必要条件。
-- 漏写差值外的括号：应为 $`\bigl(p-(1-p)\bigr)^n`$，而非 $`p-(1-p)^n`$。
-- 调换正反面的正负号后，忽略硬币总数对整体符号的影响。
+- Stopping at “the preceding even probability is one half, or the last coin is fair” without completing the backward induction.
+- Treating identical head probabilities as a requirement for the product expansion.
+- Omitting the parentheses around the entire difference: use $`\bigl(p-(1-p)\bigr)^n`$, not $`p-(1-p)^n`$.
+- Reversing the head/tail sign convention without checking how the total number of coins affects the overall sign.
 
 ## Connections
 
-- [P031 — Exact Uniform Sampling from a Biased Coin](P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md): 同样研究偏置硬币与公平结果；本题研究固定次数抛掷的奇偶性，P031 研究精确采样。
-- [First-Hitting Parity, Coverage, and Alternating Ownership](../../KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md): 都以奇偶性压缩状态；该卡讨论首次到达与停止时刻，本题是独立硬币的固定次数计数。
+- [P031 — Exact Uniform Sampling from a Biased Coin](P031_Exact_Uniform_Sampling_from_a_Biased_Coin.md): Both concern biased coins and fair outcomes. This question studies parity after a fixed number of tosses; P031 studies exact sampling.
+- [First-Hitting Parity, Coverage, and Alternating Ownership](../../KnowledgeCards/Probability/First_Hitting_Parity_Coverage_and_Alternating_Ownership.md): Both use parity to reduce the state space. The card studies first hitting and stopping times; this question counts heads in a fixed set of independent coin tosses.
 
 ## Assessment History
 
-2026-11-10 对话总结：用户独立提出正确的递推分解，并得到“前面的偶数概率为一半，或最后一枚公平”；助理补全反复归纳。用户表示已经想到相同概率下的有符号幂展开，尚未立即推广到不同概率；讨论中说明了乘积推广。不添加正式评分或独立掌握结论。
+Discussion on 2026-11-10: The user independently proposed the correct recursive decomposition and obtained “the preceding even probability is one half, or the last coin is fair.” The assistant completed the backward induction. The user reported already recognizing the signed power expansion for equal probabilities, but had not immediately generalized it to unequal probabilities; the product extension was explained in the discussion. No formal rating or claim of independent mastery is added.
 
 ## What to Remember
 
-**相同概率让同类项更容易合并；独立性才让每种结果的概率可以写成乘积。**
+**Equal probabilities make terms easier to group; independence makes each outcome probability a product.**
 
 ```math
 P(\text{even})=\frac12

@@ -10,6 +10,7 @@ This repository should be maintained using the following rules:
 
 - This is a long-term knowledge base, not a scratchpad.
 - Keep formatting consistent.
+- Write new subject notes in English, including when the source discussion is in Chinese, unless the user explicitly requests another language.
 - Preserve previous notes unless explicitly asked to revise them.
 - Make the folder easy to search and review.
 - Add cross-links when obvious.
