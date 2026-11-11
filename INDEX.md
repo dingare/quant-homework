@@ -4,6 +4,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Daily Testing Results
 
+- [November 10 drill, continued November 11](DailyTests/2026-11-10.md) — Q1 Partial / Hinted; core algorithm independent, latest handwritten returned values verified, slice/in-place correction supplied; Q2–Q4 Pending. Resume Q2 November 12. All actual times Not recorded.
+
 - [November 8 drill, continued November 9](DailyTests/2026-11-08.md) — Q1–Q3 Partial / Hinted; Q4 Cold Solve on previously covered material; all four main questions discussed, none Pending. Q4 is an accidental repeat of the October 26 identical-feature card, not new coverage or a planned retest. Q3 independent substeps and calculation/setup clarifications preserved; training-only risk correction supplied. Q2 independent rederivation remains unverified; actual times Not recorded.
 
 - [November 7 drill, continued November 8](DailyTests/2026-11-07.md) — All four main questions discussed; Q1–Q4 **Partial / Hinted** overall, none Pending. Q1 exact user code verified; Q3 bias correction and Q4 moments/forecast coefficients independently correct. Q4 target/terminology clarifications preserved; actual times Not recorded.
@@ -43,6 +45,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [L009 — Feasible Correlations and Zero-Variance Portfolios](Questions/LinearAlgebra/L009_Feasible_Correlations_and_Zero_Variance_Portfolios.md)
 
 ## Probability
+
+- [P043 — Random Walk on a Cube](Questions/Probability/P043_Random_Walk_on_a_Cube.md) — Pending; prompt only.
 
 - [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md) — Recursion, signed product expansion, and the extension from equal to unequal head probabilities.
 
@@ -95,6 +99,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P037 — Nonnegative Bridges and the Reflection Bijection](Questions/Probability/P037_Nonnegative_Bridges_and_the_Reflection_Bijection.md)
 
 ## Statistics
+
+- [S028 — Exponential Fill Times with Timeout Censoring](Questions/Statistics/S028_Exponential_Fill_Times_with_Timeout_Censoring.md) — Pending; prompt only.
 
 - [S027 — Estimating a Squared Mean](Questions/Statistics/S027_Estimating_a_Squared_Mean.md) — Discussed November 8; bias correction independent, full variance/clipping explanation supplied.
 
@@ -162,6 +168,9 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [O009 — Gradient Descent and Spectral Contraction](Questions/Optimization/O009_Gradient_Descent_and_Spectral_Contraction.md)
 
 ## Coding
+
+- [C024 — Next Permutation in Place](Questions/Coding/C024_Next_Permutation_in_Place.md) — Discussed; independent algorithm, assisted constant-space implementation.
+- [C025 — Search in a Rotated Sorted Array](Questions/Coding/C025_Search_in_a_Rotated_Sorted_Array.md) — Pending; prompt only.
 
 - [C023 — Trapping Rain Water with Two Pointers](Questions/Coding/C023_Trapping_Rain_Water_with_Two_Pointers.md) — Algorithm supplied; exact user implementation verified.
 

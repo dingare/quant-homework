@@ -4,7 +4,9 @@ Dated interview performance logs. Full prompts, solutions and reusable discussio
 
 ## Sessions
 
-Latest completed discussion: [November 8 drill, continued November 9](2026-11-08.md). Q1–Q3 Partial / Hinted; Q4 Cold Solve on previously covered material; all four main questions discussed, none Pending. Q4 is an accidental repeat of the October 26 identical-feature card, not new coverage or a planned retest. Q3 independent substeps and calculation/setup clarifications preserved; training-only risk correction supplied. Q2 independent rederivation remains unverified; actual times Not recorded.
+Latest checkpoint: [November 10 drill, continued November 11](2026-11-10.md). Q1 Partial / Hinted; independent core algorithm and verified returned permutations preserved, slice/in-place correction assisted. Q2–Q4 Pending; resume Q2 November 12. All actual times Not recorded.
+
+Latest fully discussed set: [November 8 drill, continued November 9](2026-11-08.md). Q1–Q3 Partial / Hinted; Q4 Cold Solve on previously covered material; all four main questions discussed, none Pending. Q4 is an accidental repeat of the October 26 identical-feature card, not new coverage or a planned retest. Q3 independent substeps and calculation/setup clarifications preserved; training-only risk correction supplied. Q2 independent rederivation remains unverified; actual times Not recorded.
 
 The prior [November 7 set, continued November 8](2026-11-07.md), is fully discussed. All four main questions discussed; Q1–Q4 Partial / Hinted overall, none Pending. Q3 part 1 and Q4 parts 1–2 independently correct; Q4 terminology/target clarifications preserved without additional error labels. All actual times Not recorded.
 
@@ -16,6 +18,7 @@ The October 23 set was completed in discussion through October 25; no main item 
 
 | Date | Session | Results in question order | Review / status |
 | --- | --- | --- | --- |
+| [2026-11-10](2026-11-10.md) | Four-question drill, continued November 11; paused after Q1 | Q1 Partial / Hinted; Q2–Q4 Pending | Exact handwritten returned values verified; linear-space/in-place issues observed; minimal correction supplied; resume Q2 November 12; actual times unknown |
 | [2026-11-08](2026-11-08.md) | Four-question drill, continued November 9; all discussed | Q1–Q3 Partial / Hinted; Q4 Cold Solve; none Pending | Q3 trace/risk correction assisted with independent substeps preserved; Q4 accidental repeat of existing card, independently correct but not new coverage; Q2 rederivation unverified; all actual times unknown |
 | [2026-11-07](2026-11-07.md) | Four-question drill, continued November 8; all discussed | Q1–Q4 Partial / Hinted overall; none Pending | Q1 exact user code verified; Q3 bias correction and Q4 parts 1–2 independently correct; Q3 variance/clipping and Q4 execution/cost reasoning supplied; actual times unknown |
 | [2026-11-01](2026-11-01.md) | Four-question drill, continued through November 3; all discussed | Q1–Q4 Partial / Hinted overall; none Pending | Original Q3 withdrawn for prompt flaw, without a user-gap label; replacement Q3 solution requested and supplied; Q4 expected value and rare-path explanation independently correct, typical decay prompted; actual times unknown |

@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 41 |
-| Statistics | S | 27 |
+| Probability | P | 42 |
+| Statistics | S | 28 |
 | Time Series | T | 14 |
 | Optimization | O | 10 |
-| Coding | C | 23 |
+| Coding | C | 25 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 132 |
+| Total | All | 136 |
 
 ## Knowledge Cards
 
@@ -28,6 +28,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 11 |
 
 ## Notes
+
+- 2026-11-11: Archived the [November 10 drill, continued November 11](DailyTests/2026-11-10.md), paused after Q1. Added C024 with the independently proposed algorithm, exact handwritten submission, slice/in-place discussion and minimal assistant correction; filed P043 / S028 / C025 as Pending prompts only. Q1 Partial / Hinted; latest exact user code returned 1,093 oracle permutations correctly but failed complete original-list mutation in 472 cases. I observed; K/R unresolved. Corrected reference verification is separate from independent user work. Resume Q2 November 12; no reminder scheduled; all actual times Not recorded. Canonical files 132 to 136 (Coding 23 to 25, Probability 41 to 42, Statistics 27 to 28); standalone cards unchanged at 11. Filing three Pending prompts does not imply completed attempts.
 
 - 2026-11-10: Added [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md) from the user-provided discussion: recursion/backward induction, signed product proof, and equal-to-unequal-probability extension. Probability canonical files 40 to 41; total 131 to 132; standalone cards unchanged at 11. User-proposed recursion and identical-probability expansion preserved; no timed assessment or mastery claim added.
 

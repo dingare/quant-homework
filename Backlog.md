@@ -2,6 +2,14 @@
 
 Unfinished topics and future note clusters. Canonical prompts and solutions are in the [question library](INDEX.md); [DailyTests](DailyTests/INDEX.md) preserves dated assessment evidence. The October 22 filing migration does not close any outstanding independent check or Pending follow-up.
 
+## November 10 Drill — Paused After Q1 on November 11
+
+Source: [dated assessment](DailyTests/2026-11-10.md). Q1 Partial / Hinted; Q2–Q4 Pending. The user plans to continue November 12, starting at Q2. No reminder requested or scheduled; actual times Not recorded.
+
+- [x] [Q1 / C024](Questions/Coding/C024_Next_Permutation_in_Place.md) discussed. Core pivot/successor/reversal algorithm independently proposed. Latest exact handwritten code returned all 1,093 oracle permutations correctly, but sliced copies left the original list incorrect in 472 cases and used linear extra space. Minimal original-array/index-boundary correction supplied and verified separately. I observed; K/R unresolved. Final independent corrected user submission remains unverified; do not call the submitted practice unpracticed.
+- [ ] Resume [Q2 / P043](Questions/Probability/P043_Random_Walk_on_a_Cube.md) on November 12, then [Q3 / S028](Questions/Statistics/S028_Exponential_Fill_Times_with_Timeout_Censoring.md) and [Q4 / C025](Questions/Coding/C025_Search_in_a_Rotated_Sorted_Array.md). Prompts only; no hints, solutions or inferred gaps.
+- Optional later Q1 check: rewrite the helpers to operate on index ranges and explain slice allocation. Label any near-term revisit intentional spaced repetition of November 10 Q1, continued November 11, naming the assisted space/in-place step. No separate retrieval block.
+
 ## Random Points and Spacings — To-Do List
 
 Status: Core topic completed and summarized in the [Random Points, Order Statistics, and Spacings](KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md) Knowledge Card. P001 covers interval and semicircle coverage; P016 covers mutual neighbors, simulation, expectation, and spacing laws.
