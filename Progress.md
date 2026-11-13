@@ -29,6 +29,8 @@ Track canonical question/subject files by category. These are filing counts, not
 
 ## Notes
 
+- 2026-11-12: Expanded existing [P002](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md#citadel-q53-and-one-sided-exit-variants--2026-11-12) with Q53 and the user's no-loss-limit / automatic-profit-exit variants. Canonical counts remain 136 and standalone cards remain 11. Guided discussion and reported understanding archived; no timed rating or independent mastery inferred.
+
 - 2026-11-12: Expanded existing [SC004](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md#citadel-q41-and-stopping-rule-variants--2026-11-12) with the Q41 discussion and fixed-deadline/repeated-event variants. Canonical counts remain 136 and standalone cards remain 11. User-proposed extensions and assistant-explained solutions are recorded without a timed rating or independent-mastery claim.
 
 - 2026-11-11: Completed Q2–Q4 of the [November 10 drill](DailyTests/2026-11-10.md); all main items discussed, none Pending. Q1/Q3/Q4 Partial / Hinted; Q2 Cold Solve by explicit user report, unseen derivations unverified and 3/5 preserved as a typo. Filled existing P043 / S028 / C025 notes without new IDs: counts remain 136 canonical files and 11 standalone cards. Q3 independent likelihood/timeout/selection steps, Fisher retrieval report and typing clarification retained; Q4 submitted code defects and separate reference validation recorded. Actual times Not recorded; prior November 12 continuation queue superseded.

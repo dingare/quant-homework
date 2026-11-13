@@ -60,7 +60,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P036 — Live Orders with Poisson Arrivals and Exponential Lifetimes](Questions/Probability/P036_Live_Orders_with_Poisson_Arrivals_and_Exponential_Lifetimes.md)
 
 - [P001 — Fixed vs Exists Probability Patterns](Questions/Probability/P001_Fixed_vs_Exists_Probability_Patterns.md)
-- [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md)
+- [P002 — Optional Stopping, Fair Games, and Why Stop-Loss Does Not Create Alpha](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md) — Includes [Citadel Q53 and one-sided exit variants](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md#citadel-q53-and-one-sided-exit-variants--2026-11-12): forced loss/profit exits, unrestricted target hitting, value functions and finite-mean stopping conditions.
 - [P003 — Deterministic Tournament Brackets: Survival and Meeting Probabilities](Questions/Probability/P003_Deterministic_Tournament_Brackets_Survival_and_Meeting_Probabilities.md)
 - [P004 — Two-Out-of-Three Gaussian Signal Triggers and Correlation](Questions/Probability/P004_Two_Out_of_Three_Gaussian_Signal_Triggers_and_Correlation.md)
 - [P005 — One-Round Random Matching Patterns](Questions/Probability/P005_One_Round_Random_Matching_Patterns.md)

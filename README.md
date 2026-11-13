@@ -213,6 +213,8 @@ When working locally on this repo:
 
 ## Latest Additions
 
+- 2026-11-12: Expanded [P002 — Optional Stopping](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md#citadel-q53-and-one-sided-exit-variants--2026-11-12) with Citadel Q53: the forced loss exit at -3, removing the loss limit, and an automatic profit exit at +3. Includes value functions, the nonnegative-martingale bound, and why almost-sure termination differs from finite expected duration. Qualified the note's optional-stopping summaries; counts unchanged, no independent mastery inferred.
+
 - 2026-11-12: Expanded [SC004 — Competing Exponential Clocks](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md#citadel-q41-and-stopping-rule-variants--2026-11-12) with Citadel Q41 and the discussed variants: first-event settlement, a fixed deadline with zero timeout payoff, survival conditioning, repeated Poisson-event P&L and the long-run average. Includes when probabilities multiply and rates add, plus the Q39 thinning connection. Existing note extended; counts unchanged, no timed assessment or independent mastery inferred.
 
 - 2026-11-11: Completed the [November 10 drill](DailyTests/2026-11-10.md). Q1/Q3/Q4 Partial / Hinted; Q2 Cold Solve by user report; none Pending. Updated existing P043 / S028 / C025 with the answer record, censored-likelihood/information discussion, and exact rotated-search submission plus minimal correction. Preserve Q2 typo and Q3 formula-typing clarification. Counts unchanged at 136 canonical files and 11 cards; no elapsed time inferred.
