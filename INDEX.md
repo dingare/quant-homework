@@ -206,7 +206,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [SC001 — Itô's Lemma and Discounted Price Martingale](Questions/StochasticCalculus/SC001_Itos_Lemma_and_Discounted_Price_Martingale.md)
 - [SC002 — Change of Measure I: Understanding P, Q and the Radon-Nikodym Derivative](Questions/StochasticCalculus/SC002_Change_of_Measure_I_Understanding_P_Q_and_the_Radon_Nikodym_Derivative.md)
 - [SC003 — Ornstein–Uhlenbeck First Hitting Time](Questions/StochasticCalculus/SC003_Ornstein_Uhlenbeck_First_Hitting_Time.md)
-- [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md)
+- [SC004 — Competing Exponential Clocks and CTMC Hitting](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md) — Includes [Citadel Q41 and stopping-rule variants](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md#citadel-q41-and-stopping-rule-variants--2026-11-12): first-event P&L, a fixed deadline, survival conditioning, repeated events, long-run average and rate/probability rules.
 - [SC005 — Brownian Hitting Probability with Drift](Questions/StochasticCalculus/SC005_Brownian_Hitting_Probability_with_Drift.md)
 - [SC006 — Competing Exponentials and Time-Dependent Hazards](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md) — Includes [two Poisson bus routes](Questions/StochasticCalculus/SC006_Competing_Exponentials_and_Time_Dependent_Hazards.md#bus-variant--2026-10-30): why survival probabilities multiply, rate addition, and competition versus random route selection.
 
