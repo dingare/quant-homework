@@ -7,14 +7,14 @@ Track canonical question/subject files by category. These are filing counts, not
 | Category | Prefix | Count |
 | --- | --- | ---: |
 | Linear Algebra | L | 9 |
-| Probability | P | 42 |
+| Probability | P | 43 |
 | Statistics | S | 28 |
 | Time Series | T | 14 |
 | Optimization | O | 10 |
 | Coding | C | 25 |
 | Stochastic Calculus | SC | 7 |
 | Rates Research | R | 1 |
-| Total | All | 136 |
+| Total | All | 137 |
 
 ## Knowledge Cards
 
@@ -28,6 +28,8 @@ Track canonical question/subject files by category. These are filing counts, not
 | Total | 11 |
 
 ## Notes
+
+- 2026-11-13: Added [P044 — Uniform Sampling on the Unit Sphere](Questions/Probability/P044_Uniform_Sampling_on_the_Unit_Sphere.md): preserves the independently proposed two-stage sine/cosine construction, explains why uniform polar angles fail, and records the supplied uniform-height method and Gaussian alternative. Partial / Hinted; the user explicitly did not independently find uniform height sampling. No elapsed time or independent mastery inferred. Probability canonical files 42 to 43; total 136 to 137. Standalone cards unchanged at 11.
 
 - 2026-11-12: Expanded existing [P018](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md#citadel-q54-first-ace-and-first-king) with the Q54 first-Ace/first-King solution. Canonical counts remain 136 and standalone cards remain 11. Assistant-explained discussion archived; the previous timed assessment is preserved, with no new rating or independent-mastery claim.
 

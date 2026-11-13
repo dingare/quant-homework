@@ -46,6 +46,8 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 
 ## Probability
 
+- [P044 — Uniform Sampling on the Unit Sphere](Questions/Probability/P044_Uniform_Sampling_on_the_Unit_Sphere.md) — Independent two-stage parametrization; uniform-height completion supplied, Partial / Hinted.
+
 - [P043 — Random Walk on a Cube](Questions/Probability/P043_Random_Walk_on_a_Cube.md) — Discussed; see dated assessment.
 
 - [P042 — Even Heads and a Fair Coin](Questions/Probability/P042_Even_Heads_and_a_Fair_Coin.md) — Recursion, signed product expansion, and the extension from equal to unequal head probabilities.
