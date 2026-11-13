@@ -97,6 +97,73 @@ Choosing “an Ace in the first nine remaining positions” and then freely choo
 
 [2026-10-06 Q2](../../DailyTests/2026-10-06.md#q2--conditional-ace-positions): Y, about 12 minutes; stopped at the recommended time limit. Conditioning was understood, but the count overcounted. The worked answer above was added after the attempt.
 
+## Citadel Q54: First Ace and First King
+
+Discussion date: 2026-11-12. Source: user-supplied Citadel interview-preparation PDF, page 4, Q54.
+
+### Question
+
+Reveal cards from a uniformly shuffled standard 52-card deck, without replacement, until at least one Ace and at least one King have appeared. What is the expected number of cards revealed?
+
+Count the card that completes the requirement. Let $`T_A`$ and $`T_K`$ be the positions of the first Ace and first King. The stopping time is
+
+```math
+T=\max(T_A,T_K).
+```
+
+### Solution: replace a maximum by a sum minus a minimum
+
+Use the pathwise identity
+
+```math
+\max(T_A,T_K)=T_A+T_K-\min(T_A,T_K).
+```
+
+For $`m`$ target cards uniformly placed among $`n`$ positions, the mean first target position is
+
+```math
+E[T_{\rm first}]=\frac{n+1}{m+1}.
+```
+
+This follows from the same exchangeable-gap argument used above: the target cards split the $`n-m`$ non-target cards into $`m+1`$ exchangeable gaps. The expected number before the first target is $`(n-m)/(m+1)`$; add the target card itself.
+
+There are four Aces and four Kings, so
+
+```math
+E[T_A]=\frac{53}{5},\qquad E[T_K]=\frac{53}{5}.
+```
+
+The minimum is the first position containing either an Ace or a King. These are eight distinct target cards, hence
+
+```math
+E[\min(T_A,T_K)]=\frac{53}{9}.
+```
+
+Taking expectations in the identity gives
+
+```math
+\boxed{
+E[T]=\frac{53}{5}+\frac{53}{5}-\frac{53}{9}
+=\frac{689}{45}\approx15.31\text{ cards}.
+}
+```
+
+### What to remember
+
+- Waiting for both types means the maximum of their first-appearance times.
+- Waiting for either type means the minimum, which pools the eight target cards.
+- The max-plus-min identity avoids deriving the full joint distribution.
+- The two first-appearance times are dependent. Linearity of expectation does not require independence.
+- Do not use a geometric distribution with a fixed success probability: cards are drawn without replacement.
+- This is the same first-target-position formula used in the earlier Q50 door discussion, applied to four targets and then eight targets.
+
+### Connections and discussion record
+
+- [Random Points, Order Statistics, and Spacings](../../KnowledgeCards/Probability/Random_Points_Order_Statistics_and_Spacings.md): exchangeable gaps give the mean first position; the current deck problem uses discrete positions without replacement.
+- [Waiting Time and Competing Risks Cookbook](../../KnowledgeCards/Probability/Waiting_Time_and_Competing_Risks_Cookbook.md): distinguish waiting for either event from waiting for both, and check the independence assumptions before multiplying probabilities.
+
+The assistant supplied the solution on 2026-11-12, and the user requested GitHub archival. No independent derivation, timed rating, elapsed time or mastery claim is inferred. The earlier October 6 assessment below remains unchanged.
+
 ## Assessment history
 
 - [2026-10-06 Q2 — assessment](../../DailyTests/2026-10-06.md#q2--conditional-ace-positions)

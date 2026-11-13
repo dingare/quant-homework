@@ -76,7 +76,7 @@ Categorized question and subject library. Full prompts, solutions and reusable d
 - [P015 — Dice Coupon Collector: See Every Face at Least Twice](Questions/Probability/P015_Dice_Coupon_Collector_See_Every_Face_At_Least_Twice.md)
 - [P016 — Mutual Nearest Neighbors on a Line](Questions/Probability/P016_Mutual_Nearest_Neighbors_on_a_Line.md)
 
-- [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md)
+- [P018 — First Ace Position and Conditioning on a Face Card](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md) — Includes [Citadel Q54: first Ace and first King](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md#citadel-q54-first-ace-and-first-king), using the max-plus-min identity and first-target-position means; independence is not required.
 - [P019 — HH vs HTT Pattern Race](Questions/Probability/P019_HH_vs_HTT_Pattern_Race.md)
 
 - [P020 — Uniform Sum: Half-Threshold Overshoot Probability](Questions/Probability/P020_Uniform_Sum_Half_Threshold_Overshoot_Probability.md)

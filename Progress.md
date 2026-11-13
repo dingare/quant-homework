@@ -29,6 +29,8 @@ Track canonical question/subject files by category. These are filing counts, not
 
 ## Notes
 
+- 2026-11-12: Expanded existing [P018](Questions/Probability/P018_First_Ace_Position_and_Conditioning_on_a_Face_Card.md#citadel-q54-first-ace-and-first-king) with the Q54 first-Ace/first-King solution. Canonical counts remain 136 and standalone cards remain 11. Assistant-explained discussion archived; the previous timed assessment is preserved, with no new rating or independent-mastery claim.
+
 - 2026-11-12: Expanded existing [P002](Questions/Probability/P002_Optional_Stopping_Fair_Games_and_Why_Stop_Loss_Does_Not_Create_Alpha.md#citadel-q53-and-one-sided-exit-variants--2026-11-12) with Q53 and the user's no-loss-limit / automatic-profit-exit variants. Canonical counts remain 136 and standalone cards remain 11. Guided discussion and reported understanding archived; no timed rating or independent mastery inferred.
 
 - 2026-11-12: Expanded existing [SC004](Questions/StochasticCalculus/SC004_Competing_Exponential_Clocks_and_CTMC_Hitting.md#citadel-q41-and-stopping-rule-variants--2026-11-12) with the Q41 discussion and fixed-deadline/repeated-event variants. Canonical counts remain 136 and standalone cards remain 11. User-proposed extensions and assistant-explained solutions are recorded without a timed rating or independent-mastery claim.
